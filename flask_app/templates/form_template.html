@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% macro form_group(field) -%}
+    <div class="form-group required">
+        <label for="{{ field.id }}" class="form-control-label">{{ field.label }}</label>
+        {% if field.errors %}
+            {{ field(class_="form-control is-invalid") }}
+        {% else %}
+            {{ field(class_="form-control") }}
+        {% endif %}
+        {% if field.errors %}
+            <div class="invalid-feedback">
+                {{ field.errors[0] }}
+            </div>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+
+{% macro quick_form(form) -%}
+    <form class="form" method="POST">
+        {% for field in form %}
+            {% if field.type in ('HiddenField', 'CSRFTokenField') %}
+                {{ field() }}
+            {% elif field.type == 'SubmitField' %}
+                <br>
+                {{ field(class_="btn btn-primary") }}
+            {% elif field.type =='BooleanField' %}
+                <div class="form-check">
+                    <label class="form-check-label">
+                        {{ field(class_="form-check-input") }} {{ field.label.text }}
+                    </label>
+                </div>
+            {% else %}
+                {{ form_group(field) }}
+            {% endif %}
+        {% endfor %}
+    </form>
+{% endmacro %}
+
+{% block app_content %}
+    <h1>{{ title }}</h1>
+    <br>
+    <div class="row">
+        <div class="col-md-8">
+            {{ quick_form(form) }}
+        </div>
+    </div>
+{% endblock %}

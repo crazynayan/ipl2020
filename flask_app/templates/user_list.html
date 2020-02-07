@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+
+    <h1>{{ title }}</h1>
+    <br>
+    <table class="table table-bordered table-sm table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col" class="text-center">Rank</th>
+            <th scope="col" class="text-center">Name</th>
+            <th scope="col" class="text-center">Points</th>
+            <th scope="col" class="text-center">Balance</th>
+            <th scope="col" class="text-center">Players</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td class="text-center align-middle font-weight-bold">
+                    {{ loop.index }}
+                </td>
+                <td class="align-middle">
+                    <a class="btn btn-block btn-primary"
+                       href="{{ url_for('user_players', username=user.username) }}">{{ user.name }}</a>
+                </td>
+                <td class="text-center align-middle font-weight-bold">
+                    {{ user.points }}
+                </td>
+                <td class="text-center align-middle">
+                    {{ user.balance }}
+                </td>
+                <td class="text-center align-middle">
+                    {{ user.player_count }}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+README.md
+LICENSE
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+venv/
+.idea/
+.git/
+.gitignore
+source_data/
+game.py

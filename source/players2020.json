@@ -1,0 +1,1703 @@
+[
+  {
+    "name": "MS Dhoni",
+    "cost": 1500,
+    "base": 200,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 362,
+    "team": "CSK"
+  },
+  {
+    "name": "Suresh Raina",
+    "cost": 1100,
+    "base": 200,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 297,
+    "team": "CSK"
+  },
+  {
+    "name": "Kedar Jadhav",
+    "cost": 780,
+    "base": 200,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 137,
+    "team": "CSK"
+  },
+  {
+    "name": "Ravindra Jadeja",
+    "cost": 700,
+    "base": 200,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 288,
+    "team": "CSK"
+  },
+  {
+    "name": "Piyush Chawla",
+    "cost": 675,
+    "base": 100,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 162,
+    "team": "CSK"
+  },
+  {
+    "name": "Dwayne Bravo",
+    "cost": 640,
+    "base": 200,
+    "country": "West Indies",
+    "type": "All-rounder",
+    "ipl2019_score": 202,
+    "team": "CSK"
+  },
+  {
+    "name": "Sam Curran",
+    "cost": 550,
+    "base": 100,
+    "country": "England",
+    "type": "All-rounder",
+    "ipl2019_score": 186,
+    "team": "CSK"
+  },
+  {
+    "name": "Karn Sharma",
+    "cost": 500,
+    "base": 200,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 9,
+    "team": "CSK"
+  },
+  {
+    "name": "Shane Watson",
+    "cost": 400,
+    "base": 100,
+    "country": "Australia",
+    "type": "All-rounder",
+    "ipl2019_score": 306,
+    "team": "CSK"
+  },
+  {
+    "name": "Shardul Thakur",
+    "cost": 260,
+    "base": 75,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 123,
+    "team": "CSK"
+  },
+  {
+    "name": "Ambati Rayudu",
+    "cost": 220,
+    "base": 50,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 215,
+    "team": "CSK"
+  },
+  {
+    "name": "Harbhajan Singh",
+    "cost": 200,
+    "base": 200,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 208,
+    "team": "CSK"
+  },
+  {
+    "name": "Murali Vijay",
+    "cost": 200,
+    "base": 200,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 44,
+    "team": "CSK"
+  },
+  {
+    "name": "Josh Hazelwood",
+    "cost": 200,
+    "base": 200,
+    "country": "Australia",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "CSK"
+  },
+  {
+    "name": "Faf du Plessis",
+    "cost": 160,
+    "base": 150,
+    "country": "South Africa",
+    "type": "Batsman",
+    "ipl2019_score": 313,
+    "team": "CSK"
+  },
+  {
+    "name": "Imran Tahir",
+    "cost": 100,
+    "base": 100,
+    "country": "South Africa",
+    "type": "Spin bowler",
+    "ipl2019_score": 336,
+    "team": "CSK"
+  },
+  {
+    "name": "Deepak Chahar",
+    "cost": 80,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 271,
+    "team": "CSK"
+  },
+  {
+    "name": "Mitchell Santner",
+    "cost": 50,
+    "base": 50,
+    "country": "New Zealand",
+    "type": "Spin bowler",
+    "ipl2019_score": 71,
+    "team": "CSK"
+  },
+  {
+    "name": "Lungi Ngidi",
+    "cost": 50,
+    "base": 50,
+    "country": "South Africa",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "CSK"
+  },
+  {
+    "name": "KM Asif",
+    "cost": 40,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "CSK"
+  },
+  {
+    "name": "Monu Kumar",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "CSK"
+  },
+  {
+    "name": "Narayan Jagadeesan",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 0,
+    "team": "CSK"
+  },
+  {
+    "name": "Ruturaj Gaikwad",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "CSK"
+  },
+  {
+    "name": "R Sai Kishore",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 0,
+    "team": "CSK"
+  },
+  {
+    "name": "Rishabh Pant",
+    "cost": 1500,
+    "base": 200,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 449,
+    "team": "DC"
+  },
+  {
+    "name": "Shimron Hetmyer",
+    "cost": 775,
+    "base": 50,
+    "country": "West Indies",
+    "type": "Batsman",
+    "ipl2019_score": 82,
+    "team": "DC"
+  },
+  {
+    "name": "Ravichandran Ashwin",
+    "cost": 760,
+    "base": 200,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 240,
+    "team": "DC"
+  },
+  {
+    "name": "Shreyas Iyer",
+    "cost": 700,
+    "base": 200,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 348,
+    "team": "DC"
+  },
+  {
+    "name": "Ajinkya Rahane",
+    "cost": 525,
+    "base": 200,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 286,
+    "team": "DC"
+  },
+  {
+    "name": "Shikhar Dhawan",
+    "cost": 520,
+    "base": 200,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 384,
+    "team": "DC"
+  },
+  {
+    "name": "Axar patel",
+    "cost": 500,
+    "base": 100,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 227,
+    "team": "DC"
+  },
+  {
+    "name": "Marcus Stoinis",
+    "cost": 480,
+    "base": 100,
+    "country": "Australia",
+    "type": "All-rounder",
+    "ipl2019_score": 166,
+    "team": "DC"
+  },
+  {
+    "name": "Kagiso Rabada",
+    "cost": 420,
+    "base": 150,
+    "country": "South Africa",
+    "type": "Fast bowler",
+    "ipl2019_score": 329,
+    "team": "DC"
+  },
+  {
+    "name": "Amit Mishra",
+    "cost": 400,
+    "base": 150,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 153,
+    "team": "DC"
+  },
+  {
+    "name": "Alex Carey",
+    "cost": 240,
+    "base": 50,
+    "country": "Australia",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 0,
+    "team": "DC"
+  },
+  {
+    "name": "Jason Roy",
+    "cost": 150,
+    "base": 150,
+    "country": "England",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "DC"
+  },
+  {
+    "name": "Chris Woakes",
+    "cost": 150,
+    "base": 150,
+    "country": "England",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "DC"
+  },
+  {
+    "name": "Prithvi Shaw",
+    "cost": 120,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 260,
+    "team": "DC"
+  },
+  {
+    "name": "Ishant Sharma",
+    "cost": 110,
+    "base": 75,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 171,
+    "team": "DC"
+  },
+  {
+    "name": "Avesh Khan",
+    "cost": 70,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 8,
+    "team": "DC"
+  },
+  {
+    "name": "Mohit Sharma",
+    "cost": 50,
+    "base": 50,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 11,
+    "team": "DC"
+  },
+  {
+    "name": "Keemo Paul",
+    "cost": 50,
+    "base": 50,
+    "country": "West Indies",
+    "type": "All-rounder",
+    "ipl2019_score": 132,
+    "team": "DC"
+  },
+  {
+    "name": "Sandeep Lamichhane",
+    "cost": 20,
+    "base": 20,
+    "country": "Nepal",
+    "type": "Spin bowler",
+    "ipl2019_score": 95,
+    "team": "DC"
+  },
+  {
+    "name": "Harshal Patel",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 24,
+    "team": "DC"
+  },
+  {
+    "name": "Tushar Deshpande",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "DC"
+  },
+  {
+    "name": "Lalit Yadav",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "DC"
+  },
+  {
+    "name": "Pat Cummins",
+    "cost": 1550,
+    "base": 200,
+    "country": "Australia",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "KKR"
+  },
+  {
+    "name": "Sunil Narine",
+    "cost": 1250,
+    "base": 200,
+    "country": "West Indies",
+    "type": "All-rounder",
+    "ipl2019_score": 216,
+    "team": "KKR"
+  },
+  {
+    "name": "Andre Russell",
+    "cost": 850,
+    "base": 200,
+    "country": "West Indies",
+    "type": "All-rounder",
+    "ipl2019_score": 482,
+    "team": "KKR"
+  },
+  {
+    "name": "Dinesh Karthik",
+    "cost": 740,
+    "base": 200,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 218,
+    "team": "KKR"
+  },
+  {
+    "name": "Kuldeep Yadav",
+    "cost": 580,
+    "base": 150,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 72,
+    "team": "KKR"
+  },
+  {
+    "name": "Eoin Morgan",
+    "cost": 525,
+    "base": 200,
+    "country": "England",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "KKR"
+  },
+  {
+    "name": "Varun Chakravarthy",
+    "cost": 400,
+    "base": 30,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 9,
+    "team": "KKR"
+  },
+  {
+    "name": "Nitish Rana",
+    "cost": 340,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 286,
+    "team": "KKR"
+  },
+  {
+    "name": "Kamlesh Nagarkoti",
+    "cost": 320,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "KKR"
+  },
+  {
+    "name": "Shivam Mavi",
+    "cost": 300,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "KKR"
+  },
+  {
+    "name": "Shubman Gill",
+    "cost": 180,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 234,
+    "team": "KKR"
+  },
+  {
+    "name": "Lockie Ferguson",
+    "cost": 160,
+    "base": 100,
+    "country": "New Zealand",
+    "type": "Fast bowler",
+    "ipl2019_score": 21,
+    "team": "KKR"
+  },
+  {
+    "name": "Tom Banton",
+    "cost": 100,
+    "base": 100,
+    "country": "England",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "KKR"
+  },
+  {
+    "name": "Rinku Singh",
+    "cost": 80,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 39,
+    "team": "KKR"
+  },
+  {
+    "name": "Harry Gurney",
+    "cost": 75,
+    "base": 75,
+    "country": "England",
+    "type": "Fast bowler",
+    "ipl2019_score": 80,
+    "team": "KKR"
+  },
+  {
+    "name": "Rahul Tripathi",
+    "cost": 60,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 111,
+    "team": "KKR"
+  },
+  {
+    "name": "Sandeep Warrier",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 30,
+    "team": "KKR"
+  },
+  {
+    "name": "Prasidh Krishna",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 60,
+    "team": "KKR"
+  },
+  {
+    "name": "Nikhil Naik",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 3,
+    "team": "KKR"
+  },
+  {
+    "name": "Siddhesh Lad",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 11,
+    "team": "KKR"
+  },
+  {
+    "name": "M Siddharth",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 0,
+    "team": "KKR"
+  },
+  {
+    "name": "Chris Green",
+    "cost": 20,
+    "base": 20,
+    "country": "Australia",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "KKR"
+  },
+  {
+    "name": "Pravin Tambe",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 0,
+    "team": "KKR"
+  },
+  {
+    "name": "Lokesh Rahul",
+    "cost": 1100,
+    "base": 200,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 436,
+    "team": "KXIP"
+  },
+  {
+    "name": "Glenn Maxwell",
+    "cost": 1075,
+    "base": 200,
+    "country": "Australia",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Sheldon Cottrell",
+    "cost": 850,
+    "base": 50,
+    "country": "West Indies",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Krishnappa Gowtham",
+    "cost": 620,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 33,
+    "team": "KXIP"
+  },
+  {
+    "name": "Karun Nair",
+    "cost": 560,
+    "base": 50,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 5,
+    "team": "KXIP"
+  },
+  {
+    "name": "Mohammed Shami",
+    "cost": 480,
+    "base": 100,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 230,
+    "team": "KXIP"
+  },
+  {
+    "name": "Nicholas Pooran",
+    "cost": 420,
+    "base": 75,
+    "country": "West Indies",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 125,
+    "team": "KXIP"
+  },
+  {
+    "name": "Mujeeb Ur Rahman",
+    "cost": 400,
+    "base": 50,
+    "country": "Afghanistan",
+    "type": "Spin bowler",
+    "ipl2019_score": 40,
+    "team": "KXIP"
+  },
+  {
+    "name": "Chris Jordan",
+    "cost": 300,
+    "base": 75,
+    "country": "England",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Chris Gayle",
+    "cost": 200,
+    "base": 200,
+    "country": "West Indies",
+    "type": "Batsman",
+    "ipl2019_score": 344,
+    "team": "KXIP"
+  },
+  {
+    "name": "Ravi Bishnoi",
+    "cost": 200,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Mandeep Singh",
+    "cost": 140,
+    "base": 50,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 138,
+    "team": "KXIP"
+  },
+  {
+    "name": "Mayank Agarwal",
+    "cost": 100,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 257,
+    "team": "KXIP"
+  },
+  {
+    "name": "Hardus Viljoen",
+    "cost": 75,
+    "base": 75,
+    "country": "South Africa",
+    "type": "Bowler",
+    "ipl2019_score": 78,
+    "team": "KXIP"
+  },
+  {
+    "name": "Simran Singh",
+    "cost": 55,
+    "base": 20,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 16,
+    "team": "KXIP"
+  },
+  {
+    "name": "Deepak Hooda",
+    "cost": 50,
+    "base": 40,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 112,
+    "team": "KXIP"
+  },
+  {
+    "name": "James Neesham",
+    "cost": 50,
+    "base": 50,
+    "country": "New Zealand",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Darshan Nalkande",
+    "cost": 30,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Sarfaraz Khan",
+    "cost": 25,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 124,
+    "team": "KXIP"
+  },
+  {
+    "name": "Murugan Ashwin",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 81,
+    "team": "KXIP"
+  },
+  {
+    "name": "Arshdeep Singh",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Bowler",
+    "ipl2019_score": 29,
+    "team": "KXIP"
+  },
+  {
+    "name": "Harpreet Brar",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Bowler",
+    "ipl2019_score": 13,
+    "team": "KXIP"
+  },
+  {
+    "name": "Jagdeesha Suchith",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Ishan Porel",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Tajinder Singh Dhillon",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "KXIP"
+  },
+  {
+    "name": "Rohit Sharma",
+    "cost": 1500,
+    "base": 200,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 299,
+    "team": "MI"
+  },
+  {
+    "name": "Hardik Pandya",
+    "cost": 1100,
+    "base": 200,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 449,
+    "team": "MI"
+  },
+  {
+    "name": "Krunal Pandya",
+    "cost": 880,
+    "base": 40,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 278,
+    "team": "MI"
+  },
+  {
+    "name": "Nathan Coulter-Nile",
+    "cost": 800,
+    "base": 100,
+    "country": "Australia",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "MI"
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "cost": 700,
+    "base": 200,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 249,
+    "team": "MI"
+  },
+  {
+    "name": "Ishan Kishan",
+    "cost": 620,
+    "base": 40,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 86,
+    "team": "MI"
+  },
+  {
+    "name": "Kieron Pollard",
+    "cost": 540,
+    "base": 200,
+    "country": "West Indies",
+    "type": "All-rounder",
+    "ipl2019_score": 241,
+    "team": "MI"
+  },
+  {
+    "name": "Trent Boult",
+    "cost": 320,
+    "base": 150,
+    "country": "New Zealand",
+    "type": "Fast bowler",
+    "ipl2019_score": 68,
+    "team": "MI"
+  },
+  {
+    "name": "Suryakumar Yadav",
+    "cost": 320,
+    "base": 30,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 321,
+    "team": "MI"
+  },
+  {
+    "name": "Quinton de Kock",
+    "cost": 280,
+    "base": 200,
+    "country": "South Africa",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 439,
+    "team": "MI"
+  },
+  {
+    "name": "Sherfane Rutherford",
+    "cost": 200,
+    "base": 40,
+    "country": "West Indies",
+    "type": "All-rounder",
+    "ipl2019_score": 88,
+    "team": "MI"
+  },
+  {
+    "name": "Chris Lynn",
+    "cost": 200,
+    "base": 200,
+    "country": "Australia",
+    "type": "Batsman",
+    "ipl2019_score": 286,
+    "team": "MI"
+  },
+  {
+    "name": "Lasith Malinga",
+    "cost": 200,
+    "base": 200,
+    "country": "Sri Lanka",
+    "type": "Fast bowler",
+    "ipl2019_score": 182,
+    "team": "MI"
+  },
+  {
+    "name": "Rahul Chahar",
+    "cost": 190,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 184,
+    "team": "MI"
+  },
+  {
+    "name": "Mitchell McClenaghan",
+    "cost": 100,
+    "base": 100,
+    "country": "New Zealand",
+    "type": "Fast bowler",
+    "ipl2019_score": 50,
+    "team": "MI"
+  },
+  {
+    "name": "Anmolpreet Singh",
+    "cost": 80,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "MI"
+  },
+  {
+    "name": "Dhawal Kulkarni",
+    "cost": 75,
+    "base": 50,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 96,
+    "team": "MI"
+  },
+  {
+    "name": "Jayant Yadav",
+    "cost": 50,
+    "base": 50,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 22,
+    "team": "MI"
+  },
+  {
+    "name": "Saurabh Tiwari",
+    "cost": 50,
+    "base": 50,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "MI"
+  },
+  {
+    "name": "Anukul Roy",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 13,
+    "team": "MI"
+  },
+  {
+    "name": "Aditya Tare",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 0,
+    "team": "MI"
+  },
+  {
+    "name": "Mohsin Khan",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "MI"
+  },
+  {
+    "name": "Digvijay Deshmukh",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "MI"
+  },
+  {
+    "name": "Prince Balwant Rai",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "MI"
+  },
+  {
+    "name": "Virat Kohli",
+    "cost": 1700,
+    "base": 200,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 313,
+    "team": "RCB"
+  },
+  {
+    "name": "AB De villiers",
+    "cost": 1100,
+    "base": 200,
+    "country": "South Africa",
+    "type": "Batsman",
+    "ipl2019_score": 325,
+    "team": "RCB"
+  },
+  {
+    "name": "Chris Morris",
+    "cost": 1000,
+    "base": 150,
+    "country": "South Africa",
+    "type": "All-rounder",
+    "ipl2019_score": 168,
+    "team": "RCB"
+  },
+  {
+    "name": "Yuzvendra Chahal",
+    "cost": 600,
+    "base": 200,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 215,
+    "team": "RCB"
+  },
+  {
+    "name": "Shivam Dube",
+    "cost": 500,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 36,
+    "team": "RCB"
+  },
+  {
+    "name": "Aaron Finch",
+    "cost": 440,
+    "base": 100,
+    "country": "Australia",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "RCB"
+  },
+  {
+    "name": "Umesh Yadav",
+    "cost": 420,
+    "base": 100,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 115,
+    "team": "RCB"
+  },
+  {
+    "name": "Kane Richardson",
+    "cost": 400,
+    "base": 150,
+    "country": "Australia",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "RCB"
+  },
+  {
+    "name": "Washington Sundar",
+    "cost": 320,
+    "base": 150,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 53,
+    "team": "RCB"
+  },
+  {
+    "name": "Navdeep Saini",
+    "cost": 300,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 150,
+    "team": "RCB"
+  },
+  {
+    "name": "Mohammed Siraj",
+    "cost": 260,
+    "base": 100,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 94,
+    "team": "RCB"
+  },
+  {
+    "name": "Dale Steyn",
+    "cost": 200,
+    "base": 200,
+    "country": "South Africa",
+    "type": "Fast bowler",
+    "ipl2019_score": 43,
+    "team": "RCB"
+  },
+  {
+    "name": "Parthiv Patel",
+    "cost": 170,
+    "base": 100,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 292,
+    "team": "RCB"
+  },
+  {
+    "name": "Moeen Ali",
+    "cost": 170,
+    "base": 150,
+    "country": "England",
+    "type": "All-rounder",
+    "ipl2019_score": 237,
+    "team": "RCB"
+  },
+  {
+    "name": "Pawan Negi",
+    "cost": 100,
+    "base": 50,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 49,
+    "team": "RCB"
+  },
+  {
+    "name": "Gurkeerat Mann Singh",
+    "cost": 50,
+    "base": 50,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 65,
+    "team": "RCB"
+  },
+  {
+    "name": "Isuru Udana",
+    "cost": 50,
+    "base": 50,
+    "country": "Sri Lanka",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "RCB"
+  },
+  {
+    "name": "Devdutt Padikkal",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "RCB"
+  },
+  {
+    "name": "Josh Philippe",
+    "cost": 20,
+    "base": 20,
+    "country": "Australia",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 0,
+    "team": "RCB"
+  },
+  {
+    "name": "Pavan Deshpande",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "RCB"
+  },
+  {
+    "name": "Shahbaz Ahmed",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 0,
+    "team": "RCB"
+  },
+  {
+    "name": "Ben Stokes",
+    "cost": 1250,
+    "base": 200,
+    "country": "England",
+    "type": "All-rounder",
+    "ipl2019_score": 145,
+    "team": "RR"
+  },
+  {
+    "name": "Steve Smith",
+    "cost": 1250,
+    "base": 200,
+    "country": "Australia",
+    "type": "Batsman",
+    "ipl2019_score": 220,
+    "team": "RR"
+  },
+  {
+    "name": "Sanju Samson",
+    "cost": 800,
+    "base": 100,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 226,
+    "team": "RR"
+  },
+  {
+    "name": "Jofra Archer",
+    "cost": 720,
+    "base": 40,
+    "country": "West Indies",
+    "type": "All-rounder",
+    "ipl2019_score": 204,
+    "team": "RR"
+  },
+  {
+    "name": "Jos Buttler",
+    "cost": 440,
+    "base": 150,
+    "country": "England",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 249,
+    "team": "RR"
+  },
+  {
+    "name": "Rahul Tewatia",
+    "cost": 300,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 71,
+    "team": "RR"
+  },
+  {
+    "name": "Robin Uthappa",
+    "cost": 300,
+    "base": 150,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 208,
+    "team": "RR"
+  },
+  {
+    "name": "Ankit Rajpoot",
+    "cost": 300,
+    "base": 30,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 37,
+    "team": "RR"
+  },
+  {
+    "name": "Jaydev Unadkat",
+    "cost": 300,
+    "base": 100,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 105,
+    "team": "RR"
+  },
+  {
+    "name": "Varun Aaron",
+    "cost": 240,
+    "base": 50,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 60,
+    "team": "RR"
+  },
+  {
+    "name": "Yashasvi Jaiswal",
+    "cost": 240,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "RR"
+  },
+  {
+    "name": "Mayank Markande",
+    "cost": 200,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 17,
+    "team": "RR"
+  },
+  {
+    "name": "Kartik Tyagi",
+    "cost": 130,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "RR"
+  },
+  {
+    "name": "Andrew Tye",
+    "cost": 100,
+    "base": 100,
+    "country": "Australia",
+    "type": "Fast bowler",
+    "ipl2019_score": 40,
+    "team": "RR"
+  },
+  {
+    "name": "Tom Curran",
+    "cost": 100,
+    "base": 100,
+    "country": "England",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "RR"
+  },
+  {
+    "name": "Anuj Rawat",
+    "cost": 80,
+    "base": 20,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 0,
+    "team": "RR"
+  },
+  {
+    "name": "David Miller",
+    "cost": 75,
+    "base": 75,
+    "country": "South Africa",
+    "type": "Batsman",
+    "ipl2019_score": 175,
+    "team": "RR"
+  },
+  {
+    "name": "Oshane Thomas",
+    "cost": 50,
+    "base": 50,
+    "country": "West Indies",
+    "type": "Fast bowler",
+    "ipl2019_score": 36,
+    "team": "RR"
+  },
+  {
+    "name": "Shashank Singh",
+    "cost": 30,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "RR"
+  },
+  {
+    "name": "Shreyas Gopal",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 258,
+    "team": "RR"
+  },
+  {
+    "name": "Riyan Parag",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 136,
+    "team": "RR"
+  },
+  {
+    "name": "Mahipal Lomror",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 7,
+    "team": "RR"
+  },
+  {
+    "name": "Manan Vohra",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "RR"
+  },
+  {
+    "name": "Akash Singh",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "RR"
+  },
+  {
+    "name": "Aniruddha Joshi",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "RR"
+  },
+  {
+    "name": "David Warner",
+    "cost": 1250,
+    "base": 200,
+    "country": "Australia",
+    "type": "Batsman",
+    "ipl2019_score": 466,
+    "team": "SRH"
+  },
+  {
+    "name": "Manish Pandey",
+    "cost": 1100,
+    "base": 100,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 259,
+    "team": "SRH"
+  },
+  {
+    "name": "Rashid Khan",
+    "cost": 900,
+    "base": 200,
+    "country": "Afghanistan",
+    "type": "Spin bowler",
+    "ipl2019_score": 251,
+    "team": "SRH"
+  },
+  {
+    "name": "Bhuvneshwar Kumar",
+    "cost": 850,
+    "base": 200,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 190,
+    "team": "SRH"
+  },
+  {
+    "name": "Siddarth Kaul",
+    "cost": 380,
+    "base": 30,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 74,
+    "team": "SRH"
+  },
+  {
+    "name": "Vijay Shankar",
+    "cost": 320,
+    "base": 40,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 232,
+    "team": "SRH"
+  },
+  {
+    "name": "Shahbaz Nadeem",
+    "cost": 320,
+    "base": 40,
+    "country": "India",
+    "type": "Spin bowler",
+    "ipl2019_score": 20,
+    "team": "SRH"
+  },
+  {
+    "name": "Khaleel Ahmed",
+    "cost": 300,
+    "base": 20,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 205,
+    "team": "SRH"
+  },
+  {
+    "name": "Sandeep Sharma",
+    "cost": 300,
+    "base": 50,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 148,
+    "team": "SRH"
+  },
+  {
+    "name": "Kane Williamson",
+    "cost": 300,
+    "base": 150,
+    "country": "New Zealand",
+    "type": "Batsman",
+    "ipl2019_score": 119,
+    "team": "SRH"
+  },
+  {
+    "name": "Jonny Bairstow",
+    "cost": 220,
+    "base": 150,
+    "country": "England",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 351,
+    "team": "SRH"
+  },
+  {
+    "name": "Mitchell Marsh",
+    "cost": 200,
+    "base": 200,
+    "country": "Australia",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "Virat Singh",
+    "cost": 190,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "Priyam Garg",
+    "cost": 190,
+    "base": 20,
+    "country": "India",
+    "type": "Batsman",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "Wriddhiman Saha",
+    "cost": 120,
+    "base": 100,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 83,
+    "team": "SRH"
+  },
+  {
+    "name": "Mohammad Nabi",
+    "cost": 100,
+    "base": 50,
+    "country": "Afghanistan",
+    "type": "All-rounder",
+    "ipl2019_score": 199,
+    "team": "SRH"
+  },
+  {
+    "name": "Shreevats Goswami",
+    "cost": 100,
+    "base": 20,
+    "country": "India",
+    "type": "Wicketkeeper",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "Basil Thampi",
+    "cost": 95,
+    "base": 30,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 4,
+    "team": "SRH"
+  },
+  {
+    "name": "Abhishek Sharma",
+    "cost": 55,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 25,
+    "team": "SRH"
+  },
+  {
+    "name": "Billy Stanlake",
+    "cost": 50,
+    "base": 50,
+    "country": "Australia",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "Fabian Allen",
+    "cost": 50,
+    "base": 50,
+    "country": "West Indies",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "T Natarajan",
+    "cost": 40,
+    "base": 40,
+    "country": "India",
+    "type": "Fast bowler",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "Bavanaka Sandeep",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "Abdul Samad",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  },
+  {
+    "name": "Sanjay Yadav",
+    "cost": 20,
+    "base": 20,
+    "country": "India",
+    "type": "All-rounder",
+    "ipl2019_score": 0,
+    "team": "SRH"
+  }
+]
