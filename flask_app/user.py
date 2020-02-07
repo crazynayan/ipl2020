@@ -55,7 +55,7 @@ def login() -> str:
         return redirect(url_for('home'))
     form = LoginForm()
     if not form.validate_on_submit():
-        return render_template('form_template.html', title='IPL 2019 - Sign In', form=form)
+        return render_template('form_template.html', title='IPL 2020 - Sign In', form=form)
     user = User.objects.filter_by(username=form.username.data).first()
     if not user or not user.check_password(form.password.data):
         flash(f"Invalid email or password.")

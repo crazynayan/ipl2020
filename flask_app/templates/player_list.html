@@ -12,8 +12,7 @@
             <th scope="col" class="text-center">Score</th>
             <th scope="col" class="text-center">Cost</th>
             <th scope="col" class="text-center">Base</th>
-            <th scope="col" class="text-center">Owner#1</th>
-            <th scope="col" class="text-center">Owner#2</th>
+            <th scope="col" class="text-center">Owner</th>
             <th scope="col" class="text-center">Team</th>
         </tr>
         </thead>
@@ -36,20 +35,10 @@
                     {{ player.base }}
                 </td>
                 <td class="text-center align-middle">
-                    {% if player.owner1 %}
-                        <a href="{{ url_for('user_players', username=player.owner1) }}"
+                    {% if player.owner %}
+                        <a href="{{ url_for('user_players', username=player.owner) }}"
                            class="btn btn-primary btn-block">
-                            {{ player.owner1.upper() }} @ {{ player.price1 }}
-                        </a>
-                    {% else %}
-                        Unsold
-                    {% endif %}
-                </td>
-                <td class="text-center align-middle">
-                    {% if player.owner2 %}
-                        <a href="{{ url_for('user_players', username=player.owner2) }}"
-                           class="btn btn-primary btn-block">
-                            {{ player.owner2.upper() }} @ {{ player.price2 }}
+                            {{ player.owner.upper() }} @ {{ player.price }}
                         </a>
                     {% else %}
                         Unsold

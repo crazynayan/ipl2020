@@ -3,6 +3,7 @@
 {% block app_content %}
 
     <h1>{{ title }}</h1>
+    {% if players %}
     {% for player_batch in players|batch(15) %}
         <br>
         <table class="table table-bordered table-sm table-hover">
@@ -23,7 +24,6 @@
             {% for player in player_batch %}
                 <tr>
                     <td class="align-middle text-center font-weight-bold">
-                        {#                        <a href="#" class="btn btn-primary btn-block">{{ player.name }}</a>#}
                         {{ player.name }}
                     </td>
                     <td class="text-center align-middle font-weight-bold">
@@ -67,5 +67,8 @@
             </tbody>
         </table>
     {% endfor %}
+    {% else %}
+        No bids as yet
+    {% endif %}
 
 {% endblock %}

@@ -26,9 +26,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
             <div class="navbar-nav mr-auto">
-                {#                <a class="nav-item nav-link active" href="{{ url_for('top50_players') }}">Top 50</a>#}
-                {#                <a class="nav-item nav-link active" href="{{ url_for('unsold_players') }}">Unsold</a>#}
-                {#                <a class="nav-item nav-link active" href="{{ url_for('view_bids') }}">Bids</a>#}
+                <a class="nav-item nav-link active" href="{{ url_for('top50_players') }}">Top 50</a>
+                <a class="nav-item nav-link active" href="{{ url_for('unsold_players') }}">Unsold</a>
+                <a class="nav-item nav-link active" href="{{ url_for('view_bids') }}">Bids</a>
             </div>
             <div class="navbar-nav ml-auto">
                 {% if current_user.is_anonymous %}
