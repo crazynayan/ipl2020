@@ -68,7 +68,7 @@
     <script>
         $(document).ready(function () {
             $('#player_list').DataTable({
-                "lengthMenu": [[-1], ["All"]]
+                "columnDefs": [{"searchable": false, "targets": 1}]
             });
         });
     </script>
