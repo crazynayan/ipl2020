@@ -4,7 +4,7 @@
 
     <h1>{{ title }}</h1>
     <br>
-    <table class="table table-bordered table-sm table-hover">
+    <table id="player_list" class="table table-bordered table-sm table-hover">
         <thead class="thead-dark">
         <tr>
             <th scope="col" class="text-center">No</th>
@@ -13,7 +13,10 @@
             <th scope="col" class="text-center">Cost</th>
             <th scope="col" class="text-center">Base</th>
             <th scope="col" class="text-center">Owner</th>
+            <th scope="col" class="text-center">Price</th>
             <th scope="col" class="text-center">Team</th>
+            <th scope="col" class="text-center">Type</th>
+            <th scope="col" class="text-center">Country</th>
         </tr>
         </thead>
         <tbody>
@@ -36,22 +39,37 @@
                 </td>
                 <td class="text-center align-middle">
                     {% if player.owner %}
-                        <a href="{{ url_for('user_players', username=player.owner) }}"
-                           class="btn btn-primary btn-block">
-                            {{ player.owner.upper() }} @ {{ player.price }}
-                        </a>
+                        {{ player.owner.upper() }}
                     {% else %}
                         Unsold
                     {% endif %}
                 </td>
                 <td class="text-center align-middle">
-                    <a href="{{ url_for('team_players', team=player.team) }}" class="btn btn-primary btn-block">
-                        {{ player.team }}
-                    </a>
+                    {{ player.price }}
+                </td>
+                <td class="text-center align-middle">
+                    {{ player.team }}
+                </td>
+                <td class="text-center align-middle">
+                    {{ player.type }}
+                </td>
+                <td class="text-center align-middle">
+                    {{ player.country }}
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $(document).ready(function () {
+            $('#player_list').DataTable({
+                "lengthMenu": [[-1], ["All"]]
+            });
+        });
+    </script>
 {% endblock %}

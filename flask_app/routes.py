@@ -20,31 +20,16 @@ def home() -> Response:
 @login_required
 def user_players(username: str) -> Response:
     players = Player.objects.filter_by(owner=username).get()
-    players.sort(key=lambda player: -player.score)
+    players.sort(key=lambda player: (-player.score, -player.cost))
     return render_template('user_players.html', username=username, players=players, title='IPL 2020 - Players')
 
 
-@ipl_app.route('/players/top50')
+@ipl_app.route('/players')
 @login_required
-def top50_players() -> Response:
-    players = Player.objects.order_by('score', Player.objects.ORDER_DESCENDING).limit(50).get()
-    return render_template('player_list.html', players=players, title='IPL 2020 - Top 50')
-
-
-@ipl_app.route('/teams/<team>/players')
-@login_required
-def team_players(team: str) -> Response:
-    players = Player.objects.filter_by(team=team).get()
+def all_players() -> Response:
+    players = Player.objects.get()
     players.sort(key=lambda player: (-player.score, -player.cost))
-    return render_template('player_list.html', players=players, title=f'IPL 2020 - {team} Players')
-
-
-@ipl_app.route('/unsold/players')
-@login_required
-def unsold_players() -> Response:
-    players = Player.objects.filter_by(owner=None).get()
-    players.sort(key=lambda player: (-player.score, -player.cost))
-    return render_template('user_players.html', username='Unsold', players=players, title=f'IPL 2020 - Unsold Players')
+    return render_template('player_list.html', players=players, title='IPL 2020 - Players')
 
 
 @ipl_app.route('/bids')

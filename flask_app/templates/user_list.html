@@ -4,7 +4,7 @@
 
     <h1>{{ title }}</h1>
     <br>
-    <table class="table table-bordered table-sm table-hover">
+    <table id="users" class="table table-bordered table-sm table-hover">
         <thead class="thead-dark">
         <tr>
             <th scope="col" class="text-center">Rank</th>
@@ -38,4 +38,15 @@
         </tbody>
     </table>
 
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $(document).ready(function () {
+            $('#users').DataTable({
+                "lengthMenu": [[-1], ["All"]]
+            });
+        });
+    </script>
 {% endblock %}
