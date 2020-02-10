@@ -1,5 +1,6 @@
 import json
 import os
+from typing import List
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -67,3 +68,21 @@ def upload():
         Player.create_from_dict(player)
         print(f"Players: {index + 1} of {len(players)} uploaded.")
     print('Upload to firestore complete.')
+
+
+def update_rank():
+    print('Calculating Ranks')
+    players: List[Player] = Player.objects.get()
+    players.sort(key=lambda player_item: -player_item.ipl2019_score)
+    for player in players:
+        ranked_player = next(rank_player for rank_player in players
+                             if rank_player.ipl2019_score == player.ipl2019_score)
+        player.ipl2019_rank = players.index(ranked_player) + 1
+    players.sort(key=lambda player_item: -player_item.cost)
+    for player in players:
+        ranked_player = next(rank_player for rank_player in players if rank_player.cost == player.cost)
+        player.cost_rank = players.index(ranked_player) + 1
+    for index, player in enumerate(players):
+        player.save()
+        print(f"Players: {index + 1} of {len(players)} updated.")
+    print('Rank Update Complete.')

@@ -7,6 +7,11 @@ from flask_login import LoginManager
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or b64encode(os.urandom(24)).decode()
+    IMAGES = set(os.listdir('flask_app/static/images'))
+    SCORE_2019 = 21154
+    PLAYERS_2019 = 128
+    TOTAL_COST = 61265
+    PLAYERS_COST = 151
 
 
 ipl_app: Flask = Flask(__name__)
