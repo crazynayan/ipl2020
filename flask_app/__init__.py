@@ -10,8 +10,11 @@ class Config:
     IMAGES = set(os.listdir('flask_app/static/images'))
     SCORE_2019 = 21154
     PLAYERS_2019 = 128
+    COST_2019 = 51395
     TOTAL_COST = 61265
     PLAYERS_COST = 151
+    BALANCE = 5580
+    USER_COUNT = 11
 
 
 ipl_app: Flask = Flask(__name__)

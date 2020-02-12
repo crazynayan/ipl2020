@@ -1,4 +1,4 @@
-from flask import render_template, Response
+from flask import render_template, Response, flash, redirect, url_for
 from flask_login import login_required
 
 from flask_app import ipl_app
@@ -36,3 +36,13 @@ def all_players() -> Response:
 @login_required
 def view_bids():
     return render_template('bid_list.html', players=list(), title=f'IPL 2020 - Bids')
+
+
+@ipl_app.route('/players/<string:player_id>')
+@login_required
+def view_player(player_id: str):
+    player = Player.get_by_id(player_id)
+    if not player:
+        flash("Player not found")
+        return redirect(url_for('all_players'))
+    return render_template('profile.html', player=player)

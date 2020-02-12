@@ -9,14 +9,14 @@
         <tr>
             <th scope="col" class="text-center">No</th>
             <th scope="col" class="text-center">Name</th>
-            <th scope="col" class="text-center">Score</th>
-            <th scope="col" class="text-center">Cost</th>
-            <th scope="col" class="text-center">Base</th>
+            <th scope="col" class="text-center">2019</th>
+            <th scope="col" class="text-center d-none d-md-table-cell">Cost</th>
+            <th scope="col" class="text-center d-none d-md-table-cell">Base</th>
             <th scope="col" class="text-center">Owner</th>
             <th scope="col" class="text-center">Price</th>
             <th scope="col" class="text-center">Team</th>
-            <th scope="col" class="text-center">Type</th>
-            <th scope="col" class="text-center">Country</th>
+            <th scope="col" class="text-center d-none d-md-table-cell">Type</th>
+            <th scope="col" class="text-center d-none d-md-table-cell">Country</th>
         </tr>
         </thead>
         <tbody>
@@ -26,15 +26,18 @@
                     {{ loop.index }}
                 </td>
                 <td class="text-center align-middle font-weight-bold">
-                    {{ player.name }}
+                    <a class="btn btn-block btn-primary"
+                       href="{{ url_for('view_player', player_id=player.id) }}">{{ player.name }}</a>
                 </td>
                 <td class="text-center align-middle font-weight-bold">
-                    {{ player.score }}
+                    {{ player.ipl2019_score }}
+                    {#  <img alt="{{ player.name }}" src="{{ url_for('static', filename=player.image) }}"#}
+                    {#   class="img-fluid">#}
                 </td>
-                <td class="text-center align-middle">
+                <td class="text-center align-middle d-none d-md-table-cell">
                     {{ player.cost }}
                 </td>
-                <td class="text-center align-middle">
+                <td class="text-center d-none d-md-table-cell align-middle">
                     {{ player.base }}
                 </td>
                 <td class="text-center align-middle">
@@ -50,10 +53,10 @@
                 <td class="text-center align-middle">
                     {{ player.team }}
                 </td>
-                <td class="text-center align-middle">
+                <td class="text-center d-none d-md-table-cell align-middle">
                     {{ player.type }}
                 </td>
-                <td class="text-center align-middle">
+                <td class="text-center d-none d-md-table-cell align-middle">
                     {{ player.country }}
                 </td>
             </tr>
@@ -68,7 +71,8 @@
     <script>
         $(document).ready(function () {
             $('#player_list').DataTable({
-                "columnDefs": [{"searchable": false, "targets": 1}]
+                "columnDefs": [{"searchable": false, "targets": 1}],
+                "dom": '<"top"if>'
             });
         });
     </script>

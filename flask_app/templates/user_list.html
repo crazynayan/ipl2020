@@ -10,8 +10,8 @@
             <th scope="col" class="text-center">Rank</th>
             <th scope="col" class="text-center">Name</th>
             <th scope="col" class="text-center">Points</th>
-            <th scope="col" class="text-center">Balance</th>
-            <th scope="col" class="text-center">Players</th>
+            <th scope="col" class="text-center d-none d-md-table-cell">Balance</th>
+            <th scope="col" class="text-center d-none d-md-table-cell">Players</th>
         </tr>
         </thead>
         <tbody>
@@ -27,10 +27,10 @@
                 <td class="text-center align-middle font-weight-bold">
                     {{ user.points }}
                 </td>
-                <td class="text-center align-middle">
+                <td class="text-center align-middle d-none d-md-table-cell">
                     {{ user.balance }}
                 </td>
-                <td class="text-center align-middle">
+                <td class="text-center align-middle d-none d-md-table-cell">
                     {{ user.player_count }}
                 </td>
             </tr>
