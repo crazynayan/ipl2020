@@ -14,7 +14,8 @@ class Config:
     TOTAL_COST = 61265
     PLAYERS_COST = 151
     BALANCE = 5580
-    USER_COUNT = 11
+    USER_LIST = {'NZ', 'MB', 'PP', 'VP', 'RD', 'NU', 'AG', 'SN', 'AS', 'HJ', 'SG'}
+    USER_COUNT = len(USER_LIST)
 
 
 ipl_app: Flask = Flask(__name__)

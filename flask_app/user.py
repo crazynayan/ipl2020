@@ -19,9 +19,13 @@ class User(FirestoreDocument, UserMixin):
         self.username: str = str()
         self.password_hash: str = str()
         self.name: str = str()
-        self.balance: int = 0
+        self.balance: int = ipl_app.config['BALANCE']
         self.points: float = 0.0
         self.player_count: int = 0
+        self.auto_bid: bool = False
+
+    def __repr__(self) -> str:
+        return f"{self.username.upper()}"
 
     def set_password(self, password) -> None:
         self.password_hash = generate_password_hash(password)

@@ -7,8 +7,10 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud.json'
 
+from flask_app import Config
 from flask_app.user import User
 from flask_app.player import Player
+from flask_app.bid import Bid
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 creds = ServiceAccountCredentials.from_json_keyfile_name('google-cloud.json', scope)
@@ -86,3 +88,21 @@ def update_rank():
         player.save()
         print(f"Players: {index + 1} of {len(players)} updated.")
     print('Rank Update Complete.')
+
+
+def reset_auction(auto_bid: bool = False):
+    for user in User.objects.get():
+        user.balance = Config.BALANCE
+        user.player_count = 0
+        user.auto_bid = auto_bid
+        user.save()
+    print('User: Balance update complete')
+    players = Player.objects.get()
+    for index, player in enumerate(players):
+        player.auction_status = str()
+        player.owner = None
+        player.price = 0
+        player.save()
+        print(f"Player: {index + 1} of {len(players)} updated.")
+    Bid.objects.delete()
+    print("Bid: All bids deleted")

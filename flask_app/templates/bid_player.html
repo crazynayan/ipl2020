@@ -1,0 +1,35 @@
+{% extends "form_template.html" %}
+
+{% block app_content %}
+    <div class="row">
+        <div class="col">
+            <h3>{{ player.name }}</h3>
+        </div>
+        <div class="col">
+            <a href="{{ url_for('submit_bid') }}" class="btn btn-primary btn-block">Bid Next Player</a>
+        </div>
+    </div>
+    {% if form %}
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                {{ quick_form(form) }}
+            </div>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col-md-1">
+                Bid
+            </div>
+            <div class="col-md-2">
+                {% if bid.amount %}
+                    &#8377 <strong>{{ bid.amount }}</strong> lacs
+                {% else %}
+                    bid.status
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+    <br>
+    {% include '_profile.html' %}
+{% endblock %}
