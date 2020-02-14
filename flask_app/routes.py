@@ -1,5 +1,8 @@
-from flask import render_template, Response, flash, redirect, url_for
+from urllib.parse import unquote
+
+from flask import render_template, Response, flash, redirect, url_for, request
 from flask_login import login_required, current_user
+from werkzeug.datastructures import MultiDict
 
 from flask_app import ipl_app
 from flask_app.bid import BidForm, Bid
@@ -36,7 +39,15 @@ def all_players() -> Response:
 @ipl_app.route('/bids')
 @login_required
 def view_bids():
-    return render_template('bid_list.html', players=list(), title=f'IPL 2020 - Bids')
+    return render_template('bid_list.html', bids=Bid.bid_list(10), users=sorted(ipl_app.config['USER_LIST']),
+                           all=False, title=f'IPL 2020 - Bids')
+
+
+@ipl_app.route('/bids/all')
+@login_required
+def view_all_bids():
+    return render_template('bid_list.html', bids=Bid.bid_list(), users=sorted(ipl_app.config['USER_LIST']),
+                           all=True, title=f'IPL 2020 - Bids')
 
 
 @ipl_app.route('/players/<string:player_id>')
@@ -46,7 +57,21 @@ def view_player(player_id: str):
     if not player:
         flash("Player not found")
         return redirect(url_for('all_players'))
-    return render_template('profile.html', player=player)
+    bids = Bid.objects.filter_by(player_name=player.name).get()
+    if len(bids) != ipl_app.config['USER_COUNT']:
+        bids = list()
+    bids.sort(key=lambda bid: -bid.amount)
+    return render_template('profile.html', player=player, bids=bids)
+
+
+@ipl_app.route('/players/name/<string:player_name>')
+@login_required
+def view_player_by_name(player_name: str):
+    player = Player.objects.filter_by(name=unquote(player_name)).first()
+    if not player:
+        flash("Player not found")
+        return redirect(url_for('all_players'))
+    return redirect(url_for('view_player', player_id=player.id))
 
 
 @ipl_app.route('/bids/submit')
@@ -73,6 +98,10 @@ def bid_player(player_id: str):
     if bid:
         return render_template('bid_player.html', player=player, bid=bid, form=None)
     form = BidForm(current_user.balance, player.base)
+    if request.method == 'GET':
+        form_data = form.data
+        form_data['amount'] = player.base
+        form = BidForm(current_user.balance, player.base, formdata=MultiDict(form_data))
     if not form.validate_on_submit():
         return render_template('bid_player.html', player=player, bid=None, form=form)
     Bid.submit_bid(current_user, player, form.amount.data)

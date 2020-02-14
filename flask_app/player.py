@@ -24,6 +24,8 @@ class Player(FirestoreDocument):
         self.owner: Optional[str] = None
         self.price: int = 0
         self.auction_status: str = str()
+        self.bid_order: int = 0
+        self._sbp_cost: int = 0
 
     def __repr__(self) -> str:
         return f"{self.name}"
@@ -41,8 +43,19 @@ class Player(FirestoreDocument):
 
     @property
     def sbp_cost(self) -> int:
-        return int(round(ipl_app.config['BALANCE'] * ipl_app.config['USER_COUNT'] * self.cost
-                         / ipl_app.config['TOTAL_COST'], -1))
+        if self._sbp_cost:
+            return self._sbp_cost
+        balance = sum([user.balance for user in User.objects.get()])
+        if balance == ipl_app.config['BALANCE'] * ipl_app.config['USER_COUNT']:
+            total_cost = ipl_app.config['TOTAL_COST']
+        else:
+            total_cost = sum(player.cost for player in self.objects.filter_by(auction_status=str()).get())
+            total_cost += self.cost
+        sbp_cost = int(round(balance * self.cost / total_cost, -1))
+        if self.auction_status == 'bidding':
+            self._sbp_cost = sbp_cost
+            self.save()
+        return sbp_cost
 
     @property
     def cost_rank_total(self) -> int:
@@ -63,6 +76,7 @@ class Player(FirestoreDocument):
             return None
         player = random.choice(players)
         player.auction_status = 'bidding'
+        player.bid_order = ipl_app.config['TOTAL_PLAYERS'] - len(players) + 1
         player.save()
         return player
 

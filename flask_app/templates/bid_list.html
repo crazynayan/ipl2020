@@ -3,59 +3,51 @@
 {% block app_content %}
 
     <h1>{{ title }}</h1>
-    {% if players %}
-    {% for player_batch in players|batch(15) %}
+    {% if bids %}
         <br>
-        <table class="table table-bordered table-sm table-hover">
+        <table id="bid_list" class="table table-bordered table-sm table-hover">
             <thead class="thead-dark">
             <tr>
+                <th scope="col" class="text-center">No</th>
                 <th scope="col" class="text-center">Name</th>
-                <th scope="col" class="text-center">Score</th>
-                <th scope="col" class="text-center">Cost</th>
-                <th scope="col" class="text-center">Base</th>
-                <th scope="col" class="text-center">Own</th>
-                <th scope="col" class="text-center">Price</th>
-                {% for bid in players[0].bids %}
-                    <th scope="col" class="text-center">{{ bid.user.upper() }}</th>
+                {% if all %}
+                    <th scope="col" class="text-center">Own</th>
+                {% endif %}
+                {% for user in users %}
+                    <th scope="col" class="text-center">{{ user.upper() }}</th>
                 {% endfor %}
             </tr>
             </thead>
             <tbody>
-            {% for player in player_batch %}
+            {% for bid_batch in bids|batch(users|length) %}
                 <tr>
-                    <td class="align-middle text-center font-weight-bold">
-                        {{ player.name }}
+                    <td class="align-middle text-center">
+                        {{ bid_batch[0].bid_order }}
                     </td>
-                    <td class="text-center align-middle font-weight-bold">
-                        {{ player.score }}
-                    </td>
-                    <td class="text-center align-middle">
-                        {{ player.cost }}
-                    </td>
-                    <td class="text-center align-middle">
-                        {{ player.base }}
-                    </td>
-                    <td class="text-center align-middle font-weight-bold">
-                        {% if player.owner1 %}
-                            {{ player.owner1.upper() }}
+                    <td class="align-middle">
+                        {% if all %}
+                            {{ bid_batch[0].player_name }}
+                        {% else %}
+                            <a href="{{ url_for('view_player_by_name', player_name=bid_batch[0].player_name) }}"
+                               class="btn btn-block btn-primary">{{ bid_batch[0].player_name }}</a>
                         {% endif %}
                     </td>
-                    <td class="text-center align-middle font-weight-bold">
-                        {{ player.price1 }}
-                    </td>
-                    {% for bid in player.bids %}
-                        {% if bid.user == player.owner1 %}
+                    {% if all %}
+                        <td class="align-middle text-center">
+                            {% for bid in bid_batch %}
+                                {% if bid.winner %}
+                                    {{ bid.username.upper() }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                    {% endif %}
+                    {% for bid in bid_batch %}
+                        {% if bid.winner %}
                             <td class="text-center align-middle table-success">{{ bid.amount }}</td>
-                        {% elif bid.amount == player.price1 %}
-                            <td class="text-center align-middle table-warning">{{ bid.amount }}</td>
                         {% else %}
                             <td class="text-center align-middle">
-                                {% if bid.amount == -1 %}
-                                    Pass
-                                {% elif bid.amount == -2 %}
-                                    NB
-                                {% elif bid.amount == -3 %}
-                                    Own
+                                {% if bid.status != 'Submit' %}
+                                    {{ bid.status }}
                                 {% else %}
                                     {{ bid.amount }}
                                 {% endif %}
@@ -66,9 +58,29 @@
             {% endfor %}
             </tbody>
         </table>
-    {% endfor %}
+        {% if not all %}
+            <br>
+            <div class="row">
+                <div class="col">
+                    <a href="{{ url_for('view_all_bids') }}" class="btn btn-danger">View All Bids</a>
+                </div>
+            </div>
+        {% endif %}
     {% else %}
         No bids as yet
     {% endif %}
 
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {% if all %}
+        <script>
+            $(document).ready(function () {
+                $('#bid_list').DataTable({
+                    "dom": '<"top"if>'
+                });
+            });
+        </script>
+    {% endif %}
 {% endblock %}

@@ -29,6 +29,7 @@
             <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link active" href="{{ url_for('all_players') }}">Players</a>
                 <a class="nav-item nav-link active" href="{{ url_for('view_bids') }}">Bids</a>
+                <a class="nav-item nav-link active" href="{{ url_for('submit_bid') }}">Bid</a>
             </div>
             <div class="navbar-nav ml-auto">
                 {% if current_user.is_anonymous %}

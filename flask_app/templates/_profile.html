@@ -1,13 +1,13 @@
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="card text-center">
-            <h3 class="card-header">{{ player.name }}</h3>
+            <h5 class="card-header">{{ player.name }}</h5>
             <img alt="{{ player.name }}" src="{{ url_for('static', filename=player.image) }}" class="card-img">
-            <h5 class="card-title ">{{ player.team }} - {{ player.type }} - {{ player.country }}</h5>
+            <h6 class="card-title ">{{ player.team }} - {{ player.type }} - {{ player.country }}</h6>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card">
+    <div class="col-md-3">
+        <div class="card text-center">
             <h5 class="card-header">Cost Analysis</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Salary &#8377 <strong>{{ player.cost }}</strong> lacs</li>
@@ -30,8 +30,8 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card">
+    <div class="col-md-3">
+        <div class="card text-center">
             <h5 class="card-header">2019 Analysis</h5>
             <ul class="list-group list-group-flush">
                 {% if player.ipl2019_score > 0 %}
@@ -52,6 +52,31 @@
                     </li>
                 {% else %}
                     <li class="list-group-item">Did not play in IPL 2019</li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <h5 class="card-header">2020 Auction</h5>
+            <ul class="list-group list-group-flush">
+                {% if bids %}
+                    <li class="list-group-item">
+                        {% if player.owner %}
+                            Owned by <strong>{{ player.owner.upper() }}</strong> @ &#8377
+                            <strong>{{ player.price }}</strong>
+                            lacs
+                        {% else %}
+                            Unsold
+                        {% endif %}
+                    </li>
+                    {% for bid in bids %}
+                        <li class="list-group-item">
+                            {{ bid.username.upper() }} bid &#8377 {{ bid.amount }}
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    <li class="list-group-item">Not yet auctioned</li>
                 {% endif %}
             </ul>
         </div>

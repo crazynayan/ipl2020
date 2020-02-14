@@ -90,19 +90,22 @@ def update_rank():
     print('Rank Update Complete.')
 
 
-def reset_auction(auto_bid: bool = False):
+def reset_auction(auto_bid: bool = False, except_users: List[str] = None):
     for user in User.objects.get():
         user.balance = Config.BALANCE
         user.player_count = 0
-        user.auto_bid = auto_bid
+        user.auto_bid = auto_bid ^ True if except_users and user.username in except_users else auto_bid
         user.save()
-    print('User: Balance update complete')
+    print('User: Balance update complete.')
     players = Player.objects.get()
     for index, player in enumerate(players):
         player.auction_status = str()
+        player.bid_order = 0
         player.owner = None
         player.price = 0
         player.save()
-        print(f"Player: {index + 1} of {len(players)} updated.")
+        if index % 10 == 0:
+            print(f"Player: {index + 1} of {len(players)} updated.")
+    print('Player: All players updated.')
     Bid.objects.delete()
-    print("Bid: All bids deleted")
+    print("Bid: All bids deleted.")

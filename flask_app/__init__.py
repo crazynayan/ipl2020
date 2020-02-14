@@ -16,6 +16,7 @@ class Config:
     BALANCE = 5580
     USER_LIST = {'NZ', 'MB', 'PP', 'VP', 'RD', 'NU', 'AG', 'SN', 'AS', 'HJ', 'SG'}
     USER_COUNT = len(USER_LIST)
+    TOTAL_PLAYERS = 189
 
 
 ipl_app: Flask = Flask(__name__)
