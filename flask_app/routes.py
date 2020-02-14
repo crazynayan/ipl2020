@@ -102,15 +102,20 @@ def bid_player(player_id: str):
         flash("Player not found")
         return redirect(url_for('home'))
     bid = Bid.objects.filter_by(player_name=player.name, username=current_user.username).first()
+    last_player = Player.objects.filter_by(bid_order=player.bid_order - 1).first() if player.bid_order > 1 else None
+    last_bids = Bid.objects.filter_by(bid_order=last_player.bid_order).get() if last_player else list()
+    last_bids.sort(key=lambda bid: -bid.amount)
     if bid:
-        return render_template('bid_player.html', player=player, bid=bid, form=None)
+        return render_template('bid_player.html', player=player, bid=bid, form=None, last_bids=last_bids,
+                               last_player=last_player)
     form = BidForm(current_user.balance, player.base)
     if request.method == 'GET':
         form_data = form.data
         form_data['amount'] = player.base
         form = BidForm(current_user.balance, player.base, formdata=MultiDict(form_data))
     if not form.validate_on_submit():
-        return render_template('bid_player.html', player=player, bid=None, form=form)
+        return render_template('bid_player.html', player=player, bid=None, form=form, last_bids=last_bids,
+                               last_player=last_player)
     Bid.submit_bid(current_user, player, form.amount.data)
     Bid.decide_winner(player)
     return redirect(url_for('submit_bid'))
