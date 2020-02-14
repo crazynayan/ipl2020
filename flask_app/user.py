@@ -23,6 +23,7 @@ class User(FirestoreDocument, UserMixin):
         self.points: float = 0.0
         self.player_count: int = 0
         self.auto_bid: bool = False
+        self.bidding: bool = False
 
     def __repr__(self) -> str:
         return f"{self.username.upper()}"

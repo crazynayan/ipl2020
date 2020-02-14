@@ -115,6 +115,20 @@ class Bid(FirestoreDocument):
         bids.sort(key=lambda bid: (-bid.bid_order, bid.username))
         return bids
 
+    @classmethod
+    def turn_on(cls):
+        for user in User.objects.get():
+            user.bidding = True
+            user.save()
+        return
+
+    @classmethod
+    def turn_off(cls):
+        for user in User.objects.get():
+            user.bidding = False
+            user.save()
+        return
+
 
 Bid.init()
 

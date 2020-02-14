@@ -27,9 +27,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
             <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link active" href="{{ url_for('all_players') }}">Players</a>
-                <a class="nav-item nav-link active" href="{{ url_for('view_bids') }}">Bids</a>
-                <a class="nav-item nav-link active" href="{{ url_for('submit_bid') }}">Bid</a>
+                {% if current_user.is_authenticated %}
+                    <a class="nav-item nav-link active" href="{{ url_for('all_players') }}">Players</a>
+                    <a class="nav-item nav-link active" href="{{ url_for('view_bids') }}">Bids</a>
+                    {% if current_user.bidding %}
+                        <a class="nav-item nav-link active" href="{{ url_for('submit_bid') }}">Bid</a>
+                    {% endif %}
+                {% endif %}
             </div>
             <div class="navbar-nav ml-auto">
                 {% if current_user.is_anonymous %}
@@ -77,6 +81,7 @@
     <script>
         $.extend($.fn.dataTable.defaults, {
             paging: false,
+            dom: '<"top"if>'
 
         });
     </script>

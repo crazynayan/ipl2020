@@ -25,7 +25,8 @@ def home() -> Response:
 def user_players(username: str) -> Response:
     players = Player.objects.filter_by(owner=username).get()
     players.sort(key=lambda player: (-player.score, -player.cost))
-    return render_template('user_players.html', username=username, players=players, title='IPL 2020 - Players')
+    return render_template('player_list.html', username=username, players=players,
+                           title=f'{username.upper()} - Players')
 
 
 @ipl_app.route('/players')
@@ -33,7 +34,7 @@ def user_players(username: str) -> Response:
 def all_players() -> Response:
     players = Player.objects.get()
     players.sort(key=lambda player: (-player.score, -player.cost))
-    return render_template('player_list.html', players=players, title='IPL 2020 - Players')
+    return render_template('player_list.html', username=None, players=players, title=f'IPL 2020 - Players')
 
 
 @ipl_app.route('/bids')
@@ -77,6 +78,9 @@ def view_player_by_name(player_name: str):
 @ipl_app.route('/bids/submit')
 @login_required
 def submit_bid():
+    if not current_user.bidding:
+        flash('Auction is OFF. Please contact admin to turn it ON.')
+        return redirect(url_for('home'))
     player = Player.player_in_auction()
     if not player:
         player = Player.auction_next_player()
@@ -90,6 +94,9 @@ def submit_bid():
 @ipl_app.route('/players/<string:player_id>/bids', methods=['GET', 'POST'])
 @login_required
 def bid_player(player_id: str):
+    if not current_user.bidding:
+        flash('Auction is OFF. Please contact admin to turn it ON.')
+        return redirect(url_for('home'))
     player = Player.get_by_id(player_id)
     if not player:
         flash("Player not found")

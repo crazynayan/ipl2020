@@ -2,67 +2,74 @@
 
 {% block app_content %}
 
-    <h1>{{ title }}</h1>
+    <h1 class="text-center">{{ title }}</h1>
     <br>
-    <table id="player_list" class="table table-bordered table-sm table-hover">
-        <thead class="thead-dark">
-        <tr>
-            <th scope="col" class="text-center">No</th>
-            <th scope="col" class="text-center">Name</th>
-            <th scope="col" class="text-center">2019</th>
-            <th scope="col" class="text-center d-none d-md-table-cell">Cost</th>
-            <th scope="col" class="text-center d-none d-md-table-cell">Base</th>
-            <th scope="col" class="text-center d-none d-md-table-cell">Owner</th>
-            <th scope="col" class="text-center">Price</th>
-            <th scope="col" class="text-center d-none d-md-table-cell">Team</th>
-            <th scope="col" class="text-center d-none d-md-table-cell">Type</th>
-            <th scope="col" class="text-center d-none d-md-table-cell">Country</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for player in players %}
+    {% if players %}
+        <table id="player_list" class="table table-bordered table-sm table-hover">
+            <thead class="thead-dark">
             <tr>
-                <td class="text-center align-middle font-weight-bold">
-                    {{ loop.index }}
-                </td>
-                <td class="text-center align-middle font-weight-bold">
-                    <a class="btn btn-block btn-primary"
-                       href="{{ url_for('view_player', player_id=player.id) }}">{{ player.name }}</a>
-                </td>
-                <td class="text-center align-middle font-weight-bold">
-                    {{ player.ipl2019_score }}
-                    {#  <img alt="{{ player.name }}" src="{{ url_for('static', filename=player.image) }}"#}
-                    {#   class="img-fluid">#}
-                </td>
-                <td class="text-center align-middle d-none d-md-table-cell">
-                    {{ player.cost }}
-                </td>
-                <td class="text-center d-none d-md-table-cell align-middle">
-                    {{ player.base }}
-                </td>
-                <td class="text-center align-middle  d-none d-md-table-cell">
-                    {% if player.owner %}
-                        {{ player.owner.upper() }}
-                    {% else %}
-                        Unsold
-                    {% endif %}
-                </td>
-                <td class="text-center align-middle">
-                    {{ player.price }}
-                </td>
-                <td class="text-center align-middle  d-none d-md-table-cell">
-                    {{ player.team }}
-                </td>
-                <td class="text-center d-none d-md-table-cell align-middle">
-                    {{ player.type }}
-                </td>
-                <td class="text-center d-none d-md-table-cell align-middle">
-                    {{ player.country }}
-                </td>
+                <th scope="col" class="text-center">No</th>
+                <th scope="col" class="text-center">Name</th>
+                <th scope="col" class="text-center">2019</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Cost</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Base</th>
+                {% if not username %}
+                    <th scope="col" class="text-center d-none d-md-table-cell">Owner</th>
+                {% endif %}
+                <th scope="col" class="text-center">Price</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Team</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Type</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Country</th>
             </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {% for player in players %}
+                <tr>
+                    <td class="text-center align-middle font-weight-bold">
+                        {{ loop.index }}
+                    </td>
+                    <td class="text-center align-middle font-weight-bold">
+                        <a class="btn btn-block btn-primary"
+                           href="{{ url_for('view_player', player_id=player.id) }}">{{ player.name }}</a>
+                    </td>
+                    <td class="text-center align-middle font-weight-bold">
+                        {{ player.ipl2019_score }}
+                        {# <img alt="{{ player.name }}" src="{{ url_for('static', filename=player.image) }}" class="img-fluid">#}
+                    </td>
+                    <td class="text-center align-middle d-none d-md-table-cell">
+                        {{ player.cost }}
+                    </td>
+                    <td class="text-center d-none d-md-table-cell align-middle">
+                        {{ player.base }}
+                    </td>
+                    {% if not username %}
+                        <td class="text-center align-middle  d-none d-md-table-cell">
+                            {% if player.owner %}
+                                {{ player.owner.upper() }}
+                            {% else %}
+                                Unsold
+                            {% endif %}
+                        </td>
+                    {% endif %}
+                    <td class="text-center align-middle">
+                        {{ player.price }}
+                    </td>
+                    <td class="text-center align-middle  d-none d-md-table-cell">
+                        {{ player.team }}
+                    </td>
+                    <td class="text-center d-none d-md-table-cell align-middle">
+                        {{ player.type }}
+                    </td>
+                    <td class="text-center d-none d-md-table-cell align-middle">
+                        {{ player.country }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        No Players Owned
+    {% endif %}
 
 {% endblock %}
 
@@ -70,10 +77,7 @@
     {{ super() }}
     <script>
         $(document).ready(function () {
-            $('#player_list').DataTable({
-                {#"columnDefs": [{"searchable": false, "targets": 1}],#}
-                "dom": '<"top"if>'
-            });
+            $('#player_list').DataTable();
         });
     </script>
 {% endblock %}
