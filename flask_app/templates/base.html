@@ -61,6 +61,13 @@
                 {% endfor %}
             {% endif %}
         {% endwith %}
+        {% if current_user.is_authenticated and current_user.bidding %}
+            <a href="{{ url_for('submit_bid') }}">
+                <div class="alert alert-warning" role="alert">
+                    <span id="current_bid_status">Auction in progress</span>
+                </div>
+            </a>
+        {% endif %}
         <br>
         {% block app_content %}
         {% endblock %}
@@ -69,9 +76,10 @@
 
 {% block scripts %}
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    {#    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"#}
+    {#            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"#}
+    {#            crossorigin="anonymous"></script>#}
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
@@ -88,6 +96,25 @@
 
         });
     </script>
+
+    {% if current_user.is_authenticated and current_user.bidding %}
+        <script>
+            let interval_id = null;
+            $(function () {
+                interval_id = setInterval(updateMessage, 10000);
+                updateMessage();
+            });
+
+            function updateMessage() {
+                $.ajax('{{ url_for('current_bid_status') }}').done(function (msg) {
+                    $('#current_bid_status').text(msg.message);
+                    if (msg.message === 'Auction is OFF')
+                        clearInterval(interval_id)
+                });
+
+            }
+        </script>
+    {% endif %}
 {%- endblock scripts %}
 
 </body>

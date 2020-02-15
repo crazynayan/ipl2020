@@ -50,7 +50,7 @@ class Bid(FirestoreDocument):
         bid.create()
 
     @classmethod
-    def submit_auto_bids(cls, player: Player, user: User = None):
+    def submit_auto_bids(cls, player: Player, user: User = None) -> bool:
         users = User.objects.get() if not user else [user]
         for user in users:
             if user.balance < player.base:
@@ -68,14 +68,14 @@ class Bid(FirestoreDocument):
                 max_bid = min_bid if max_bid < min_bid else max_bid
                 bid_amount = random.randrange(min_bid, max_bid + 1, 20)
                 cls.submit_bid(user, player, bid_amount, auto=True)
-        cls.decide_winner(player)
-        return
+        return cls.decide_winner(player)
 
     @classmethod
     def get_pending_bidders(cls, player: Player) -> List[str]:
         # TODO Optimize it later by reading the game object. Do NOT optimize if the number of reads as less
         bids: List[Bid] = cls.objects.filter_by(player_name=player.name).get()
-        return [username for username in ipl_app.config['USER_LIST'] if username not in [bid.username for bid in bids]]
+        return [username for username in ipl_app.config['USER_LIST']
+                if username.lower() not in [bid.username for bid in bids]]
 
     @classmethod
     def decide_winner(cls, player: Player) -> bool:

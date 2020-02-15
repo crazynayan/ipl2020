@@ -1,6 +1,6 @@
 from urllib.parse import unquote
 
-from flask import render_template, Response, flash, redirect, url_for, request
+from flask import render_template, Response, flash, redirect, url_for, request, jsonify
 from flask_login import login_required, current_user
 from werkzeug.datastructures import MultiDict
 
@@ -130,14 +130,29 @@ def user_profile():
     form = AutoBidForm()
     if not form.validate_on_submit():
         return render_template('form_template.html', form=form)
-    message = 'unchanged'
     if current_user.auto_bid != form.auto_bid.data:
         current_user.auto_bid = form.auto_bid.data
         current_user.save()
-        message = 'updated'
-    flash(f'User settings {message}')
     if current_user.auto_bid:
         player = Player.player_in_auction()
         if player and not Bid.objects.filter_by(player_name=player.name, username=current_user.username).first():
             Bid.submit_auto_bids(player, current_user)
     return redirect(url_for('submit_bid'))
+
+
+@ipl_app.route('/current_bid_status')
+@login_required
+def current_bid_status():
+    if not current_user.bidding:
+        return jsonify(message='Auction is OFF')
+    player = Player.player_in_auction()
+    if not player:
+        return jsonify(message='No player invited for auction yet')
+    pending_bidders = Bid.get_pending_bidders(player)
+    if not pending_bidders:
+        return jsonify(message=f'{player.name}: Bidding complete')
+    if len(pending_bidders) <= 5:
+        pending_bidders.sort()
+        user_list = " ".join(pending_bidders)
+        return jsonify(message=f'{player.name}: Awaiting bids from {user_list}')
+    return jsonify(message=f'{player.name}: Awaiting bids from {len(pending_bidders)} users')
