@@ -3,7 +3,7 @@ from typing import List
 
 from firestore_ci import FirestoreDocument
 from flask_wtf import FlaskForm
-from wtforms import IntegerField, SubmitField
+from wtforms import IntegerField, SubmitField, BooleanField
 from wtforms.validators import NumberRange, DataRequired, ValidationError
 from wtforms.widgets import Input
 
@@ -35,27 +35,27 @@ class Bid(FirestoreDocument):
         return bid
 
     @classmethod
-    def submit_bid(cls, user: User, player: Player, amount: int):
+    def submit_bid(cls, user: User, player: Player, amount: int, auto: bool = False):
         if not 20 <= amount <= 2000:
             raise ValueError
         bid = cls._bid_instance(user, player)
         bid.amount = amount
-        bid.status = 'Submit'
+        bid.status = 'auto bid' if auto else 'bid'
         bid.create()
 
     @classmethod
     def pass_bid(cls, user: User, player: Player):
         bid = cls._bid_instance(user, player)
-        bid.status = 'Pass'
+        bid.status = 'passed'
         bid.create()
 
     @classmethod
-    def submit_auto_bids(cls, player: Player):
-        users = User.objects.get()
+    def submit_auto_bids(cls, player: Player, user: User = None):
+        users = User.objects.get() if not user else [user]
         for user in users:
             if user.balance < player.base:
                 bid = cls._bid_instance(user, player)
-                bid.status = 'No Balance'
+                bid.status = 'no balance'
                 bid.create()
             elif user.auto_bid:
                 min_sbp = min(player.sbp_2019, player.sbp_cost) if player.ipl2019_score else player.base
@@ -67,7 +67,7 @@ class Bid(FirestoreDocument):
                 max_bid = min(max_sbp, user.balance)
                 max_bid = min_bid if max_bid < min_bid else max_bid
                 bid_amount = random.randrange(min_bid, max_bid + 1, 20)
-                cls.submit_bid(user, player, bid_amount)
+                cls.submit_bid(user, player, bid_amount, auto=True)
         cls.decide_winner(player)
         return
 
@@ -136,6 +136,7 @@ Bid.init()
 class BidForm(FlaskForm):
     amount = IntegerField('Enter your bid', validators=[DataRequired(), NumberRange(min=20, max=2000)],
                           widget=Input(input_type='number'))
+    pass_bid = BooleanField('Check here to pass the player')
     submit = SubmitField('Submit')
 
     def __init__(self, balance, base, *args, **kwargs):
@@ -152,3 +153,8 @@ class BidForm(FlaskForm):
             raise ValidationError('You cannot bid more than your balance')
         if amount.data < self.base:
             raise ValidationError('You cannot bid less than the player base price')
+
+
+class AutoBidForm(FlaskForm):
+    auto_bid = BooleanField('Check here if you want to turn ON auto bid bot')
+    submit = SubmitField('Submit')

@@ -8,6 +8,13 @@
         <div class="col-md">
             <a href="{{ url_for('submit_bid') }}" class="btn btn-primary btn-block">Bid Next Player</a>
         </div>
+        <div class="col-md">
+            {% if current_user.auto_bid %}
+                <a href="{{ url_for('user_profile') }}" class="btn btn-warning btn-block">Auto Bid is ON</a>
+            {% else %}
+                <a href="{{ url_for('user_profile') }}" class="btn btn-primary btn-block">Auto Bid is OFF</a>
+            {% endif %}
+        </div>
     </div>
     {% if form %}
         <br>
@@ -20,43 +27,16 @@
         <br>
         <div class="row">
             <div class="col-md text-center">
-                {% if bid.amount %}
-                    <h6>Your bid was &#8377 <strong>{{ bid.amount }}</strong> lacs</h6>
-                {% else %}
-                    bid.status
-                {% endif %}
+                <h6>
+                    {% if bid.amount %}
+                        Your {{ bid.status }} was &#8377 <strong>{{ bid.amount }}</strong> lacs
+                    {% else %}
+                        You have {{ bid.status }}
+                    {% endif %}
+                </h6>
             </div>
         </div>
     {% endif %}
     <br>
     {% include '_profile.html' %}
-    <br>
-    {% if last_bids %}
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <h5 class="card-header">Previous Player</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <h6>{{ last_player.name }}</h6>
-                        </li>
-                        <li class="list-group-item">
-                            {% if last_player.owner %}
-                                Bought by <strong>{{ last_player.owner.upper() }}</strong> @ &#8377
-                                <strong>{{ last_player.price }}</strong>
-                                lacs
-                            {% else %}
-                                Unsold
-                            {% endif %}
-                        </li>
-                        {% for bid in last_bids %}
-                            <li class="list-group-item">
-                                {{ bid.username.upper() }} bid &#8377 {{ bid.amount }}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    {% endif %}
 {% endblock %}

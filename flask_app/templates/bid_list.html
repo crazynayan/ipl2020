@@ -46,10 +46,10 @@
                             <td class="text-center align-middle table-success">{{ bid.amount }}</td>
                         {% else %}
                             <td class="text-center align-middle">
-                                {% if bid.status != 'Submit' %}
-                                    {{ bid.status }}
-                                {% else %}
+                                {% if bid.amount %}
                                     {{ bid.amount }}
+                                {% else %}
+                                    -
                                 {% endif %}
                             </td>
                         {% endif %}

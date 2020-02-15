@@ -58,21 +58,40 @@
     </div>
     <div class="col-md-3">
         <div class="card text-center">
-            <h5 class="card-header">2020 Auction</h5>
+            <h5 class="card-header">
+                {% if last_player %}
+                    <a href="{{ url_for('view_player', player_id=last_player.id) }}">{{ last_player.name }}</a>
+                {% else %}
+                    2020 Auction
+                {% endif %}
+            </h5>
             <ul class="list-group list-group-flush">
                 {% if bids %}
                     <li class="list-group-item">
-                        {% if player.owner %}
-                            Owned by <strong>{{ player.owner.upper() }}</strong> @ &#8377
-                            <strong>{{ player.price }}</strong>
-                            lacs
+                        {% if last_player %}
+                            {% if last_player.owner %}
+                                Owned by <strong>{{ last_player.owner.upper() }}</strong> @ &#8377
+                                <strong>{{ last_player.price }}</strong>
+                                lacs
+                            {% else %}
+                                Unsold
+                            {% endif %}
                         {% else %}
-                            Unsold
+                            {% if player.owner %}
+                                Owned by <strong>{{ player.owner.upper() }}</strong> @ &#8377
+                                <strong>{{ player.price }}</strong>
+                                lacs
+                            {% else %}
+                                Unsold
+                            {% endif %}
                         {% endif %}
                     </li>
                     {% for bid in bids %}
                         <li class="list-group-item">
-                            {{ bid.username.upper() }} bid &#8377 {{ bid.amount }}
+                            {{ bid.username.upper() }} {{ bid.status }}
+                            {% if bid.amount %}
+                                {{ bid.amount }}
+                            {% endif %}
                         </li>
                     {% endfor %}
                 {% else %}

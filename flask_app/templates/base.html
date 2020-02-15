@@ -39,6 +39,9 @@
                 {% if current_user.is_anonymous %}
                     <a class="nav-item nav-link active" href="{{ url_for('login') }}">Login</a>
                 {% else %}
+                    <a class="nav-item nav-link active" href="{{ url_for('user_profile') }}">
+                        {{ current_user.username.upper() }}
+                    </a>
                     <a class="nav-item nav-link active" href="{{ url_for('logout') }}">Logout</a>
                 {% endif %}
             </div>
