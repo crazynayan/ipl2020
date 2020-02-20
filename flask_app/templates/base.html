@@ -109,7 +109,7 @@
                 $.ajax('{{ url_for('current_bid_status') }}').done(function (msg) {
                     $('#current_bid_status').text(msg.message);
                     if (msg.message === 'Auction is OFF')
-                        clearInterval(interval_id)
+                        clearInterval(interval_id);
                 });
 
             }

@@ -78,16 +78,10 @@ def view_player_by_name(player_name: str):
 @ipl_app.route('/bids/submit')
 @login_required
 def submit_bid():
-    if not current_user.bidding:
-        flash('Auction is OFF. Please contact admin to turn it ON.')
-        return redirect(url_for('home'))
-    player = Player.player_in_auction()
+    message, player = Bid.bid_status()
     if not player:
-        player = Player.auction_next_player()
-        if not player:
-            flash('Auction completed - Thank You')
-            return redirect(url_for('home'))
-        Bid.submit_auto_bids(player)
+        flash(message)
+        return redirect(url_for('home'))
     return redirect(url_for('bid_player', player_id=player.id))
 
 
@@ -95,7 +89,7 @@ def submit_bid():
 @login_required
 def bid_player(player_id: str):
     if not current_user.bidding:
-        flash('Auction is OFF. Please contact admin to turn it ON.')
+        flash('Auction is OFF')
         return redirect(url_for('home'))
     player = Player.get_by_id(player_id)
     if not player:
@@ -143,11 +137,9 @@ def user_profile():
 @ipl_app.route('/current_bid_status')
 @login_required
 def current_bid_status():
-    if not current_user.bidding:
-        return jsonify(message='Auction is OFF')
-    player = Player.player_in_auction()
+    message, player = Bid.bid_status()
     if not player:
-        return jsonify(message='No player invited for auction yet')
+        return jsonify(message=message)
     pending_bidders = Bid.get_pending_bidders(player)
     if not pending_bidders:
         return jsonify(message=f'{player.name}: Bidding complete')

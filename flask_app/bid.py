@@ -1,7 +1,8 @@
 import random
-from typing import List
+from typing import List, Optional, Tuple
 
 from firestore_ci import FirestoreDocument
+from flask_login import current_user
 from flask_wtf import FlaskForm
 from wtforms import IntegerField, SubmitField, BooleanField
 from wtforms.validators import NumberRange, DataRequired, ValidationError
@@ -72,7 +73,6 @@ class Bid(FirestoreDocument):
 
     @classmethod
     def get_pending_bidders(cls, player: Player) -> List[str]:
-        # TODO Optimize it later by reading the game object. Do NOT optimize if the number of reads as less
         bids: List[Bid] = cls.objects.filter_by(player_name=player.name).get()
         return [username for username in ipl_app.config['USER_LIST']
                 if username.lower() not in [bid.username for bid in bids]]
@@ -128,6 +128,18 @@ class Bid(FirestoreDocument):
             user.bidding = False
             user.save()
         return
+
+    @classmethod
+    def bid_status(cls) -> Tuple[str, Optional[Player]]:
+        if not current_user.bidding:
+            return 'Auction is OFF', None
+        player = Player.player_in_auction()
+        if not player:
+            player = Player.auction_next_player()
+            if not player:
+                return 'Auction completed', None
+            cls.submit_auto_bids(player)
+        return str(), player
 
 
 Bid.init()
