@@ -59,14 +59,8 @@ class Bid(FirestoreDocument):
                 bid.status = 'no balance'
                 bid.create()
             elif user.auto_bid:
-                min_sbp = min(player.sbp_2019, player.sbp_cost) if player.ipl2019_score else player.base
-                min_bid = max(min(min_sbp, user.balance), player.base)
-                min_bid += 20 - min_bid % 20 if min_bid % 20 else 0
-                if user.balance < min_bid:
-                    min_bid = user.balance
-                max_sbp = max(player.sbp_2019, player.sbp_cost) if player.ipl2019_score else player.sbp_cost
-                max_bid = min(max_sbp, user.balance)
-                max_bid = min_bid if max_bid < min_bid else max_bid
+                min_bid = player.get_min_bid(user)
+                max_bid = player.get_max_bid(user)
                 bid_amount = random.randrange(min_bid, max_bid + 1, 20)
                 cls.submit_bid(user, player, bid_amount, auto=True)
         return cls.decide_winner(player)

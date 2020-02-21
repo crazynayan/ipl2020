@@ -12,6 +12,7 @@ from flask_app import Config
 from flask_app.user import User
 from flask_app.player import Player
 from flask_app.bid import Bid
+from flask_app.schedule import schedule
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 creds = ServiceAccountCredentials.from_json_keyfile_name('google-cloud.json', scope)
@@ -112,50 +113,11 @@ def reset_auction(auto_bid: bool = False, except_users: List[str] = None):
     print("Bid: All bids deleted.")
 
 
-team_names = {'Mumbai Indians': 'MI', 'Chennai Super Kings': 'CSK', 'Delhi Capitals': 'DC', 'Kings XI Punjab': 'KXIP',
-              'Royal Challengers Bangalore': 'RCB', 'Kolkata Knight Riders': 'KKR', 'Sunrisers Hyderabad': 'SRH',
-              'Rajasthan Royals': 'RR'}
+def print_schedule():
+    for match in schedule.schedule:
+        print(match)
 
 
-class Schedule:
-
-    def __init__(self):
-        self.teams: list = list()
-        self.home_team: str = str()
-        self.away_team: str = str()
-        self.game_week: int = 0
-        self.date: datetime = datetime.utcnow()
-        self.match: int = 0
-
-
-def prepare_schedule() -> List[Schedule]:
-    with open('source/schedule.txt') as file:
-        lines = file.readlines()
-        schedules = list()
-        schedule = None
-        game_week = match = 1
-        prev_line = str()
-        for line in lines:
-            line = line.strip()
-            if line.split()[-1] == 'IST':
-                schedule = Schedule()
-                date = datetime.strptime(line, '%a %d/%m - %I:%M %p IST')
-                schedule.date = datetime(year=2020, month=date.month, day=date.day, hour=date.hour)
-                if schedule.date.weekday() == 0:
-                    game_week += 1
-                schedule.game_week = game_week
-                schedule.match = match
-                match += 1
-            if line.split()[-1] == 'HOME':
-                schedules.append(schedule)
-            if line in team_names and line != prev_line:
-                schedule.teams.append(team_names[line])
-                if prev_line in team_names:
-                    schedule.away_team = team_names[line]
-                else:
-                    schedule.home_team = team_names[line]
-            prev_line = line
-        for schedule in schedules:
-            print(f"M-{schedule.match:02} GW-{schedule.game_week} {schedule.date.strftime('%a,%d/%m %I:%M %p')}"
-                  f" {schedule.home_team} v {schedule.away_team}")
-        return schedules
+def game_week(date: str):
+    print(schedule.get_game_week(datetime(year=2020, month=int(date.split('/')[1]), day=int(date.split('/')[0]),
+                                          hour=int(date.split('/')[2]))))

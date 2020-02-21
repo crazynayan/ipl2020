@@ -1,9 +1,10 @@
 import random
-from typing import Optional
+from typing import Optional, List, Tuple
 
 from firestore_ci import FirestoreDocument
 
 from flask_app import ipl_app
+from flask_app.schedule import schedule
 from flask_app.user import User
 
 
@@ -96,6 +97,25 @@ class Player(FirestoreDocument):
             return
         self.auction_status = 'completed'
         self.save()
+
+    def get_schedule_by_game_week(self) -> List[Tuple[int, List[str]]]:
+        return [(game_week, schedule.get_matches(self.team, game_week))
+                for game_week in range(1, schedule.max_game_week + 1)]
+
+    def get_min_bid(self, user: User = None) -> int:
+        min_sbp = min(self.sbp_2019, self.sbp_cost) if self.ipl2019_score else self.base
+        min_bid = max(min(min_sbp, user.balance) if user else min_sbp, self.base)
+        min_bid += 20 - min_bid % 20 if min_bid % 20 else 0
+        if user and user.balance < min_bid:
+            min_bid = user.balance
+        return min_bid
+
+    def get_max_bid(self, user: User = None) -> int:
+        max_sbp = max(self.sbp_2019, self.sbp_cost) if self.ipl2019_score else self.sbp_cost
+        max_bid = min(max_sbp, user.balance) if user else max_sbp
+        min_bid = self.get_min_bid(user)
+        max_bid = min_bid if max_bid < min_bid else max_bid
+        return max_bid
 
 
 Player.init()
