@@ -76,21 +76,13 @@ class _Schedule:
             game_week_start += timedelta(days=7)
         return self.max_game_week + 1
 
-    def get_cut_off(self, date: datetime = None) -> datetime:
-        date = datetime.utcnow() if not date else date
-        if date < self.GAME_WEEK_START:
+    def get_cut_off(self, game_week: int) -> datetime:
+        if game_week <= 0:
             return self.GAME_WEEK_START
-        game_week_start = self.GAME_WEEK_START
-        for game_week in range(1, self.max_game_week + 1):
-            if game_week_start <= date < game_week_start + timedelta(days=7):
-                return game_week_start + timedelta(days=7)
-            game_week_start += timedelta(days=7)
-        return game_week_start + timedelta(days=7)
+        return self.GAME_WEEK_START + timedelta(days=7 * (game_week - 1))
 
     def get_matches(self, team: str, game_week: int) -> List[str]:
         matches = [match for match in self.schedule if game_week == match.game_week and team in match.teams]
-        if not matches:
-            return list()
         return [f"{match.date.strftime('%d/%m')} v {match.get_opponent(team)} "
                 f"({'H' if team == match.home_team else 'A'})" for match in matches]
 

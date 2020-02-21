@@ -17,6 +17,7 @@ class Config:
     USER_LIST = {'NZ', 'MB', 'PP', 'VP', 'RD', 'NU', 'AG', 'SN', 'AS', 'HJ', 'SG'}
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
+    AUCTION_COMPLETE = False
 
 
 ipl_app: Flask = Flask(__name__)

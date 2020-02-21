@@ -131,6 +131,9 @@ class Bid(FirestoreDocument):
         if not player:
             player = Player.auction_next_player()
             if not player:
+                ipl_app.config['AUCTION_COMPLETE'] = True
+                current_user.bidding = False
+                current_user.save()
                 return 'Auction completed', None
             cls.submit_auto_bids(player)
         return str(), player

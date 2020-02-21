@@ -7,6 +7,8 @@ from werkzeug.datastructures import MultiDict
 from flask_app import ipl_app
 from flask_app.bid import BidForm, Bid, AutoBidForm
 from flask_app.player import Player
+from flask_app.schedule import schedule
+from flask_app.team import UserTeam
 from flask_app.user import User
 
 
@@ -148,3 +150,13 @@ def current_bid_status():
         user_list = " ".join(pending_bidders)
         return jsonify(message=f'{player.name}: Awaiting bids from {user_list}')
     return jsonify(message=f'{player.name}: Awaiting bids from {len(pending_bidders)} users')
+
+
+@ipl_app.route('/my_team')
+@login_required
+def my_team():
+    current_game_week = schedule.get_game_week()
+    next_game_week = current_game_week + 1
+    players = UserTeam.objects.filter_by(owner=current_user.username, game_week=next_game_week).get()
+    return render_template('my_team.html', players=players, game_week=next_game_week,
+                           cut_off=schedule.get_cut_off(current_game_week).strftime('%a %d %b %H:%M'))
