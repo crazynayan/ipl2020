@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-    {% if players %}
+    {% if players or groups %}
         <div class="row">
             <div class="col-md-4">
                 <div class="card text-center">
@@ -11,32 +11,88 @@
                             <strong>{{ cut_off }}</strong>
                         </li>
                         <li class="list-group-item">
-                            Max Captains <strong>{{ players|length // 3 }}</strong>
+                            Captains made <strong>{{ captains }}</strong> of <strong>{{ max_captains }}</strong>
                         </li>
-
-                        {% for player in players %}
-                            <li class="list-group-item">
-                                <div class="row">
-                                    <div class="col">{{ player.player_name }} ({{ player.team }})</div>
-                                </div>
-                                {% if player.matches %}
-                                    {% for match in player.matches %}
-                                        <div class="row">
-                                            <div class="col">{{ match.match }}</div>
-                                        </div>
-                                    {% endfor %}
-                                {% else %}
-                                    <div class="row">
-                                        <div class="col">No Matches</div>
-                                    </div>
-                                {% endif %}
-                            </li>
-                        {% endfor %}
+                        <li class="list-group-item">
+                            <a class="btn btn-block btn-primary" href="{{ url_for('make_captain') }}">
+                                Make Captain
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
+            {% if groups %}
+                <div class="col-md-4">
+                    {% for group in groups|groupby('group') %}
+                        <div class="card text-center">
+                            <h5 class="card-header">
+                                Group {{ group.grouper }}
+                                <a class="badge badge-danger" href="{{ url_for('remove_group', group=group.grouper,
+                                captain=group.list[0].player_name) }}">
+                                    X
+                                </a>
+                            </h5>
+                            <ul class="list-group list-group-flush">
+                                {% for player in group.list %}
+                                    <li class="list-group-item {{ player.list_group_item }}">
+                                        <div class="row">
+                                            <div class="col">
+                                                <strong>{{ player.player_name }}</strong> -
+                                                <strong>{{ player.final_score }}</strong> pts
+                                                ({{ player.team }})
+                                            </div>
+                                        </div>
+                                        {% if player.matches %}
+                                            {% for match in player.matches %}
+                                                <div class="row">
+                                                    <div class="col">{{ match.match }}</div>
+                                                </div>
+                                            {% endfor %}
+                                        {% else %}
+                                            <div class="row">
+                                                <div class="col">No Matches</div>
+                                            </div>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if players %}
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <h5 class="card-header">Players</h5>
+                        <ul class="list-group list-group-flush">
+                            {% for player in players %}
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col">
+                                            <strong>{{ player.player_name }}</strong> -
+                                            <strong>{{ player.final_score }}</strong> pts
+                                            ({{ player.team }})
+                                        </div>
+                                    </div>
+                                    {% if player.matches %}
+                                        {% for match in player.matches %}
+                                            <div class="row">
+                                                <div class="col">{{ match.match }}</div>
+                                            </div>
+                                        {% endfor %}
+                                    {% else %}
+                                        <div class="row">
+                                            <div class="col">No Matches</div>
+                                        </div>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
 
+                    </div>
+                </div>
+            {% endif %}
+        </div>
     {% else %}
         <div class="row">
             <div class="col">

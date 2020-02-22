@@ -8,7 +8,7 @@ from flask_app import ipl_app
 from flask_app.bid import BidForm, Bid, AutoBidForm
 from flask_app.player import Player
 from flask_app.schedule import schedule
-from flask_app.team import UserTeam
+from flask_app.team import UserTeam, MakeCaptainForm
 from flask_app.user import User
 
 
@@ -156,7 +156,72 @@ def current_bid_status():
 @login_required
 def my_team():
     current_game_week = schedule.get_game_week()
-    next_game_week = current_game_week + 1
-    players = UserTeam.objects.filter_by(owner=current_user.username, game_week=next_game_week).get()
-    return render_template('my_team.html', players=players, game_week=next_game_week,
-                           cut_off=schedule.get_cut_off(current_game_week).strftime('%a %d %b %H:%M'))
+    cut_off = schedule.get_cut_off(current_game_week).strftime('%a %d %b %H:%M')
+    players = UserTeam.get_players_next_game_week(current_user.username)
+    captains = sum(1 for player in players if player.type == UserTeam.CAPTAIN)
+    max_captains = len(players) // 3
+    groups = [player for player in players if player.group > 0]
+    groups.sort(key=lambda player_item: (player_item.group, player_item.type, -player_item.final_score))
+    players = [player for player in players if player.group == 0]
+    players.sort(key=lambda player_item: -player_item.final_score)
+    return render_template('my_team.html', players=players, cut_off=cut_off, groups=groups, captains=captains,
+                           game_week=current_game_week + 1, max_captains=max_captains, title='My Team')
+
+
+@ipl_app.route('/my_team/make_captain', methods=['GET', 'POST'])
+@login_required
+def make_captain():
+    players = UserTeam.get_players_next_game_week(current_user.username)
+    players.sort(key=lambda player_item: -player_item.final_score)
+    number_of_captains = sum(1 for player in players if player.type == UserTeam.CAPTAIN)
+    if len(players) // 3 == number_of_captains:
+        flash('You already have maximum captains selected. Please remove a group to appoint more captains.')
+        return redirect(url_for('my_team'))
+    current_game_week = schedule.get_game_week()
+    form = MakeCaptainForm()
+    form.captain.choices = [(p.player_name, f'{p.player_name} (M-{len(p.matches)}, P-{p.final_score})')
+                            for p in players if p.type == UserTeam.NORMAL]
+    if current_game_week > 2:
+        form.sub1.choices = form.captain.choices
+        form.sub1.choices.sort(key=lambda player_item: -player_item.final_score)
+    else:
+        form.sub1.choices = form.captain.choices[1:]
+        form.sub1.choices.append(form.captain.choices[0])
+    form.sub2.choices = form.sub1.choices[1:]
+    form.sub2.choices.append(form.sub1.choices[0])
+    if not form.validate_on_submit():
+        return render_template('form_template.html', title=f'Make Captain for GW-{current_game_week + 1}', form=form)
+    group = number_of_captains + 1
+    captain = next(player for player in players if player.player_name == form.captain.data)
+    captain.group = group
+    captain.type = UserTeam.CAPTAIN
+    captain.save()
+    sub1 = next(player for player in players if player.player_name == form.sub1.data)
+    sub1.group = group
+    sub1.type = UserTeam.SUB
+    sub1.save()
+    sub2 = next(player for player in players if player.player_name == form.sub2.data)
+    sub2.group = group
+    sub2.type = UserTeam.SUB
+    sub2.save()
+    return redirect(url_for('my_team'))
+
+
+@ipl_app.route('/my_team/remove_group/<int:group>/captain/<string:captain>')
+@login_required
+def remove_group(group: int, captain: str):
+    players = UserTeam.get_players_next_game_week(current_user.username)
+    group_players = [player for player in players if player.group == group]
+    if not group_players or not any(player.player_name == captain for player in group_players):
+        flash('Error in removing group')
+        return redirect(url_for('my_team'))
+    for player in group_players:
+        player.group = 0
+        player.type = UserTeam.NORMAL
+        player.save()
+    for player in players:
+        if player.group <= group:
+            continue
+        player.group -= 1
+        player.save()
+    return redirect((url_for('my_team')))
