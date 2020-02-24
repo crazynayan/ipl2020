@@ -3,7 +3,7 @@ from typing import Optional, List, Tuple
 
 from firestore_ci import FirestoreDocument
 
-from flask_app import ipl_app
+from config import Config
 from flask_app.schedule import schedule
 from flask_app.user import User
 
@@ -27,6 +27,7 @@ class Player(FirestoreDocument):
         self.auction_status: str = str()
         self.bid_order: int = 0
         self._sbp_cost: int = 0
+        self.ipl_name: str = str()
 
     def __repr__(self) -> str:
         return f"{self.name}"
@@ -34,21 +35,21 @@ class Player(FirestoreDocument):
     @property
     def image(self) -> str:
         file_name = f"{self.name.lower().replace(' ', '_')}.jpg"
-        if file_name not in ipl_app.config['IMAGES']:
+        if file_name not in Config.IMAGES:
             file_name = 'default.jpg'
         return f'images/{file_name}'
 
     @property
     def sbp_2019(self) -> int:
-        return int(round(ipl_app.config['COST_2019'] * self.ipl2019_score / ipl_app.config['SCORE_2019'], -1))
+        return int(round(Config.COST_2019 * self.ipl2019_score / Config.SCORE_2019, -1))
 
     @property
     def sbp_cost(self) -> int:
         if self._sbp_cost:
             return self._sbp_cost
         balance = sum([user.balance for user in User.objects.get()])
-        if balance == ipl_app.config['BALANCE'] * ipl_app.config['USER_COUNT']:
-            total_cost = ipl_app.config['TOTAL_COST']
+        if balance == Config.BALANCE * Config.USER_COUNT:
+            total_cost = Config.TOTAL_COST
         else:
             total_cost = sum(player.cost for player in self.objects.filter_by(auction_status=str()).get())
             total_cost += self.cost
@@ -60,15 +61,19 @@ class Player(FirestoreDocument):
 
     @property
     def cost_rank_total(self) -> int:
-        return ipl_app.config['PLAYERS_COST']
+        return Config.PLAYERS_COST
 
     @property
     def ipl2019_rank_total(self) -> int:
-        return ipl_app.config['PLAYERS_2019']
+        return Config.PLAYERS_2019
 
     @classmethod
     def player_in_auction(cls) -> Optional['Player']:
-        return cls.objects.filter_by(auction_status='bidding').first()
+        players = cls.objects.filter_by(auction_status='bidding').get()
+        if not players:
+            return None
+        players.sort(key=lambda player_item: player_item.bid_order)
+        return players[0]
 
     @classmethod
     def auction_next_player(cls) -> Optional['Player']:
@@ -77,7 +82,7 @@ class Player(FirestoreDocument):
             return None
         player = random.choice(players)
         player.auction_status = 'bidding'
-        player.bid_order = ipl_app.config['TOTAL_PLAYERS'] - len(players) + 1
+        player.bid_order = Config.TOTAL_PLAYERS - len(players) + 1
         player.save()
         return player
 

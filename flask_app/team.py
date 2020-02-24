@@ -1,20 +1,21 @@
-from datetime import datetime
-from typing import List
+from typing import List, Optional
 
 from firestore_ci import FirestoreDocument
 from flask_wtf import FlaskForm
 from wtforms import SelectField, SubmitField, ValidationError
 
-from flask_app import ipl_app
+from config import Config
 from flask_app.bid import Bid
 from flask_app.player import Player
 from flask_app.schedule import schedule
+from flask_app.user import User
 
 
 class UserTeam(FirestoreDocument):
     NORMAL = 'Normal'
     CAPTAIN = 'Captain'
     SUB = 'Sub'
+    MULTIPLIER = {NORMAL: 1.0, CAPTAIN: 2.0, SUB: 0.5}
 
     def __init__(self):
         super().__init__()
@@ -31,16 +32,15 @@ class UserTeam(FirestoreDocument):
         return f"GW-{self.game_week}:{self.player_name}:{self.type}:{self.final_score}:M-{len(self.matches)}"
 
     @classmethod
-    def create_game_week(cls, date: datetime = None) -> str:
-        date = datetime.utcnow() if not date else date
-        if not ipl_app.config['AUCTION_COMPLETE']:
+    def create_game_week(cls) -> str:
+        if not Config.AUCTION_COMPLETE:
             last_bid = Bid.objects.order_by('bid_order', Bid.objects.ORDER_DESCENDING).first()
-            if not last_bid or last_bid.bid_order != ipl_app.config['TOTAL_PLAYERS']:
+            if not last_bid or last_bid.bid_order != Config.TOTAL_PLAYERS:
                 return 'Auction is incomplete'
-            ipl_app.config['AUCTION_COMPLETE'] = True
+            Config.AUCTION_COMPLETE = True
         last_team = cls.objects.order_by('game_week', Bid.objects.ORDER_DESCENDING).first()
         current_game_week = last_team.game_week if last_team else 0
-        if current_game_week and date < schedule.get_cut_off(current_game_week):
+        if current_game_week and not schedule.can_create_game_week(current_game_week):
             return f'GW-{current_game_week} already created.'
         players = Player.objects.filter('owner', '>', str()).get()
         next_game_week = current_game_week + 1
@@ -60,14 +60,43 @@ class UserTeam(FirestoreDocument):
         return str()
 
     @property
-    def list_group_item(self):
+    def list_group_item(self) -> str:
         return 'list-group-item-success' if self.type == self.CAPTAIN else 'list-group-item-danger' \
             if self.type == self.SUB else str()
 
     @classmethod
     def get_players_next_game_week(cls, owner: str) -> List['UserTeam']:
         next_game_week = schedule.get_game_week() + 1
-        return UserTeam.objects.filter_by(owner=owner, game_week=next_game_week).get()
+        return cls.objects.filter_by(owner=owner, game_week=next_game_week).get()
+
+    @classmethod
+    def get_last_match_played(cls, player) -> Optional['UserTeam']:
+        game_week = schedule.get_game_week_last_match_played(player.team)
+        if not game_week:
+            return None
+        return cls.objects.filter_by(player_name=player.name, game_week=game_week).first()
+
+    def update_score(self, player: Player, delta_score: float) -> bool:
+        score_updated = False
+        for match in reversed(self.matches):
+            if schedule.match_played(match['match'].split()[0], player.team):
+                match['score'] += delta_score * self.MULTIPLIER[self.type]
+                score_updated = True
+                break
+        if score_updated:
+            self.final_score += delta_score * self.MULTIPLIER[self.type]
+            self.save()
+        return score_updated
+
+    @classmethod
+    def update_points(cls):
+        for user in User.objects.get():
+            players_owned = cls.objects.filter_by(owner=user.username, game_week=schedule.get_game_week()).get()
+            points = sum(player.final_score for player in players_owned)
+            if points != user.points:
+                user.points = points
+                user.save()
+        return
 
 
 UserTeam.init('user_teams')

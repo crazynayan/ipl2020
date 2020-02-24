@@ -9,6 +9,7 @@ from werkzeug.urls import url_parse
 from wtforms import PasswordField, SubmitField, StringField
 from wtforms.validators import DataRequired
 
+from config import Config
 from flask_app import ipl_app, login
 
 
@@ -19,7 +20,7 @@ class User(FirestoreDocument, UserMixin):
         self.username: str = str()
         self.password_hash: str = str()
         self.name: str = str()
-        self.balance: int = ipl_app.config['BALANCE']
+        self.balance: int = Config.BALANCE
         self.points: float = 0.0
         self.player_count: int = 0
         self.auto_bid: bool = False

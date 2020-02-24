@@ -187,8 +187,8 @@ def make_captain():
     else:
         form.sub1.choices = form.captain.choices[1:]
         form.sub1.choices.append(form.captain.choices[0])
-    form.sub2.choices = form.sub1.choices[1:]
-    form.sub2.choices.append(form.sub1.choices[0])
+    form.sub2.choices = form.sub1.choices[:]
+    form.sub2.choices[0], form.sub2.choices[1] = form.sub2.choices[1], form.sub2.choices[0]
     if not form.validate_on_submit():
         return render_template('form_template.html', title=f'Make Captain for GW-{current_game_week + 1}', form=form)
     group = number_of_captains + 1

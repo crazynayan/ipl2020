@@ -8,7 +8,7 @@ from wtforms import IntegerField, SubmitField, BooleanField
 from wtforms.validators import NumberRange, DataRequired, ValidationError
 from wtforms.widgets import Input
 
-from flask_app import ipl_app
+from config import Config
 from flask_app.player import Player
 from flask_app.user import User
 
@@ -68,13 +68,13 @@ class Bid(FirestoreDocument):
     @classmethod
     def get_pending_bidders(cls, player: Player) -> List[str]:
         bids: List[Bid] = cls.objects.filter_by(player_name=player.name).get()
-        return [username for username in ipl_app.config['USER_LIST']
+        return [username for username in Config.USER_LIST
                 if username.lower() not in [bid.username for bid in bids]]
 
     @classmethod
     def decide_winner(cls, player: Player) -> bool:
         bids: List[Bid] = cls.objects.filter_by(player_name=player.name).get()
-        if len(bids) != ipl_app.config['USER_COUNT']:
+        if len(bids) != Config.USER_COUNT:
             return False
         max_bid = max(bids, key=lambda bid: bid.amount)
         if not max_bid.amount:
@@ -90,7 +90,7 @@ class Bid(FirestoreDocument):
 
     @classmethod
     def remove_incomplete_bids(cls, bids: List['Bid'], bid_order: int) -> List['Bid']:
-        if sum(1 for bid in bids if bid.bid_order == bid_order) < ipl_app.config['USER_COUNT']:
+        if sum(1 for bid in bids if bid.bid_order == bid_order) < Config.USER_COUNT:
             return [bid for bid in bids if bid.bid_order != bid_order]
         return bids
 
@@ -98,7 +98,7 @@ class Bid(FirestoreDocument):
     def bid_list(cls, limit: int = 0) -> List['Bid']:
         if limit:
             limit += 1
-            limit *= ipl_app.config['USER_COUNT']
+            limit *= Config.USER_COUNT
             bids = cls.objects.order_by('bid_order', cls.objects.ORDER_DESCENDING).limit(limit).get()
         else:
             bids = cls.objects.order_by('bid_order', cls.objects.ORDER_DESCENDING).get()
@@ -131,7 +131,7 @@ class Bid(FirestoreDocument):
         if not player:
             player = Player.auction_next_player()
             if not player:
-                ipl_app.config['AUCTION_COMPLETE'] = True
+                Config.AUCTION_COMPLETE = True
                 current_user.bidding = False
                 current_user.save()
                 return 'Auction completed', None

@@ -69,6 +69,7 @@ def upload():
     with open('source/players2020.json') as file:
         players = json.load(file)
     for index, player in enumerate(players):
+        player['ipl_name'] = player['name']
         Player.create_from_dict(player)
         print(f"Players: {index + 1} of {len(players)} uploaded.")
     print('Upload to firestore complete.')
