@@ -54,9 +54,10 @@ class UserTeam(FirestoreDocument):
             user_team.player_name = player.name
             user_team.owner = player.owner
             user_team.team = player.team
-            if last_game_week > 1:
-                previous_game_week = cls.objects.filter_by(player_name=player.name, game_week=last_game_week).first()
+            previous_game_week = cls.objects.filter_by(player_name=player.name, game_week=last_game_week).first()
+            if previous_game_week:
                 user_team.type = previous_game_week.type
+                user_team.group = previous_game_week.group
                 user_team.final_score = previous_game_week.final_score
             user_team.matches = [{'match': match, 'score': 0.0} for match in
                                  schedule.get_matches(player.team, next_game_week)]
@@ -99,6 +100,15 @@ class UserTeam(FirestoreDocument):
             if points != user.points:
                 user.points = points
                 user.save()
+        return
+
+    @classmethod
+    def sync_final_score(cls, player: Player, final_score: float, from_game_week: int, stop_game_week: int):
+        for game_week in range(from_game_week, stop_game_week):
+            user_team = cls.objects.filter_by(player_name=player.name, game_week=game_week).first()
+            if user_team:
+                user_team.final_score = final_score
+                user_team.save()
         return
 
 

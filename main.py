@@ -32,6 +32,7 @@ def update_scores(**_):
         return False
     players = [player for player in players if player.score != get_player_score(scores, player) and player.owner]
     score_updated = False
+    stop_game_week = UserTeam.last_game_week() + 1
     for player in players:
         sheet_score = get_player_score(scores, player)
         if not sheet_score:
@@ -40,6 +41,7 @@ def update_scores(**_):
         if not user_team:
             continue
         if user_team.update_score(player, sheet_score - player.score):
+            UserTeam.sync_final_score(player, user_team.final_score, user_team.game_week + 1, stop_game_week)
             player.score = sheet_score
             player.save()
             score_updated = True

@@ -21,11 +21,7 @@
             <div class="col-md-4">
                 <div class="card text-center">
                     <h5 class="card-header">
-                        {% if edit %}
-                            Gameweek {{ game_week }}
-                        {% else %}
-                            {{ title }} - Gameweek {{ game_week }}
-                        {% endif %}
+                        Gameweek {{ game_week }}
                     </h5>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
@@ -35,6 +31,13 @@
                             <li class="list-group-item">
                                 <a class="btn btn-block btn-primary" href="{{ url_for('make_captain') }}">
                                     Make Captain
+                                </a>
+                            </li>
+                        {% else %}
+                            <li class="list-group-item">
+                                <a class="btn btn-block btn-primary"
+                                   href="{{ url_for('user_players', username=owner) }}">
+                                    {{ title }}
                                 </a>
                             </li>
                         {% endif %}
@@ -59,10 +62,12 @@
                         <div class="card text-center">
                             <h5 class="card-header">
                                 Group {{ group.grouper }}
+                                {% if edit %}
                                 <a class="badge badge-danger" href="{{ url_for('remove_group', group=group.grouper,
                                 captain=group.list[0].player_name) }}">
                                     X
                                 </a>
+                                {% endif %}
                             </h5>
                             <ul class="list-group list-group-flush">
                                 {% for player in group.list %}
@@ -94,6 +99,7 @@
                                 {% endfor %}
                             </ul>
                         </div>
+                        <br>
                     {% endfor %}
                 </div>
             {% endif %}

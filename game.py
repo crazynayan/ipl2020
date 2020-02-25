@@ -1,12 +1,15 @@
 import json
 import os
+import random
 from datetime import datetime
 from typing import List
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud.json'
+import main
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = main.os.environ['GOOGLE_APPLICATION_CREDENTIALS']
 
 from flask_app import Config
 from flask_app.user import User
@@ -122,3 +125,146 @@ def print_schedule():
 def game_week(date: str):
     print(schedule.get_game_week(datetime(year=2020, month=int(date.split('/')[1]), day=int(date.split('/')[0]),
                                           hour=int(date.split('/')[2]))))
+
+
+playingXI = {
+    'CSK': [
+        'Shane Watson',
+        'Ravindra Jadeja',
+        'Dwayne Bravo',
+        'Faf du Plessis',
+        'Suresh Raina',
+        'Ambati Rayudu',
+        'Kedar Jadhav',
+        'MS Dhoni',
+        'Deepak Chahar',
+        'Shardul Thakur',
+        'Imran Tahir',
+    ],
+    'MI': [
+        'Hardik Pandya',
+        'Krunal Pandya',
+        'Kieron Pollard',
+        'Suryakumar Yadav',
+        'Rohit Sharma',
+        'Chris Lynn',
+        'Quinton de Kock',
+        'Rahul Chahar',
+        'Jasprit Bumrah',
+        'Lasith Malinga',
+        'Dhawal Kulkarni',
+    ],
+    'KXIP': [
+        'Chris Gayle',
+        'Mayank Agarwal',
+        'Mandeep Singh',
+        'Karun Nair',
+        'Mohammed Shami',
+        'Sheldon Cottrell',
+        'Krishnappa Gowtham',
+        'Lokesh Rahul',
+        'Sarfaraz Khan',
+        'Glenn Maxwell',
+        'Chris Jordan',
+    ],
+    'DC': [
+        'Marcus Stoinis',
+        'Keemo Paul',
+        'Chris Woakes',
+        'Shikhar Dhawan',
+        'Shreyas Iyer',
+        'Ajinkya Rahane',
+        'Prithvi Shaw',
+        'Kagiso Rabada',
+        'Ishant Sharma',
+        'Ravichandran Ashwin',
+        'Rishabh Pant',
+    ],
+    'RCB': [
+        'Moeen Ali',
+        'Chris Morris',
+        'Washington Sundar',
+        'Shivam Dube',
+        'AB De villiers',
+        'Virat Kohli',
+        'Aaron Finch',
+        'Navdeep Saini',
+        'Umesh Yadav',
+        'Yuzvendra Chahal',
+        'Parthiv Patel',
+    ],
+    'KKR': [
+        'Andre Russell',
+        'Sunil Narine',
+        'Pat Cummins',
+        'Nitish Rana',
+        'Shubman Gill',
+        'Rahul Tripathi',
+        'Eoin Morgan',
+        'Prasidh Krishna',
+        'Sandeep Warrier',
+        'Kuldeep Yadav',
+        'Dinesh Karthik',
+    ],
+    'SRH': [
+        'Vijay Shankar',
+        'Mohammad Nabi',
+        'David Warner',
+        'Manish Pandey',
+        'Kane Williamson',
+        'Khaleel Ahmed',
+        'Bhuvneshwar Kumar',
+        'Sandeep Sharma',
+        'Siddarth Kaul',
+        'Rashid Khan',
+        'Jonny Bairstow',
+    ],
+    'RR': [
+        'Jofra Archer',
+        'Ben Stokes',
+        'Riyan Parag',
+        'Steve Smith',
+        'Robin Uthappa',
+        'Jaydev Unadkat',
+        'Varun Aaron',
+        'Ankit Rajpoot',
+        'Shreyas Gopal',
+        'Jos Buttler',
+        'Sanju Samson',
+    ]
+}
+
+max_score = int(34 * 2)
+
+
+def update_score(match_list: List[int]):
+    sheet = gspread.authorize(creds).open('IPL2020').worksheet('Scores')
+    cell_range = sheet.range(f'A1:B190')
+    for index in range(3, 380, 2):
+        cell_range[index].value = float(cell_range[index].value)
+    for match_number in match_list:
+        match = next(match for match in schedule.schedule if match_number == match.number)
+        players = [player_name for team_name, player_list in playingXI.items() for player_name in player_list
+                   if team_name in match.teams]
+        for player_name in players:
+            score = 2.0 if random.random() < 0.3 else random.randrange(4, max_score * 2 + 1) / 2
+            index = next(index for index in range(2, 380, 2) if cell_range[index].value == player_name)
+            cell_range[index + 1].value += score
+    sheet.update_cells(cell_range)
+    print(f"Updated scores for all matches.")
+    return
+
+
+def reset_score():
+    sheet = gspread.authorize(creds).open('IPL2020').worksheet('Scores')
+    cell_range = sheet.range(f'A1:B190')
+    for index in range(3, 380, 2):
+        cell_range[index].value = 0.0
+    sheet.update_cells(cell_range)
+    for player in Player.objects.filter('score', '>', 0).get():
+        player.score = 0.0
+        player.save()
+    for user in User.objects.get():
+        user.points = 0.0
+        user.save()
+    print(f"All players score zeroed.")

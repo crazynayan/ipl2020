@@ -200,9 +200,10 @@ def make_captain():
     form = MakeCaptainForm()
     form.captain.choices = [(p.player_name, f'{p.player_name} (M-{len(p.matches)}, P-{p.final_score})')
                             for p in players if p.type == UserTeam.NORMAL]
-    if current_game_week > 2:
-        form.sub1.choices = form.captain.choices
-        form.sub1.choices.sort(key=lambda player_item: -player_item.final_score)
+    if current_game_week > 1:
+        players.sort(key=lambda player_item: player_item.final_score)
+        form.sub1.choices = [(p.player_name, f'{p.player_name} (M-{len(p.matches)}, P-{p.final_score})')
+                             for p in players if p.type == UserTeam.NORMAL]
     else:
         form.sub1.choices = form.captain.choices[1:]
         form.sub1.choices.append(form.captain.choices[0])
