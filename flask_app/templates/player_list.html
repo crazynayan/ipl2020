@@ -2,15 +2,37 @@
 
 {% block app_content %}
 
-    <h1 class="text-center">{{ title }}</h1>
-    <br>
+    {% if game_week %}
+        {% for game_week_batch in range(1, game_week + 1)|batch(12) %}
+            <div class="row">
+                {% for number in game_week_batch %}
+                    <div class="col-lg-1">
+                        <a class="btn btn-block btn-primary"
+                           href="{{ url_for('user_team', owner=username, game_week=number) }}">
+                            GW{{ number }}
+                        </a>
+                    </div>
+                    <br>
+                {% endfor %}
+            </div>
+            <br>
+        {% endfor %}
+    {% else %}
+        <h1 class="text-center">{{ title }}</h1>
+    {% endif %}
     {% if players %}
         <table id="player_list" class="table table-bordered table-sm table-hover">
             <thead class="thead-dark">
             <tr>
                 <th scope="col" class="text-center">No</th>
-                <th scope="col" class="text-center">Name</th>
-                <th scope="col" class="text-center">2019</th>
+                <th scope="col" class="text-center">
+                    {% if game_week %}
+                        {{ title }}
+                    {% else %}
+                        Name
+                    {% endif %}
+                </th>
+                <th scope="col" class="text-center">Score</th>
                 <th scope="col" class="text-center d-none d-md-table-cell">Cost</th>
                 <th scope="col" class="text-center d-none d-md-table-cell">Base</th>
                 {% if not username %}
@@ -33,7 +55,7 @@
                            href="{{ url_for('view_player', player_id=player.id) }}">{{ player.name }}</a>
                     </td>
                     <td class="text-center align-middle font-weight-bold">
-                        {{ player.ipl2019_score }}
+                        {{ player.score }}
                     </td>
                     <td class="text-center align-middle d-none d-md-table-cell">
                         {{ player.cost }}
@@ -69,6 +91,8 @@
     {% else %}
         No Players Owned
     {% endif %}
+
+    <br>
 
 {% endblock %}
 

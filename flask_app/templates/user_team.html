@@ -1,22 +1,54 @@
 {% extends "base.html" %}
 
 {% block app_content %}
+    {% if game_week %}
+        {% for game_week_batch in range(1, all_game_weeks + 1)|batch(12) %}
+            <div class="row">
+                {% for number in game_week_batch %}
+                    <div class="col-lg-1">
+                        <a class="btn btn-block btn-primary"
+                           href="{{ url_for('user_team', owner=owner, game_week=number) }}">
+                            GW{{ number }}
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <br>
+        {% endfor %}
+    {% endif %}
     {% if players or groups %}
         <div class="row">
             <div class="col-md-4">
                 <div class="card text-center">
-                    <h5 class="card-header">Gameweek {{ game_week }}</h5>
+                    <h5 class="card-header">
+                        {% if edit %}
+                            Gameweek {{ game_week }}
+                        {% else %}
+                            {{ title }} - Gameweek {{ game_week }}
+                        {% endif %}
+                    </h5>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <strong>{{ cut_off }}</strong>
                         </li>
+                        {% if edit %}
+                            <li class="list-group-item">
+                                <a class="btn btn-block btn-primary" href="{{ url_for('make_captain') }}">
+                                    Make Captain
+                                </a>
+                            </li>
+                        {% endif %}
                         <li class="list-group-item">
                             Captains made <strong>{{ captains }}</strong> of <strong>{{ max_captains }}</strong>
                         </li>
+                        <li class="list-group-item list-group-item-success">
+                            Captains earn <strong>2x</strong> points
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            Subs earn <strong>0.5x</strong> points
+                        </li>
                         <li class="list-group-item">
-                            <a class="btn btn-block btn-primary" href="{{ url_for('make_captain') }}">
-                                Make Captain
-                            </a>
+                            Players earn <strong>1x</strong> points
                         </li>
                     </ul>
                 </div>
@@ -45,7 +77,12 @@
                                         {% if player.matches %}
                                             {% for match in player.matches %}
                                                 <div class="row">
-                                                    <div class="col">{{ match.match }}</div>
+                                                    <div class="col">
+                                                        {{ match.match }}
+                                                        {% if not edit %}
+                                                            - <strong>{{ match.score }}</strong> pts
+                                                        {% endif %}
+                                                    </div>
                                                 </div>
                                             {% endfor %}
                                         {% else %}
@@ -77,7 +114,12 @@
                                     {% if player.matches %}
                                         {% for match in player.matches %}
                                             <div class="row">
-                                                <div class="col">{{ match.match }}</div>
+                                                <div class="col">
+                                                    {{ match.match }}
+                                                    {% if not edit %}
+                                                        - <strong>{{ match.score }}</strong> pts
+                                                    {% endif %}
+                                                </div>
                                             </div>
                                         {% endfor %}
                                     {% else %}
@@ -97,7 +139,7 @@
         <div class="row">
             <div class="col">
                 <h6>
-                    {% if game_week == 1 %}
+                    {% if game_week < 1 %}
                         You don't own any players
                     {% else %}
                         There are no more scheduled matches
@@ -107,19 +149,4 @@
         </div>
     {% endif %}
     <br>
-    {% if game_week > 1 %}
-        {% for game_week_batch in range(game_week - 1, 0, -1)|batch(4) %}
-            <div class="row">
-                {% for number in game_week_batch %}
-                    <div class="col-md-3">
-                        <a class="btn btn-block btn-primary"
-                           href="#">
-                            Gameweek {{ number }}
-                        </a>
-                    </div>
-                    <br>
-                {% endfor %}
-            </div>
-        {% endfor %}
-    {% endif %}
 {% endblock %}

@@ -46,3 +46,7 @@ def update_scores(**_):
     if score_updated:
         UserTeam.update_points()
     return score_updated
+
+
+def create_game_week(**_):
+    return UserTeam.create_game_week() == str()

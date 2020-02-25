@@ -79,7 +79,7 @@ class _Schedule:
 
     @staticmethod
     def get_cut_off(game_week: int) -> datetime:
-        if game_week <= 0:
+        if game_week <= 1:
             return Config.GAME_WEEK_START
         return Config.GAME_WEEK_START + timedelta(days=7 * (game_week - 1))
 

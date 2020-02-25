@@ -32,26 +32,30 @@ class UserTeam(FirestoreDocument):
         return f"GW-{self.game_week}:{self.player_name}:{self.type}:{self.final_score}:M-{len(self.matches)}"
 
     @classmethod
+    def last_game_week(cls) -> int:
+        last_team = cls.objects.order_by('game_week', Bid.objects.ORDER_DESCENDING).first()
+        return last_team.game_week if last_team else 0
+
+    @classmethod
     def create_game_week(cls) -> str:
         if not Config.AUCTION_COMPLETE:
             last_bid = Bid.objects.order_by('bid_order', Bid.objects.ORDER_DESCENDING).first()
             if not last_bid or last_bid.bid_order != Config.TOTAL_PLAYERS:
                 return 'Auction is incomplete'
             Config.AUCTION_COMPLETE = True
-        last_team = cls.objects.order_by('game_week', Bid.objects.ORDER_DESCENDING).first()
-        current_game_week = last_team.game_week if last_team else 0
-        if current_game_week and not schedule.can_create_game_week(current_game_week):
-            return f'GW-{current_game_week} already created.'
+        last_game_week = cls.last_game_week()
+        if last_game_week and not schedule.can_create_game_week(last_game_week):
+            return f'GW-{last_game_week} already created.'
         players = Player.objects.filter('owner', '>', str()).get()
-        next_game_week = current_game_week + 1
+        next_game_week = last_game_week + 1
         for player in players:
             user_team = cls()
             user_team.game_week = next_game_week
             user_team.player_name = player.name
             user_team.owner = player.owner
             user_team.team = player.team
-            if current_game_week > 1:
-                previous_game_week = cls.objects.filter_by(player_name=player.name, game_week=current_game_week).first()
+            if last_game_week > 1:
+                previous_game_week = cls.objects.filter_by(player_name=player.name, game_week=last_game_week).first()
                 user_team.type = previous_game_week.type
                 user_team.final_score = previous_game_week.final_score
             user_team.matches = [{'match': match, 'score': 0.0} for match in
@@ -65,9 +69,8 @@ class UserTeam(FirestoreDocument):
             if self.type == self.SUB else str()
 
     @classmethod
-    def get_players_next_game_week(cls, owner: str) -> List['UserTeam']:
-        next_game_week = schedule.get_game_week() + 1
-        return cls.objects.filter_by(owner=owner, game_week=next_game_week).get()
+    def get_players_by_game_week(cls, owner: str, game_week: int) -> List['UserTeam']:
+        return cls.objects.filter_by(owner=owner, game_week=game_week).get()
 
     @classmethod
     def get_last_match_played(cls, player) -> Optional['UserTeam']:

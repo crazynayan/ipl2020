@@ -27,7 +27,10 @@ def home() -> Response:
 def user_players(username: str) -> Response:
     players = Player.objects.filter_by(owner=username).get()
     players.sort(key=lambda player: (-player.score, -player.cost))
-    return render_template('player_list.html', username=username, players=players,
+    last_game_week = UserTeam.last_game_week()
+    if last_game_week > schedule.get_game_week():
+        last_game_week -= 1
+    return render_template('player_list.html', username=username, players=players, game_week=last_game_week,
                            title=f'{username.upper()} - Players')
 
 
@@ -152,32 +155,48 @@ def current_bid_status():
     return jsonify(message=f'{player.name}: Awaiting bids from {len(pending_bidders)} users')
 
 
+@ipl_app.route('/user_teams/<string:owner>/gameweek/<int:game_week>')
+@login_required
+def user_team(owner: str, game_week: int):
+    if not 0 < game_week <= schedule.get_game_week():
+        flash('Invalid Gameweek')
+        return redirect(url_for('my_team'))
+    return view_team(owner, game_week, edit=False)
+
+
 @ipl_app.route('/my_team')
 @login_required
 def my_team():
-    current_game_week = schedule.get_game_week()
-    cut_off = schedule.get_cut_off(current_game_week).strftime('%a %d %b %H:%M')
-    players = UserTeam.get_players_next_game_week(current_user.username)
-    captains = sum(1 for player in players if player.type == UserTeam.CAPTAIN)
+    return view_team(current_user.username, schedule.get_game_week() + 1, edit=True)
+
+
+def view_team(owner: str, game_week: int, edit: bool) -> Response:
+    players = UserTeam.get_players_by_game_week(owner, game_week)
+    captains = sum(1 for player in players if player.type == player.CAPTAIN)
+    cut_off = schedule.get_cut_off(game_week).strftime('%a %d %b %H:%M')
     max_captains = len(players) // 3
     groups = [player for player in players if player.group > 0]
     groups.sort(key=lambda player_item: (player_item.group, player_item.type, -player_item.final_score))
     players = [player for player in players if player.group == 0]
     players.sort(key=lambda player_item: -player_item.final_score)
-    return render_template('my_team.html', players=players, cut_off=cut_off, groups=groups, captains=captains,
-                           game_week=current_game_week + 1, max_captains=max_captains, title='My Team')
+    last_game_week = UserTeam.last_game_week()
+    if last_game_week > schedule.get_game_week():
+        last_game_week -= 1
+    return render_template('user_team.html', players=players, cut_off=cut_off, groups=groups, captains=captains,
+                           game_week=game_week, max_captains=max_captains, title=f'{owner.upper()} Team', edit=edit,
+                           owner=owner, all_game_weeks=last_game_week)
 
 
 @ipl_app.route('/my_team/make_captain', methods=['GET', 'POST'])
 @login_required
 def make_captain():
-    players = UserTeam.get_players_next_game_week(current_user.username)
+    current_game_week = schedule.get_game_week()
+    players = UserTeam.get_players_by_game_week(current_user.username, current_game_week + 1)
     players.sort(key=lambda player_item: -player_item.final_score)
     number_of_captains = sum(1 for player in players if player.type == UserTeam.CAPTAIN)
     if len(players) // 3 == number_of_captains:
         flash('You already have maximum captains selected. Please remove a group to appoint more captains.')
         return redirect(url_for('my_team'))
-    current_game_week = schedule.get_game_week()
     form = MakeCaptainForm()
     form.captain.choices = [(p.player_name, f'{p.player_name} (M-{len(p.matches)}, P-{p.final_score})')
                             for p in players if p.type == UserTeam.NORMAL]
@@ -210,7 +229,7 @@ def make_captain():
 @ipl_app.route('/my_team/remove_group/<int:group>/captain/<string:captain>')
 @login_required
 def remove_group(group: int, captain: str):
-    players = UserTeam.get_players_next_game_week(current_user.username)
+    players = UserTeam.get_players_by_game_week(current_user.username, schedule.get_game_week() + 1)
     group_players = [player for player in players if player.group == group]
     if not group_players or not any(player.player_name == captain for player in group_players):
         flash('Error in removing group')

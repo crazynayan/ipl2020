@@ -16,5 +16,5 @@ class Config:
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
     AUCTION_COMPLETE = False
-    TEST_DATE = datetime(year=2020, month=3, day=29, hour=20, minute=1)
+    TEST_DATE = datetime(year=2020, month=3, day=29, hour=21, minute=1)
     GAME_WEEK_START = datetime(year=2020, month=3, day=23, hour=19)
