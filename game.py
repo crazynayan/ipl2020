@@ -268,3 +268,15 @@ def reset_score():
         user.points = 0.0
         user.save()
     print(f"All players score zeroed.")
+
+
+def show_player_not_in_db():
+    scores = gspread.authorize(creds).open('IPL2020').worksheet('Scores').get_all_records()
+    player_names = [player.name for player in Player.objects.get()]
+    scores = [score for score in scores if score['ipl_name'] not in player_names]
+    if not scores:
+        print('All players present')
+    else:
+        for score in scores:
+            print(score['ipl_name'])
+    return

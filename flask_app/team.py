@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from firestore_ci import FirestoreDocument
+from firestore_ci.firestore_ci import FirestoreDocument
 from flask_wtf import FlaskForm
 from wtforms import SelectField, SubmitField, ValidationError
 
@@ -37,16 +37,21 @@ class UserTeam(FirestoreDocument):
         return last_team.game_week if last_team else 0
 
     @classmethod
+    def last_locked_game_week(cls) -> int:
+        last_game_week = cls.last_game_week()
+        if not last_game_week:
+            return 0
+        return last_game_week - 1 if last_game_week > schedule.get_game_week() else last_game_week
+
+    @classmethod
     def create_game_week(cls) -> str:
-        if not Config.AUCTION_COMPLETE:
-            last_bid = Bid.objects.order_by('bid_order', Bid.objects.ORDER_DESCENDING).first()
-            if not last_bid or last_bid.bid_order != Config.TOTAL_PLAYERS:
-                return 'Auction is incomplete'
-            Config.AUCTION_COMPLETE = True
+        last_bid = Bid.objects.order_by('bid_order', Bid.objects.ORDER_DESCENDING).first()
+        if not last_bid or last_bid.bid_order != Config.TOTAL_PLAYERS:
+            return 'Auction is incomplete'
         last_game_week = cls.last_game_week()
         if last_game_week and not schedule.can_create_game_week(last_game_week):
             return f'GW-{last_game_week} already created.'
-        players = Player.objects.filter('owner', '>', str()).get()
+        players = Player.objects.get()
         next_game_week = last_game_week + 1
         for player in players:
             user_team = cls()
@@ -63,6 +68,13 @@ class UserTeam(FirestoreDocument):
                                  schedule.get_matches(player.team, next_game_week)]
             user_team.create()
         return str()
+
+    @classmethod
+    def get_dummy_user_team(cls, game_week: int, team: str) -> 'UserTeam':
+        user_team = UserTeam()
+        user_team.game_week = game_week
+        user_team.matches = [{'match': match, 'score': 0.0} for match in schedule.get_matches(team, game_week)]
+        return user_team
 
     @property
     def list_group_item(self) -> str:

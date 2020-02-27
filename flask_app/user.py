@@ -1,6 +1,6 @@
 from typing import Optional
 
-from firestore_ci import FirestoreDocument
+from firestore_ci.firestore_ci import FirestoreDocument
 from flask import flash, redirect, url_for, render_template, request
 from flask_login import UserMixin, current_user, login_user, logout_user
 from flask_wtf import FlaskForm

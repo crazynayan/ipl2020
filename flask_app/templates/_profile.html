@@ -1,12 +1,26 @@
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-lg-3">
         <div class="card text-center">
             <h5 class="card-header">{{ player.name }}</h5>
             <img alt="{{ player.name }}" src="{{ url_for('static', filename=player.image) }}" class="card-img">
-            <h6 class="card-title ">{{ player.team }} - {{ player.type }} - {{ player.country }}</h6>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <strong>{{ player.team }}</strong> - {{ player.type }} - {{ player.country }}
+                </li>
+                {% if player.score %}
+                    <li class="list-group-item">
+                        2020 Scored <strong>{{ player.score }}</strong> pts
+                    </li>
+                    {% if player.owner %}
+                        <li class="list-group-item">
+                            {{ player.owner.upper() }} Earned <strong>{{ final_score }}</strong> pts
+                        </li>
+                    {% endif %}
+                {% endif %}
+            </ul>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-lg-3">
         <div class="card text-center">
             <h5 class="card-header">Analysis</h5>
             <ul class="list-group list-group-flush">
@@ -36,35 +50,43 @@
                     <li class="list-group-item">
                         2019 SBP &#8377 <strong>{{ player.sbp_2019 }}</strong> lacs
                     </li>
+                {% else %}
+                    <li class="list-group-item">
+                        Did not play IPL 2019
+                    </li>
                 {% endif %}
             </ul>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-lg-3">
         <div class="card text-center">
             <h5 class="card-header">Schedule</h5>
             <ul class="list-group list-group-flush">
-                {% for game_week, matches in player.get_schedule_by_game_week() %}
-                    {% if matches %}
-                        <li class="list-group-item">
-                            {% for match in matches %}
+                {% for user_team in schedule %}
+                    <li class="list-group-item {{ user_team.list_group_item }}">
+                        <div class="row">
+                            <div class="col"><strong>Gameweek {{ user_team.game_week }}</strong></div>
+                        </div>
+                        {% if user_team.matches %}
+                            {% for match in user_team.matches %}
                                 <div class="row">
                                     <div class="col">
-                                        <strong>GW-{{ game_week }}</strong> {{ match }}
+                                        {{ match.match }}
+                                        {% if user_team.id %}
+                                            - <strong>{{ match.score }}</strong> pts
+                                        {% endif %}
                                     </div>
                                 </div>
                             {% endfor %}
-                        </li>
-                    {% else %}
-                        <li class="list-group-item">
-                            <strong>GW-{{ game_week }}</strong> No matches
-                        </li>
-                    {% endif %}
+                        {% else %}
+                            No matches
+                        {% endif %}
+                    </li>
                 {% endfor %}
             </ul>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-lg-3">
         <div class="card text-center">
             <h5 class="card-header">
                 {% if last_player %}

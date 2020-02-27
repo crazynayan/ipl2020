@@ -11,10 +11,11 @@ class Config:
     COST_2019 = 51395
     TOTAL_COST = 61265
     PLAYERS_COST = 151
-    BALANCE = 5580
-    USER_LIST = {'NZ', 'MB', 'PP', 'VP', 'RD', 'NU', 'AG', 'SN', 'AS', 'HJ', 'SG'}
+    BALANCE = 6140
+    USER_LIST = {'NZ': 'Nayan Zaveri', 'MB': 'Manish Bhatt', 'PP': 'Pranay Patil', 'VP': 'Vinayak Patil',
+                 'RD': "Ravi D'Lima", 'FA': 'Faisal Ansari', 'AG': 'Avinash Gaikwad', 'AS': 'Arunesh Shah',
+                 'HJ': 'Hitendra Jain', 'SG': 'Sagar Ghadage'}
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
-    AUCTION_COMPLETE = False
-    TEST_DATE = datetime(year=2020, month=4, day=6, hour=20, minute=1)
+    TEST_DATE = None  # datetime(year=2020, month=3, day=16, hour=19, minute=1)
     GAME_WEEK_START = datetime(year=2020, month=3, day=23, hour=19)

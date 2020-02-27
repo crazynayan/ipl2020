@@ -63,13 +63,16 @@
             {% endif %}
         {% endwith %}
         {% if current_user.is_authenticated and current_user.bidding %}
-            <a href="{{ url_for('submit_bid') }}">
-                <div class="alert alert-warning" role="alert">
-                    <span id="current_bid_status">Auction in progress</span>
+            <div class="row">
+                <div class="col">
+                    <a href="{{ url_for('submit_bid') }}">
+                        <div class="alert alert-warning" role="alert">
+                            <span id="current_bid_status">Auction in progress</span>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
         {% endif %}
-        <br>
         {% block app_content %}
         {% endblock %}
     </div>

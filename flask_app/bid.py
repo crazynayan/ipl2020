@@ -1,7 +1,7 @@
 import random
 from typing import List, Optional, Tuple
 
-from firestore_ci import FirestoreDocument
+from firestore_ci.firestore_ci import FirestoreDocument
 from flask_login import current_user
 from flask_wtf import FlaskForm
 from wtforms import IntegerField, SubmitField, BooleanField
@@ -76,6 +76,12 @@ class Bid(FirestoreDocument):
         bids: List[Bid] = cls.objects.filter_by(player_name=player.name).get()
         if len(bids) != Config.USER_COUNT:
             return False
+        if any(bid.winner for bid in bids):
+            if player.owner:
+                return False
+            winning_bid = next(bid for bid in bids if bid.winner)
+            player.purchase(winning_bid.username, winning_bid.amount)
+            return True
         max_bid = max(bids, key=lambda bid: bid.amount)
         if not max_bid.amount:
             player.pass_player()
@@ -84,8 +90,7 @@ class Bid(FirestoreDocument):
         winning_bid: Bid = random.choice(max_bids)
         winning_bid.winner = True
         winning_bid.save()
-        winner = User.objects.filter_by(username=winning_bid.username).first()
-        player.purchase(winner, winning_bid.amount)
+        player.purchase(winning_bid.username, winning_bid.amount)
         return True
 
     @classmethod
@@ -102,6 +107,8 @@ class Bid(FirestoreDocument):
             bids = cls.objects.order_by('bid_order', cls.objects.ORDER_DESCENDING).limit(limit).get()
         else:
             bids = cls.objects.order_by('bid_order', cls.objects.ORDER_DESCENDING).get()
+        if not bids:
+            return list()
         last_bid = max(bids, key=lambda bid: bid.bid_order)
         bids = cls.remove_incomplete_bids(bids, last_bid.bid_order)
         oldest_bid = min(bids, key=lambda bid: bid.bid_order)
@@ -131,11 +138,11 @@ class Bid(FirestoreDocument):
         if not player:
             player = Player.auction_next_player()
             if not player:
-                Config.AUCTION_COMPLETE = True
                 current_user.bidding = False
                 current_user.save()
                 return 'Auction completed', None
             cls.submit_auto_bids(player)
+        cls.decide_winner(player)
         return str(), player
 
 

@@ -1,7 +1,7 @@
 import random
 from typing import Optional, List, Tuple
 
-from firestore_ci import FirestoreDocument
+from firestore_ci.firestore_ci import FirestoreDocument
 
 from config import Config
 from flask_app.schedule import schedule
@@ -67,13 +67,18 @@ class Player(FirestoreDocument):
     def ipl2019_rank_total(self) -> int:
         return Config.PLAYERS_2019
 
+    @property
+    def team_full_name(self) -> str:
+        return next((team_name for team_name, team_code in schedule.team_names.items() if team_code == self.team),
+                    str())
+
+    @property
+    def owner_full_name(self) -> str:
+        return Config.USER_LIST.get(self.owner.upper(), str())
+
     @classmethod
     def player_in_auction(cls) -> Optional['Player']:
-        players = cls.objects.filter_by(auction_status='bidding').get()
-        if not players:
-            return None
-        players.sort(key=lambda player_item: player_item.bid_order)
-        return players[0]
+        return cls.objects.filter_by(auction_status='bidding').first()
 
     @classmethod
     def auction_next_player(cls) -> Optional['Player']:
@@ -83,10 +88,14 @@ class Player(FirestoreDocument):
         player = random.choice(players)
         player.auction_status = 'bidding'
         player.bid_order = Config.TOTAL_PLAYERS - len(players) + 1
+        player_in_bidding = cls.objects.filter_by(auction_status='bidding').first()
+        if player_in_bidding:
+            return player_in_bidding
         player.save()
         return player
 
-    def purchase(self, user: User, amount: int):
+    def purchase(self, username: str, amount: int):
+        user = User.objects.filter_by(username=username).first()
         if self.auction_status != 'bidding':
             return
         self.price = amount

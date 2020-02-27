@@ -27,9 +27,7 @@ def home() -> Response:
 def user_players(username: str) -> Response:
     players = Player.objects.filter_by(owner=username).get()
     players.sort(key=lambda player: (-player.score, -player.cost))
-    last_game_week = UserTeam.last_game_week()
-    if last_game_week > schedule.get_game_week():
-        last_game_week -= 1
+    last_game_week = UserTeam.last_locked_game_week()
     return render_template('player_list.html', username=username, players=players, game_week=last_game_week,
                            title=f'{username.upper()} - Players')
 
@@ -67,7 +65,15 @@ def view_player(player_id: str):
     if len(bids) != ipl_app.config['USER_COUNT']:
         bids = list()
     bids.sort(key=lambda bid: -bid.amount)
-    return render_template('profile.html', player=player, bids=bids)
+    player_matches = UserTeam.objects.filter_by(player_name=player.name).get()
+    last_locked_game_week = UserTeam.last_locked_game_week()
+    player_matches = [team for team in player_matches if team.game_week <= last_locked_game_week]
+    player_matches.sort(key=lambda team: team.game_week)
+    from_game_week = player_matches[-1].game_week + 1 if player_matches else 1
+    final_score = player_matches[-1].final_score if player_matches else 0
+    for game_week in range(from_game_week, schedule.max_game_week + 1):
+        player_matches.append(UserTeam.get_dummy_user_team(game_week, player.team))
+    return render_template('profile.html', player=player, bids=bids, schedule=player_matches, final_score=final_score)
 
 
 @ipl_app.route('/players/name/<string:player_name>')
@@ -104,9 +110,11 @@ def bid_player(player_id: str):
     last_player = Player.objects.filter_by(bid_order=player.bid_order - 1).first() if player.bid_order > 1 else None
     last_bids = Bid.objects.filter_by(bid_order=last_player.bid_order).get() if last_player else list()
     last_bids.sort(key=lambda bid_item: -bid_item.amount)
+    player_matches = [UserTeam.get_dummy_user_team(game_week, player.team)
+                      for game_week in range(1, schedule.max_game_week + 1)]
     if bid:
         return render_template('bid_player.html', player=player, bid=bid, form=None, bids=last_bids,
-                               last_player=last_player)
+                               last_player=last_player, schedule=player_matches)
     form = BidForm(current_user.balance, player.base)
     if request.method == 'GET':
         form_data = form.data
@@ -114,7 +122,7 @@ def bid_player(player_id: str):
         form = BidForm(current_user.balance, player.base, formdata=MultiDict(form_data))
     if not form.validate_on_submit():
         return render_template('bid_player.html', player=player, bid=None, form=form, bids=last_bids,
-                               last_player=last_player)
+                               last_player=last_player, schedule=player_matches)
     if form.pass_bid.data:
         Bid.pass_bid(current_user, player)
     else:
@@ -179,9 +187,7 @@ def view_team(owner: str, game_week: int, edit: bool) -> Response:
     groups.sort(key=lambda player_item: (player_item.group, player_item.type, -player_item.final_score))
     players = [player for player in players if player.group == 0]
     players.sort(key=lambda player_item: -player_item.final_score)
-    last_game_week = UserTeam.last_game_week()
-    if last_game_week > schedule.get_game_week():
-        last_game_week -= 1
+    last_game_week = UserTeam.last_locked_game_week()
     return render_template('user_team.html', players=players, cut_off=cut_off, groups=groups, captains=captains,
                            game_week=game_week, max_captains=max_captains, title=f'{owner.upper()} Team', edit=edit,
                            owner=owner, all_game_weeks=last_game_week)

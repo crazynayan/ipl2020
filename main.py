@@ -28,9 +28,11 @@ def update_scores(**_):
     except (ValueError, KeyError):
         return False
     players = Player.objects.get()
+    player_names = [player.name for player in players]
+    scores = [score for score in scores if score['ipl_name'] in player_names]
     if sum(score['score'] for score in scores) == sum(player.score for player in players):
         return False
-    players = [player for player in players if player.score != get_player_score(scores, player) and player.owner]
+    players = [player for player in players if player.score != get_player_score(scores, player)]
     score_updated = False
     stop_game_week = UserTeam.last_game_week() + 1
     for player in players:
