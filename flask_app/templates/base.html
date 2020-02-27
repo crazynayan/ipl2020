@@ -63,6 +63,7 @@
             {% endif %}
         {% endwith %}
         {% if current_user.is_authenticated and current_user.bidding %}
+            <br>
             <div class="row">
                 <div class="col">
                     <a href="{{ url_for('submit_bid') }}">
@@ -73,6 +74,7 @@
                 </div>
             </div>
         {% endif %}
+        <br>
         {% block app_content %}
         {% endblock %}
     </div>

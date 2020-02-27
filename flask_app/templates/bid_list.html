@@ -3,7 +3,6 @@
 {% block app_content %}
 
     {% if bids %}
-        <br>
         <table id="bid_list" class="table table-bordered table-sm table-hover">
             <thead class="thead-dark">
             <tr>
@@ -66,8 +65,9 @@
             </div>
         {% endif %}
     {% else %}
+        <br>
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <h6>There are no bids made</h6>
             </div>
         </div>

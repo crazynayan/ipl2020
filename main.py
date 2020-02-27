@@ -19,23 +19,26 @@ def get_player_score(scores: List[dict], player: Player) -> float:
     return score['score'] if score else 0.0
 
 
-def update_scores(**_):
+def update_scores(*_):
     if not schedule.get_game_week():
-        return False
+        print('Error: SFL gameweek has not yet started')
+        return
     scores = gspread.authorize(creds).open('IPL2020').worksheet('Scores').get_all_records()
     try:
         scores = [{'ipl_name': score['ipl_name'], 'score': float(score['score'])} for score in scores]
     except (ValueError, KeyError):
-        return False
+        print('Error: Google Sheet is not properly formatted')
+        return
     players = Player.objects.get()
     player_names = [player.name for player in players]
     scores = [score for score in scores if score['ipl_name'] in player_names]
     if sum(score['score'] for score in scores) == sum(player.score for player in players):
-        return False
+        print('Sheet: All scores matched and no updates done')
+        return
     players = [player for player in players if player.score != get_player_score(scores, player)]
     score_updated = False
     stop_game_week = UserTeam.last_game_week() + 1
-    for player in players:
+    for index, player in enumerate(players):
         sheet_score = get_player_score(scores, player)
         if not sheet_score:
             continue
@@ -47,10 +50,15 @@ def update_scores(**_):
             player.score = sheet_score
             player.save()
             score_updated = True
+            print(f'{player.name}: {index + 1} of {len(players)} updated')
     if score_updated:
         UserTeam.update_points()
-    return score_updated
+        print('User: All user points updated')
+    else:
+        print('Error: No updates done')
+    return
 
 
-def create_game_week(**_):
-    return UserTeam.create_game_week() == str()
+def create_game_week(*_):
+    message = UserTeam.create_game_week()
+    print(f'{message}')

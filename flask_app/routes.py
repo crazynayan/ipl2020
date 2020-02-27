@@ -154,13 +154,14 @@ def current_bid_status():
     if not player:
         return jsonify(message=message)
     pending_bidders = Bid.get_pending_bidders(player)
+    player_tag = f'{player.bid_order} - {player.name} -'
     if not pending_bidders:
-        return jsonify(message=f'{player.name}: Bidding complete')
+        return jsonify(message=f'{player_tag} Bidding complete')
     if len(pending_bidders) <= 5:
         pending_bidders.sort()
         user_list = " ".join(pending_bidders)
-        return jsonify(message=f'{player.name}: Awaiting bids from {user_list}')
-    return jsonify(message=f'{player.name}: Awaiting bids from {len(pending_bidders)} users')
+        return jsonify(message=f'{player_tag} Awaiting bids from {user_list}')
+    return jsonify(message=f'{player_tag} Awaiting bids from {len(pending_bidders)} users')
 
 
 @ipl_app.route('/user_teams/<string:owner>/gameweek/<int:game_week>')

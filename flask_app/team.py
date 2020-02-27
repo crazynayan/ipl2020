@@ -50,23 +50,27 @@ class UserTeam(FirestoreDocument):
             return 'Auction is incomplete'
         last_game_week = cls.last_game_week()
         if last_game_week and not schedule.can_create_game_week(last_game_week):
-            return f'GW-{last_game_week} already created.'
+            return f'Gameweek {last_game_week} already created.'
+        last_user_team = cls.objects.filter_by(game_week=last_game_week).get() if last_game_week else None
         players = Player.objects.get()
         next_game_week = last_game_week + 1
-        for player in players:
+        for index, player in enumerate(players):
             user_team = cls()
             user_team.game_week = next_game_week
             user_team.player_name = player.name
             user_team.owner = player.owner
             user_team.team = player.team
-            previous_game_week = cls.objects.filter_by(player_name=player.name, game_week=last_game_week).first()
-            if previous_game_week:
-                user_team.type = previous_game_week.type
-                user_team.group = previous_game_week.group
-                user_team.final_score = previous_game_week.final_score
+            if last_user_team:
+                last_player = next(team for team in last_user_team if team.player_name == user_team.player_name)
+                user_team.type = last_player.type
+                user_team.group = last_player.group
+                user_team.final_score = last_player.final_score
             user_team.matches = [{'match': match, 'score': 0.0} for match in
                                  schedule.get_matches(player.team, next_game_week)]
             user_team.create()
+            if (index + 1) % 10 == 0:
+                print(f"Gameweek {next_game_week}: {index + 1} player of {len(players)} created")
+        print(f'Gameweek {next_game_week} created')
         return str()
 
     @classmethod

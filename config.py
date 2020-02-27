@@ -2,6 +2,8 @@ import os
 from base64 import b64encode
 from datetime import datetime
 
+from pytz import timezone
+
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or b64encode(os.urandom(24)).decode()
@@ -17,5 +19,6 @@ class Config:
                  'HJ': 'Hitendra Jain', 'SG': 'Sagar Ghadage'}
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
-    TEST_DATE = None  # datetime(year=2020, month=3, day=16, hour=19, minute=1)
-    GAME_WEEK_START = datetime(year=2020, month=3, day=23, hour=19)
+    INDIA_TZ = timezone('Asia/Kolkata')
+    TEST_DATE = datetime(year=2020, month=3, day=30, hour=19, minute=1, tzinfo=INDIA_TZ)
+    GAME_WEEK_START = datetime(year=2020, month=3, day=23, hour=19, tzinfo=INDIA_TZ)

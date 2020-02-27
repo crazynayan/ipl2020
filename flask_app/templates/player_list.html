@@ -1,12 +1,6 @@
 {% extends 'base.html' %}
 
 {% block app_content %}
-    <div class="row">
-        <div class="col d-none d-md-table-cell">
-            <h1 class="text-center">{{ title }}</h1>
-        </div>
-    </div>
-
     {% if game_week %}
         {% for game_week_batch in range(1, game_week + 1)|batch(12) %}
             <div class="row">
@@ -29,19 +23,15 @@
             <tr>
                 <th scope="col" class="text-center">No</th>
                 <th scope="col" class="text-center">
-                    {% if game_week %}
-                        {{ title }}
-                    {% else %}
-                        Name
-                    {% endif %}
+                    {{ title }}
                 </th>
                 <th scope="col" class="text-center">Score</th>
-                <th scope="col" class="text-center d-none d-md-table-cell">Cost</th>
-                <th scope="col" class="text-center d-none d-md-table-cell">Base</th>
                 {% if not username %}
                     <th scope="col" class="text-center d-none d-md-table-cell">Owner</th>
                 {% endif %}
                 <th scope="col" class="text-center">Price</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Cost</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Base</th>
                 <th scope="col" class="text-center d-none d-md-table-cell">Team</th>
                 <th scope="col" class="text-center d-none d-md-table-cell">Type</th>
                 <th scope="col" class="text-center d-none d-md-table-cell">Country</th>
@@ -53,7 +43,11 @@
             {% for player in players %}
                 <tr>
                     <td class="text-center align-middle font-weight-bold">
-                        {{ loop.index }}
+                        {% if player.bid_order %}
+                            {{ player.bid_order }}
+                        {% else %}
+                            {{ loop.index + 200 }}
+                        {% endif %}
                     </td>
                     <td class="text-center align-middle font-weight-bold">
                         <a class="btn btn-block btn-primary"
@@ -61,12 +55,6 @@
                     </td>
                     <td class="text-center align-middle font-weight-bold">
                         {{ player.score }}
-                    </td>
-                    <td class="text-center align-middle d-none d-md-table-cell">
-                        {{ player.cost }}
-                    </td>
-                    <td class="text-center d-none d-md-table-cell align-middle">
-                        {{ player.base }}
                     </td>
                     {% if not username %}
                         <td class="text-center align-middle  d-none d-md-table-cell">
@@ -79,6 +67,12 @@
                     {% endif %}
                     <td class="text-center align-middle">
                         {{ player.price }}
+                    </td>
+                    <td class="text-center align-middle d-none d-md-table-cell">
+                        {{ player.cost }}
+                    </td>
+                    <td class="text-center d-none d-md-table-cell align-middle">
+                        {{ player.base }}
                     </td>
                     <td class="text-center align-middle  d-none d-md-table-cell">
                         {{ player.team }}
@@ -100,11 +94,14 @@
             </tbody>
         </table>
     {% else %}
-        No Players Owned
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <h6>No Players Owned</h6>
+            </div>
+        </div>
     {% endif %}
-
     <br>
-
 {% endblock %}
 
 {% block scripts %}

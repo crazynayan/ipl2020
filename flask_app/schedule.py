@@ -12,7 +12,7 @@ class Match:
         self.home_team: str = str()
         self.away_team: str = str()
         self.game_week: int = 0
-        self.date: datetime = datetime.now()
+        self.date: datetime = datetime.now(Config.INDIA_TZ)
         self.number: int = 0
 
     def __repr__(self):
@@ -45,7 +45,7 @@ class _Schedule:
             if line.split()[-1] == 'IST':
                 match = Match()
                 date = datetime.strptime(line, '%a %d/%m - %I:%M %p IST')
-                match.date = datetime(year=2020, month=date.month, day=date.day, hour=date.hour)
+                match.date = datetime(year=2020, month=date.month, day=date.day, hour=date.hour, tzinfo=Config.INDIA_TZ)
                 if match.date.weekday() == Config.GAME_WEEK_START.weekday():
                     game_week += 1
                 match.game_week = game_week
@@ -109,7 +109,7 @@ class _Schedule:
 
     @staticmethod
     def now():
-        return Config.TEST_DATE or datetime.now()
+        return Config.TEST_DATE or datetime.now(Config.INDIA_TZ)
 
 
 schedule = _Schedule()
