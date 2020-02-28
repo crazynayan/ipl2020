@@ -1,8 +1,11 @@
 import os
+from datetime import datetime
 from typing import List
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+
+from config import Config
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud.json'
 
@@ -19,7 +22,17 @@ def get_player_score(scores: List[dict], player: Player) -> float:
     return score['score'] if score else 0.0
 
 
-def update_scores(*_):
+def set_test_date(data: dict):
+    test_date = data.get('test_date', None)
+    if not test_date:
+        return
+    Config.TEST_DATE = datetime.strptime(test_date, '%Y-%m-%d %H:%M:%S')
+    Config.TEST_DATE = Config.TEST_DATE.replace(tzinfo=Config.INDIA_TZ)
+    return
+
+
+def update_scores(data: dict, _):
+    set_test_date(data)
     if not schedule.get_game_week():
         print('Error: SFL gameweek has not yet started')
         return
@@ -59,6 +72,7 @@ def update_scores(*_):
     return
 
 
-def create_game_week(*_):
+def create_game_week(data: dict, _):
+    set_test_date(data)
     message = UserTeam.create_game_week()
     print(f'{message}')

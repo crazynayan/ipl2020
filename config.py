@@ -20,5 +20,5 @@ class Config:
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
     INDIA_TZ = timezone('Asia/Kolkata')
-    TEST_DATE = datetime(year=2020, month=3, day=30, hour=19, minute=1, tzinfo=INDIA_TZ)
+    TEST_DATE = None
     GAME_WEEK_START = datetime(year=2020, month=3, day=23, hour=19, tzinfo=INDIA_TZ)
