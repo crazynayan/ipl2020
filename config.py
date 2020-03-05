@@ -13,9 +13,9 @@ class Config:
     COST_2019 = 51395
     TOTAL_COST = 61265
     PLAYERS_COST = 151
-    BALANCE = 6820
+    BALANCE = 6140
     USER_LIST = {'NZ': 'Nayan Zaveri', 'MB': 'Manish Bhatt', 'PP': 'Pranay Patil', 'VP': 'Vinayak Patil',
-                 'RD': "Ravi D'Lima", 'FA': 'Faisal Ansari', 'AS': 'Arunesh Shah',
+                 'RD': "Ravi D'Lima", 'FA': 'Faisal Ansari', 'AS': 'Arunesh Shah', 'RK': 'Raheem Khan',
                  'HJ': 'Hitendra Jain', 'SG': 'Sagar Ghadage'}
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
