@@ -142,7 +142,8 @@ class Bid(FirestoreDocument):
                 current_user.save()
                 return 'Auction completed', None
             cls.submit_auto_bids(player)
-        cls.decide_winner(player)
+        else:
+            cls.decide_winner(player)
         return str(), player
 
 
