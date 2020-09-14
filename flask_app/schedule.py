@@ -1,8 +1,11 @@
+import csv
 from datetime import datetime
 from datetime import timedelta
 from typing import List
 
-from config import Config
+from config import Config, today
+
+DATE, LOCATION, HOME_TEAM, AWAY_TEAM, ROUND = "Date", "Location", "Home Team", "Away Team", "Round Number"
 
 
 class Match:
@@ -28,38 +31,29 @@ class Match:
 class _Schedule:
 
     def __init__(self):
-        self.team_names: dict = {'Mumbai Indians': 'MI', 'Chennai Super Kings': 'CSK', 'Delhi Capitals': 'DC',
-                                 'Kings XI Punjab': 'KXIP', 'Royal Challengers Bangalore': 'RCB',
-                                 'Kolkata Knight Riders': 'KKR', 'Sunrisers Hyderabad': 'SRH', 'Rajasthan Royals': 'RR'}
+        self.team_names: dict = {"Mumbai Indians": "MI", "Chennai Super Kings": "CSK", "Delhi Capitals": "DC",
+                                 "Kings XI Punjab": "KXIP", "Royal Challengers Bangalore": "RCB", "TBD": "TBD",
+                                 "Kolkata Knight Riders": "KKR", "Sunrisers Hyderabad": "SRH", "Rajasthan Royals": "RR"}
         self.schedule: List[Match] = self.prepare_schedule()
 
-    def prepare_schedule(self) -> List[Match]:
-        with open('source/schedule.txt') as file:
-            lines = file.readlines()
+    def prepare_schedule(self):
         match_list = list()
+        schedule_file = open("source/schedule.csv")
         game_week = match_number = 1
-        prev_line = str()
-        match = Match()
-        for line in lines:
-            line = line.strip()
-            if line.split()[-1] == 'IST':
-                match = Match()
-                date = datetime.strptime(line, '%a %d/%m - %I:%M %p IST')
-                match.date = datetime(year=2020, month=date.month, day=date.day, hour=date.hour, tzinfo=Config.INDIA_TZ)
-                if match.date.weekday() == Config.GAME_WEEK_START.weekday():
-                    game_week += 1
-                match.game_week = game_week
-                match.number = match_number
-                match_number += 1
-            if line.split()[-1] == 'HOME':
-                match_list.append(match)
-            if line in self.team_names and line != prev_line:
-                match.teams.append(self.team_names[line])
-                if prev_line in self.team_names:
-                    match.away_team = self.team_names[line]
-                else:
-                    match.home_team = self.team_names[line]
-            prev_line = line
+        schedule_reader = csv.DictReader(schedule_file)
+        for row in schedule_reader:
+            match = Match()
+            match.date = datetime.strptime(row[DATE], "%d/%m/%Y %H:%M").replace(tzinfo=Config.INDIA_TZ)
+            if match.date.weekday() == Config.GAME_WEEK_START.weekday():
+                game_week += 1
+            match.game_week = game_week if row[ROUND] != "8" else 9
+            match.number = match_number
+            match_number += 1
+            match.home_team = self.team_names[row[HOME_TEAM]]
+            match.away_team = self.team_names[row[AWAY_TEAM]]
+            match.teams = [match.home_team, match.away_team]
+            match_list.append(match)
+        schedule_file.close()
         return match_list
 
     @property
@@ -67,9 +61,13 @@ class _Schedule:
         return max(self.schedule, key=lambda match: match.game_week).game_week
 
     def get_game_week(self) -> int:
-        date = self.now()
-        if date < Config.GAME_WEEK_START:
+        date = today()
+        if date <= Config.GAME_WEEK_START:
             return 0
+        if Config.GAME_WEEK_START <= date <= Config.GAME_WEEK_1_CUT_OFF:
+            return 1
+        if date > Config.GAME_WEEK_9_CUT_OFF:
+            return self.max_game_week + 1
         game_week_start = Config.GAME_WEEK_START
         for game_week in range(1, self.max_game_week + 1):
             if game_week_start <= date < game_week_start + timedelta(days=7):
@@ -79,8 +77,12 @@ class _Schedule:
 
     @staticmethod
     def get_cut_off(game_week: int) -> datetime:
-        if game_week <= 1:
+        if game_week < 1:
             return Config.GAME_WEEK_START
+        if game_week == 1:
+            return Config.GAME_WEEK_1_CUT_OFF
+        if game_week == 9:
+            return Config.GAME_WEEK_9_CUT_OFF
         return Config.GAME_WEEK_START + timedelta(days=7 * (game_week - 1))
 
     def get_matches(self, team: str, game_week: int) -> List[str]:
@@ -89,7 +91,7 @@ class _Schedule:
                 f"({'H' if team == match.home_team else 'A'})" for match in matches]
 
     def can_create_game_week(self, game_week: int) -> bool:
-        return True if self.now() >= self.get_cut_off(game_week) else False
+        return True if today() >= self.get_cut_off(game_week) else False
 
     def match_played(self, dd_mm: str, team: str) -> bool:
         try:
@@ -100,16 +102,12 @@ class _Schedule:
                       match.date.month == match_date.month and team in match.teams), None)
         if not match:
             return False
-        return True if self.now() > match.date else False
+        return True if today() > match.date else False
 
     def get_game_week_last_match_played(self, team: str) -> int:
-        match = next((match for match in reversed(self.schedule) if team in match.teams and self.now() > match.date),
+        match = next((match for match in reversed(self.schedule) if team in match.teams and today() > match.date),
                      None)
         return match.game_week if match else 0
-
-    @staticmethod
-    def now():
-        return Config.TEST_DATE or datetime.now(Config.INDIA_TZ)
 
 
 schedule = _Schedule()

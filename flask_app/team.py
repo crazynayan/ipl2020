@@ -12,9 +12,9 @@ from flask_app.user import User
 
 
 class UserTeam(FirestoreDocument):
-    NORMAL = 'Normal'
-    CAPTAIN = 'Captain'
-    SUB = 'Sub'
+    NORMAL = "Normal"
+    CAPTAIN = "Captain"
+    SUB = "Sub"
     MULTIPLIER = {NORMAL: 1.0, CAPTAIN: 2.0, SUB: 0.5}
 
     def __init__(self):
@@ -33,7 +33,7 @@ class UserTeam(FirestoreDocument):
 
     @classmethod
     def last_game_week(cls) -> int:
-        last_team = cls.objects.order_by('game_week', Bid.objects.ORDER_DESCENDING).first()
+        last_team: UserTeam = cls.objects.order_by("game_week", Bid.objects.ORDER_DESCENDING).first()
         return last_team.game_week if last_team else 0
 
     @classmethod
@@ -45,15 +45,16 @@ class UserTeam(FirestoreDocument):
 
     @classmethod
     def create_game_week(cls) -> str:
-        last_bid = Bid.objects.order_by('bid_order', Bid.objects.ORDER_DESCENDING).first()
+        last_bid = Bid.objects.order_by("bid_order", Bid.objects.ORDER_DESCENDING).first()
         if not last_bid or last_bid.bid_order != Config.TOTAL_PLAYERS:
-            return 'Auction is incomplete'
+            return "Auction is incomplete"
         last_game_week = cls.last_game_week()
         if last_game_week and not schedule.can_create_game_week(last_game_week):
-            return f'Gameweek {last_game_week} already created.'
+            return f"Gameweek {last_game_week} already created."
         last_user_team = cls.objects.filter_by(game_week=last_game_week).get() if last_game_week else None
         players = Player.objects.get()
         next_game_week = last_game_week + 1
+        user_teams: List[dict] = list()
         for index, player in enumerate(players):
             user_team = cls()
             user_team.game_week = next_game_week
@@ -65,32 +66,33 @@ class UserTeam(FirestoreDocument):
                 user_team.type = last_player.type
                 user_team.group = last_player.group
                 user_team.final_score = last_player.final_score
-            user_team.matches = [{'match': match, 'score': 0.0} for match in
-                                 schedule.get_matches(player.team, next_game_week)]
-            user_team.create()
+            user_team.matches = [{"match": match, "score": 0.0}
+                                 for match in schedule.get_matches(player.team, next_game_week)]
+            user_teams.append(cls.objects.to_dicts([user_team])[0])
             if (index + 1) % 10 == 0:
                 print(f"Gameweek {next_game_week}: {index + 1} player of {len(players)} created")
-        print(f'Gameweek {next_game_week} created')
+        cls.objects.create_all(user_teams)
+        print(f"Gameweek {next_game_week} created")
         return str()
 
     @classmethod
-    def get_dummy_user_team(cls, game_week: int, team: str) -> 'UserTeam':
+    def get_dummy_user_team(cls, game_week: int, team: str) -> "UserTeam":
         user_team = UserTeam()
         user_team.game_week = game_week
-        user_team.matches = [{'match': match, 'score': 0.0} for match in schedule.get_matches(team, game_week)]
+        user_team.matches = [{"match": match, "score": 0.0} for match in schedule.get_matches(team, game_week)]
         return user_team
 
     @property
     def list_group_item(self) -> str:
-        return 'list-group-item-success' if self.type == self.CAPTAIN else 'list-group-item-danger' \
+        return "list-group-item-success" if self.type == self.CAPTAIN else "list-group-item-danger" \
             if self.type == self.SUB else str()
 
     @classmethod
-    def get_players_by_game_week(cls, owner: str, game_week: int) -> List['UserTeam']:
+    def get_players_by_game_week(cls, owner: str, game_week: int) -> List["UserTeam"]:
         return cls.objects.filter_by(owner=owner, game_week=game_week).get()
 
     @classmethod
-    def get_last_match_played(cls, player) -> Optional['UserTeam']:
+    def get_last_match_played(cls, player) -> Optional["UserTeam"]:
         game_week = schedule.get_game_week_last_match_played(player.team)
         if not game_week:
             return None
@@ -99,8 +101,8 @@ class UserTeam(FirestoreDocument):
     def update_score(self, player: Player, delta_score: float) -> bool:
         score_updated = False
         for match in reversed(self.matches):
-            if schedule.match_played(match['match'].split()[0], player.team):
-                match['score'] += delta_score * self.MULTIPLIER[self.type]
+            if schedule.match_played(match["match"].split()[0], player.team):
+                match["score"] += delta_score * self.MULTIPLIER[self.type]
                 score_updated = True
                 break
         if score_updated:
@@ -124,23 +126,23 @@ class UserTeam(FirestoreDocument):
             user_team = cls.objects.filter_by(player_name=player.name, game_week=game_week).first()
             if user_team:
                 user_team.final_score = final_score
-                user_team.save()
+                cls.objects.save(user_team)
         return
 
 
-UserTeam.init('user_teams')
+UserTeam.init("user_teams")
 
 
 class MakeCaptainForm(FlaskForm):
-    captain = SelectField('Select Captain')
-    sub1 = SelectField('Select Sub 1')
-    sub2 = SelectField('Select Sub 2')
-    submit = SubmitField('Save')
+    captain = SelectField("Select Captain")
+    sub1 = SelectField("Select Sub 1")
+    sub2 = SelectField("Select Sub 2")
+    submit = SubmitField("Save")
 
     def validate_captain(self, captain: SelectField):
         if captain.data == self.sub1.data or captain.data == self.sub2.data:
-            raise ValidationError('You cannot select the same player for captain and sub')
+            raise ValidationError("You cannot select the same player for captain and sub")
 
-    def validate_sub1(self, sub1: SelectField):
-        if sub1.data == self.sub2.data:
-            raise ValidationError('You cannot select the same player for both the sub')
+    def validate_sub2(self, sub2: SelectField):
+        if sub2.data == self.sub1.data:
+            raise ValidationError("You cannot select the same player for both the sub")

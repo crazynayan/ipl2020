@@ -20,5 +20,11 @@ class Config:
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
     INDIA_TZ = timezone('Asia/Kolkata')
+    GAME_WEEK_START = datetime(year=2020, month=9, day=14, hour=19, tzinfo=INDIA_TZ)
+    GAME_WEEK_1_CUT_OFF = datetime(year=2020, month=9, day=18, hour=19, tzinfo=INDIA_TZ)
+    GAME_WEEK_9_CUT_OFF = datetime(year=2020, month=11, day=4, hour=19, tzinfo=INDIA_TZ)
     TEST_DATE = None
-    GAME_WEEK_START = datetime(year=2020, month=3, day=23, hour=19, tzinfo=INDIA_TZ)
+
+
+def today() -> datetime:
+    return Config.TEST_DATE if Config.TEST_DATE else datetime.now(tz=Config.INDIA_TZ)

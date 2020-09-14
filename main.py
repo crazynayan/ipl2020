@@ -26,8 +26,7 @@ def set_test_date(data: dict):
     test_date = data.get('test_date', None)
     if not test_date:
         return
-    Config.TEST_DATE = datetime.strptime(test_date, '%Y-%m-%d %H:%M:%S')
-    Config.TEST_DATE = Config.TEST_DATE.replace(tzinfo=Config.INDIA_TZ)
+    Config.TEST_DATE = datetime.strptime(test_date, '%Y-%m-%d %H:%M:%S').replace(tzinfo=Config.INDIA_TZ)
     return
 
 
