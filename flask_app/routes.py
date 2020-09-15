@@ -1,3 +1,4 @@
+from typing import Tuple
 from urllib.parse import unquote
 
 from flask import render_template, Response, flash, redirect, url_for, request, jsonify
@@ -79,7 +80,7 @@ def view_player(player_id: str):
 @ipl_app.route('/players/name/<string:player_name>')
 @login_required
 def view_player_by_name(player_name: str):
-    player = Player.objects.filter_by(name=unquote(player_name)).first()
+    player: Player = Player.objects.filter_by(name=unquote(player_name)).first()
     if not player:
         flash("Player not found")
         return redirect(url_for('all_players'))
@@ -89,7 +90,8 @@ def view_player_by_name(player_name: str):
 @ipl_app.route('/bids/submit')
 @login_required
 def submit_bid():
-    message, player = Bid.bid_status()
+    bid_status: Tuple[str, Player] = Bid.bid_status()
+    message, player = bid_status
     if not player:
         flash(message)
         return redirect(url_for('home'))
@@ -107,7 +109,8 @@ def bid_player(player_id: str):
         flash("Player not found")
         return redirect(url_for('home'))
     bid = Bid.objects.filter_by(player_name=player.name, username=current_user.username).first()
-    last_player = Player.objects.filter_by(bid_order=player.bid_order - 1).first() if player.bid_order > 1 else None
+    last_player: Player = Player.objects.filter_by(
+        bid_order=player.bid_order - 1).first() if player.bid_order > 1 else None
     last_bids = Bid.objects.filter_by(bid_order=last_player.bid_order).get() if last_player else list()
     last_bids.sort(key=lambda bid_item: -bid_item.amount)
     player_matches = [UserTeam.get_dummy_user_team(game_week, player.team)

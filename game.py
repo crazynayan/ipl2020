@@ -8,6 +8,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 import main
+from flask_app.team import UserTeam
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = main.os.environ['GOOGLE_APPLICATION_CREDENTIALS']
 
@@ -261,12 +262,20 @@ def reset_score():
     for index in range(3, 380, 2):
         cell_range[index].value = 0.0
     sheet.update_cells(cell_range)
-    for player in Player.objects.filter('score', '>', 0).get():
+    players = Player.objects.filter('score', '>', 0).get()
+    for player in players:
         player.score = 0.0
-        player.save()
-    for user in User.objects.get():
+    users = User.objects.get()
+    for user in users:
         user.points = 0.0
-        user.save()
+    teams: List[UserTeam] = UserTeam.objects.filter("final_score", ">", 0).get()
+    for user_team in teams:
+        user_team.final_score = 0.0
+        for match in user_team.matches:
+            match["score"] = 0.0
+    Player.objects.save_all(players)
+    User.objects.save_all(users)
+    UserTeam.objects.save_all(teams)
     print(f"All players score zeroed.")
 
 

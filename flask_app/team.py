@@ -8,7 +8,6 @@ from config import Config
 from flask_app.bid import Bid
 from flask_app.player import Player
 from flask_app.schedule import schedule
-from flask_app.user import User
 
 
 class UserTeam(FirestoreDocument):
@@ -33,7 +32,7 @@ class UserTeam(FirestoreDocument):
 
     @classmethod
     def last_game_week(cls) -> int:
-        last_team: UserTeam = cls.objects.order_by("game_week", Bid.objects.ORDER_DESCENDING).first()
+        last_team: UserTeam = cls.objects.order_by("game_week", cls.objects.ORDER_DESCENDING).first()
         return last_team.game_week if last_team else 0
 
     @classmethod
@@ -107,27 +106,7 @@ class UserTeam(FirestoreDocument):
                 break
         if score_updated:
             self.final_score += delta_score * self.MULTIPLIER[self.type]
-            self.save()
         return score_updated
-
-    @classmethod
-    def update_points(cls):
-        for user in User.objects.get():
-            players_owned = cls.objects.filter_by(owner=user.username, game_week=schedule.get_game_week()).get()
-            points = sum(player.final_score for player in players_owned)
-            if points != user.points:
-                user.points = points
-                user.save()
-        return
-
-    @classmethod
-    def sync_final_score(cls, player: Player, final_score: float, from_game_week: int, stop_game_week: int):
-        for game_week in range(from_game_week, stop_game_week):
-            user_team = cls.objects.filter_by(player_name=player.name, game_week=game_week).first()
-            if user_team:
-                user_team.final_score = final_score
-                cls.objects.save(user_team)
-        return
 
 
 UserTeam.init("user_teams")
