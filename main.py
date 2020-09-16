@@ -54,7 +54,7 @@ def update_scores(data: dict, _):
     updated_teams = list()
     for player in players:
         sheet_score = get_player_score(scores, player)
-        if not sheet_score or player.score == sheet_score:
+        if player.score == sheet_score:
             continue
         game_week = schedule.get_game_week_last_match_played(player.team)
         if not game_week:
