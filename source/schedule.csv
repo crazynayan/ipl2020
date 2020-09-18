@@ -1,61 +1,57 @@
-Round Number,Date,Location,Home Team,Away Team,Group,Result
-1,19/09/2020 19:30,Sheikh Zayed Stadium,Mumbai Indians,Chennai Super Kings,,
-1,20/09/2020 19:30,Dubai International Cricket Stadium,Delhi Capitals,Kings XI Punjab,,
-1,21/09/2020 19:30,Dubai International Cricket Stadium,Sunrisers Hyderabad,Royal Challengers Bangalore,,
-1,22/09/2020 19:30,Sharjah Cricket Stadium,Rajasthan Royals,Chennai Super Kings,,
-1,23/09/2020 19:30,Sheikh Zayed Stadium,Kolkata Knight Riders,Mumbai Indians,,
-1,24/09/2020 19:30,Dubai International Cricket Stadium,Kings XI Punjab,Royal Challengers Bangalore,,
-1,25/09/2020 19:30,Dubai International Cricket Stadium,Chennai Super Kings,Delhi Capitals,,
-1,26/09/2020 19:30,Sheikh Zayed Stadium,Kolkata Knight Riders,Sunrisers Hyderabad,,
-2,27/09/2020 19:30,Sharjah Cricket Stadium,Rajasthan Royals,Kings XI Punjab,,
-2,28/09/2020 19:30,Dubai International Cricket Stadium,Royal Challengers Bangalore,Mumbai Indians,,
-2,29/09/2020 19:30,Sheikh Zayed Stadium,Delhi Capitals,Sunrisers Hyderabad,,
-2,30/09/2020 19:30,Dubai International Cricket Stadium,Rajasthan Royals,Kolkata Knight Riders,,
-2,01/10/2020 19:30,Sheikh Zayed Stadium,Kings XI Punjab,Mumbai Indians,,
-2,02/10/2020 19:30,Dubai International Cricket Stadium,Chennai Super Kings,Sunrisers Hyderabad,,
-2,03/10/2020 15:30,Sheikh Zayed Stadium,Royal Challengers Bangalore,Rajasthan Royals,,
-2,03/10/2020 19:30,Sharjah Cricket Stadium,Delhi Capitals,Kolkata Knight Riders,,
-3,04/10/2020 15:30,Sharjah Cricket Stadium,Mumbai Indians,Sunrisers Hyderabad,,
-3,04/10/2020 19:30,Dubai International Cricket Stadium,Kings XI Punjab,Chennai Super Kings,,
-3,05/10/2020 19:30,Dubai International Cricket Stadium,Royal Challengers Bangalore,Delhi Capitals,,
-3,06/10/2020 19:30,Sheikh Zayed Stadium,Mumbai Indians,Rajasthan Royals,,
-3,07/10/2020 19:30,Sheikh Zayed Stadium,Kolkata Knight Riders,Chennai Super Kings,,
-3,08/10/2020 19:30,Dubai International Cricket Stadium,Sunrisers Hyderabad,Kings XI Punjab,,
-3,09/10/2020 19:30,Sharjah Cricket Stadium,Rajasthan Royals,Delhi Capitals,,
-3,10/10/2020 15:30,Sheikh Zayed Stadium,Kings XI Punjab,Kolkata Knight Riders,,
-4,10/10/2020 19:30,Dubai International Cricket Stadium,Chennai Super Kings,Royal Challengers Bangalore,,
-4,11/10/2020 15:30,Dubai International Cricket Stadium,Sunrisers Hyderabad,Rajasthan Royals,,
-4,11/10/2020 19:30,Sheikh Zayed Stadium,Mumbai Indians,Delhi Capitals,,
-4,12/10/2020 19:30,Sharjah Cricket Stadium,Royal Challengers Bangalore,Kolkata Knight Riders,,
-4,13/10/2020 19:30,Dubai International Cricket Stadium,Sunrisers Hyderabad,Chennai Super Kings,,
-4,14/10/2020 19:30,Dubai International Cricket Stadium,Delhi Capitals,Rajasthan Royals,,
-4,15/10/2020 19:30,Sharjah Cricket Stadium,Royal Challengers Bangalore,Kings XI Punjab,,
-4,16/10/2020 19:30,Sheikh Zayed Stadium,Mumbai Indians,Kolkata Knight Riders,,
-5,17/10/2020 15:30,Dubai International Cricket Stadium,Rajasthan Royals,Royal Challengers Bangalore,,
-5,17/10/2020 19:30,Sharjah Cricket Stadium,Delhi Capitals,Chennai Super Kings,,
-5,18/10/2020 15:30,Sheikh Zayed Stadium,Sunrisers Hyderabad,Kolkata Knight Riders,,
-5,18/10/2020 19:30,Dubai International Cricket Stadium,Mumbai Indians,Kings XI Punjab,,
-5,19/10/2020 19:30,Sheikh Zayed Stadium,Chennai Super Kings,Rajasthan Royals,,
-5,20/10/2020 19:30,Dubai International Cricket Stadium,Kings XI Punjab,Delhi Capitals,,
-5,21/10/2020 19:30,Sheikh Zayed Stadium,Kolkata Knight Riders,Royal Challengers Bangalore,,
-5,22/10/2020 19:30,Dubai International Cricket Stadium,Rajasthan Royals,Sunrisers Hyderabad,,
-6,23/10/2020 19:30,Sharjah Cricket Stadium,Chennai Super Kings,Mumbai Indians,,
-6,24/10/2020 15:30,Sheikh Zayed Stadium,Kolkata Knight Riders,Delhi Capitals,,
-6,24/10/2020 19:30,Dubai International Cricket Stadium,Kings XI Punjab,Sunrisers Hyderabad,,
-6,25/10/2020 15:30,Dubai International Cricket Stadium,Royal Challengers Bangalore,Chennai Super Kings,,
-6,25/10/2020 19:30,Sheikh Zayed Stadium,Rajasthan Royals,Mumbai Indians,,
-6,26/10/2020 19:30,Sharjah Cricket Stadium,Kolkata Knight Riders,Kings XI Punjab,,
-6,27/10/2020 19:30,Dubai International Cricket Stadium,Sunrisers Hyderabad,Delhi Capitals,,
-6,28/10/2020 19:30,Sheikh Zayed Stadium,Mumbai Indians,Royal Challengers Bangalore,,
-7,29/10/2020 19:30,Dubai International Cricket Stadium,Chennai Super Kings,Kolkata Knight Riders,,
-7,30/10/2020 19:30,Sheikh Zayed Stadium,Kings XI Punjab,Rajasthan Royals,,
-7,31/10/2020 15:30,Dubai International Cricket Stadium,Delhi Capitals,Mumbai Indians,,
-7,31/10/2020 19:30,Sharjah Cricket Stadium,Royal Challengers Bangalore,Sunrisers Hyderabad,,
-7,01/11/2020 15:30,Sheikh Zayed Stadium,Chennai Super Kings,Kings XI Punjab,,
-7,01/11/2020 19:30,Dubai International Cricket Stadium,Kolkata Knight Riders,Rajasthan Royals,,
-7,02/11/2020 19:30,Sheikh Zayed Stadium,Delhi Capitals,Royal Challengers Bangalore,,
-7,03/11/2020 19:30,Sharjah Cricket Stadium,Sunrisers Hyderabad,Mumbai Indians,,
-8,05/11/2020 19:30,Sharjah Cricket Stadium,TBD,TBD,,
-8,07/11/2020 19:30,Sharjah Cricket Stadium,TBD,TBD,,
-8,08/11/2020 19:30,Sharjah Cricket Stadium,TBD,TBD,,
-8,10/11/2020 19:30,Sharjah Cricket Stadium,TBD,TBD,,
+Match No,Gameweek,Date,Home Team,Away Team,Unique Id
+1,1,19/09/2020 19:30,Mumbai Indians,Chennai Super Kings,1216492
+2,1,20/09/2020 19:30,Delhi Capitals,Kings XI Punjab,1216493
+3,2,21/09/2020 19:30,Sunrisers Hyderabad,Royal Challengers Bangalore,1216534
+4,2,22/09/2020 19:30,Rajasthan Royals,Chennai Super Kings,1216496
+5,2,23/09/2020 19:30,Kolkata Knight Riders,Mumbai Indians,1216508
+6,2,24/09/2020 19:30,Kings XI Punjab,Royal Challengers Bangalore,1216510
+7,2,25/09/2020 19:30,Chennai Super Kings,Delhi Capitals,1216539
+8,2,26/09/2020 19:30,Kolkata Knight Riders,Sunrisers Hyderabad,1216545
+9,2,27/09/2020 19:30,Rajasthan Royals,Kings XI Punjab,1216527
+10,3,28/09/2020 19:30,Royal Challengers Bangalore,Mumbai Indians,1216547
+11,3,29/09/2020 19:30,Delhi Capitals,Sunrisers Hyderabad,1216532
+12,3,30/09/2020 19:30,Rajasthan Royals,Kolkata Knight Riders,1216504
+13,3,01/10/2020 19:30,Kings XI Punjab,Mumbai Indians,1216503
+14,3,02/10/2020 19:30,Chennai Super Kings,Sunrisers Hyderabad,1216516
+15,3,03/10/2020 15:30,Royal Challengers Bangalore,Rajasthan Royals,1216514
+16,3,03/10/2020 19:30,Delhi Capitals,Kolkata Knight Riders,1216515
+17,3,04/10/2020 19:30,Kings XI Punjab,Chennai Super Kings,1216513
+18,3,04/10/2020 15:30,Mumbai Indians,Sunrisers Hyderabad,1216538
+19,4,05/10/2020 19:30,Royal Challengers Bangalore,Delhi Capitals,1216519
+20,4,06/10/2020 19:30,Mumbai Indians,Rajasthan Royals,1216511
+21,4,07/10/2020 19:30,Kolkata Knight Riders,Chennai Super Kings,1216501
+22,4,08/10/2020 19:30,Sunrisers Hyderabad,Kings XI Punjab,1216542
+23,4,09/10/2020 19:30,Rajasthan Royals,Delhi Capitals,1216500
+24,4,10/10/2020 15:30,Kings XI Punjab,Kolkata Knight Riders,1216523
+25,4,10/10/2020 19:30,Chennai Super Kings,Royal Challengers Bangalore,1216525
+26,4,11/10/2020 15:30,Sunrisers Hyderabad,Rajasthan Royals,1216507
+27,4,11/10/2020 19:30,Mumbai Indians,Delhi Capitals,1216529
+28,5,12/10/2020 19:30,Royal Challengers Bangalore,Kolkata Knight Riders,1216540
+29,5,13/10/2020 19:30,Sunrisers Hyderabad,Chennai Super Kings,1216528
+30,5,14/10/2020 19:30,Delhi Capitals,Rajasthan Royals,1216543
+31,5,15/10/2020 19:30,Royal Challengers Bangalore,Kings XI Punjab,1216531
+32,5,16/10/2020 19:30,Mumbai Indians,Kolkata Knight Riders,1216526
+33,5,17/10/2020 19:30,Delhi Capitals,Chennai Super Kings,1216509
+34,5,17/10/2020 15:30,Rajasthan Royals,Royal Challengers Bangalore,1216522
+35,5,18/10/2020 15:30,Sunrisers Hyderabad,Kolkata Knight Riders,1216512
+36,5,18/10/2020 19:30,Mumbai Indians,Kings XI Punjab,1216517
+37,6,19/10/2020 19:30,Chennai Super Kings,Rajasthan Royals,1216533
+38,6,20/10/2020 19:30,Kings XI Punjab,Delhi Capitals,1216546
+39,6,21/10/2020 19:30,Kolkata Knight Riders,Royal Challengers Bangalore,1216494
+40,6,22/10/2020 19:30,Rajasthan Royals,Sunrisers Hyderabad,1216518
+41,6,23/10/2020 19:30,Chennai Super Kings,Mumbai Indians,1216521
+42,6,24/10/2020 15:30,Kolkata Knight Riders,Delhi Capitals,1216497
+43,6,24/10/2020 19:30,Kings XI Punjab,Sunrisers Hyderabad,1216498
+44,6,25/10/2020 19:30,Rajasthan Royals,Mumbai Indians,1216541
+45,6,25/10/2020 15:30,Royal Challengers Bangalore,Chennai Super Kings,1216544
+46,7,26/10/2020 19:30,Kolkata Knight Riders,Kings XI Punjab,1216520
+47,7,27/10/2020 19:30,Sunrisers Hyderabad,Delhi Capitals,1216524
+48,7,28/10/2020 19:30,Mumbai Indians,Royal Challengers Bangalore,1216499
+49,7,29/10/2020 19:30,Chennai Super Kings,Kolkata Knight Riders,1216536
+50,7,30/10/2020 19:30,Kings XI Punjab,Rajasthan Royals,1216537
+51,7,31/10/2020 19:30,Royal Challengers Bangalore,Sunrisers Hyderabad,1216502
+52,7,31/10/2020 15:30,Delhi Capitals,Mumbai Indians,1216535
+53,7,01/11/2020 15:30,Chennai Super Kings,Kings XI Punjab,1216506
+54,7,01/11/2020 19:30,Kolkata Knight Riders,Rajasthan Royals,1216530
+55,8,02/11/2020 19:30,Delhi Capitals,Royal Challengers Bangalore,1216505
+56,8,03/11/2020 19:30,Sunrisers Hyderabad,Mumbai Indians,1216495

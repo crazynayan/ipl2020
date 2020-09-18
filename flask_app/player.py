@@ -28,9 +28,10 @@ class Player(FirestoreDocument):
         self.bid_order: int = 0
         self._sbp_cost: int = 0
         self.ipl_name: str = str()
+        self.pid: str = str()
 
     def __repr__(self) -> str:
-        return f"{self.name}"
+        return f"{self.name}:{self.team}:{self.ipl_name}:{self.pid}"
 
     @property
     def image(self) -> str:
@@ -88,7 +89,7 @@ class Player(FirestoreDocument):
         player = random.choice(players)
         player.auction_status = 'bidding'
         player.bid_order = Config.TOTAL_PLAYERS - len(players) + 1
-        player_in_bidding = cls.objects.filter_by(auction_status='bidding').first()
+        player_in_bidding: Player = cls.objects.filter_by(auction_status='bidding').first()
         if player_in_bidding:
             return player_in_bidding
         player.save()

@@ -1,12 +1,12 @@
 import os
-from base64 import b64encode
 from datetime import datetime
 
 from pytz import timezone
 
+from secrets import SecretConfig
 
-class Config:
-    SECRET_KEY = os.environ.get("SECRET_KEY") or b64encode(os.urandom(24)).decode()
+
+class Config(SecretConfig):
     IMAGES = set(os.listdir("flask_app/static/images"))
     SCORE_2019 = 21154
     PLAYERS_2019 = 128
@@ -17,6 +17,11 @@ class Config:
     USER_LIST = {"NZ": "Nayan Zaveri", "MB": "Manish Bhatt", "PP": "Pranay Patil", "VP": "Vinayak Patil",
                  "RD": "Ravi D'Lima", "FA": "Faisal Ansari", "AS": "Arunesh Shah", "RK": "Raheem Khan",
                  "HJ": "Hitendra Jain", "SG": "Sagar Ghadage"}
+    TEAMS = {"Mumbai Indians": "MI", "Chennai Super Kings": "CSK", "Delhi Capitals": "DC", "Kings XI Punjab": "KXIP",
+             "Royal Challengers Bangalore": "RCB", "TBD": "TBD", "Kolkata Knight Riders": "KKR",
+             "Sunrisers Hyderabad": "SRH", "Rajasthan Royals": "RR"}
+    DATE, UNIQUE_ID, HOME_TEAM, AWAY_TEAM = "Date", "Unique Id", "Home Team", "Away Team"
+    ROUND, MATCH_NO = "Gameweek", "Match No"
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
     INDIA_TZ = timezone("Asia/Kolkata")

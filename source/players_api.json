@@ -1,0 +1,947 @@
+[
+  {
+    "pid": 851261,
+    "name": "Anmolpreet Singh",
+    "team": "MI"
+  },
+  {
+    "pid": 277912,
+    "name": "Trent Boult",
+    "team": "MI"
+  },
+  {
+    "pid": 625383,
+    "name": "Jasprit Bumrah",
+    "team": "MI"
+  },
+  {
+    "pid": 1064812,
+    "name": "Rahul Chahar",
+    "team": "MI"
+  },
+  {
+    "pid": 261354,
+    "name": "Nathan Coulter-Nile",
+    "team": "MI"
+  },
+  {
+    "pid": 379143,
+    "name": "Quinton de Kock",
+    "team": "MI"
+  },
+  {
+    "pid": 1206410,
+    "name": "Digvijay Rajkumar Deshmukh",
+    "team": "MI"
+  },
+  {
+    "pid": 720471,
+    "name": "Ishan Kishan",
+    "team": "MI"
+  },
+  {
+    "pid": 277955,
+    "name": "Dhawal Kulkarni",
+    "team": "MI"
+  },
+  {
+    "pid": 326637,
+    "name": "Chris Lynn",
+    "team": "MI"
+  },
+  {
+    "pid": 319439,
+    "name": "Mitchell McClenaghan",
+    "team": "MI"
+  },
+  {
+    "pid": 49758,
+    "name": "Lasith Malinga",
+    "team": "MI"
+  },
+  {
+    "pid": 1132005,
+    "name": "Mohsin Khan",
+    "team": "MI"
+  },
+  {
+    "pid": 625371,
+    "name": "Hardik Pandya",
+    "team": "MI"
+  },
+  {
+    "pid": 471342,
+    "name": "Krunal Pandya",
+    "team": "MI"
+  },
+  {
+    "pid": 230559,
+    "name": "Kieron Pollard",
+    "team": "MI"
+  },
+  {
+    "pid": 1210280,
+    "name": "Prince Balwant Rai",
+    "team": "MI"
+  },
+  {
+    "pid": 1079839,
+    "name": "Anukul Roy",
+    "team": "MI"
+  },
+  {
+    "pid": 914541,
+    "name": "Sherfane Rutherford",
+    "team": "MI"
+  },
+  {
+    "pid": 34102,
+    "name": "Rohit Sharma",
+    "team": "MI"
+  },
+  {
+    "pid": 333904,
+    "name": "Aditya Tare",
+    "team": "MI"
+  },
+  {
+    "pid": 35390,
+    "name": "Saurabh Tiwary",
+    "team": "MI"
+  },
+  {
+    "pid": 447587,
+    "name": "Jayant Yadav",
+    "team": "MI"
+  },
+  {
+    "pid": 446507,
+    "name": "Suryakumar Yadav",
+    "team": "MI"
+  },
+  {
+    "pid": 1083030,
+    "name": "KM Asif",
+    "team": "CSK"
+  },
+  {
+    "pid": 51439,
+    "name": "Dwayne Bravo",
+    "team": "CSK"
+  },
+  {
+    "pid": 447261,
+    "name": "Deepak Chahar",
+    "team": "CSK"
+  },
+  {
+    "pid": 32966,
+    "name": "Piyush Chawla",
+    "team": "CSK"
+  },
+  {
+    "pid": 662973,
+    "name": "Sam Curran",
+    "team": "CSK"
+  },
+  {
+    "pid": 28081,
+    "name": "MS Dhoni",
+    "team": "CSK"
+  },
+  {
+    "pid": 44828,
+    "name": "Faf du Plessis",
+    "team": "CSK"
+  },
+  {
+    "pid": 1060380,
+    "name": "Ruturaj Gaikwad",
+    "team": "CSK"
+  },
+  {
+    "pid": 29264,
+    "name": "Harbhajan Singh",
+    "team": "CSK"
+  },
+  {
+    "pid": 288284,
+    "name": "Josh Hazlewood",
+    "team": "CSK"
+  },
+  {
+    "pid": 40618,
+    "name": "Imran Tahir",
+    "team": "CSK"
+  },
+  {
+    "pid": 234675,
+    "name": "Ravindra Jadeja",
+    "team": "CSK"
+  },
+  {
+    "pid": 290716,
+    "name": "Kedar Jadhav",
+    "team": "CSK"
+  },
+  {
+    "pid": 1048813,
+    "name": "Narayan Jagadeesan",
+    "team": "CSK"
+  },
+  {
+    "pid": 694209,
+    "name": "Monu Kumar",
+    "team": "CSK"
+  },
+  {
+    "pid": 542023,
+    "name": "Lungi Ngidi",
+    "team": "CSK"
+  },
+  {
+    "pid": 33335,
+    "name": "Suresh Raina",
+    "team": "CSK"
+  },
+  {
+    "pid": 33141,
+    "name": "Ambati Rayudu",
+    "team": "CSK"
+  },
+  {
+    "pid": 1048739,
+    "name": "Ravisrinivasan Sai Kishore",
+    "team": "CSK"
+  },
+  {
+    "pid": 502714,
+    "name": "Mitchell Santner",
+    "team": "CSK"
+  },
+  {
+    "pid": 30288,
+    "name": "Karn Sharma",
+    "team": "CSK"
+  },
+  {
+    "pid": 475281,
+    "name": "Shardul Thakur",
+    "team": "CSK"
+  },
+  {
+    "pid": 237095,
+    "name": "Murali Vijay",
+    "team": "CSK"
+  },
+  {
+    "pid": 8180,
+    "name": "Shane Watson",
+    "team": "CSK"
+  },
+  {
+    "pid": 26421,
+    "name": "Ravichandran Ashwin",
+    "team": "DC"
+  },
+  {
+    "pid": 694211,
+    "name": "Avesh Khan",
+    "team": "DC"
+  },
+  {
+    "pid": 326434,
+    "name": "Alex Carey",
+    "team": "DC"
+  },
+  {
+    "pid": 822553,
+    "name": "Tushar Deshpande",
+    "team": "DC"
+  },
+  {
+    "pid": 28235,
+    "name": "Shikhar Dhawan",
+    "team": "DC"
+  },
+  {
+    "pid": 670025,
+    "name": "Shimron Hetmyer",
+    "team": "DC"
+  },
+  {
+    "pid": 642519,
+    "name": "Shreyas Iyer",
+    "team": "DC"
+  },
+  {
+    "pid": 960361,
+    "name": "Sandeep Lamichhane",
+    "team": "DC"
+  },
+  {
+    "pid": 31107,
+    "name": "Amit Mishra",
+    "team": "DC"
+  },
+  {
+    "pid": 931581,
+    "name": "Rishabh Pant",
+    "team": "DC"
+  },
+  {
+    "pid": 554691,
+    "name": "Axar Patel",
+    "team": "DC"
+  },
+  {
+    "pid": 390481,
+    "name": "Harshal Patel",
+    "team": "DC"
+  },
+  {
+    "pid": 677081,
+    "name": "Keemo Paul",
+    "team": "DC"
+  },
+  {
+    "pid": 550215,
+    "name": "Kagiso Rabada",
+    "team": "DC"
+  },
+  {
+    "pid": 277916,
+    "name": "Ajinkya Rahane",
+    "team": "DC"
+  },
+  {
+    "pid": 298438,
+    "name": "Jason Roy",
+    "team": "DC"
+  },
+  {
+    "pid": 236779,
+    "name": "Ishant Sharma",
+    "team": "DC"
+  },
+  {
+    "pid": 537119,
+    "name": "Mohit Sharma",
+    "team": "DC"
+  },
+  {
+    "pid": 1070168,
+    "name": "Prithvi Shaw",
+    "team": "DC"
+  },
+  {
+    "pid": 325012,
+    "name": "Marcus Stoinis",
+    "team": "DC"
+  },
+  {
+    "pid": 247235,
+    "name": "Chris Woakes",
+    "team": "DC"
+  },
+  {
+    "pid": 930189,
+    "name": "Lalit Yadav",
+    "team": "DC"
+  },
+  {
+    "pid": 398438,
+    "name": "Mayank Agarwal",
+    "team": "KXIP"
+  },
+  {
+    "pid": 1125976,
+    "name": "Arshdeep Singh",
+    "team": "KXIP"
+  },
+  {
+    "pid": 528067,
+    "name": "Murugan Ashwin",
+    "team": "KXIP"
+  },
+  {
+    "pid": 495551,
+    "name": "Sheldon Cottrell",
+    "team": "KXIP"
+  },
+  {
+    "pid": 51880,
+    "name": "Chris Gayle",
+    "team": "KXIP"
+  },
+  {
+    "pid": 424377,
+    "name": "Krishnappa Gowtham",
+    "team": "KXIP"
+  },
+  {
+    "pid": 1168641,
+    "name": "Harpreet Brar",
+    "team": "KXIP"
+  },
+  {
+    "pid": 497121,
+    "name": "Deepak Hooda",
+    "team": "KXIP"
+  },
+  {
+    "pid": 288992,
+    "name": "Chris Jordan",
+    "team": "KXIP"
+  },
+  {
+    "pid": 642525,
+    "name": "Sarfaraz Khan",
+    "team": "KXIP"
+  },
+  {
+    "pid": 398506,
+    "name": "Mandeep Singh",
+    "team": "KXIP"
+  },
+  {
+    "pid": 325026,
+    "name": "Glenn Maxwell",
+    "team": "KXIP"
+  },
+  {
+    "pid": 481896,
+    "name": "Mohammed Shami",
+    "team": "KXIP"
+  },
+  {
+    "pid": 974109,
+    "name": "Mujeeb Ur Rahman",
+    "team": "KXIP"
+  },
+  {
+    "pid": 398439,
+    "name": "Karun Nair",
+    "team": "KXIP"
+  },
+  {
+    "pid": 1111917,
+    "name": "Darshan Nalkande",
+    "team": "KXIP"
+  },
+  {
+    "pid": 355269,
+    "name": "James Neesham",
+    "team": "KXIP"
+  },
+  {
+    "pid": 604302,
+    "name": "Nicholas Pooran",
+    "team": "KXIP"
+  },
+  {
+    "pid": 967603,
+    "name": "Ishan Porel",
+    "team": "KXIP"
+  },
+  {
+    "pid": 422108,
+    "name": "KL Rahul",
+    "team": "KXIP"
+  },
+  {
+    "pid": 1175441,
+    "name": "Ravi Bishnoi",
+    "team": "KXIP"
+  },
+  {
+    "pid": 1161024,
+    "name": "Simran Singh",
+    "team": "KXIP"
+  },
+  {
+    "pid": 527663,
+    "name": "Jagadeesha Suchith",
+    "team": "KXIP"
+  },
+  {
+    "pid": 1079860,
+    "name": "Tajinder Singh",
+    "team": "KXIP"
+  },
+  {
+    "pid": 375126,
+    "name": "Hardus Viljoen",
+    "team": "KXIP"
+  },
+  {
+    "pid": 1175485,
+    "name": "Abdul Samad",
+    "team": "SRH"
+  },
+  {
+    "pid": 1070183,
+    "name": "Abhishek Sharma",
+    "team": "SRH"
+  },
+  {
+    "pid": 942645,
+    "name": "Khaleel Ahmed",
+    "team": "SRH"
+  },
+  {
+    "pid": 670013,
+    "name": "Fabian Allen",
+    "team": "SRH"
+  },
+  {
+    "pid": 297433,
+    "name": "Jonny Bairstow",
+    "team": "SRH"
+  },
+  {
+    "pid": 732291,
+    "name": "Basil Thampi",
+    "team": "SRH"
+  },
+  {
+    "pid": 1070180,
+    "name": "Priyam Garg",
+    "team": "SRH"
+  },
+  {
+    "pid": 302579,
+    "name": "Shreevats Goswami",
+    "team": "SRH"
+  },
+  {
+    "pid": 326017,
+    "name": "Siddarth Kaul",
+    "team": "SRH"
+  },
+  {
+    "pid": 326016,
+    "name": "Bhuvneshwar Kumar",
+    "team": "SRH"
+  },
+  {
+    "pid": 272450,
+    "name": "Mitchell Marsh",
+    "team": "SRH"
+  },
+  {
+    "pid": 25913,
+    "name": "Mohammad Nabi",
+    "team": "SRH"
+  },
+  {
+    "pid": 31872,
+    "name": "Shahbaz Nadeem",
+    "team": "SRH"
+  },
+  {
+    "pid": 802575,
+    "name": "T Natarajan",
+    "team": "SRH"
+  },
+  {
+    "pid": 290630,
+    "name": "Manish Pandey",
+    "team": "SRH"
+  },
+  {
+    "pid": 793463,
+    "name": "Rashid Khan",
+    "team": "SRH"
+  },
+  {
+    "pid": 279810,
+    "name": "Wriddhiman Saha",
+    "team": "SRH"
+  },
+  {
+    "pid": 427484,
+    "name": "Bavanaka Sandeep",
+    "team": "SRH"
+  },
+  {
+    "pid": 438362,
+    "name": "Sandeep Sharma",
+    "team": "SRH"
+  },
+  {
+    "pid": 1048841,
+    "name": "Sanjay Yadav",
+    "team": "SRH"
+  },
+  {
+    "pid": 477021,
+    "name": "Vijay Shankar",
+    "team": "SRH"
+  },
+  {
+    "pid": 533042,
+    "name": "Billy Stanlake",
+    "team": "SRH"
+  },
+  {
+    "pid": 720465,
+    "name": "Virat Singh",
+    "team": "SRH"
+  },
+  {
+    "pid": 219889,
+    "name": "David Warner",
+    "team": "SRH"
+  },
+  {
+    "pid": 277906,
+    "name": "Kane Williamson",
+    "team": "SRH"
+  },
+  {
+    "pid": 8917,
+    "name": "Moeen Ali",
+    "team": "RCB"
+  },
+  {
+    "pid": 430246,
+    "name": "Yuzvendra Chahal",
+    "team": "RCB"
+  },
+  {
+    "pid": 422104,
+    "name": "Pavan Deshpande",
+    "team": "RCB"
+  },
+  {
+    "pid": 44936,
+    "name": "AB de Villiers",
+    "team": "RCB"
+  },
+  {
+    "pid": 714451,
+    "name": "Shivam Dube",
+    "team": "RCB"
+  },
+  {
+    "pid": 5334,
+    "name": "Aaron Finch",
+    "team": "RCB"
+  },
+  {
+    "pid": 537124,
+    "name": "Gurkeerat Singh Mann",
+    "team": "RCB"
+  },
+  {
+    "pid": 253802,
+    "name": "Virat Kohli",
+    "team": "RCB"
+  },
+  {
+    "pid": 940973,
+    "name": "Mohammed Siraj",
+    "team": "RCB"
+  },
+  {
+    "pid": 439952,
+    "name": "Chris Morris",
+    "team": "RCB"
+  },
+  {
+    "pid": 530773,
+    "name": "Pawan Negi",
+    "team": "RCB"
+  },
+  {
+    "pid": 1119026,
+    "name": "Devdutt Padikkal",
+    "team": "RCB"
+  },
+  {
+    "pid": 32242,
+    "name": "Parthiv Patel",
+    "team": "RCB"
+  },
+  {
+    "pid": 1124282,
+    "name": "Josh Philippe",
+    "team": "RCB"
+  },
+  {
+    "pid": 272262,
+    "name": "Kane Richardson",
+    "team": "RCB"
+  },
+  {
+    "pid": 1159711,
+    "name": "Shahbaz Ahmed",
+    "team": "RCB"
+  },
+  {
+    "pid": 700167,
+    "name": "Navdeep Saini",
+    "team": "RCB"
+  },
+  {
+    "pid": 47492,
+    "name": "Dale Steyn",
+    "team": "RCB"
+  },
+  {
+    "pid": 328026,
+    "name": "Isuru Udana",
+    "team": "RCB"
+  },
+  {
+    "pid": 719715,
+    "name": "Washington Sundar",
+    "team": "RCB"
+  },
+  {
+    "pid": 376116,
+    "name": "Umesh Yadav",
+    "team": "RCB"
+  },
+  {
+    "pid": 360911,
+    "name": "Varun Aaron",
+    "team": "RR"
+  },
+  {
+    "pid": 1175458,
+    "name": "Akash Singh",
+    "team": "RR"
+  },
+  {
+    "pid": 1123073,
+    "name": "Anuj Rawat",
+    "team": "RR"
+  },
+  {
+    "pid": 669855,
+    "name": "Jofra Archer",
+    "team": "RR"
+  },
+  {
+    "pid": 308967,
+    "name": "Jos Buttler",
+    "team": "RR"
+  },
+  {
+    "pid": 550235,
+    "name": "Tom Curran",
+    "team": "RR"
+  },
+  {
+    "pid": 344580,
+    "name": "Shreyas Gopal",
+    "team": "RR"
+  },
+  {
+    "pid": 1151278,
+    "name": "Yashasvi Jaiswal",
+    "team": "RR"
+  },
+  {
+    "pid": 420644,
+    "name": "Aniruddha Joshi",
+    "team": "RR"
+  },
+  {
+    "pid": 1122918,
+    "name": "Kartik Tyagi",
+    "team": "RR"
+  },
+  {
+    "pid": 853265,
+    "name": "Mahipal Lomror",
+    "team": "RR"
+  },
+  {
+    "pid": 1081442,
+    "name": "Mayank Markande",
+    "team": "RR"
+  },
+  {
+    "pid": 321777,
+    "name": "David Miller",
+    "team": "RR"
+  },
+  {
+    "pid": 1079434,
+    "name": "Riyan Parag",
+    "team": "RR"
+  },
+  {
+    "pid": 591650,
+    "name": "Ankit Rajpoot",
+    "team": "RR"
+  },
+  {
+    "pid": 425943,
+    "name": "Sanju Samson",
+    "team": "RR"
+  },
+  {
+    "pid": 377534,
+    "name": "Shashank Singh",
+    "team": "RR"
+  },
+  {
+    "pid": 267192,
+    "name": "Steven Smith",
+    "team": "RR"
+  },
+  {
+    "pid": 311158,
+    "name": "Ben Stokes",
+    "team": "RR"
+  },
+  {
+    "pid": 423838,
+    "name": "Rahul Tewatia",
+    "team": "RR"
+  },
+  {
+    "pid": 914567,
+    "name": "Oshane Thomas",
+    "team": "RR"
+  },
+  {
+    "pid": 459508,
+    "name": "Andrew Tye",
+    "team": "RR"
+  },
+  {
+    "pid": 390484,
+    "name": "Jaydev Unadkat",
+    "team": "RR"
+  },
+  {
+    "pid": 35582,
+    "name": "Robin Uthappa",
+    "team": "RR"
+  },
+  {
+    "pid": 532856,
+    "name": "Manan Vohra",
+    "team": "RR"
+  },
+  {
+    "pid": 877051,
+    "name": "Tom Banton",
+    "team": "KKR"
+  },
+  {
+    "pid": 489889,
+    "name": "Pat Cummins",
+    "team": "KKR"
+  },
+  {
+    "pid": 493773,
+    "name": "Lockie Ferguson",
+    "team": "KKR"
+  },
+  {
+    "pid": 787073,
+    "name": "Chris Green",
+    "team": "KKR"
+  },
+  {
+    "pid": 244639,
+    "name": "Harry Gurney",
+    "team": "KKR"
+  },
+  {
+    "pid": 30045,
+    "name": "Dinesh Karthik",
+    "team": "KKR"
+  },
+  {
+    "pid": 559235,
+    "name": "Kuldeep Yadav",
+    "team": "KKR"
+  },
+  {
+    "pid": 422342,
+    "name": "Siddhesh Lad",
+    "team": "KKR"
+  },
+  {
+    "pid": 24598,
+    "name": "Eoin Morgan",
+    "team": "KKR"
+  },
+  {
+    "pid": 1070188,
+    "name": "Kamlesh Nagarkoti",
+    "team": "KKR"
+  },
+  {
+    "pid": 554700,
+    "name": "Nikhil Naik",
+    "team": "KKR"
+  },
+  {
+    "pid": 230558,
+    "name": "Sunil Narine",
+    "team": "KKR"
+  },
+  {
+    "pid": 917159,
+    "name": "Prasidh Krishna",
+    "team": "KKR"
+  },
+  {
+    "pid": 604527,
+    "name": "Nitish Rana",
+    "team": "KKR"
+  },
+  {
+    "pid": 276298,
+    "name": "Andre Russell",
+    "team": "KKR"
+  },
+  {
+    "pid": 592735,
+    "name": "Sandeep Warrier",
+    "team": "KKR"
+  },
+  {
+    "pid": 1079848,
+    "name": "Shivam Mavi",
+    "team": "KKR"
+  },
+  {
+    "pid": 1070173,
+    "name": "Shubman Gill",
+    "team": "KKR"
+  },
+  {
+    "pid": 1151286,
+    "name": "M Siddharth",
+    "team": "KKR"
+  },
+  {
+    "pid": 723105,
+    "name": "Rinku Singh",
+    "team": "KKR"
+  },
+  {
+    "pid": 587152,
+    "name": "Pravin Tambe",
+    "team": "KKR"
+  },
+  {
+    "pid": 446763,
+    "name": "Rahul Tripathi",
+    "team": "KKR"
+  },
+  {
+    "pid": 1108375,
+    "name": "Varun Chakravathi",
+    "team": "KKR"
+  }
+]

@@ -1,11 +1,15 @@
+import csv
 import json
 import os
 import random
 from datetime import datetime
-from typing import List
+from typing import List, Dict
 
 import gspread
+import requests
 from oauth2client.service_account import ServiceAccountCredentials
+from pytz import utc
+from requests import Response
 
 import main
 from flask_app.team import UserTeam
@@ -288,4 +292,88 @@ def show_player_not_in_db():
     else:
         for score in scores:
             print(score['ipl_name'])
+    return
+
+
+def update_schedule_file():
+    response: Response = requests.get("https://cricapi.com/api/matches", params={"apikey": Config.API_KEY})
+    matches: List[dict] = response.json()["matches"]
+    schedules: List[dict] = list()
+    match_number = gameweek = 1
+    for match in matches:
+        if match["team-1"] not in Config.TEAMS:
+            continue
+        match_date = datetime.fromisoformat(match["dateTimeGMT"][:-1]).replace(tzinfo=utc).astimezone(Config.INDIA_TZ)
+        if match_date.weekday() == Config.GAME_WEEK_2_CUT_OFF.weekday():
+            gameweek += 1
+        schedules.append({
+            Config.ROUND: gameweek,
+            Config.DATE: match_date.strftime("%d/%m/%Y %H:%M"),
+            Config.HOME_TEAM: match["team-1"],
+            Config.AWAY_TEAM: match["team-2"],
+            Config.UNIQUE_ID: match["unique_id"],
+            Config.MATCH_NO: match_number
+        })
+        match_number += 1
+    fieldnames = [Config.MATCH_NO, Config.ROUND, Config.DATE, Config.HOME_TEAM, Config.AWAY_TEAM, Config.UNIQUE_ID]
+    with open("source/schedule.csv", "w", newline="") as schedule_file:
+        writer = csv.DictWriter(schedule_file, fieldnames=fieldnames)
+        writer.writeheader()
+        for match in schedules:
+            writer.writerow(match)
+    print("Schedule file created")
+
+
+def update_players():
+    mi_csk, dc_kxip, srh_rcb, rr_kkr = 1216492, 1216493, 1216534, 1216504
+    match_ids = [mi_csk, dc_kxip, srh_rcb, rr_kkr]
+    players: List[Dict] = list()
+    for unique_id in match_ids:
+        response: Response = requests.get("https://cricapi.com/api/fantasySquad",
+                                          params={"apikey": Config.API_KEY, "unique_id": unique_id})
+        squad: List[Dict] = response.json()["squad"]
+        for team in squad:
+            players.extend([{**player, "team": Config.TEAMS[team["name"]]} for player in team["players"]])
+    for player in players:
+        print(player)
+    with open("source/players_api.json", "w") as player_file:
+        json.dump(players, player_file, indent=2)
+    print("player_api.json file created")
+
+
+def update_api_players():
+    with open("source/players_api.json") as player_file:
+        api_players: List[Dict] = json.load(player_file)
+    db_players: List[Player] = Player.objects.get()
+    not_found_players: List[Player] = list()
+    updated_players: List[Player] = list()
+    for db_player in db_players:
+        db_names = {db_player.name.lower(), db_player.ipl_name.lower()}
+        api_player = next((player for player in api_players if player["name"].lower() in db_names), None)
+        if not api_player:
+            not_found_players.append(db_player)
+            continue
+        db_player.ipl_name = api_player["name"]
+        db_player.pid = str(api_player["pid"])
+        updated_players.append(db_player)
+    Player.objects.save_all(updated_players)
+    print(f"{len(updated_players)} players updated")
+    if not not_found_players:
+        print("All players synced")
+        return
+    print("Following players still need to be synced")
+    not_found_players.sort(key=lambda player: player.name)
+    for player in not_found_players:
+        print(player)
+    return
+
+
+def check_api_players():
+    with open("source/players_api.json") as player_file:
+        api_players: List[Dict] = json.load(player_file)
+    db_players: List[Player] = Player.objects.get()
+    db_names = [player.ipl_name.lower() for player in db_players]
+    for player in api_players:
+        if player["name"].lower() not in db_names:
+            print(player)
     return

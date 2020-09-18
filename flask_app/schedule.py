@@ -5,8 +5,6 @@ from typing import List
 
 from config import Config, today
 
-DATE, LOCATION, HOME_TEAM, AWAY_TEAM, ROUND = "Date", "Location", "Home Team", "Away Team", "Round Number"
-
 
 class Match:
 
@@ -17,10 +15,10 @@ class Match:
         self.game_week: int = 0
         self.date: datetime = datetime.now(Config.INDIA_TZ)
         self.number: int = 0
+        self.unique_id: int = 0
 
     def __repr__(self):
-        return f"M-{self.number:02} GW-{self.game_week} {self.date.strftime('%a,%d/%m %I:%M %p')} " \
-               f"{self.home_team} v {self.away_team}"
+        return f"M-{self.number} GW-{self.game_week} ID-{self.unique_id} {self.date.strftime('%a,%d/%m %I:%M %p')} {self.home_team} v {self.away_team}"
 
     def get_opponent(self, team: str) -> str:
         if team not in self.teams:
@@ -31,28 +29,23 @@ class Match:
 class _Schedule:
 
     def __init__(self):
-        self.team_names: dict = {"Mumbai Indians": "MI", "Chennai Super Kings": "CSK", "Delhi Capitals": "DC",
-                                 "Kings XI Punjab": "KXIP", "Royal Challengers Bangalore": "RCB", "TBD": "TBD",
-                                 "Kolkata Knight Riders": "KKR", "Sunrisers Hyderabad": "SRH", "Rajasthan Royals": "RR"}
         self.schedule: List[Match] = self.prepare_schedule()
-        self.team_initials = [team_initial for team_name, team_initial in self.team_names.items()]
+        self.team_initials = [team_initial for team_name, team_initial in Config.TEAMS.items()]
 
-    def prepare_schedule(self):
+    @staticmethod
+    def prepare_schedule():
         match_list = list()
         schedule_file = open("source/schedule.csv")
-        game_week = match_number = 1
         schedule_reader = csv.DictReader(schedule_file)
         for row in schedule_reader:
             match = Match()
-            match.date = datetime.strptime(row[DATE], "%d/%m/%Y %H:%M").replace(tzinfo=Config.INDIA_TZ)
-            if match.date.weekday() == Config.GAME_WEEK_START.weekday():
-                game_week += 1
-            match.game_week = game_week if row[ROUND] != "8" else 9
-            match.number = match_number
-            match_number += 1
-            match.home_team = self.team_names[row[HOME_TEAM]]
-            match.away_team = self.team_names[row[AWAY_TEAM]]
+            match.date = datetime.strptime(row[Config.DATE], "%d/%m/%Y %H:%M").replace(tzinfo=Config.INDIA_TZ)
+            match.game_week = row[Config.ROUND]
+            match.number = row[Config.MATCH_NO]
+            match.home_team = Config.TEAMS[row[Config.HOME_TEAM]]
+            match.away_team = Config.TEAMS[row[Config.AWAY_TEAM]]
             match.teams = [match.home_team, match.away_team]
+            match.unique_id = row[Config.UNIQUE_ID]
             match_list.append(match)
         schedule_file.close()
         return match_list
