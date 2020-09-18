@@ -25,6 +25,9 @@ class Match:
             return str()
         return self.home_team if team == self.away_team else self.away_team
 
+    def get_text(self, team):
+        return f"{self.date.strftime('%d/%m')} v {self.get_opponent(team)} ({'H' if team == self.home_team else 'A'})"
+
 
 class _Schedule:
 
@@ -40,8 +43,8 @@ class _Schedule:
         for row in schedule_reader:
             match = Match()
             match.date = datetime.strptime(row[Config.DATE], "%d/%m/%Y %H:%M").replace(tzinfo=Config.INDIA_TZ)
-            match.game_week = row[Config.ROUND]
-            match.number = row[Config.MATCH_NO]
+            match.game_week = int(row[Config.ROUND])
+            match.number = int(row[Config.MATCH_NO])
             match.home_team = Config.TEAMS[row[Config.HOME_TEAM]]
             match.away_team = Config.TEAMS[row[Config.AWAY_TEAM]]
             match.teams = [match.home_team, match.away_team]
@@ -77,10 +80,11 @@ class _Schedule:
             return Config.GAME_WEEK_9_CUT_OFF
         return Config.GAME_WEEK_2_CUT_OFF + timedelta(days=7 * (game_week - 1))
 
-    def get_matches(self, team: str, game_week: int) -> List[str]:
-        matches = [match for match in self.schedule if game_week == match.game_week and team in match.teams]
-        return [f"{match.date.strftime('%d/%m')} v {match.get_opponent(team)} "
-                f"({'H' if team == match.home_team else 'A'})" for match in matches]
+    def get_matches_being_played(self) -> List[Match]:
+        return [match for match in self.schedule if match.date <= today() <= match.date + timedelta(hours=6)]
+
+    def get_matches(self, team: str, game_week: int) -> List[Match]:
+        return [match for match in self.schedule if game_week == match.game_week and team in match.teams]
 
     def can_create_game_week(self, game_week: int) -> bool:
         return True if today() >= self.get_cut_off(game_week) else False

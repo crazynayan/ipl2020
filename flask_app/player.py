@@ -1,5 +1,5 @@
 import random
-from typing import Optional, List, Tuple
+from typing import Optional, List, Tuple, Dict
 
 from firestore_ci.firestore_ci import FirestoreDocument
 
@@ -19,7 +19,7 @@ class Player(FirestoreDocument):
         self.type: str = str()
         self.ipl2019_score: float = 0.0
         self.team: str = str()
-        self.score: float = 0.0
+        self.score: int = 0
         self.ipl2019_rank: int = 0
         self.cost_rank: int = 0
         self.owner: Optional[str] = None
@@ -29,6 +29,7 @@ class Player(FirestoreDocument):
         self._sbp_cost: int = 0
         self.ipl_name: str = str()
         self.pid: str = str()
+        self.scores: Dict[str, int] = dict()
 
     def __repr__(self) -> str:
         return f"{self.name}:{self.team}:{self.ipl_name}:{self.pid}"

@@ -26,6 +26,7 @@ class UserTeam(FirestoreDocument):
         self.matches: List[dict] = list()
         self.team: str = str()
         self.group: int = 0
+        self.previous_week_score: float = 0.0
 
     def __repr__(self):
         return f"GW-{self.game_week}:{self.player_name}:{self.type}:{self.final_score}:M-{len(self.matches)}"
@@ -43,13 +44,15 @@ class UserTeam(FirestoreDocument):
         return last_game_week - 1 if last_game_week > schedule.get_game_week() else last_game_week
 
     @classmethod
-    def create_game_week(cls) -> str:
+    def create_game_week(cls):
         last_bid = Bid.objects.order_by("bid_order", Bid.objects.ORDER_DESCENDING).first()
         if not last_bid or last_bid.bid_order != Config.TOTAL_PLAYERS:
-            return "Auction is incomplete"
+            print("Auction is incomplete")
+            return
         last_game_week = cls.last_game_week()
         if last_game_week and not schedule.can_create_game_week(last_game_week):
-            return f"Gameweek {last_game_week} already created."
+            print(f"Gameweek {last_game_week} already created")
+            return
         last_user_team = cls.objects.filter_by(game_week=last_game_week).get() if last_game_week else None
         players = Player.objects.get()
         next_game_week = last_game_week + 1
@@ -61,18 +64,19 @@ class UserTeam(FirestoreDocument):
             user_team.owner = player.owner
             user_team.team = player.team
             if last_user_team:
-                last_player = next(team for team in last_user_team if team.player_name == user_team.player_name)
-                user_team.type = last_player.type
-                user_team.group = last_player.group
-                user_team.final_score = last_player.final_score
-            user_team.matches = [{"match": match, "score": 0.0}
+                user_team_previous_gw = next(team for team in last_user_team
+                                             if team.player_name == user_team.player_name)
+                user_team.type = user_team_previous_gw.type
+                user_team.group = user_team_previous_gw.group
+                user_team.final_score = user_team.previous_week_score = user_team_previous_gw.final_score
+            user_team.matches = [{"match": match.get_text(player.team), "score": 0.0, "match_id": str(match.unique_id)}
                                  for match in schedule.get_matches(player.team, next_game_week)]
             user_teams.append(cls.objects.to_dicts([user_team])[0])
             if (index + 1) % 10 == 0:
                 print(f"Gameweek {next_game_week}: {index + 1} player of {len(players)} created")
         cls.objects.create_all(user_teams)
         print(f"Gameweek {next_game_week} created")
-        return str()
+        return
 
     @classmethod
     def get_dummy_user_team(cls, game_week: int, team: str) -> "UserTeam":
@@ -97,16 +101,10 @@ class UserTeam(FirestoreDocument):
             return None
         return cls.objects.filter_by(player_name=player.name, game_week=game_week).first()
 
-    def update_score(self, player: Player, delta_score: float) -> bool:
-        score_updated = False
-        for match in reversed(self.matches):
-            if schedule.match_played(match["match"].split()[0], player.team):
-                match["score"] += delta_score * self.MULTIPLIER[self.type]
-                score_updated = True
-                break
-        if score_updated:
-            self.final_score += delta_score * self.MULTIPLIER[self.type]
-        return score_updated
+    def update_match_score(self, match_id: str, score: int):
+        match = next(match for match in self.matches if match["match_id"] == match_id)
+        match["score"] = float(score) * self.MULTIPLIER[self.type]
+        self.final_score = self.previous_week_score + sum(match["score"] for match in self.matches)
 
 
 UserTeam.init("user_teams")

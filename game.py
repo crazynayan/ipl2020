@@ -11,16 +11,15 @@ from oauth2client.service_account import ServiceAccountCredentials
 from pytz import utc
 from requests import Response
 
-import main
-from flask_app.team import UserTeam
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud.json'
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = main.os.environ['GOOGLE_APPLICATION_CREDENTIALS']
-
+from scoring import update_match_scores
 from flask_app import Config
 from flask_app.user import User
 from flask_app.player import Player
 from flask_app.bid import Bid
 from flask_app.schedule import schedule
+from flask_app.team import UserTeam
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 creds = ServiceAccountCredentials.from_json_keyfile_name('google-cloud.json', scope)
@@ -261,20 +260,18 @@ def update_score(match_list: List[int]):
 
 
 def reset_score():
-    sheet = gspread.authorize(creds).open('IPL2020').worksheet('Scores')
-    cell_range = sheet.range(f'A1:B190')
-    for index in range(3, 380, 2):
-        cell_range[index].value = 0.0
-    sheet.update_cells(cell_range)
-    players = Player.objects.filter('score', '>', 0).get()
+    players = Player.objects.get()
     for player in players:
-        player.score = 0.0
+        player.score = 0
+        for match_id in player.scores:
+            player.scores[match_id] = 0
     users = User.objects.get()
     for user in users:
         user.points = 0.0
-    teams: List[UserTeam] = UserTeam.objects.filter("final_score", ">", 0).get()
+    teams: List[UserTeam] = UserTeam.objects.filter('final_score', '>', 0).get()
     for user_team in teams:
         user_team.final_score = 0.0
+        user_team.previous_week_score = 0.0
         for match in user_team.matches:
             match["score"] = 0.0
     Player.objects.save_all(players)
@@ -377,3 +374,15 @@ def check_api_players():
         if player["name"].lower() not in db_names:
             print(player)
     return
+
+
+def update_fantasy_score_file():
+    response: Response = requests.get("https://cricapi.com/api/fantasySummary",
+                                      params={"apikey": Config.API_KEY, "unique_id": 1207770})
+    with open("source/fantasy_score.json", "w") as score_file:
+        json.dump(response.json(), score_file, indent=2)
+    print("fantasy_score.json file created")
+
+
+def test_update_score():
+    update_match_scores()
