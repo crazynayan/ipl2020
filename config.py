@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-from pytz import timezone
+from dateutil.tz import gettz
 
 from secrets import SecretConfig
 
@@ -24,7 +24,7 @@ class Config(SecretConfig):
     ROUND, MATCH_NO = "Gameweek", "Match No"
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189
-    INDIA_TZ = timezone("Asia/Kolkata")
+    INDIA_TZ = gettz("Asia/Kolkata")
     GAME_WEEK_START = datetime(year=2020, month=9, day=18, hour=19, tzinfo=INDIA_TZ)
     GAME_WEEK_2_CUT_OFF = datetime(year=2020, month=9, day=21, hour=19, tzinfo=INDIA_TZ)
     GAME_WEEK_9_CUT_OFF = datetime(year=2020, month=11, day=4, hour=19, tzinfo=INDIA_TZ)

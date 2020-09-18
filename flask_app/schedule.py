@@ -78,7 +78,7 @@ class _Schedule:
             return Config.GAME_WEEK_START
         if game_week == 9:
             return Config.GAME_WEEK_9_CUT_OFF
-        return Config.GAME_WEEK_2_CUT_OFF + timedelta(days=7 * (game_week - 1))
+        return Config.GAME_WEEK_2_CUT_OFF + timedelta(days=7 * (game_week - 2))
 
     def get_matches_being_played(self) -> List[Match]:
         return [match for match in self.schedule if match.date <= today() <= match.date + timedelta(hours=6)]

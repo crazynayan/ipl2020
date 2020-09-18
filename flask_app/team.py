@@ -82,7 +82,8 @@ class UserTeam(FirestoreDocument):
     def get_dummy_user_team(cls, game_week: int, team: str) -> "UserTeam":
         user_team = UserTeam()
         user_team.game_week = game_week
-        user_team.matches = [{"match": match, "score": 0.0} for match in schedule.get_matches(team, game_week)]
+        user_team.matches = [{"match": match.get_text(team), "score": 0.0, "match_id": str(match.unique_id)}
+                             for match in schedule.get_matches(team, game_week)]
         return user_team
 
     @property

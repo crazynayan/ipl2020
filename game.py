@@ -7,8 +7,8 @@ from typing import List, Dict
 
 import gspread
 import requests
+from dateutil.tz import tzutc
 from oauth2client.service_account import ServiceAccountCredentials
-from pytz import utc
 from requests import Response
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud.json'
@@ -300,7 +300,8 @@ def update_schedule_file():
     for match in matches:
         if match["team-1"] not in Config.TEAMS:
             continue
-        match_date = datetime.fromisoformat(match["dateTimeGMT"][:-1]).replace(tzinfo=utc).astimezone(Config.INDIA_TZ)
+        match_date = datetime.fromisoformat(match["dateTimeGMT"][:-1]).replace(tzinfo=tzutc())
+        match_date = match_date.astimezone(Config.INDIA_TZ)
         if match_date.weekday() == Config.GAME_WEEK_2_CUT_OFF.weekday():
             gameweek += 1
         schedules.append({
