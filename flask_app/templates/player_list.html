@@ -43,11 +43,7 @@
             {% for player in players %}
                 <tr>
                     <td class="text-center align-middle font-weight-bold">
-                        {% if player.bid_order %}
-                            {{ player.bid_order }}
-                        {% else %}
-                            {{ loop.index + 200 }}
-                        {% endif %}
+                        {{ loop.index }}
                     </td>
                     <td class="text-center align-middle font-weight-bold">
                         <a class="btn btn-block btn-primary"
@@ -108,7 +104,9 @@
     {{ super() }}
     <script>
         $(document).ready(function () {
-            $('#player_list').DataTable();
+            $('#player_list').DataTable({
+                "order": [[2, "desc"]]
+            });
         });
     </script>
 {% endblock %}

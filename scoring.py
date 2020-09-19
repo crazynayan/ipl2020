@@ -41,8 +41,10 @@ def get_bowling_score(score_data: Dict, pid: str) -> int:
                     if player["pid"] == pid), None)
     if not bowling:
         return 0
-    score = int(bowling["W"]) * 20
-    er = float(bowling["Econ"])
+    score = int(bowling["W"]) * 20 if "W" in bowling else 0
+    er = float(bowling["Econ"]) if "Econ" in bowling else 0.0
+    if not er:
+        return score
     if er < 2.0:
         score += 50
     elif er < 4.0:
@@ -80,6 +82,8 @@ def calculate_scores() -> Dict[str, List[Player]]:
             score = get_batting_score(score_data, pid)
             score += get_bowling_score(score_data, pid)
             score += get_man_of_the_match_score(score_data, pid)
+            if not score:
+                continue
             player = next((player for player in players if player.pid == pid), None)
             if not player:
                 print(f"Player with pid {pid} not found")

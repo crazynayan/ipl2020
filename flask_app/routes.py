@@ -27,7 +27,7 @@ def home() -> Response:
 @login_required
 def user_players(username: str) -> Response:
     players = Player.objects.filter_by(owner=username).get()
-    players.sort(key=lambda player: (-player.score, -player.cost))
+    players.sort(key=lambda player: (-player.score, -player.price))
     last_game_week = UserTeam.last_locked_game_week()
     return render_template('player_list.html', username=username, players=players, game_week=last_game_week,
                            title=f'{username.upper()} - Players')
@@ -37,7 +37,7 @@ def user_players(username: str) -> Response:
 @login_required
 def all_players() -> Response:
     players = Player.objects.get()
-    players.sort(key=lambda player: (-player.score, -player.cost))
+    players.sort(key=lambda player: (-player.score, -player.price))
     return render_template('player_list.html', username=None, players=players, title=f'IPL 2020 - Players')
 
 
