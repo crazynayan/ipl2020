@@ -29,6 +29,7 @@ class Config(SecretConfig):
     GAME_WEEK_2_CUT_OFF = datetime(year=2020, month=9, day=21, hour=19, tzinfo=INDIA_TZ)
     GAME_WEEK_9_CUT_OFF = datetime(year=2020, month=11, day=4, hour=19, tzinfo=INDIA_TZ)
     TEST_DATE = None
+    USE_MOCK_SCORE = False
 
 
 def today() -> datetime:

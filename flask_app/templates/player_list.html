@@ -25,7 +25,7 @@
                 <th scope="col" class="text-center">
                     {{ title }}
                 </th>
-                {#                <th scope="col" class="text-center">Score</th>#}
+                <th scope="col" class="text-center">Score</th>
                 {% if not username %}
                     <th scope="col" class="text-center d-none d-md-table-cell">Owner</th>
                 {% endif %}
@@ -53,9 +53,9 @@
                         <a class="btn btn-block btn-primary"
                            href="{{ url_for('view_player', player_id=player.id) }}">{{ player.name }}</a>
                     </td>
-                    {#                    <td class="text-center align-middle font-weight-bold">#}
-                    {#                        {{ player.score }}#}
-                    {#                    </td>#}
+                    <td class="text-center align-middle font-weight-bold">
+                        {{ player.score }}
+                    </td>
                     {% if not username %}
                         <td class="text-center align-middle  d-none d-md-table-cell">
                             {% if player.owner %}

@@ -72,9 +72,7 @@ def calculate_scores() -> Dict[str, List[Player]]:
     players: List[Player] = Player.objects.filter("team", Player.objects.IN, teams).get()
     updated_players = dict()
     for match in matches:
-        # Replace the mock with real before deploying
-        # score_data = get_mock_score(match.unique_id)
-        score_data = get_score(match.unique_id)
+        score_data = get_mock_score(match.unique_id) if Config.USE_MOCK_SCORE else get_score(match.unique_id)
         playing_xi_ids = [player["pid"] for team in score_data["team"] for player in team["players"]]
         match_id = str(match.unique_id)
         updated_players[match_id] = list()
@@ -89,6 +87,7 @@ def calculate_scores() -> Dict[str, List[Player]]:
             if match_id in player.scores and player.scores[match_id] == score:
                 continue
             player.scores[match_id] = score
+            player.score = sum(score for _, score in player.scores.items())
             updated_players[match_id].append(player)
     return updated_players
 
@@ -96,7 +95,10 @@ def calculate_scores() -> Dict[str, List[Player]]:
 def update_match_scores():
     player_scores = calculate_scores()
     if not player_scores:
-        print("Score: All scores matched and no updates done")
+        print("Score: No match currently in progress")
+        return
+    if all(players == list() for _, players in player_scores.items()):
+        print("Score: All scores match. No updates done")
         return
     user_teams: List[UserTeam] = UserTeam.objects.filter("game_week", ">=", schedule.get_game_week() - 1).get()
     updated_teams = list()
