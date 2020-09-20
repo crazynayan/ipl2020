@@ -1,0 +1,647 @@
+{
+  "dateTimeGMT": "2020-09-19T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Mumbai Indians Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Shane Watson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "8180"
+          },
+          {
+            "name": "MS Dhoni",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "28081"
+          },
+          {
+            "name": "Faf du Plessis",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 3,
+            "pid": "44828"
+          },
+          {
+            "name": "Sam Curran",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "662973"
+          },
+          {
+            "name": "Rahul Chahar",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "1064812"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Chennai Super Kings Innings (target: 163 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "James Pattinson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 1,
+            "pid": "272465"
+          },
+          {
+            "name": "Trent Boult",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "277912"
+          },
+          {
+            "name": "H Pandya",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "625371"
+          },
+          {
+            "name": "Rahul Chahar",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1064812"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 3,
+            "0s": 7,
+            "Econ": "8.00",
+            "W": "2",
+            "R": "32",
+            "M": "0",
+            "O": "4",
+            "bowler": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 9,
+            "Econ": "7.00",
+            "W": "1",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 6,
+            "0s": 8,
+            "Econ": "9.50",
+            "W": "3",
+            "R": "38",
+            "M": "0",
+            "O": "4",
+            "bowler": "L Ngidi",
+            "pid": "542023"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 0,
+            "0s": 11,
+            "Econ": "5.25",
+            "W": "1",
+            "R": "21",
+            "M": "0",
+            "O": "4",
+            "bowler": "PP Chawla",
+            "pid": "32966"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 3,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "10.50",
+            "W": "2",
+            "R": "42",
+            "M": "0",
+            "O": "4",
+            "bowler": "RA Jadeja",
+            "pid": "234675"
+          }
+        ],
+        "title": "Bowling To Mumbai Indians Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 5,
+            "0s": 12,
+            "Econ": "6.90",
+            "W": "1",
+            "R": "23",
+            "M": "0",
+            "O": "3.2",
+            "bowler": "TA Boult",
+            "pid": "277912"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 3,
+            "0s": 10,
+            "Econ": "6.75",
+            "W": "1",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "JL Pattinson",
+            "pid": "272465"
+          },
+          {
+            "NB": "1",
+            "WD": "1",
+            "6s": 2,
+            "4s": 4,
+            "0s": 10,
+            "Econ": "10.75",
+            "W": "1",
+            "R": "43",
+            "M": "0",
+            "O": "4",
+            "bowler": "JJ Bumrah",
+            "pid": "625383"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "9.25",
+            "W": "1",
+            "R": "37",
+            "M": "0",
+            "O": "4",
+            "bowler": "KH Pandya",
+            "pid": "471342"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 2,
+            "Econ": "9.00",
+            "W": "1",
+            "R": "36",
+            "M": "0",
+            "O": "4",
+            "bowler": "RD Chahar",
+            "pid": "1064812"
+          }
+        ],
+        "title": "Bowling To Chennai Super Kings Innings (target: 163 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Sam Curran",
+              "pid": "662973"
+            },
+            "dismissal": "catch",
+            "SR": 120,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 10,
+            "R": 12,
+            "dismissal-info": "c Curran b Chawla",
+            "batsman": "RG Sharma (c)",
+            "pid": "34102"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shane Watson",
+              "pid": "8180"
+            },
+            "dismissal": "catch",
+            "SR": 165,
+            "6s": 0,
+            "4s": 5,
+            "M": 0,
+            "B": 20,
+            "R": 33,
+            "dismissal-info": "c Watson b Curran",
+            "batsman": "Q de Kock  ",
+            "pid": "379143"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sam Curran",
+              "pid": "662973"
+            },
+            "dismissal": "catch",
+            "SR": 106,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 16,
+            "R": 17,
+            "dismissal-info": "c Curran b Chahar",
+            "batsman": "SA Yadav",
+            "pid": "446507"
+          },
+          {
+            "dismissal-by": {
+              "name": "Faf du Plessis",
+              "pid": "44828"
+            },
+            "dismissal": "catch",
+            "SR": 135,
+            "6s": 1,
+            "4s": 3,
+            "M": 0,
+            "B": 31,
+            "R": 42,
+            "dismissal-info": "c du Plessis b Jadeja",
+            "batsman": "SS Tiwary",
+            "pid": "35390"
+          },
+          {
+            "dismissal-by": {
+              "name": "Faf du Plessis",
+              "pid": "44828"
+            },
+            "dismissal": "catch",
+            "SR": 140,
+            "6s": 2,
+            "4s": 0,
+            "M": 0,
+            "B": 10,
+            "R": 14,
+            "dismissal-info": "c du Plessis b Jadeja",
+            "batsman": "HH Pandya",
+            "pid": "625371"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 128,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 14,
+            "R": 18,
+            "dismissal-info": "c  Dhoni b Ngidi",
+            "batsman": "KA Pollard",
+            "pid": "230559"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 3,
+            "dismissal-info": "c  Dhoni b Ngidi",
+            "batsman": "KH Pandya",
+            "pid": "471342"
+          },
+          {
+            "dismissal-by": {
+              "name": "Faf du Plessis",
+              "pid": "44828"
+            },
+            "dismissal": "catch",
+            "SR": 137,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 8,
+            "R": 11,
+            "dismissal-info": "c du Plessis b Ngidi",
+            "batsman": "JL Pattinson",
+            "pid": "272465"
+          },
+          {
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "RD Chahar",
+            "pid": "1064812"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Chahar",
+              "pid": "1064812"
+            },
+            "dismissal": "bowled",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "b Chahar",
+            "batsman": "TA Boult",
+            "pid": "277912"
+          },
+          {
+            "SR": 166,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 5,
+            "dismissal-info": "",
+            "batsman": "JJ Bumrah",
+            "pid": "625383"
+          }
+        ],
+        "title": "Mumbai Indians Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "James Pattinson",
+              "pid": "272465"
+            },
+            "dismissal": "lbw",
+            "SR": 14,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 1,
+            "dismissal-info": "lbw b Pattinson",
+            "batsman": "M Vijay",
+            "pid": "237095"
+          },
+          {
+            "dismissal-by": {
+              "name": "Trent Boult",
+              "pid": "277912"
+            },
+            "dismissal": "lbw",
+            "SR": 80,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 5,
+            "R": 4,
+            "dismissal-info": "lbw b Boult",
+            "batsman": "SR Watson",
+            "pid": "8180"
+          },
+          {
+            "SR": 131,
+            "6s": 0,
+            "4s": 6,
+            "M": 0,
+            "B": 44,
+            "R": 58,
+            "dismissal-info": "",
+            "batsman": "F du Plessis",
+            "pid": "44828"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Chahar",
+              "pid": "1064812"
+            },
+            "dismissal": "catch & bowled",
+            "SR": 147,
+            "6s": 3,
+            "4s": 6,
+            "M": 0,
+            "B": 48,
+            "R": 71,
+            "dismissal-info": "c & b Chahar",
+            "batsman": "AT Rayudu",
+            "pid": "33141"
+          },
+          {
+            "dismissal-by": {
+              "name": "H Pandya",
+              "pid": "625371"
+            },
+            "dismissal": "lbw",
+            "SR": 200,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 5,
+            "R": 10,
+            "dismissal-info": "lbw b KH Pandya",
+            "batsman": "RA Jadeja",
+            "pid": "234675"
+          },
+          {
+            "dismissal-by": {
+              "name": "James Pattinson",
+              "pid": "272465"
+            },
+            "dismissal": "catch",
+            "SR": 300,
+            "6s": 2,
+            "4s": 1,
+            "M": 0,
+            "B": 6,
+            "R": 18,
+            "dismissal-info": "c Pattinson b Bumrah",
+            "batsman": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "MS Dhoni (c)  ",
+            "pid": "28081"
+          }
+        ],
+        "title": "Chennai Super Kings Innings (target: 163 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Rohit Sharma",
+            "pid": "34102"
+          },
+          {
+            "name": "Quinton de Kock",
+            "pid": "379143"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "pid": "446507"
+          },
+          {
+            "name": "Saurabh Tiwary",
+            "pid": "35390"
+          },
+          {
+            "name": "Hardik Pandya",
+            "pid": "625371"
+          },
+          {
+            "name": "Kieron Pollard",
+            "pid": "230559"
+          },
+          {
+            "name": "Krunal Pandya",
+            "pid": "471342"
+          },
+          {
+            "name": "James Pattinson",
+            "pid": "272465"
+          },
+          {
+            "name": "Rahul Chahar",
+            "pid": "1064812"
+          },
+          {
+            "name": "Trent Boult",
+            "pid": "277912"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "pid": "625383"
+          }
+        ],
+        "name": "Mumbai Indians"
+      },
+      {
+        "players": [
+          {
+            "name": "Murali Vijay",
+            "pid": "237095"
+          },
+          {
+            "name": "Shane Watson",
+            "pid": "8180"
+          },
+          {
+            "name": "Faf du Plessis",
+            "pid": "44828"
+          },
+          {
+            "name": "Ambati Rayudu",
+            "pid": "33141"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "pid": "234675"
+          },
+          {
+            "name": "Sam Curran",
+            "pid": "662973"
+          },
+          {
+            "name": "MS Dhoni",
+            "pid": "28081"
+          },
+          {
+            "name": "Kedar Jadhav",
+            "pid": "290716"
+          },
+          {
+            "name": "Piyush Chawla",
+            "pid": "32966"
+          },
+          {
+            "name": "Deepak Chahar",
+            "pid": "447261"
+          },
+          {
+            "name": "Lungi Ngidi",
+            "pid": "542023"
+          }
+        ],
+        "name": "Chennai Super Kings"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Ambati Rayudu",
+      "pid": "33141"
+    },
+    "toss_winner_team": "Chennai Super Kings",
+    "winner_team": "Chennai Super Kings",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 150,
+  "v": "1",
+  "ttl": 4,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-09-20T02:54:07.727Z"
+  }
+}

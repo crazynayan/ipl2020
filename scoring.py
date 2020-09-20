@@ -42,7 +42,10 @@ def get_bowling_score(score_data: Dict, pid: str) -> int:
     if not bowling:
         return 0
     score = int(bowling["W"]) * 20 if "W" in bowling else 0
-    if "O" not in bowling or float(bowling["O"]) < 1.0:
+    try:
+        if "O" not in bowling or float(bowling["O"]) < 1.0:
+            return score
+    except ValueError:
         return score
     er = float(bowling["Econ"]) if "Econ" in bowling else 0.0
     if er < 2.0:
