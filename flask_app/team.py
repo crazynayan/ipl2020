@@ -11,17 +11,13 @@ from flask_app.schedule import schedule
 
 
 class UserTeam(FirestoreDocument):
-    NORMAL = "Normal"
-    CAPTAIN = "Captain"
-    SUB = "Sub"
-    MULTIPLIER = {NORMAL: 1.0, CAPTAIN: 2.0, SUB: 0.5}
 
     def __init__(self):
         super().__init__()
         self.game_week: int = 0
         self.player_name: str = str()
         self.owner: str = str()
-        self.type: str = self.NORMAL
+        self.type: str = Config.NORMAL
         self.final_score: float = 0.0
         self.matches: List[dict] = list()
         self.team: str = str()
@@ -88,8 +84,8 @@ class UserTeam(FirestoreDocument):
 
     @property
     def list_group_item(self) -> str:
-        return "list-group-item-success" if self.type == self.CAPTAIN else "list-group-item-danger" \
-            if self.type == self.SUB else str()
+        return "list-group-item-success" if self.type == Config.CAPTAIN else "list-group-item-danger" \
+            if self.type == Config.SUB else str()
 
     @classmethod
     def get_players_by_game_week(cls, owner: str, game_week: int) -> List["UserTeam"]:
@@ -104,7 +100,7 @@ class UserTeam(FirestoreDocument):
 
     def update_match_score(self, match_id: str, score: int):
         match = next(match for match in self.matches if match["match_id"] == match_id)
-        match["score"] = float(score) * self.MULTIPLIER[self.type]
+        match["score"] = float(score) * Config.MULTIPLIER[self.type]
         self.final_score = self.previous_week_score + sum(match["score"] for match in self.matches)
 
 

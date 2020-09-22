@@ -21,6 +21,10 @@ class Config(SecretConfig):
              "Royal Challengers Bangalore": "RCB", "TBD": "TBD", "Kolkata Knight Riders": "KKR",
              "Sunrisers Hyderabad": "SRH", "Rajasthan Royals": "RR"}
     DATE, UNIQUE_ID, HOME_TEAM, AWAY_TEAM = "Date", "Unique Id", "Home Team", "Away Team"
+    NORMAL = "Normal"
+    CAPTAIN = "Captain"
+    SUB = "Sub"
+    MULTIPLIER = {NORMAL: 1.0, CAPTAIN: 2.0, SUB: 0.5}
     ROUND, MATCH_NO = "Gameweek", "Match No"
     USER_COUNT = len(USER_LIST)
     TOTAL_PLAYERS = 189

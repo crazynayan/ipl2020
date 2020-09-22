@@ -3,7 +3,7 @@ import json
 import os
 import random
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Union
 
 import gspread
 import requests
@@ -377,12 +377,18 @@ def check_api_players():
     return
 
 
-def update_fantasy_score_file():
+def update_fantasy_score_file(match_id: Union[str, int]):
+    unique_id = str(match_id)
+    match = next((match for match in schedule.schedule if match.unique_id == unique_id), None)
+    if not match:
+        print(f"Match ID {unique_id} not found")
+        return
     response: Response = requests.get("https://cricapi.com/api/fantasySummary",
-                                      params={"apikey": Config.API_KEY, "unique_id": 1207770})
-    with open("source/fantasy_score.json", "w") as score_file:
+                                      params={"apikey": Config.API_KEY, "unique_id": unique_id})
+    file_name = f"m{match.number:02}-{match.home_team.lower()}-{match.away_team.lower()}.json"
+    with open(f"source/{file_name}", "w") as score_file:
         json.dump(response.json(), score_file, indent=2)
-    print("fantasy_score.json file created")
+    print(f"{file_name} file created")
 
 
 def test_update_score():
