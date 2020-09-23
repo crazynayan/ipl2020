@@ -18,7 +18,12 @@ class Match:
         self.unique_id: int = 0
 
     def __repr__(self):
-        return f"M-{self.number} GW-{self.game_week} ID-{self.unique_id} {self.date.strftime('%a,%d/%m %I:%M %p')} {self.home_team} v {self.away_team}"
+        return f"M-{self.number} GW-{self.game_week} ID-{self.unique_id} {self.date.strftime('%a,%d/%m %I:%M %p')} " \
+               f"{self.home_team} v {self.away_team}"
+
+    @property
+    def file_name(self):
+        return f"m{self.number:02}-{self.home_team.lower()}-{self.away_team.lower()}.json"
 
     def get_opponent(self, team: str) -> str:
         if team not in self.teams:

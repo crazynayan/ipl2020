@@ -10,17 +10,29 @@ from flask_app.team import UserTeam
 from flask_app.user import User
 
 
-def get_mock_score(_) -> Dict:
-    with open("source/fantasy_score.json") as score_file:
-        score_data = json.load(score_file)
-    return score_data["data"]
+def get_mock_score(match: Match) -> Dict:
+    try:
+        with open(f"source/{match.file_name}") as score_file:
+            score_data = json.load(score_file)
+    except FileNotFoundError:
+        cache_request(match)
+        with open(f"source/{match.file_name}") as score_file:
+            score_data = json.load(score_file)
+    return score_data
 
 
-def get_score(match_id: int) -> Dict:
+def cache_request(match: Match):
     response = requests.get("https://cricapi.com/api/fantasySummary",
-                            params={"apikey": Config.API_KEY, "unique_id": match_id})
+                            params={"apikey": Config.API_KEY, "unique_id": match.unique_id})
+    with open(f"source/{match.file_name}", "w") as score_file:
+        json.dump(response.json(), score_file, indent=2)
+
+
+def get_score(match: Match) -> Dict:
+    response = requests.get("https://cricapi.com/api/fantasySummary",
+                            params={"apikey": Config.API_KEY, "unique_id": match.unique_id})
     score_data = response.json()
-    return score_data["data"]
+    return score_data
 
 
 def get_batting_score(score_data: Dict, pid: str) -> int:
@@ -77,9 +89,13 @@ def calculate_scores() -> Dict[str, List[Player]]:
     players: List[Player] = Player.objects.filter("team", Player.objects.IN, teams).get()
     updated_players = dict()
     for match in matches:
-        score_data = get_mock_score(match.unique_id) if Config.USE_MOCK_SCORE else get_score(match.unique_id)
+        score_data = get_mock_score(match) if Config.USE_MOCK_SCORE else get_score(match)
+        if "data" not in score_data:
+            continue
+        score_data = score_data["data"]
         playing_xi_ids = [player["pid"] for team in score_data["team"] for player in team["players"]]
         match_id = str(match.unique_id)
+        updated_players[f"{match_id}_data"] = score_data
         updated_players[match_id] = list()
         for pid in playing_xi_ids:
             score = get_batting_score(score_data, pid)
@@ -90,6 +106,8 @@ def calculate_scores() -> Dict[str, List[Player]]:
                 print(f"Player with pid {pid} not found")
                 continue
             if match_id in player.scores and player.scores[match_id] == score:
+                continue
+            if match_id not in player.scores and score == 0:
                 continue
             player.scores[match_id] = score
             player.score = sum(score for _, score in player.scores.items())
@@ -102,7 +120,7 @@ def update_match_scores():
     if not player_scores:
         print("Score: No match currently in progress")
         return
-    if all(players == list() for _, players in player_scores.items()):
+    if all(players == list() for match_id, players in player_scores.items() if not match_id.endswith("_data")):
         print("Score: All scores match. No updates done")
         return
     user_teams: List[UserTeam] = UserTeam.objects.filter("game_week", ">=", schedule.get_game_week() - 1).get()

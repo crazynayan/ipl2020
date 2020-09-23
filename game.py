@@ -13,7 +13,7 @@ from requests import Response
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google-cloud.json"
 
-from scoring import update_match_scores
+from scoring import update_match_scores, cache_request
 from flask_app import Config
 from flask_app.user import User
 from flask_app.player import Player
@@ -383,12 +383,8 @@ def update_fantasy_score_file(match_id: Union[str, int]):
     if not match:
         print(f"Match ID {unique_id} not found")
         return
-    response: Response = requests.get("https://cricapi.com/api/fantasySummary",
-                                      params={"apikey": Config.API_KEY, "unique_id": unique_id})
-    file_name = f"m{match.number:02}-{match.home_team.lower()}-{match.away_team.lower()}.json"
-    with open(f"source/{file_name}", "w") as score_file:
-        json.dump(response.json(), score_file, indent=2)
-    print(f"{file_name} file created")
+    cache_request(match)
+    print(f"{match.file_name} file created")
 
 
 def test_update_score():
