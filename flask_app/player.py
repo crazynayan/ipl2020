@@ -71,7 +71,7 @@ class Player(FirestoreDocument):
 
     @property
     def team_full_name(self) -> str:
-        return next((team_name for team_name, team_code in schedule.team_names.items() if team_code == self.team),
+        return next((team_name for team_name, team_code in Config.TEAMS.items() if team_code == self.team),
                     str())
 
     @property

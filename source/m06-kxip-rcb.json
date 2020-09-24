@@ -1,0 +1,29 @@
+{
+  "dateTimeGMT": "2020-09-24T14:00:00.000Z",
+  "data": {
+    "fielding": [],
+    "bowling": [],
+    "batting": [],
+    "team": [
+      {
+        "players": [],
+        "name": "Kings XI Punjab"
+      },
+      {
+        "players": [],
+        "name": "Royal Challengers Bangalore"
+      }
+    ],
+    "man-of-the-match": ""
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 244,
+  "v": "1",
+  "ttl": 6,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-09-24T06:40:40.232Z"
+  }
+}

@@ -1,0 +1,637 @@
+{
+  "dateTimeGMT": "2020-09-22T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Rajasthan Royals Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "MS Dhoni",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "28081"
+          },
+          {
+            "name": "Faf du Plessis",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "44828"
+          },
+          {
+            "name": "Kedar Jadhav",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "290716"
+          },
+          {
+            "name": "Deepak Chahar",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "447261"
+          },
+          {
+            "name": "Tom Curran",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "550235"
+          },
+          {
+            "name": "Ruturaj Gaikwad",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "1060380"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Chennai Super Kings Innings (target: 217 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Rahul Tewatia",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "423838"
+          },
+          {
+            "name": "Sanju Samson",
+            "runout": 0,
+            "stumped": 2,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "425943"
+          },
+          {
+            "name": "Tom Curran",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "550235"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 8,
+            "Econ": "7.75",
+            "W": "1",
+            "R": "31",
+            "M": "0",
+            "O": "4",
+            "bowler": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 3,
+            "0s": 9,
+            "Econ": "8.25",
+            "W": "3",
+            "R": "33",
+            "M": "0",
+            "O": "4",
+            "bowler": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "NB": "2",
+            "WD": "2",
+            "6s": 5,
+            "4s": 2,
+            "0s": 7,
+            "Econ": "14.00",
+            "W": "1",
+            "R": "56",
+            "M": "0",
+            "O": "4",
+            "bowler": "L Ngidi",
+            "pid": "542023"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 4,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "10.00",
+            "W": "0",
+            "R": "40",
+            "M": "0",
+            "O": "4",
+            "bowler": "RA Jadeja",
+            "pid": "234675"
+          },
+          {
+            "NB": "1",
+            "WD": "0",
+            "6s": 6,
+            "4s": 1,
+            "0s": 4,
+            "Econ": "13.75",
+            "W": "1",
+            "R": "55",
+            "M": "0",
+            "O": "4",
+            "bowler": "PP Chawla",
+            "pid": "32966"
+          }
+        ],
+        "title": "Bowling To Rajasthan Royals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 3,
+            "4s": 2,
+            "0s": 3,
+            "Econ": "11.00",
+            "W": "0",
+            "R": "44",
+            "M": "0",
+            "O": "4",
+            "bowler": "JD Unadkat",
+            "pid": "390484"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 1,
+            "0s": 13,
+            "Econ": "6.50",
+            "W": "1",
+            "R": "26",
+            "M": "0",
+            "O": "4",
+            "bowler": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 5,
+            "0s": 6,
+            "Econ": "9.50",
+            "W": "1",
+            "R": "38",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "NB": "1",
+            "WD": "0",
+            "6s": 6,
+            "4s": 1,
+            "0s": 6,
+            "Econ": "13.50",
+            "W": "1",
+            "R": "54",
+            "M": "0",
+            "O": "4",
+            "bowler": "TK Curran",
+            "pid": "550235"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 4,
+            "4s": 0,
+            "0s": 7,
+            "Econ": "9.25",
+            "W": "3",
+            "R": "37",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Tewatia",
+            "pid": "423838"
+          }
+        ],
+        "title": "Bowling To Chennai Super Kings Innings (target: 217 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Deepak Chahar",
+              "pid": "447261"
+            },
+            "dismissal": "catch & bowled",
+            "SR": 100,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 6,
+            "R": 6,
+            "dismissal-info": "c & b Chahar",
+            "batsman": "YBK Jaiswal",
+            "pid": "1151278"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kedar Jadhav",
+              "pid": "290716"
+            },
+            "dismissal": "catch",
+            "SR": 146,
+            "6s": 4,
+            "4s": 4,
+            "M": 0,
+            "B": 47,
+            "R": 69,
+            "dismissal-info": "c Jadhav b Curran",
+            "batsman": "SPD Smith\u00a0(c)",
+            "pid": "267192"
+          },
+          {
+            "dismissal-by": {
+              "name": "Deepak Chahar",
+              "pid": "447261"
+            },
+            "dismissal": "catch",
+            "SR": 231,
+            "6s": 9,
+            "4s": 1,
+            "M": 0,
+            "B": 32,
+            "R": 74,
+            "dismissal-info": "c Chahar b Ngidi",
+            "batsman": "SV Samson\u00a0 ",
+            "pid": "425943"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Ruturaj Gaikwad",
+                "pid": "1060380"
+              },
+              {
+                "name": "Kedar Jadhav",
+                "pid": "290716"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": "run out (Gaikwad/Jadhav)",
+            "batsman": "DA Miller",
+            "pid": "321777"
+          },
+          {
+            "dismissal-by": {
+              "name": "Faf du Plessis",
+              "pid": "44828"
+            },
+            "dismissal": "catch",
+            "SR": 55,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 9,
+            "R": 5,
+            "dismissal-info": "c du Plessis b Chawla",
+            "batsman": "RV Uthappa",
+            "pid": "35582"
+          },
+          {
+            "dismissal-by": {
+              "name": "Tom Curran",
+              "pid": "550235"
+            },
+            "dismissal": "lbw",
+            "SR": 125,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 8,
+            "R": 10,
+            "dismissal-info": "lbw b Curran",
+            "batsman": "R Tewatia",
+            "pid": "423838"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 150,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 4,
+            "R": 6,
+            "dismissal-info": "c  Dhoni b Curran",
+            "batsman": "R Parag",
+            "pid": "1079434"
+          },
+          {
+            "SR": 111,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 9,
+            "R": 10,
+            "dismissal-info": "",
+            "batsman": "TK Curran",
+            "pid": "550235"
+          },
+          {
+            "SR": 337,
+            "6s": 4,
+            "4s": 0,
+            "M": 0,
+            "B": 8,
+            "R": 27,
+            "dismissal-info": "",
+            "batsman": "JC Archer",
+            "pid": "669855"
+          }
+        ],
+        "title": "Rajasthan Royals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Tom Curran",
+              "pid": "550235"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 21,
+            "R": 21,
+            "dismissal-info": "c Curran b Gopal",
+            "batsman": "M Vijay",
+            "pid": "237095"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Tewatia",
+              "pid": "423838"
+            },
+            "dismissal": "bowled",
+            "SR": 157,
+            "6s": 4,
+            "4s": 1,
+            "M": 0,
+            "B": 21,
+            "R": 33,
+            "dismissal-info": "b Tewatia",
+            "batsman": "SR Watson",
+            "pid": "8180"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sanju Samson",
+              "pid": "425943"
+            },
+            "dismissal": "catch",
+            "SR": 194,
+            "6s": 7,
+            "4s": 1,
+            "M": 0,
+            "B": 37,
+            "R": 72,
+            "dismissal-info": "c  Samson b Archer",
+            "batsman": "F du Plessis",
+            "pid": "44828"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sanju Samson",
+              "pid": "425943"
+            },
+            "dismissal": "stumped",
+            "SR": 283,
+            "6s": 2,
+            "4s": 1,
+            "M": 0,
+            "B": 6,
+            "R": 17,
+            "dismissal-info": "st  Samson b Tewatia",
+            "batsman": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sanju Samson",
+              "pid": "425943"
+            },
+            "dismissal": "stumped",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "st  Samson b Tewatia",
+            "batsman": "RD Gaikwad",
+            "pid": "1060380"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sanju Samson",
+              "pid": "425943"
+            },
+            "dismissal": "catch",
+            "SR": 137,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 16,
+            "R": 22,
+            "dismissal-info": "c  Samson b Curran",
+            "batsman": "KM Jadhav",
+            "pid": "290716"
+          },
+          {
+            "SR": 170,
+            "6s": 3,
+            "4s": 0,
+            "M": 0,
+            "B": 17,
+            "R": 29,
+            "dismissal-info": "",
+            "batsman": "MS Dhoni\u00a0(c)  ",
+            "pid": "28081"
+          },
+          {
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 1,
+            "dismissal-info": "",
+            "batsman": "RA Jadeja",
+            "pid": "234675"
+          }
+        ],
+        "title": "Chennai Super Kings Innings (target: 217 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Yashasvi Jaiswal",
+            "pid": "1151278"
+          },
+          {
+            "name": "Steven Smith",
+            "pid": "267192"
+          },
+          {
+            "name": "Sanju Samson",
+            "pid": "425943"
+          },
+          {
+            "name": "David Miller",
+            "pid": "321777"
+          },
+          {
+            "name": "Robin Uthappa",
+            "pid": "35582"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "pid": "423838"
+          },
+          {
+            "name": "Riyan Parag",
+            "pid": "1079434"
+          },
+          {
+            "name": "Tom Curran",
+            "pid": "550235"
+          },
+          {
+            "name": "Jofra Archer",
+            "pid": "669855"
+          },
+          {
+            "name": "Shreyas Gopal",
+            "pid": "344580"
+          },
+          {
+            "name": "Jaydev Unadkat",
+            "pid": "390484"
+          }
+        ],
+        "name": "Rajasthan Royals"
+      },
+      {
+        "players": [
+          {
+            "name": "Murali Vijay",
+            "pid": "237095"
+          },
+          {
+            "name": "Shane Watson",
+            "pid": "8180"
+          },
+          {
+            "name": "Faf du Plessis",
+            "pid": "44828"
+          },
+          {
+            "name": "Sam Curran",
+            "pid": "662973"
+          },
+          {
+            "name": "Ruturaj Gaikwad",
+            "pid": "1060380"
+          },
+          {
+            "name": "Kedar Jadhav",
+            "pid": "290716"
+          },
+          {
+            "name": "MS Dhoni",
+            "pid": "28081"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "pid": "234675"
+          },
+          {
+            "name": "Piyush Chawla",
+            "pid": "32966"
+          },
+          {
+            "name": "Deepak Chahar",
+            "pid": "447261"
+          },
+          {
+            "name": "Lungi Ngidi",
+            "pid": "542023"
+          }
+        ],
+        "name": "Chennai Super Kings"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Sanju Samson",
+      "pid": "425943"
+    },
+    "toss_winner_team": "Chennai Super Kings",
+    "winner_team": "Rajasthan Royals",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 248,
+  "v": "1",
+  "ttl": 11,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-09-24T03:09:44.884Z"
+  }
+}

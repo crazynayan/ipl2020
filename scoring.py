@@ -1,9 +1,10 @@
 import json
-from typing import List, Dict
+from typing import List, Dict, Tuple
 
 import requests
 
 from config import Config
+from flask_app.match_score import MatchPlayer, ScoreData
 from flask_app.player import Player
 from flask_app.schedule import schedule, Match
 from flask_app.team import UserTeam
@@ -15,135 +16,97 @@ def get_mock_score(match: Match) -> Dict:
         with open(f"source/{match.file_name}") as score_file:
             score_data = json.load(score_file)
     except FileNotFoundError:
-        cache_request(match)
-        with open(f"source/{match.file_name}") as score_file:
-            score_data = json.load(score_file)
+        score_data = cache_request(match)
     return score_data
 
 
-def cache_request(match: Match):
-    response = requests.get("https://cricapi.com/api/fantasySummary",
-                            params={"apikey": Config.API_KEY, "unique_id": match.unique_id})
-    with open(f"source/{match.file_name}", "w") as score_file:
-        json.dump(response.json(), score_file, indent=2)
+def cache_request(match: Match) -> Dict:
+    score_data = get_score(match)
+    if score_data:
+        with open(f"source/{match.file_name}", "w") as score_file:
+            json.dump(score_data, score_file, indent=2)
+    return score_data
 
 
 def get_score(match: Match) -> Dict:
     response = requests.get("https://cricapi.com/api/fantasySummary",
                             params={"apikey": Config.API_KEY, "unique_id": match.unique_id})
     score_data = response.json()
+    if "creditsLeft" in score_data:
+        print(f"Credits Left: {score_data['creditsLeft']}")
+    if "data" not in score_data:
+        print(score_data)
+        return dict()
     return score_data
 
 
-def get_batting_score(score_data: Dict, pid: str) -> int:
-    batting = next((player for team in score_data["batting"] for player in team["scores"]
-                    if player["pid"] == pid), None)
-    if not batting:
-        return 0
-    score = batting["R"] + batting["4s"] * 2 + batting["6s"] * 3
-    if batting["R"] >= 100:
-        score += 20
-    if batting["R"] >= 50:
-        score += 10
-    return score
-
-
-def get_bowling_score(score_data: Dict, pid: str) -> int:
-    bowling = next((player for team in score_data["bowling"] for player in team["scores"]
-                    if player["pid"] == pid), None)
-    if not bowling:
-        return 0
-    score = int(bowling["W"]) * 20 if "W" in bowling else 0
-    try:
-        if "O" not in bowling or float(bowling["O"]) < 1.0:
-            return score
-    except ValueError:
-        return score
-    er = float(bowling["Econ"]) if "Econ" in bowling else 0.0
-    if er < 2.0:
-        score += 50
-    elif er < 4.0:
-        score += 40
-    elif er < 6.0:
-        score += 30
-    elif er < 7.0:
-        score += 20
-    return score
-
-
-def get_man_of_the_match_score(score_data: Dict, pid: str) -> int:
-    if "man-of-the-match" not in score_data:
-        return 0
-    if "pid" not in score_data["man-of-the-match"]:
-        return 0
-    if pid != score_data["man-of-the-match"]["pid"]:
-        return 0
-    return 50
-
-
-def calculate_scores() -> Dict[str, List[Player]]:
+def update_match_points():
     matches: List[Match] = schedule.get_matches_being_played()
     if not matches:
-        return dict()
+        print("Score: No match currently in progress")
+        return
     teams = [team for match in matches for team in match.teams]
     players: List[Player] = Player.objects.filter("team", Player.objects.IN, teams).get()
-    updated_players = dict()
+    updated_players = list()
+    user_teams: List[UserTeam] = UserTeam.objects.filter("game_week", ">=", schedule.get_game_week() - 1).get()
+    updated_teams = list()
+    match_ids = [match.unique_id for match in matches]
+    match_players: List[MatchPlayer] = MatchPlayer.objects.filter("match_id", MatchPlayer.objects.IN, match_ids).get()
+    updated_match_players = list()
+    created_match_players = list()
     for match in matches:
         score_data = get_mock_score(match) if Config.USE_MOCK_SCORE else get_score(match)
-        if "data" not in score_data:
+        if not score_data:
             continue
-        score_data = score_data["data"]
-        playing_xi_ids = [player["pid"] for team in score_data["team"] for player in team["players"]]
+        score_data = ScoreData(score_data["data"])
         match_id = str(match.unique_id)
-        updated_players[f"{match_id}_data"] = score_data
-        updated_players[match_id] = list()
-        for pid in playing_xi_ids:
-            score = get_batting_score(score_data, pid)
-            score += get_bowling_score(score_data, pid)
-            score += get_man_of_the_match_score(score_data, pid)
-            player = next((player for player in players if player.pid == pid), None)
+        playing_xi: List[Tuple[str, str]] = score_data.get_playing_xi()
+        for player_data in playing_xi:
+            player = next((player for player in players if player.pid == player_data[0]), None)
             if not player:
-                print(f"Player with pid {pid} not found")
+                print(f"Player {player_data[1]} ({player_data[0]}) not found")
                 continue
+            game_week = schedule.get_game_week_last_match_played(player.team)
+            if not game_week:
+                continue
+            user_team: UserTeam = next(team for team in user_teams if team.player_name == player.name and
+                                       team.game_week == game_week)
+            match_player = next((mp for mp in match_players if mp.player_id == player_data[0] and
+                                 mp.match_id == match_id), None)
+            if not match_player:
+                match_player = MatchPlayer()
+                match_player.player_id = player_data[0]
+                match_player.player_name = player.name
+                match_player.team = player.team
+                match_player.match_id = match_id
+                match_player.owner = player.owner
+                match_player.gameweek = game_week
+                match_player.type = user_team.type
+                match_player.update_scores(score_data)
+                created_match_players.append(match_player)
+            else:
+                match_player.update_scores(score_data)
+                updated_match_players.append(match_player)
+            score = match_player.total_points
             if match_id in player.scores and player.scores[match_id] == score:
                 continue
             if match_id not in player.scores and score == 0:
                 continue
             player.scores[match_id] = score
             player.score = sum(score for _, score in player.scores.items())
-            updated_players[match_id].append(player)
-    return updated_players
-
-
-def update_match_scores():
-    player_scores = calculate_scores()
-    if not player_scores:
-        print("Score: No match currently in progress")
-        return
-    if all(players == list() for match_id, players in player_scores.items() if not match_id.endswith("_data")):
-        print("Score: All scores match. No updates done")
-        return
-    user_teams: List[UserTeam] = UserTeam.objects.filter("game_week", ">=", schedule.get_game_week() - 1).get()
-    updated_teams = list()
-    updated_players = list()
-    for match_id, players in player_scores.items():
-        for player in players:
-            game_week = schedule.get_game_week_last_match_played(player.team)
-            if not game_week:
-                continue
-            if not player.scores[match_id]:
-                continue
-            user_team: UserTeam = next(team for team in user_teams if team.player_name == player.name and
-                                       team.game_week == game_week)
-            user_team.update_match_score(match_id, player.scores[match_id])
-            updated_teams.append(user_team)
             updated_players.append(player)
+            user_team.update_match_score(match_id, score)
+            updated_teams.append(user_team)
             user_team_next_gw: UserTeam = next((team for team in user_teams if team.player_name == player.name and
                                                 team.game_week == user_team.game_week + 1), None)
             if user_team_next_gw:
                 user_team_next_gw.final_score = user_team_next_gw.previous_week_score = user_team.final_score
                 updated_teams.append(user_team_next_gw)
-            print(f"{player.name}: points update to {player.scores[match_id]}")
+            print(f"{player.name}: points update to {score}")
+    MatchPlayer.objects.create_all(MatchPlayer.objects.to_dicts(created_match_players))
+    print(f"MatchPlayer: {len(created_match_players)} players created")
+    MatchPlayer.objects.save_all(updated_match_players)
+    print(f"MatchPlayer: {len(updated_match_players)} players updated")
     Player.objects.save_all(updated_players)
     print(f"Player: {len(updated_players)} players updated")
     UserTeam.objects.save_all(updated_teams)

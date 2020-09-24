@@ -5,7 +5,7 @@ from config import Config
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud.json'
 
-from scoring import update_match_scores
+from scoring import update_match_points
 from flask_app.schedule import schedule
 from flask_app.team import UserTeam
 
@@ -23,7 +23,7 @@ def update_scores(data: dict, _):
     if not schedule.get_game_week():
         print("Error: SFL gameweek has not yet started")
         return
-    update_match_scores()
+    update_match_points()
     return
 
 

@@ -13,7 +13,7 @@ from requests import Response
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google-cloud.json"
 
-from scoring import update_match_scores, cache_request
+from scoring import cache_request, update_match_points
 from flask_app import Config
 from flask_app.user import User
 from flask_app.player import Player
@@ -388,4 +388,4 @@ def update_fantasy_score_file(match_id: Union[str, int]):
 
 
 def test_update_score():
-    update_match_scores()
+    update_match_points()

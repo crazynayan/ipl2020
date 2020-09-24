@@ -5,6 +5,7 @@ from flask import render_template, Response, flash, redirect, url_for, request, 
 from flask_login import login_required, current_user
 from werkzeug.datastructures import MultiDict
 
+from config import Config
 from flask_app import ipl_app
 from flask_app.bid import BidForm, Bid, AutoBidForm
 from flask_app.player import Player
@@ -184,7 +185,7 @@ def my_team():
 
 def view_team(owner: str, game_week: int, edit: bool) -> Response:
     players = UserTeam.get_players_by_game_week(owner, game_week)
-    captains = sum(1 for player in players if player.type == player.CAPTAIN)
+    captains = sum(1 for player in players if player.type == Config.CAPTAIN)
     cut_off = schedule.get_cut_off(game_week).strftime('%a %d %b %H:%M')
     max_captains = len(players) // 3
     groups = [player for player in players if player.group > 0]
@@ -203,17 +204,17 @@ def make_captain():
     current_game_week = schedule.get_game_week()
     players = UserTeam.get_players_by_game_week(current_user.username, current_game_week + 1)
     players.sort(key=lambda player_item: -player_item.final_score)
-    number_of_captains = sum(1 for player in players if player.type == UserTeam.CAPTAIN)
+    number_of_captains = sum(1 for player in players if player.type == Config.CAPTAIN)
     if len(players) // 3 == number_of_captains:
         flash('You already have maximum captains selected. Please remove a group to appoint more captains.')
         return redirect(url_for('my_team'))
     form = MakeCaptainForm()
     form.captain.choices = [(p.player_name, f'{p.player_name} (M-{len(p.matches)}, P-{p.final_score})')
-                            for p in players if p.type == UserTeam.NORMAL]
+                            for p in players if p.type == Config.NORMAL]
     if current_game_week > 1:
         players.sort(key=lambda player_item: player_item.final_score)
         form.sub1.choices = [(p.player_name, f'{p.player_name} (M-{len(p.matches)}, P-{p.final_score})')
-                             for p in players if p.type == UserTeam.NORMAL]
+                             for p in players if p.type == Config.NORMAL]
     else:
         form.sub1.choices = form.captain.choices[1:]
         form.sub1.choices.append(form.captain.choices[0])
@@ -224,15 +225,15 @@ def make_captain():
     group = number_of_captains + 1
     captain = next(player for player in players if player.player_name == form.captain.data)
     captain.group = group
-    captain.type = UserTeam.CAPTAIN
+    captain.type = Config.CAPTAIN
     captain.save()
     sub1 = next(player for player in players if player.player_name == form.sub1.data)
     sub1.group = group
-    sub1.type = UserTeam.SUB
+    sub1.type = Config.SUB
     sub1.save()
     sub2 = next(player for player in players if player.player_name == form.sub2.data)
     sub2.group = group
-    sub2.type = UserTeam.SUB
+    sub2.type = Config.SUB
     sub2.save()
     return redirect(url_for('my_team'))
 
@@ -247,7 +248,7 @@ def remove_group(group: int, captain: str):
         return redirect(url_for('my_team'))
     for player in group_players:
         player.group = 0
-        player.type = UserTeam.NORMAL
+        player.type = Config.NORMAL
         player.save()
     for player in players:
         if player.group <= group:
