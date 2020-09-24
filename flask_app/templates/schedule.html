@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <div class="row">
+        {% for gameweek, matches in schedule|groupby("game_week") %}
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <h5 class="card-header">Gameweek {{ gameweek }}</h5>
+                    <ul class="list-group list-group-flush">
+                        {% for match in matches %}
+                            <li class="list-group-item">
+                                <a class="{{ match.display_class }}"
+                                   href="{{ url_for('view_match_score', match_id=match.unique_id) }}">
+                                    {{ match.display }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

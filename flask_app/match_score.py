@@ -103,6 +103,26 @@ class MatchPlayer(FirestoreDocument):
     def total_points(self):
         return self.batting_points + self.bowling_points + self.man_of_the_match_points
 
+    @property
+    def adjusted_points(self) -> float:
+        if self.type == Config.CAPTAIN:
+            return float(self.total_points * 2)
+        elif self.type == Config.SUB:
+            return self.total_points / 2
+        return float(self.total_points)
+
+    @property
+    def display_class(self) -> str:
+        if self.type == Config.CAPTAIN:
+            return "table-success"
+        elif self.type == Config.SUB:
+            return "table-danger"
+        return str()
+
+    @property
+    def owner_full_name(self) -> str:
+        return Config.USER_LIST.get(self.owner.upper(), str())
+
     def update_scores(self, score_data: ScoreData):
         self.runs = score_data.get_runs(self.player_id)
         self.fours = score_data.get_fours(self.player_id)

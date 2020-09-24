@@ -33,6 +33,14 @@ class Match:
     def get_text(self, team):
         return f"{self.date.strftime('%d/%m')} v {self.get_opponent(team)} ({'H' if team == self.home_team else 'A'})"
 
+    @property
+    def display(self):
+        return f"{self.number}. {self.home_team} v {self.away_team} @  {self.date.strftime('%#d/%m')}"
+
+    @property
+    def display_class(self):
+        return f"btn btn-block btn-primary {'disabled' if self.date > today() else str()}"
+
 
 class _Schedule:
 
