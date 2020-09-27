@@ -1,0 +1,565 @@
+{
+  "dateTimeGMT": "2020-09-26T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Sunrisers Hyderabad Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Dinesh Karthik",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "30045"
+          },
+          {
+            "name": "Andre Russell",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "276298"
+          },
+          {
+            "name": "Pat Cummins",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "489889"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1108375"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Kolkata Knight Riders Innings (target: 143 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "David Warner",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "219889"
+          },
+          {
+            "name": "Wriddhiman Saha",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "279810"
+          },
+          {
+            "name": "Rashid Khan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "793463"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 5,
+            "Econ": "7.75",
+            "W": "0",
+            "R": "31",
+            "M": "0",
+            "O": "4",
+            "bowler": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 11,
+            "Econ": "4.75",
+            "W": "1",
+            "R": "19",
+            "M": "0",
+            "O": "4",
+            "bowler": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 1,
+            "0s": 6,
+            "Econ": "7.50",
+            "W": "0",
+            "R": "15",
+            "M": "0",
+            "O": "2",
+            "bowler": "Shivam Mavi",
+            "pid": "1079848"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 3,
+            "Econ": "7.50",
+            "W": "0",
+            "R": "15",
+            "M": "0",
+            "O": "2",
+            "bowler": "Kuldeep Yadav",
+            "pid": "559235"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "6.25",
+            "W": "1",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "CV Varun",
+            "pid": "1108375"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "8.50",
+            "W": "0",
+            "R": "17",
+            "M": "0",
+            "O": "2",
+            "bowler": "KL Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 4,
+            "Econ": "8.00",
+            "W": "1",
+            "R": "16",
+            "M": "0",
+            "O": "2",
+            "bowler": "AD Russell",
+            "pid": "276298"
+          }
+        ],
+        "title": "Bowling To Sunrisers Hyderabad Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "1",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 7,
+            "Econ": "9.66",
+            "W": "0",
+            "R": "29",
+            "M": "0",
+            "O": "3",
+            "bowler": "B Kumar",
+            "pid": "326016"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 5,
+            "0s": 10,
+            "Econ": "9.33",
+            "W": "1",
+            "R": "28",
+            "M": "0",
+            "O": "3",
+            "bowler": "KK Ahmed",
+            "pid": "942645"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "9.00",
+            "W": "1",
+            "R": "27",
+            "M": "0",
+            "O": "3",
+            "bowler": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 8,
+            "Econ": "6.25",
+            "W": "1",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 0,
+            "0s": 5,
+            "Econ": "5.75",
+            "W": "0",
+            "R": "23",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mohammad Nabi",
+            "pid": "25913"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 0,
+            "Econ": "11.00",
+            "W": "0",
+            "R": "11",
+            "M": "0",
+            "O": "1",
+            "bowler": "Abhishek Sharma",
+            "pid": "1070183"
+          }
+        ],
+        "title": "Bowling To Kolkata Knight Riders Innings (target: 143 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Varun Chakravarthy",
+              "pid": "1108375"
+            },
+            "dismissal": "catch & bowled",
+            "SR": 120,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 30,
+            "R": 36,
+            "dismissal-info": "c & b Varun",
+            "batsman": "DA Warner\u00a0(c)",
+            "pid": "219889"
+          },
+          {
+            "dismissal-by": {
+              "name": "Pat Cummins",
+              "pid": "489889"
+            },
+            "dismissal": "bowled",
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 10,
+            "R": 5,
+            "dismissal-info": "b Cummins",
+            "batsman": "JM Bairstow",
+            "pid": "297433"
+          },
+          {
+            "dismissal-by": {
+              "name": "Andre Russell",
+              "pid": "276298"
+            },
+            "dismissal": "catch & bowled",
+            "SR": 134,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 38,
+            "R": 51,
+            "dismissal-info": "c & b Russell",
+            "batsman": "MK Pandey",
+            "pid": "290630"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Pat Cummins",
+                "pid": "489889"
+              },
+              {
+                "name": "Dinesh Karthik",
+                "pid": "30045"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 96,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 31,
+            "R": 30,
+            "dismissal-info": "run out (Cummins/ Karthik)",
+            "batsman": "WP Saha\u00a0 ",
+            "pid": "279810"
+          },
+          {
+            "SR": 137,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 8,
+            "R": 11,
+            "dismissal-info": "",
+            "batsman": "Mohammad Nabi",
+            "pid": "25913"
+          },
+          {
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "Abhishek Sharma",
+            "pid": "1070183"
+          }
+        ],
+        "title": "Sunrisers Hyderabad Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "SR": 112,
+            "6s": 2,
+            "4s": 5,
+            "M": 0,
+            "B": 62,
+            "R": 70,
+            "dismissal-info": "",
+            "batsman": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "dismissal-by": {
+              "name": "David Warner",
+              "pid": "219889"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "c Warner b Ahmed",
+            "batsman": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "dismissal-by": {
+              "name": "Wriddhiman Saha",
+              "pid": "279810"
+            },
+            "dismissal": "catch",
+            "SR": 200,
+            "6s": 0,
+            "4s": 6,
+            "M": 0,
+            "B": 13,
+            "R": 26,
+            "dismissal-info": "c  Saha b Natarajan",
+            "batsman": "N Rana",
+            "pid": "604527"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rashid Khan",
+              "pid": "793463"
+            },
+            "dismissal": "lbw",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 0,
+            "dismissal-info": "lbw b Rashid Khan",
+            "batsman": "KD Karthik\u00a0(c)  ",
+            "pid": "30045"
+          },
+          {
+            "SR": 144,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 29,
+            "R": 42,
+            "dismissal-info": "",
+            "batsman": "EJG Morgan",
+            "pid": "24598"
+          }
+        ],
+        "title": "Kolkata Knight Riders Innings (target: 143 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "name": "Sunil Narine",
+            "pid": "230558"
+          },
+          {
+            "name": "Nitish Rana",
+            "pid": "604527"
+          },
+          {
+            "name": "Dinesh Karthik",
+            "pid": "30045"
+          },
+          {
+            "name": "Eoin Morgan",
+            "pid": "24598"
+          },
+          {
+            "name": "Andre Russell",
+            "pid": "276298"
+          },
+          {
+            "name": "Pat Cummins",
+            "pid": "489889"
+          },
+          {
+            "name": "Shivam Mavi",
+            "pid": "1079848"
+          },
+          {
+            "name": "Kuldeep Yadav",
+            "pid": "559235"
+          },
+          {
+            "name": "Kamlesh Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "pid": "1108375"
+          }
+        ],
+        "name": "Kolkata Knight Riders"
+      },
+      {
+        "players": [
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Jonny Bairstow",
+            "pid": "297433"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Wriddhiman Saha",
+            "pid": "279810"
+          },
+          {
+            "name": "Mohammad Nabi",
+            "pid": "25913"
+          },
+          {
+            "name": "Abhishek Sharma",
+            "pid": "1070183"
+          },
+          {
+            "name": "Priyam Garg",
+            "pid": "1070180"
+          },
+          {
+            "name": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "name": "Bhuvneshwar Kumar",
+            "pid": "326016"
+          },
+          {
+            "name": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "name": "Khaleel Ahmed",
+            "pid": "942645"
+          }
+        ],
+        "name": "Sunrisers Hyderabad"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Shubman Gill",
+      "pid": "1070173"
+    },
+    "toss_winner_team": "Sunrisers Hyderabad",
+    "winner_team": "Kolkata Knight Riders",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 194,
+  "v": "1",
+  "ttl": 55,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-09-27T03:47:44.183Z"
+  }
+}
