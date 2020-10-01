@@ -1,0 +1,528 @@
+{
+  "dateTimeGMT": "2020-09-28T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Royal Challengers Bangalore Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Rohit Sharma",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "34102"
+          },
+          {
+            "name": "Kieron Pollard",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "230559"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Mumbai Indians Innings (target: 202 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "AB de Villiers",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "44936"
+          },
+          {
+            "name": "P Negi",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 3,
+            "pid": 530773
+          },
+          {
+            "name": "Devdutt Padikkal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1119026"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 2,
+            "0s": 8,
+            "Econ": "8.50",
+            "W": "2",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "TA Boult",
+            "pid": "277912"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 5,
+            "4s": 2,
+            "0s": 9,
+            "Econ": "12.75",
+            "W": "0",
+            "R": "51",
+            "M": "0",
+            "O": "4",
+            "bowler": "JL Pattinson",
+            "pid": "272465"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "7.75",
+            "W": "1",
+            "R": "31",
+            "M": "0",
+            "O": "4",
+            "bowler": "RD Chahar",
+            "pid": "1064812"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 4,
+            "0s": 10,
+            "Econ": "10.50",
+            "W": "0",
+            "R": "42",
+            "M": "0",
+            "O": "4",
+            "bowler": "JJ Bumrah",
+            "pid": "625383"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "7.66",
+            "W": "0",
+            "R": "23",
+            "M": "0",
+            "O": "3",
+            "bowler": "KH Pandya",
+            "pid": "471342"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 0,
+            "Econ": "13.00",
+            "W": "0",
+            "R": "13",
+            "M": "0",
+            "O": "1",
+            "bowler": "KA Pollard",
+            "pid": "230559"
+          }
+        ],
+        "title": "Bowling To Royal Challengers Bangalore Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 3,
+            "4s": 3,
+            "0s": 7,
+            "Econ": "11.25",
+            "W": "2",
+            "R": "45",
+            "M": "0",
+            "O": "4",
+            "bowler": "I Udana",
+            "pid": "328026"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 13,
+            "Econ": "3.00",
+            "W": "1",
+            "R": "12",
+            "M": "0",
+            "O": "4",
+            "bowler": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 4,
+            "4s": 1,
+            "0s": 8,
+            "Econ": "10.75",
+            "W": "0",
+            "R": "43",
+            "M": "0",
+            "O": "4",
+            "bowler": "NA Saini",
+            "pid": "700167"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 4,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "12.00",
+            "W": "1",
+            "R": "48",
+            "M": "0",
+            "O": "4",
+            "bowler": "YS Chahal",
+            "pid": "430246"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 5,
+            "4s": 1,
+            "0s": 3,
+            "Econ": "13.25",
+            "W": "1",
+            "R": "53",
+            "M": "0",
+            "O": "4",
+            "bowler": "A Zampa",
+            "pid": "379504"
+          }
+        ],
+        "title": "Bowling To Mumbai Indians Innings (target: 202 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Kieron Pollard",
+              "pid": "230559"
+            },
+            "dismissal": "catch",
+            "SR": 135,
+            "6s": 2,
+            "4s": 5,
+            "M": 0,
+            "B": 40,
+            "R": 54,
+            "dismissal-info": "c Pollard b Boult",
+            "batsman": "D Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kieron Pollard",
+              "pid": "230559"
+            },
+            "dismissal": "catch",
+            "SR": 148,
+            "6s": 1,
+            "4s": 7,
+            "M": 0,
+            "B": 35,
+            "R": 52,
+            "dismissal-info": "c Pollard b Boult",
+            "batsman": "AJ Finch",
+            "pid": "5334"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rohit Sharma",
+              "pid": "34102"
+            },
+            "dismissal": "catch",
+            "SR": 27,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 11,
+            "R": 3,
+            "dismissal-info": "c Sharma b Chahar",
+            "batsman": "V Kohli\u00a0(c)",
+            "pid": "253802"
+          },
+          {
+            "SR": 229,
+            "6s": 4,
+            "4s": 4,
+            "M": 0,
+            "B": 24,
+            "R": 55,
+            "dismissal-info": "",
+            "batsman": "AB de Villiers\u00a0 ",
+            "pid": "44936"
+          },
+          {
+            "SR": 270,
+            "6s": 3,
+            "4s": 1,
+            "M": 0,
+            "B": 10,
+            "R": 27,
+            "dismissal-info": "",
+            "batsman": "S Dube",
+            "pid": "714451"
+          }
+        ],
+        "title": "Royal Challengers Bangalore Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "P Negi",
+              "pid": 530773
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 8,
+            "R": 8,
+            "dismissal-info": "c sub (P Negi) b Washington Sundar",
+            "batsman": "RG Sharma\u00a0(c)",
+            "pid": "34102"
+          },
+          {
+            "dismissal-by": {
+              "name": "P Negi",
+              "pid": 530773
+            },
+            "dismissal": "catch",
+            "SR": 93,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 15,
+            "R": 14,
+            "dismissal-info": "c sub (P Negi) b Chahal",
+            "batsman": "Q de Kock\u00a0 ",
+            "pid": "379143"
+          },
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "c  de Villiers b Udana",
+            "batsman": "SA Yadav",
+            "pid": "446507"
+          },
+          {
+            "dismissal-by": {
+              "name": "Devdutt Padikkal",
+              "pid": "1119026"
+            },
+            "dismissal": "catch",
+            "SR": 170,
+            "6s": 9,
+            "4s": 2,
+            "M": 0,
+            "B": 58,
+            "R": 99,
+            "dismissal-info": "c Padikkal b Udana",
+            "batsman": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "dismissal-by": {
+              "name": "P Negi",
+              "pid": 530773
+            },
+            "dismissal": "catch",
+            "SR": 115,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 13,
+            "R": 15,
+            "dismissal-info": "c sub (P Negi) b Zampa",
+            "batsman": "HH Pandya",
+            "pid": "625371"
+          },
+          {
+            "SR": 250,
+            "6s": 5,
+            "4s": 3,
+            "M": 0,
+            "B": 24,
+            "R": 60,
+            "dismissal-info": "",
+            "batsman": "KA Pollard",
+            "pid": "230559"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "KH Pandya",
+            "pid": "471342"
+          }
+        ],
+        "title": "Mumbai Indians Innings (target: 202 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Devdutt Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "name": "Aaron Finch",
+            "pid": "5334"
+          },
+          {
+            "name": "Virat Kohli",
+            "pid": "253802"
+          },
+          {
+            "name": "AB de Villiers",
+            "pid": "44936"
+          },
+          {
+            "name": "Shivam Dube",
+            "pid": "714451"
+          },
+          {
+            "name": "Gurkeerat Singh Mann",
+            "pid": "537124"
+          },
+          {
+            "name": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "name": "Isuru Udana",
+            "pid": "328026"
+          },
+          {
+            "name": "Navdeep Saini",
+            "pid": "700167"
+          },
+          {
+            "name": "Yuzvendra Chahal",
+            "pid": "430246"
+          },
+          {
+            "name": "Adam Zampa",
+            "pid": "379504"
+          }
+        ],
+        "name": "Royal Challengers Bangalore"
+      },
+      {
+        "players": [
+          {
+            "name": "Rohit Sharma",
+            "pid": "34102"
+          },
+          {
+            "name": "Quinton de Kock",
+            "pid": "379143"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "pid": "446507"
+          },
+          {
+            "name": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "name": "Hardik Pandya",
+            "pid": "625371"
+          },
+          {
+            "name": "Kieron Pollard",
+            "pid": "230559"
+          },
+          {
+            "name": "Krunal Pandya",
+            "pid": "471342"
+          },
+          {
+            "name": "James Pattinson",
+            "pid": "272465"
+          },
+          {
+            "name": "Rahul Chahar",
+            "pid": "1064812"
+          },
+          {
+            "name": "Trent Boult",
+            "pid": "277912"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "pid": "625383"
+          }
+        ],
+        "name": "Mumbai Indians"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "AB de Villiers",
+      "pid": "44936"
+    },
+    "toss_winner_team": "Mumbai Indians",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 160,
+  "v": "1",
+  "ttl": 9,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-09-29T05:46:08.151Z"
+  }
+}

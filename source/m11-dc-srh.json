@@ -1,0 +1,622 @@
+{
+  "dateTimeGMT": "2020-09-29T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Sunrisers Hyderabad Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Anrich Nortje",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "481979"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "550215"
+          },
+          {
+            "name": "Axar Patel",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "554691"
+          },
+          {
+            "name": "Rishabh Pant",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "931581"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Delhi Capitals Innings (target: 163 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Manish Pandey",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "290630"
+          },
+          {
+            "name": "Jonny Bairstow",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "297433"
+          },
+          {
+            "name": "T Natarajan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "802575"
+          },
+          {
+            "name": "Khaleel Ahmed",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "942645"
+          },
+          {
+            "name": "Priyam Garg",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1070180"
+          },
+          {
+            "name": "Abdul Samad",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1175485"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 0,
+            "0s": 4,
+            "Econ": "8.66",
+            "W": "0",
+            "R": "26",
+            "M": "0",
+            "O": "3",
+            "bowler": "I Sharma",
+            "pid": "236779"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 11,
+            "Econ": "5.25",
+            "W": "2",
+            "R": "21",
+            "M": "0",
+            "O": "4",
+            "bowler": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 4,
+            "0s": 6,
+            "Econ": "10.00",
+            "W": "0",
+            "R": "40",
+            "M": "0",
+            "O": "4",
+            "bowler": "A Nortje",
+            "pid": "481979"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 4,
+            "Econ": "7.33",
+            "W": "0",
+            "R": "22",
+            "M": "0",
+            "O": "3",
+            "bowler": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "8.75",
+            "W": "2",
+            "R": "35",
+            "M": "0",
+            "O": "4",
+            "bowler": "A Mishra",
+            "pid": "31107"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "7.00",
+            "W": "0",
+            "R": "14",
+            "M": "0",
+            "O": "2",
+            "bowler": "AR Patel",
+            "pid": "554691"
+          }
+        ],
+        "title": "Bowling To Sunrisers Hyderabad Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 4,
+            "0s": 13,
+            "Econ": "6.25",
+            "W": "2",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "B Kumar",
+            "pid": "326016"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 2,
+            "0s": 9,
+            "Econ": "10.75",
+            "W": "1",
+            "R": "43",
+            "M": "0",
+            "O": "4",
+            "bowler": "KK Ahmed",
+            "pid": "942645"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 8,
+            "Econ": "6.25",
+            "W": "1",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 0,
+            "0s": 4,
+            "Econ": "8.50",
+            "W": "0",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "Abhishek Sharma",
+            "pid": "1070183"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 13,
+            "Econ": "3.50",
+            "W": "3",
+            "R": "14",
+            "M": "0",
+            "O": "4",
+            "bowler": "Rashid Khan",
+            "pid": "793463"
+          }
+        ],
+        "title": "Bowling To Delhi Capitals Innings (target: 163 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Rishabh Pant",
+              "pid": "931581"
+            },
+            "dismissal": "catch",
+            "SR": 136,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 33,
+            "R": 45,
+            "dismissal-info": "c  Pant b Mishra",
+            "batsman": "DA Warner\u00a0(c)",
+            "pid": "219889"
+          },
+          {
+            "dismissal-by": {
+              "name": "Anrich Nortje",
+              "pid": "481979"
+            },
+            "dismissal": "catch",
+            "SR": 110,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 48,
+            "R": 53,
+            "dismissal-info": "c Nortje b Rabada",
+            "batsman": "JM Bairstow\u00a0 ",
+            "pid": "297433"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kagiso Rabada",
+              "pid": "550215"
+            },
+            "dismissal": "catch",
+            "SR": 60,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 3,
+            "dismissal-info": "c Rabada b Mishra",
+            "batsman": "MK Pandey",
+            "pid": "290630"
+          },
+          {
+            "dismissal-by": {
+              "name": "Axar Patel",
+              "pid": "554691"
+            },
+            "dismissal": "catch",
+            "SR": 157,
+            "6s": 0,
+            "4s": 5,
+            "M": 0,
+            "B": 26,
+            "R": 41,
+            "dismissal-info": "c Patel b Rabada",
+            "batsman": "KS Williamson",
+            "pid": "277906"
+          },
+          {
+            "SR": 171,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 7,
+            "R": 12,
+            "dismissal-info": "",
+            "batsman": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 1,
+            "dismissal-info": "",
+            "batsman": "Abhishek Sharma",
+            "pid": "1070183"
+          }
+        ],
+        "title": "Sunrisers Hyderabad Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Jonny Bairstow",
+              "pid": "297433"
+            },
+            "dismissal": "catch",
+            "SR": 40,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 2,
+            "dismissal-info": "c  Bairstow b Kumar",
+            "batsman": "PP Shaw",
+            "pid": "1070168"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jonny Bairstow",
+              "pid": "297433"
+            },
+            "dismissal": "catch",
+            "SR": 109,
+            "6s": 0,
+            "4s": 4,
+            "M": 0,
+            "B": 31,
+            "R": 34,
+            "dismissal-info": "c  Bairstow b Rashid Khan",
+            "batsman": "S Dhawan",
+            "pid": "28235"
+          },
+          {
+            "dismissal-by": {
+              "name": "Abdul Samad",
+              "pid": "1175485"
+            },
+            "dismissal": "catch",
+            "SR": 80,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 21,
+            "R": 17,
+            "dismissal-info": "c Abdul Samad b Rashid Khan",
+            "batsman": "SS Iyer\u00a0(c)",
+            "pid": "642519"
+          },
+          {
+            "dismissal-by": {
+              "name": "Priyam Garg",
+              "pid": "1070180"
+            },
+            "dismissal": "catch",
+            "SR": 103,
+            "6s": 2,
+            "4s": 1,
+            "M": 0,
+            "B": 27,
+            "R": 28,
+            "dismissal-info": "c Garg b Rashid Khan",
+            "batsman": "RR Pant\u00a0 ",
+            "pid": "931581"
+          },
+          {
+            "dismissal-by": {
+              "name": "Manish Pandey",
+              "pid": "290630"
+            },
+            "dismissal": "catch",
+            "SR": 175,
+            "6s": 2,
+            "4s": 0,
+            "M": 0,
+            "B": 12,
+            "R": 21,
+            "dismissal-info": "c Pandey b Kumar",
+            "batsman": "SO Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "dismissal-by": {
+              "name": "T Natarajan",
+              "pid": "802575"
+            },
+            "dismissal": "lbw",
+            "SR": 122,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 9,
+            "R": 11,
+            "dismissal-info": "lbw b Natarajan",
+            "batsman": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "dismissal-by": {
+              "name": "Khaleel Ahmed",
+              "pid": "942645"
+            },
+            "dismissal": "bowled",
+            "SR": 83,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 5,
+            "dismissal-info": "b Ahmed",
+            "batsman": "AR Patel",
+            "pid": "554691"
+          },
+          {
+            "SR": 214,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 7,
+            "R": 15,
+            "dismissal-info": "",
+            "batsman": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "SR": 150,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 3,
+            "dismissal-info": "",
+            "batsman": "A Nortje",
+            "pid": "481979"
+          }
+        ],
+        "title": "Delhi Capitals Innings (target: 163 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Prithvi Shaw",
+            "pid": "1070168"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "pid": "28235"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "pid": "642519"
+          },
+          {
+            "name": "Rishabh Pant",
+            "pid": "931581"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "name": "Marcus Stoinis",
+            "pid": "325012"
+          },
+          {
+            "name": "Axar Patel",
+            "pid": "554691"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "pid": "550215"
+          },
+          {
+            "name": "Anrich Nortje",
+            "pid": "481979"
+          },
+          {
+            "name": "Amit Mishra",
+            "pid": "31107"
+          },
+          {
+            "name": "Ishant Sharma",
+            "pid": "236779"
+          }
+        ],
+        "name": "Delhi Capitals"
+      },
+      {
+        "players": [
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Jonny Bairstow",
+            "pid": "297433"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Kane Williamson",
+            "pid": "277906"
+          },
+          {
+            "name": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "name": "Abhishek Sharma",
+            "pid": "1070183"
+          },
+          {
+            "name": "Priyam Garg",
+            "pid": "1070180"
+          },
+          {
+            "name": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "name": "Bhuvneshwar Kumar",
+            "pid": "326016"
+          },
+          {
+            "name": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "name": "Khaleel Ahmed",
+            "pid": "942645"
+          }
+        ],
+        "name": "Sunrisers Hyderabad"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Rashid Khan",
+      "pid": "793463"
+    },
+    "toss_winner_team": "Delhi Capitals",
+    "winner_team": "Sunrisers Hyderabad",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 144,
+  "v": "1",
+  "ttl": 11,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-09-30T12:47:10.276Z"
+  }
+}

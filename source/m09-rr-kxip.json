@@ -1,0 +1,570 @@
+{
+  "dateTimeGMT": "2020-09-27T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Kings XI Punjab Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Shreyas Gopal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "344580"
+          },
+          {
+            "name": "Sanju Samson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "425943"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Rajasthan Royals Innings (target: 224 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Mayank Agarwal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "398438"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "423838"
+          },
+          {
+            "name": "Mohammed Shami",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "481896"
+          },
+          {
+            "name": "Murugan Ashwin",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "528067"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "604302"
+          },
+          {
+            "name": "Sarfaraz Khan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "642525"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "10.00",
+            "W": "0",
+            "R": "30",
+            "M": "0",
+            "O": "3",
+            "bowler": "JD Unadkat",
+            "pid": "390484"
+          },
+          {
+            "NB": "1",
+            "WD": "1",
+            "6s": 1,
+            "4s": 5,
+            "0s": 7,
+            "Econ": "9.75",
+            "W": "1",
+            "R": "39",
+            "M": "0",
+            "O": "4",
+            "bowler": "AS Rajpoot",
+            "pid": "591650"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 6,
+            "0s": 9,
+            "Econ": "11.50",
+            "W": "0",
+            "R": "46",
+            "M": "0",
+            "O": "4",
+            "bowler": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 2,
+            "0s": 4,
+            "Econ": "11.00",
+            "W": "0",
+            "R": "44",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 1,
+            "0s": 0,
+            "Econ": "19.00",
+            "W": "0",
+            "R": "19",
+            "M": "0",
+            "O": "1",
+            "bowler": "R Tewatia",
+            "pid": "423838"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 4,
+            "0s": 4,
+            "Econ": "11.00",
+            "W": "1",
+            "R": "44",
+            "M": "0",
+            "O": "4",
+            "bowler": "TK Curran",
+            "pid": "550235"
+          }
+        ],
+        "title": "Bowling To Kings XI Punjab Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 6,
+            "4s": 3,
+            "0s": 8,
+            "Econ": "17.33",
+            "W": "1",
+            "R": "52",
+            "M": "0",
+            "O": "3",
+            "bowler": "SS Cottrell",
+            "pid": "495551"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 4,
+            "4s": 4,
+            "0s": 8,
+            "Econ": "13.25",
+            "W": "3",
+            "R": "53",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 3,
+            "4s": 1,
+            "0s": 12,
+            "Econ": "8.50",
+            "W": "0",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 5,
+            "0s": 5,
+            "Econ": "10.00",
+            "W": "1",
+            "R": "40",
+            "M": "0",
+            "O": "4",
+            "bowler": "JDS Neesham",
+            "pid": "355269"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "10.66",
+            "W": "1",
+            "R": "16",
+            "M": "0",
+            "O": "1.3",
+            "bowler": "M Ashwin",
+            "pid": "528067"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 3,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "9.66",
+            "W": "0",
+            "R": "29",
+            "M": "0",
+            "O": "3",
+            "bowler": "GJ Maxwell",
+            "pid": "325026"
+          }
+        ],
+        "title": "Bowling To Rajasthan Royals Innings (target: 224 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Shreyas Gopal",
+              "pid": "344580"
+            },
+            "dismissal": "catch",
+            "SR": 127,
+            "6s": 1,
+            "4s": 7,
+            "M": 0,
+            "B": 54,
+            "R": 69,
+            "dismissal-info": "c Gopal b Rajpoot",
+            "batsman": "KL Rahul\u00a0(c)  ",
+            "pid": "422108"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sanju Samson",
+              "pid": "425943"
+            },
+            "dismissal": "catch",
+            "SR": 212,
+            "6s": 7,
+            "4s": 10,
+            "M": 0,
+            "B": 50,
+            "R": 106,
+            "dismissal-info": "c Samson b Curran",
+            "batsman": "MA Agarwal",
+            "pid": "398438"
+          },
+          {
+            "SR": 144,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 9,
+            "R": 13,
+            "dismissal-info": "",
+            "batsman": "GJ Maxwell",
+            "pid": "325026"
+          },
+          {
+            "SR": 312,
+            "6s": 3,
+            "4s": 1,
+            "M": 0,
+            "B": 8,
+            "R": 25,
+            "dismissal-info": "",
+            "batsman": "N Pooran",
+            "pid": "604302"
+          }
+        ],
+        "title": "Kings XI Punjab Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Sarfaraz Khan",
+              "pid": "642525"
+            },
+            "dismissal": "catch",
+            "SR": 57,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 4,
+            "dismissal-info": "c Khan b Cottrell",
+            "batsman": "JC Buttler\u00a0 ",
+            "pid": "308967"
+          },
+          {
+            "dismissal-by": {
+              "name": "Mohammed Shami",
+              "pid": "481896"
+            },
+            "dismissal": "catch",
+            "SR": 185,
+            "6s": 2,
+            "4s": 7,
+            "M": 0,
+            "B": 27,
+            "R": 50,
+            "dismissal-info": "c Mohammed Shami b Neesham",
+            "batsman": "SPD Smith\u00a0(c)",
+            "pid": "267192"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Tewatia",
+              "pid": "423838"
+            },
+            "dismissal": "catch",
+            "SR": 202,
+            "6s": 7,
+            "4s": 4,
+            "M": 0,
+            "B": 42,
+            "R": 85,
+            "dismissal-info": "c  Rahul b Mohammed Shami",
+            "batsman": "SV Samson",
+            "pid": "425943"
+          },
+          {
+            "dismissal-by": {
+              "name": "Mayank Agarwal",
+              "pid": "398438"
+            },
+            "dismissal": "catch",
+            "SR": 170,
+            "6s": 7,
+            "4s": 0,
+            "M": 0,
+            "B": 31,
+            "R": 53,
+            "dismissal-info": "c Agarwal b Mohammed Shami",
+            "batsman": "R Tewatia",
+            "pid": "423838"
+          },
+          {
+            "dismissal-by": {
+              "name": "Nicholas Pooran",
+              "pid": "604302"
+            },
+            "dismissal": "catch",
+            "SR": 225,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 4,
+            "R": 9,
+            "dismissal-info": "c Pooran b Mohammed Shami",
+            "batsman": "RV Uthappa",
+            "pid": "35582"
+          },
+          {
+            "SR": 433,
+            "6s": 2,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 13,
+            "dismissal-info": "",
+            "batsman": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "dismissal-by": {
+              "name": "Murugan Ashwin",
+              "pid": "528067"
+            },
+            "dismissal": "bowled",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "b Ashwin",
+            "batsman": "R Parag",
+            "pid": "1079434"
+          },
+          {
+            "SR": 400,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 1,
+            "R": 4,
+            "dismissal-info": "",
+            "batsman": "TK Curran",
+            "pid": "550235"
+          }
+        ],
+        "title": "Rajasthan Royals Innings (target: 224 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Jos Buttler",
+            "pid": "308967"
+          },
+          {
+            "name": "Steven Smith",
+            "pid": "267192"
+          },
+          {
+            "name": "Sanju Samson",
+            "pid": "425943"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "pid": "423838"
+          },
+          {
+            "name": "Robin Uthappa",
+            "pid": "35582"
+          },
+          {
+            "name": "Jofra Archer",
+            "pid": "669855"
+          },
+          {
+            "name": "Riyan Parag",
+            "pid": "1079434"
+          },
+          {
+            "name": "Tom Curran",
+            "pid": "550235"
+          },
+          {
+            "name": "Shreyas Gopal",
+            "pid": "344580"
+          },
+          {
+            "name": "Ankit Rajpoot",
+            "pid": "591650"
+          },
+          {
+            "name": "Jaydev Unadkat",
+            "pid": "390484"
+          }
+        ],
+        "name": "Rajasthan Royals"
+      },
+      {
+        "players": [
+          {
+            "name": "KL Rahul",
+            "pid": "422108"
+          },
+          {
+            "name": "Mayank Agarwal",
+            "pid": "398438"
+          },
+          {
+            "name": "Glenn Maxwell",
+            "pid": "325026"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "pid": "604302"
+          },
+          {
+            "name": "Karun Nair",
+            "pid": "398439"
+          },
+          {
+            "name": "James Neesham",
+            "pid": "355269"
+          },
+          {
+            "name": "Sarfaraz Khan",
+            "pid": "642525"
+          },
+          {
+            "name": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "name": "Sheldon Cottrell",
+            "pid": "495551"
+          },
+          {
+            "name": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "name": "Murugan Ashwin",
+            "pid": "528067"
+          }
+        ],
+        "name": "Kings XI Punjab"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Sanju Samson",
+      "pid": "425943"
+    },
+    "toss_winner_team": "Rajasthan Royals",
+    "winner_team": "Rajasthan Royals",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 176,
+  "v": "1",
+  "ttl": 9,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-09-28T03:24:54.042Z"
+  }
+}

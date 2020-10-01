@@ -1,0 +1,723 @@
+{
+  "dateTimeGMT": "2020-09-30T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Kolkata Knight Riders Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Jos Buttler",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "308967"
+          },
+          {
+            "name": "Jaydev Unadkat",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "390484"
+          },
+          {
+            "name": "Sanju Samson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "425943"
+          },
+          {
+            "name": "Jofra Archer",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "669855"
+          },
+          {
+            "name": "Riyan Parag",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1079434"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Rajasthan Royals Innings (target: 175 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Dinesh Karthik",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "30045"
+          },
+          {
+            "name": "Sunil Narine",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "230558"
+          },
+          {
+            "name": "Shubman Gill",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1070173"
+          },
+          {
+            "name": "Kamlesh Nagarkoti",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "1070188"
+          },
+          {
+            "name": "Shivam Mavi",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1079848"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1108375"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 14,
+            "Econ": "4.50",
+            "W": "2",
+            "R": "18",
+            "M": "0",
+            "O": "4",
+            "bowler": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "NB": "0",
+            "WD": "4",
+            "6s": 2,
+            "4s": 3,
+            "0s": 9,
+            "Econ": "9.75",
+            "W": "1",
+            "R": "39",
+            "M": "0",
+            "O": "4",
+            "bowler": "AS Rajpoot",
+            "pid": "591650"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 6,
+            "Econ": "7.00",
+            "W": "1",
+            "R": "14",
+            "M": "0",
+            "O": "2",
+            "bowler": "JD Unadkat",
+            "pid": "390484"
+          },
+          {
+            "NB": "0",
+            "WD": "4",
+            "6s": 1,
+            "4s": 2,
+            "0s": 7,
+            "Econ": "9.25",
+            "W": "1",
+            "R": "37",
+            "M": "0",
+            "O": "4",
+            "bowler": "TK Curran",
+            "pid": "550235"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "10.75",
+            "W": "0",
+            "R": "43",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 0,
+            "Econ": "14.00",
+            "W": "0",
+            "R": "14",
+            "M": "0",
+            "O": "1",
+            "bowler": "R Parag",
+            "pid": "1079434"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 3,
+            "Econ": "6.00",
+            "W": "1",
+            "R": "6",
+            "M": "0",
+            "O": "1",
+            "bowler": "R Tewatia",
+            "pid": "423838"
+          }
+        ],
+        "title": "Bowling To Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 4,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "10.00",
+            "W": "1",
+            "R": "40",
+            "M": "0",
+            "O": "4",
+            "bowler": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 12,
+            "Econ": "4.33",
+            "W": "1",
+            "R": "13",
+            "M": "0",
+            "O": "3",
+            "bowler": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 13,
+            "Econ": "5.00",
+            "W": "2",
+            "R": "20",
+            "M": "0",
+            "O": "4",
+            "bowler": "Shivam Mavi",
+            "pid": "1079848"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "6.50",
+            "W": "2",
+            "R": "13",
+            "M": "0",
+            "O": "2",
+            "bowler": "KL Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 7,
+            "Econ": "6.25",
+            "W": "2",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "CV Varun",
+            "pid": "1108375"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 8,
+            "Econ": "6.66",
+            "W": "1",
+            "R": "20",
+            "M": "0",
+            "O": "3",
+            "bowler": "Kuldeep Yadav",
+            "pid": "559235"
+          }
+        ],
+        "title": "Bowling To Rajasthan Royals Innings (target: 175 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Jofra Archer",
+              "pid": "669855"
+            },
+            "dismissal": "catch & bowled",
+            "SR": 138,
+            "6s": 1,
+            "4s": 5,
+            "M": 0,
+            "B": 34,
+            "R": 47,
+            "dismissal-info": "c & b Archer",
+            "batsman": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jaydev Unadkat",
+              "pid": "390484"
+            },
+            "dismissal": "bowled",
+            "SR": 107,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 14,
+            "R": 15,
+            "dismissal-info": "b Unadkat",
+            "batsman": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "dismissal-by": {
+              "name": "Riyan Parag",
+              "pid": "1079434"
+            },
+            "dismissal": "catch",
+            "SR": 129,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 17,
+            "R": 22,
+            "dismissal-info": "c Parag b Tewatia",
+            "batsman": "N Rana",
+            "pid": "604527"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jaydev Unadkat",
+              "pid": "390484"
+            },
+            "dismissal": "catch",
+            "SR": 171,
+            "6s": 3,
+            "4s": 0,
+            "M": 0,
+            "B": 14,
+            "R": 24,
+            "dismissal-info": "c Unadkat b Rajpoot",
+            "batsman": "AD Russell",
+            "pid": "276298"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jos Buttler",
+              "pid": "308967"
+            },
+            "dismissal": "catch",
+            "SR": 33,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 1,
+            "dismissal-info": "c  Buttler b Archer",
+            "batsman": "KD Karthik\u00a0(c)  ",
+            "pid": "30045"
+          },
+          {
+            "SR": 147,
+            "6s": 2,
+            "4s": 1,
+            "M": 0,
+            "B": 23,
+            "R": 34,
+            "dismissal-info": "",
+            "batsman": "EJG Morgan",
+            "pid": "24598"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sanju Samson",
+              "pid": "425943"
+            },
+            "dismissal": "catch",
+            "SR": 120,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 10,
+            "R": 12,
+            "dismissal-info": "c Samson b Curran",
+            "batsman": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "SR": 160,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 5,
+            "R": 8,
+            "dismissal-info": "",
+            "batsman": "KL Nagarkoti",
+            "pid": "1070188"
+          }
+        ],
+        "title": "Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Varun Chakravarthy",
+              "pid": "1108375"
+            },
+            "dismissal": "catch",
+            "SR": 131,
+            "6s": 2,
+            "4s": 1,
+            "M": 0,
+            "B": 16,
+            "R": 21,
+            "dismissal-info": "c Varun b Shivam Mavi",
+            "batsman": "JC Buttler\u00a0 ",
+            "pid": "308967"
+          },
+          {
+            "dismissal-by": {
+              "name": "Dinesh Karthik",
+              "pid": "30045"
+            },
+            "dismissal": "catch",
+            "SR": 42,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 3,
+            "dismissal-info": "c  Karthik b Cummins",
+            "batsman": "SPD Smith\u00a0(c)",
+            "pid": "267192"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sunil Narine",
+              "pid": "230558"
+            },
+            "dismissal": "catch",
+            "SR": 88,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 9,
+            "R": 8,
+            "dismissal-info": "c Narine b Shivam Mavi",
+            "batsman": "SV Samson",
+            "pid": "425943"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shivam Mavi",
+              "pid": "1079848"
+            },
+            "dismissal": "catch",
+            "SR": 28,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 2,
+            "dismissal-info": "c Shivam Mavi b Nagarkoti",
+            "batsman": "RV Uthappa",
+            "pid": "35582"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shubman Gill",
+              "pid": "1070173"
+            },
+            "dismissal": "catch",
+            "SR": 16,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 1,
+            "dismissal-info": "c Shubman Gill b Nagarkoti",
+            "batsman": "R Parag",
+            "pid": "1079434"
+          },
+          {
+            "dismissal-by": {
+              "name": "Varun Chakravarthy",
+              "pid": "1108375"
+            },
+            "dismissal": "bowled",
+            "SR": 140,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 10,
+            "R": 14,
+            "dismissal-info": "b Varun",
+            "batsman": "R Tewatia",
+            "pid": "423838"
+          },
+          {
+            "SR": 150,
+            "6s": 3,
+            "4s": 2,
+            "M": 0,
+            "B": 36,
+            "R": 54,
+            "dismissal-info": "",
+            "batsman": "TK Curran",
+            "pid": "550235"
+          },
+          {
+            "dismissal-by": {
+              "name": "Dinesh Karthik",
+              "pid": "30045"
+            },
+            "dismissal": "catch",
+            "SR": 71,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 5,
+            "dismissal-info": "c  Karthik b Narine",
+            "batsman": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kamlesh Nagarkoti",
+              "pid": "1070188"
+            },
+            "dismissal": "catch",
+            "SR": 150,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 6,
+            "dismissal-info": "c Nagarkoti b Varun",
+            "batsman": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kamlesh Nagarkoti",
+              "pid": "1070188"
+            },
+            "dismissal": "catch",
+            "SR": 69,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 13,
+            "R": 9,
+            "dismissal-info": "c Nagarkoti b Kuldeep Yadav",
+            "batsman": "JD Unadkat",
+            "pid": "390484"
+          },
+          {
+            "SR": 140,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 7,
+            "dismissal-info": "",
+            "batsman": "AS Rajpoot",
+            "pid": "591650"
+          }
+        ],
+        "title": "Rajasthan Royals Innings (target: 175 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Jos Buttler",
+            "pid": "308967"
+          },
+          {
+            "name": "Steven Smith",
+            "pid": "267192"
+          },
+          {
+            "name": "Sanju Samson",
+            "pid": "425943"
+          },
+          {
+            "name": "Robin Uthappa",
+            "pid": "35582"
+          },
+          {
+            "name": "Riyan Parag",
+            "pid": "1079434"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "pid": "423838"
+          },
+          {
+            "name": "Tom Curran",
+            "pid": "550235"
+          },
+          {
+            "name": "Shreyas Gopal",
+            "pid": "344580"
+          },
+          {
+            "name": "Jofra Archer",
+            "pid": "669855"
+          },
+          {
+            "name": "Jaydev Unadkat",
+            "pid": "390484"
+          },
+          {
+            "name": "Ankit Rajpoot",
+            "pid": "591650"
+          }
+        ],
+        "name": "Rajasthan Royals"
+      },
+      {
+        "players": [
+          {
+            "name": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "name": "Sunil Narine",
+            "pid": "230558"
+          },
+          {
+            "name": "Nitish Rana",
+            "pid": "604527"
+          },
+          {
+            "name": "Andre Russell",
+            "pid": "276298"
+          },
+          {
+            "name": "Dinesh Karthik",
+            "pid": "30045"
+          },
+          {
+            "name": "Eoin Morgan",
+            "pid": "24598"
+          },
+          {
+            "name": "Pat Cummins",
+            "pid": "489889"
+          },
+          {
+            "name": "Kamlesh Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "name": "Shivam Mavi",
+            "pid": "1079848"
+          },
+          {
+            "name": "Kuldeep Yadav",
+            "pid": "559235"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "pid": "1108375"
+          }
+        ],
+        "name": "Kolkata Knight Riders"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Shivam Mavi",
+      "pid": "1079848"
+    },
+    "toss_winner_team": "Rajasthan Royals",
+    "winner_team": "Kolkata Knight Riders",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 128,
+  "v": "1",
+  "ttl": 8,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-01T02:48:19.856Z"
+  }
+}
