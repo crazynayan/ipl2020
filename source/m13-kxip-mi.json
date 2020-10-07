@@ -1,0 +1,635 @@
+{
+  "dateTimeGMT": "2020-10-01T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Mumbai Indians Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "James Neesham",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "355269"
+          },
+          {
+            "name": "Karun Nair",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "398439"
+          },
+          {
+            "name": "Mohammed Shami",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "481896"
+          },
+          {
+            "name": "Sheldon Cottrell",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "495551"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Kings XI Punjab Innings (target: 192 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "James Pattinson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "272465"
+          },
+          {
+            "name": "Trent Boult",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "277912"
+          },
+          {
+            "name": "Quinton de Kock",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "379143"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "446507"
+          },
+          {
+            "name": "H Pandya",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "625371"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "625383"
+          },
+          {
+            "name": "Rahul Chahar",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "1064812"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 3,
+            "0s": 14,
+            "Econ": "5.00",
+            "W": "1",
+            "R": "20",
+            "M": "1",
+            "O": "4",
+            "bowler": "SS Cottrell",
+            "pid": "495551"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 6,
+            "0s": 9,
+            "Econ": "9.00",
+            "W": "1",
+            "R": "36",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 1,
+            "0s": 8,
+            "Econ": "9.25",
+            "W": "0",
+            "R": "37",
+            "M": "0",
+            "O": "4",
+            "bowler": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 4,
+            "4s": 2,
+            "0s": 6,
+            "Econ": "11.25",
+            "W": "1",
+            "R": "45",
+            "M": "0",
+            "O": "4",
+            "bowler": "K Gowtham",
+            "pid": "424377"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 5,
+            "0s": 4,
+            "Econ": "13.00",
+            "W": "0",
+            "R": "52",
+            "M": "0",
+            "O": "4",
+            "bowler": "JDS Neesham",
+            "pid": "355269"
+          }
+        ],
+        "title": "Bowling To Mumbai Indians Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 5,
+            "0s": 5,
+            "Econ": "10.50",
+            "W": "1",
+            "R": "42",
+            "M": "0",
+            "O": "4",
+            "bowler": "TA Boult",
+            "pid": "277912"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 7,
+            "Econ": "7.00",
+            "W": "2",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "JL Pattinson",
+            "pid": "272465"
+          },
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 1,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "6.75",
+            "W": "1",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "KH Pandya",
+            "pid": "471342"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 13,
+            "Econ": "4.50",
+            "W": "2",
+            "R": "18",
+            "M": "0",
+            "O": "4",
+            "bowler": "JJ Bumrah",
+            "pid": "625383"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 0,
+            "0s": 9,
+            "Econ": "6.50",
+            "W": "2",
+            "R": "26",
+            "M": "0",
+            "O": "4",
+            "bowler": "RD Chahar",
+            "pid": "1064812"
+          }
+        ],
+        "title": "Bowling To Kings XI Punjab Innings (target: 192 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Sheldon Cottrell",
+              "pid": "495551"
+            },
+            "dismissal": "bowled",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 0,
+            "dismissal-info": "b Cottrell",
+            "batsman": "Q de Kock\u00a0 ",
+            "pid": "379143"
+          },
+          {
+            "dismissal-by": {
+              "name": "James Neesham",
+              "pid": "355269"
+            },
+            "dismissal": "catch",
+            "SR": 155,
+            "6s": 3,
+            "4s": 8,
+            "M": 0,
+            "B": 45,
+            "R": 70,
+            "dismissal-info": "c Neesham b Mohammed Shami",
+            "batsman": "RG Sharma\u00a0(c)",
+            "pid": "34102"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Mohammed Shami",
+                "pid": "481896"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 142,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 7,
+            "R": 10,
+            "dismissal-info": "run out (Mohammed Shami)",
+            "batsman": "SA Yadav",
+            "pid": "446507"
+          },
+          {
+            "dismissal-by": {
+              "name": "Karun Nair",
+              "pid": "398439"
+            },
+            "dismissal": "catch",
+            "SR": 87,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 32,
+            "R": 28,
+            "dismissal-info": "c Nair b Gowtham",
+            "batsman": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "SR": 235,
+            "6s": 4,
+            "4s": 3,
+            "M": 0,
+            "B": 20,
+            "R": 47,
+            "dismissal-info": "",
+            "batsman": "KA Pollard",
+            "pid": "230559"
+          },
+          {
+            "SR": 272,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 11,
+            "R": 30,
+            "dismissal-info": "",
+            "batsman": "HH Pandya",
+            "pid": "625371"
+          }
+        ],
+        "title": "Mumbai Indians Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Rahul Chahar",
+              "pid": "1064812"
+            },
+            "dismissal": "bowled",
+            "SR": 89,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 19,
+            "R": 17,
+            "dismissal-info": "b Chahar",
+            "batsman": "KL Rahul\u00a0(c)  ",
+            "pid": "422108"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jasprit Bumrah",
+              "pid": "625383"
+            },
+            "dismissal": "bowled",
+            "SR": 138,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 18,
+            "R": 25,
+            "dismissal-info": "b Bumrah",
+            "batsman": "MA Agarwal",
+            "pid": "398438"
+          },
+          {
+            "dismissal-by": {
+              "name": "H Pandya",
+              "pid": "625371"
+            },
+            "dismissal": "bowled",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 0,
+            "dismissal-info": "b KH Pandya",
+            "batsman": "KK Nair",
+            "pid": "398439"
+          },
+          {
+            "dismissal-by": {
+              "name": "Quinton de Kock",
+              "pid": "379143"
+            },
+            "dismissal": "catch",
+            "SR": 162,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 27,
+            "R": 44,
+            "dismissal-info": "c  de Kock b Pattinson",
+            "batsman": "N Pooran",
+            "pid": "604302"
+          },
+          {
+            "dismissal-by": {
+              "name": "Trent Boult",
+              "pid": "277912"
+            },
+            "dismissal": "catch",
+            "SR": 61,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 18,
+            "R": 11,
+            "dismissal-info": "c Boult b Chahar",
+            "batsman": "GJ Maxwell",
+            "pid": "325026"
+          },
+          {
+            "dismissal-by": {
+              "name": "Suryakumar Yadav",
+              "pid": "446507"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 7,
+            "dismissal-info": "c Yadav b Bumrah",
+            "batsman": "JDS Neesham",
+            "pid": "355269"
+          },
+          {
+            "dismissal-by": {
+              "name": "James Pattinson",
+              "pid": "272465"
+            },
+            "dismissal": "lbw",
+            "SR": 87,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 8,
+            "R": 7,
+            "dismissal-info": "lbw b Pattinson",
+            "batsman": "SN Khan",
+            "pid": "642525"
+          },
+          {
+            "SR": 169,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 13,
+            "R": 22,
+            "dismissal-info": "",
+            "batsman": "K Gowtham",
+            "pid": "424377"
+          },
+          {
+            "dismissal-by": {
+              "name": "Suryakumar Yadav",
+              "pid": "446507"
+            },
+            "dismissal": "catch",
+            "SR": 20,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 1,
+            "dismissal-info": "c Yadav b Boult",
+            "batsman": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "Mohammed Shami",
+            "pid": "481896"
+          }
+        ],
+        "title": "Kings XI Punjab Innings (target: 192 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "KL Rahul",
+            "pid": "422108"
+          },
+          {
+            "name": "Mayank Agarwal",
+            "pid": "398438"
+          },
+          {
+            "name": "Karun Nair",
+            "pid": "398439"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "pid": "604302"
+          },
+          {
+            "name": "Glenn Maxwell",
+            "pid": "325026"
+          },
+          {
+            "name": "James Neesham",
+            "pid": "355269"
+          },
+          {
+            "name": "Sarfaraz Khan",
+            "pid": "642525"
+          },
+          {
+            "name": "Krishnappa Gowtham",
+            "pid": "424377"
+          },
+          {
+            "name": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "name": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "name": "Sheldon Cottrell",
+            "pid": "495551"
+          }
+        ],
+        "name": "Kings XI Punjab"
+      },
+      {
+        "players": [
+          {
+            "name": "Quinton de Kock",
+            "pid": "379143"
+          },
+          {
+            "name": "Rohit Sharma",
+            "pid": "34102"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "pid": "446507"
+          },
+          {
+            "name": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "name": "Kieron Pollard",
+            "pid": "230559"
+          },
+          {
+            "name": "Hardik Pandya",
+            "pid": "625371"
+          },
+          {
+            "name": "Krunal Pandya",
+            "pid": "471342"
+          },
+          {
+            "name": "James Pattinson",
+            "pid": "272465"
+          },
+          {
+            "name": "Rahul Chahar",
+            "pid": "1064812"
+          },
+          {
+            "name": "Trent Boult",
+            "pid": "277912"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "pid": "625383"
+          }
+        ],
+        "name": "Mumbai Indians"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Kieron Pollard",
+      "pid": "230559"
+    },
+    "toss_winner_team": "Kings XI Punjab",
+    "winner_team": "Mumbai Indians",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 244,
+  "v": "1",
+  "ttl": 8,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-07T03:41:24.043Z"
+  }
+}

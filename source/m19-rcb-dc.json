@@ -1,0 +1,672 @@
+{
+  "dateTimeGMT": "2020-10-05T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Delhi Capitals Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Moeen Ali",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "8917"
+          },
+          {
+            "name": "AB de Villiers",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "44936"
+          },
+          {
+            "name": "Mohammed Siraj",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "940973"
+          },
+          {
+            "name": "Devdutt Padikkal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1119026"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Royal Challengers Bangalore Innings (target: 197 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Ravichandran Ashwin",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "26421"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "28235"
+          },
+          {
+            "name": "Marcus Stoinis",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "325012"
+          },
+          {
+            "name": "Anrich Nortje",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "481979"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "550215"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "642519"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "670025"
+          },
+          {
+            "name": "Rishabh Pant",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "931581"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 4,
+            "0s": 5,
+            "Econ": "10.00",
+            "W": "1",
+            "R": "40",
+            "M": "0",
+            "O": "4",
+            "bowler": "I Udana",
+            "pid": "328026"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "5.00",
+            "W": "0",
+            "R": "20",
+            "M": "0",
+            "O": "4",
+            "bowler": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "NB": "1",
+            "WD": "0",
+            "6s": 3,
+            "4s": 5,
+            "0s": 4,
+            "Econ": "16.00",
+            "W": "0",
+            "R": "48",
+            "M": "0",
+            "O": "3",
+            "bowler": "NA Saini",
+            "pid": "700167"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 4,
+            "Econ": "9.66",
+            "W": "0",
+            "R": "29",
+            "M": "0",
+            "O": "3",
+            "bowler": "YS Chahal",
+            "pid": "430246"
+          },
+          {
+            "NB": "1",
+            "WD": "1",
+            "6s": 1,
+            "4s": 4,
+            "0s": 11,
+            "Econ": "8.50",
+            "W": "2",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mohammed Siraj",
+            "pid": "940973"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "10.50",
+            "W": "1",
+            "R": "21",
+            "M": "0",
+            "O": "2",
+            "bowler": "MM Ali",
+            "pid": "8917"
+          }
+        ],
+        "title": "Bowling To Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 2,
+            "0s": 9,
+            "Econ": "6.00",
+            "W": "4",
+            "R": "24",
+            "M": "0",
+            "O": "4",
+            "bowler": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 3,
+            "0s": 13,
+            "Econ": "5.50",
+            "W": "2",
+            "R": "22",
+            "M": "0",
+            "O": "4",
+            "bowler": "A Nortje",
+            "pid": "481979"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "6.50",
+            "W": "1",
+            "R": "26",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Ashwin",
+            "pid": "26421"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 10,
+            "Econ": "4.50",
+            "W": "2",
+            "R": "18",
+            "M": "0",
+            "O": "4",
+            "bowler": "AR Patel",
+            "pid": "554691"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 4,
+            "0s": 5,
+            "Econ": "10.75",
+            "W": "0",
+            "R": "43",
+            "M": "0",
+            "O": "4",
+            "bowler": "HV Patel",
+            "pid": "390481"
+          }
+        ],
+        "title": "Bowling To Royal Challengers Bangalore Innings (target: 197 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 182,
+            "6s": 2,
+            "4s": 5,
+            "M": 0,
+            "B": 23,
+            "R": 42,
+            "dismissal-info": "c  de Villiers b Mohammed Siraj",
+            "batsman": "PP Shaw",
+            "pid": "1070168"
+          },
+          {
+            "dismissal-by": {
+              "name": "Moeen Ali",
+              "pid": "8917"
+            },
+            "dismissal": "catch",
+            "SR": 114,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 28,
+            "R": 32,
+            "dismissal-info": "c Ali b Udana",
+            "batsman": "S Dhawan",
+            "pid": "28235"
+          },
+          {
+            "dismissal-by": {
+              "name": "Devdutt Padikkal",
+              "pid": "1119026"
+            },
+            "dismissal": "catch",
+            "SR": 84,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 13,
+            "R": 11,
+            "dismissal-info": "c Padikkal b Ali",
+            "batsman": "SS Iyer\u00a0(c)",
+            "pid": "642519"
+          },
+          {
+            "dismissal-by": {
+              "name": "Mohammed Siraj",
+              "pid": "940973"
+            },
+            "dismissal": "bowled",
+            "SR": 148,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 25,
+            "R": 37,
+            "dismissal-info": "b Mohammed Siraj",
+            "batsman": "RR Pant\u00a0 ",
+            "pid": "931581"
+          },
+          {
+            "SR": 203,
+            "6s": 2,
+            "4s": 6,
+            "M": 0,
+            "B": 26,
+            "R": 53,
+            "dismissal-info": "",
+            "batsman": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "SR": 157,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 11,
+            "dismissal-info": "",
+            "batsman": "SO Hetmyer",
+            "pid": "670025"
+          }
+        ],
+        "title": "Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Marcus Stoinis",
+              "pid": "325012"
+            },
+            "dismissal": "catch",
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 4,
+            "dismissal-info": "c Stoinis b Ashwin",
+            "batsman": "D Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rishabh Pant",
+              "pid": "931581"
+            },
+            "dismissal": "catch",
+            "SR": 92,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 14,
+            "R": 13,
+            "dismissal-info": "c  Pant b AR Patel",
+            "batsman": "AJ Finch",
+            "pid": "5334"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rishabh Pant",
+              "pid": "931581"
+            },
+            "dismissal": "catch",
+            "SR": 110,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 39,
+            "R": 43,
+            "dismissal-info": "c  Pant b Rabada",
+            "batsman": "V Kohli\u00a0(c)",
+            "pid": "253802"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shikhar Dhawan",
+              "pid": "28235"
+            },
+            "dismissal": "catch",
+            "SR": 150,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 6,
+            "R": 9,
+            "dismissal-info": "c Dhawan b Nortje",
+            "batsman": "AB de Villiers\u00a0 ",
+            "pid": "44936"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shimron Hetmyer",
+              "pid": "670025"
+            },
+            "dismissal": "catch",
+            "SR": 84,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 13,
+            "R": 11,
+            "dismissal-info": "c Hetmyer b AR Patel",
+            "batsman": "MM Ali",
+            "pid": "8917"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ravichandran Ashwin",
+              "pid": "26421"
+            },
+            "dismissal": "catch",
+            "SR": 154,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 11,
+            "R": 17,
+            "dismissal-info": "c Ashwin b Rabada",
+            "batsman": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kagiso Rabada",
+              "pid": "550215"
+            },
+            "dismissal": "bowled",
+            "SR": 91,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 12,
+            "R": 11,
+            "dismissal-info": "b Rabada",
+            "batsman": "S Dube",
+            "pid": "714451"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shreyas Iyer",
+              "pid": "642519"
+            },
+            "dismissal": "catch",
+            "SR": 33,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 1,
+            "dismissal-info": "c Iyer b Rabada",
+            "batsman": "I Udana",
+            "pid": "328026"
+          },
+          {
+            "SR": 100,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 12,
+            "R": 12,
+            "dismissal-info": "",
+            "batsman": "NA Saini",
+            "pid": "700167"
+          },
+          {
+            "dismissal-by": {
+              "name": "Anrich Nortje",
+              "pid": "481979"
+            },
+            "dismissal": "bowled",
+            "SR": 125,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 4,
+            "R": 5,
+            "dismissal-info": "b Nortje",
+            "batsman": "Mohammed Siraj",
+            "pid": "940973"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "YS Chahal",
+            "pid": "430246"
+          }
+        ],
+        "title": "Royal Challengers Bangalore Innings (target: 197 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Devdutt Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "name": "Aaron Finch",
+            "pid": "5334"
+          },
+          {
+            "name": "Virat Kohli",
+            "pid": "253802"
+          },
+          {
+            "name": "AB de Villiers",
+            "pid": "44936"
+          },
+          {
+            "name": "Moeen Ali",
+            "pid": "8917"
+          },
+          {
+            "name": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "name": "Shivam Dube",
+            "pid": "714451"
+          },
+          {
+            "name": "Isuru Udana",
+            "pid": "328026"
+          },
+          {
+            "name": "Navdeep Saini",
+            "pid": "700167"
+          },
+          {
+            "name": "Mohammed Siraj",
+            "pid": "940973"
+          },
+          {
+            "name": "Yuzvendra Chahal",
+            "pid": "430246"
+          }
+        ],
+        "name": "Royal Challengers Bangalore"
+      },
+      {
+        "players": [
+          {
+            "name": "Prithvi Shaw",
+            "pid": "1070168"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "pid": "28235"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "pid": "642519"
+          },
+          {
+            "name": "Rishabh Pant",
+            "pid": "931581"
+          },
+          {
+            "name": "Marcus Stoinis",
+            "pid": "325012"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "name": "Axar Patel",
+            "pid": "554691"
+          },
+          {
+            "name": "Ravichandran Ashwin",
+            "pid": "26421"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "pid": "550215"
+          },
+          {
+            "name": "Anrich Nortje",
+            "pid": "481979"
+          },
+          {
+            "name": "Harshal Patel",
+            "pid": "390481"
+          }
+        ],
+        "name": "Delhi Capitals"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Axar Patel",
+      "pid": "554691"
+    },
+    "toss_winner_team": "Royal Challengers Bangalore",
+    "winner_team": "Delhi Capitals",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 248,
+  "v": "1",
+  "ttl": 8,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-07T03:04:22.026Z"
+  }
+}

@@ -3,7 +3,7 @@ import json
 import os
 import random
 from datetime import datetime
-from typing import List, Dict, Union
+from typing import List, Dict
 
 import gspread
 import requests
@@ -13,12 +13,12 @@ from requests import Response
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google-cloud.json"
 
-from scoring import cache_request, update_match_points
+from scoring import update_match_points, cache_request
 from flask_app import Config
 from flask_app.user import User
 from flask_app.player import Player
 from flask_app.bid import Bid
-from flask_app.schedule import schedule
+from flask_app.schedule import schedule, Match
 from flask_app.team import UserTeam
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
@@ -377,14 +377,15 @@ def check_api_players():
     return
 
 
-def update_fantasy_score_file(match_id: Union[str, int]):
-    unique_id = str(match_id)
-    match = next((match for match in schedule.schedule if match.unique_id == unique_id), None)
-    if not match:
-        print(f"Match ID {unique_id} not found")
+def update_fantasy_score_file():
+    matches: List[Match] = schedule.get_matches_being_played()
+    if not matches:
+        print("Score: No match currently in progress")
         return
-    cache_request(match)
-    print(f"{match.file_name} file created")
+    for match in matches:
+        cache_request(match)
+        print(f"{match.file_name} file created")
+    return
 
 
 def test_update_score():

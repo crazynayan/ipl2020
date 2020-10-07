@@ -1,0 +1,455 @@
+{
+  "dateTimeGMT": "2020-10-04T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Kings XI Punjab Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "MS Dhoni",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "28081"
+          },
+          {
+            "name": "Ambati Rayudu",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "33141"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "234675"
+          },
+          {
+            "name": "Sam Curran",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "662973"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Chennai Super Kings Innings (target: 179 runs from 20 overs)",
+        "scores": []
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 9,
+            "Econ": "5.66",
+            "W": "0",
+            "R": "17",
+            "M": "0",
+            "O": "3",
+            "bowler": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 3,
+            "Econ": "10.33",
+            "W": "0",
+            "R": "31",
+            "M": "0",
+            "O": "3",
+            "bowler": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 5,
+            "0s": 8,
+            "Econ": "9.75",
+            "W": "2",
+            "R": "39",
+            "M": "0",
+            "O": "4",
+            "bowler": "SN Thakur",
+            "pid": "475281"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 3,
+            "0s": 7,
+            "Econ": "9.50",
+            "W": "0",
+            "R": "38",
+            "M": "0",
+            "O": "4",
+            "bowler": "DJ Bravo",
+            "pid": "51439"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 7,
+            "Econ": "7.50",
+            "W": "1",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "RA Jadeja",
+            "pid": "234675"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 0,
+            "0s": 2,
+            "Econ": "11.00",
+            "W": "1",
+            "R": "22",
+            "M": "0",
+            "O": "2",
+            "bowler": "PP Chawla",
+            "pid": "32966"
+          }
+        ],
+        "title": "Bowling To Kings XI Punjab Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 3,
+            "0s": 5,
+            "Econ": "10.00",
+            "W": "0",
+            "R": "30",
+            "M": "0",
+            "O": "3",
+            "bowler": "SS Cottrell",
+            "pid": "495551"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 2,
+            "0s": 7,
+            "Econ": "9.54",
+            "W": "0",
+            "R": "35",
+            "M": "0",
+            "O": "3.4",
+            "bowler": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 5,
+            "0s": 6,
+            "Econ": "10.25",
+            "W": "0",
+            "R": "41",
+            "M": "0",
+            "O": "4",
+            "bowler": "Harpreet Brar",
+            "pid": "1168641"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 8,
+            "0s": 2,
+            "Econ": "14.00",
+            "W": "0",
+            "R": "42",
+            "M": "0",
+            "O": "3",
+            "bowler": "CJ Jordan",
+            "pid": "288992"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 4,
+            "0s": 10,
+            "Econ": "8.25",
+            "W": "0",
+            "R": "33",
+            "M": "0",
+            "O": "4",
+            "bowler": "Ravi Bishnoi",
+            "pid": "1175441"
+          }
+        ],
+        "title": "Bowling To Chennai Super Kings Innings (target: 179 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 121,
+            "6s": 1,
+            "4s": 7,
+            "M": 0,
+            "B": 52,
+            "R": 63,
+            "dismissal-info": "c  Dhoni b Thakur",
+            "batsman": "KL Rahul\u00a0(c)",
+            "pid": "422108"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sam Curran",
+              "pid": "662973"
+            },
+            "dismissal": "catch",
+            "SR": 136,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 19,
+            "R": 26,
+            "dismissal-info": "c Curran b Chawla",
+            "batsman": "MA Agarwal",
+            "pid": "398438"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ambati Rayudu",
+              "pid": "33141"
+            },
+            "dismissal": "catch",
+            "SR": 168,
+            "6s": 2,
+            "4s": 0,
+            "M": 0,
+            "B": 16,
+            "R": 27,
+            "dismissal-info": "c Rayudu b Jadeja",
+            "batsman": "Mandeep Singh",
+            "pid": "398506"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ravindra Jadeja",
+              "pid": "234675"
+            },
+            "dismissal": "catch",
+            "SR": 194,
+            "6s": 3,
+            "4s": 1,
+            "M": 0,
+            "B": 17,
+            "R": 33,
+            "dismissal-info": "c Jadeja b Thakur",
+            "batsman": "N Pooran\u00a0 ",
+            "pid": "604302"
+          },
+          {
+            "SR": 157,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 7,
+            "R": 11,
+            "dismissal-info": "",
+            "batsman": "GJ Maxwell",
+            "pid": "325026"
+          },
+          {
+            "SR": 155,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 9,
+            "R": 14,
+            "dismissal-info": "",
+            "batsman": "SN Khan",
+            "pid": "642525"
+          }
+        ],
+        "title": "Kings XI Punjab Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "SR": 156,
+            "6s": 3,
+            "4s": 11,
+            "M": 0,
+            "B": 53,
+            "R": 83,
+            "dismissal-info": "",
+            "batsman": "SR Watson",
+            "pid": "8180"
+          },
+          {
+            "SR": 164,
+            "6s": 1,
+            "4s": 11,
+            "M": 0,
+            "B": 53,
+            "R": 87,
+            "dismissal-info": "",
+            "batsman": "F du Plessis",
+            "pid": "44828"
+          }
+        ],
+        "title": "Chennai Super Kings Innings (target: 179 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "KL Rahul",
+            "pid": "422108"
+          },
+          {
+            "name": "Mayank Agarwal",
+            "pid": "398438"
+          },
+          {
+            "name": "Mandeep Singh",
+            "pid": "398506"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "pid": "604302"
+          },
+          {
+            "name": "Glenn Maxwell",
+            "pid": "325026"
+          },
+          {
+            "name": "Sarfaraz Khan",
+            "pid": "642525"
+          },
+          {
+            "name": "Chris Jordan",
+            "pid": "288992"
+          },
+          {
+            "name": "Harpreet Brar",
+            "pid": "1168641"
+          },
+          {
+            "name": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "name": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "name": "Sheldon Cottrell",
+            "pid": "495551"
+          }
+        ],
+        "name": "Kings XI Punjab"
+      },
+      {
+        "players": [
+          {
+            "name": "Shane Watson",
+            "pid": "8180"
+          },
+          {
+            "name": "Faf du Plessis",
+            "pid": "44828"
+          },
+          {
+            "name": "Ambati Rayudu",
+            "pid": "33141"
+          },
+          {
+            "name": "Kedar Jadhav",
+            "pid": "290716"
+          },
+          {
+            "name": "MS Dhoni",
+            "pid": "28081"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "pid": "234675"
+          },
+          {
+            "name": "Sam Curran",
+            "pid": "662973"
+          },
+          {
+            "name": "Dwayne Bravo",
+            "pid": "51439"
+          },
+          {
+            "name": "Piyush Chawla",
+            "pid": "32966"
+          },
+          {
+            "name": "Shardul Thakur",
+            "pid": "475281"
+          },
+          {
+            "name": "Deepak Chahar",
+            "pid": "447261"
+          }
+        ],
+        "name": "Chennai Super Kings"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Shane Watson",
+      "pid": "8180"
+    },
+    "toss_winner_team": "Kings XI Punjab",
+    "winner_team": "Chennai Super Kings",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 236,
+  "v": "1",
+  "ttl": 7,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-07T03:42:30.505Z"
+  }
+}
