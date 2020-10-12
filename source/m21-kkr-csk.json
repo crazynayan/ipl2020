@@ -1,0 +1,681 @@
+{
+  "dateTimeGMT": "2020-10-07T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Kolkata Knight Riders Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Shane Watson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "8180"
+          },
+          {
+            "name": "MS Dhoni",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 4,
+            "pid": "28081"
+          },
+          {
+            "name": "Faf du Plessis",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "44828"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "234675"
+          },
+          {
+            "name": "Shardul Thakur",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "475281"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Chennai Super Kings Innings (target: 168 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Eoin Morgan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "24598"
+          },
+          {
+            "name": "Dinesh Karthik",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "30045"
+          },
+          {
+            "name": "Sunil Narine",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "230558"
+          },
+          {
+            "name": "Shubman Gill",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1070173"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "1108375"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 2,
+            "4s": 5,
+            "0s": 4,
+            "Econ": "11.75",
+            "W": "0",
+            "R": "47",
+            "M": "0",
+            "O": "4",
+            "bowler": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 9,
+            "Econ": "6.50",
+            "W": "2",
+            "R": "26",
+            "M": "0",
+            "O": "4",
+            "bowler": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 3,
+            "0s": 13,
+            "Econ": "7.00",
+            "W": "2",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "SN Thakur",
+            "pid": "475281"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 5,
+            "Econ": "6.25",
+            "W": "2",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "KV Sharma",
+            "pid": "30288"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 3,
+            "0s": 8,
+            "Econ": "9.25",
+            "W": "3",
+            "R": "37",
+            "M": "0",
+            "O": "4",
+            "bowler": "DJ Bravo",
+            "pid": "51439"
+          }
+        ],
+        "title": "Bowling To Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 3,
+            "0s": 11,
+            "Econ": "6.25",
+            "W": "0",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 4,
+            "0s": 3,
+            "Econ": "10.66",
+            "W": "1",
+            "R": "32",
+            "M": "0",
+            "O": "3",
+            "bowler": "Shivam Mavi",
+            "pid": "1079848"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 7,
+            "Econ": "7.00",
+            "W": "1",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "CV Varun",
+            "pid": "1108375"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "7.00",
+            "W": "1",
+            "R": "21",
+            "M": "0",
+            "O": "3",
+            "bowler": "KL Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 9,
+            "Econ": "7.75",
+            "W": "1",
+            "R": "31",
+            "M": "0",
+            "O": "4",
+            "bowler": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "9.00",
+            "W": "1",
+            "R": "18",
+            "M": "0",
+            "O": "2",
+            "bowler": "AD Russell",
+            "pid": "276298"
+          }
+        ],
+        "title": "Bowling To Chennai Super Kings Innings (target: 168 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Shane Watson",
+              "pid": "8180"
+            },
+            "dismissal": "catch",
+            "SR": 158,
+            "6s": 3,
+            "4s": 8,
+            "M": 0,
+            "B": 51,
+            "R": 81,
+            "dismissal-info": "c Watson b Bravo",
+            "batsman": "RA Tripathi",
+            "pid": "446763"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 91,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 12,
+            "R": 11,
+            "dismissal-info": "c  Dhoni b Thakur",
+            "batsman": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ravindra Jadeja",
+              "pid": "234675"
+            },
+            "dismissal": "catch",
+            "SR": 90,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 10,
+            "R": 9,
+            "dismissal-info": "c Jadeja b Sharma",
+            "batsman": "N Rana",
+            "pid": "604527"
+          },
+          {
+            "dismissal-by": {
+              "name": "Faf du Plessis",
+              "pid": "44828"
+            },
+            "dismissal": "catch",
+            "SR": 188,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 9,
+            "R": 17,
+            "dismissal-info": "c du Plessis b Sharma",
+            "batsman": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 70,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 10,
+            "R": 7,
+            "dismissal-info": "c  Dhoni b Curran",
+            "batsman": "EJG Morgan",
+            "pid": "24598"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 2,
+            "dismissal-info": "c  Dhoni b Thakur",
+            "batsman": "AD Russell",
+            "pid": "276298"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shardul Thakur",
+              "pid": "475281"
+            },
+            "dismissal": "catch",
+            "SR": 109,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 11,
+            "R": 12,
+            "dismissal-info": "c Thakur b Curran",
+            "batsman": "KD Karthik\u00a0(c)  ",
+            "pid": "30045"
+          },
+          {
+            "SR": 188,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 9,
+            "R": 17,
+            "dismissal-info": "",
+            "batsman": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "dismissal-by": {
+              "name": "Faf du Plessis",
+              "pid": "44828"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "c du Plessis b Bravo",
+            "batsman": "KL Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "c  Dhoni b Bravo",
+            "batsman": "Shivam Mavi",
+            "pid": "1079848"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Ravindra Jadeja",
+                "pid": "234675"
+              },
+              {
+                "name": "MS Dhoni",
+                "pid": "28081"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 1,
+            "dismissal-info": "run out (Jadeja/ Dhoni)",
+            "batsman": "CV Varun",
+            "pid": "1108375"
+          }
+        ],
+        "title": "Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Sunil Narine",
+              "pid": "230558"
+            },
+            "dismissal": "lbw",
+            "SR": 125,
+            "6s": 1,
+            "4s": 6,
+            "M": 0,
+            "B": 40,
+            "R": 50,
+            "dismissal-info": "lbw b Narine",
+            "batsman": "SR Watson",
+            "pid": "8180"
+          },
+          {
+            "dismissal-by": {
+              "name": "Dinesh Karthik",
+              "pid": "30045"
+            },
+            "dismissal": "catch",
+            "SR": 170,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 10,
+            "R": 17,
+            "dismissal-info": "c  Karthik b Shivam Mavi",
+            "batsman": "F du Plessis",
+            "pid": "44828"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shubman Gill",
+              "pid": "1070173"
+            },
+            "dismissal": "catch",
+            "SR": 111,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 27,
+            "R": 30,
+            "dismissal-info": "c Shubman Gill b Nagarkoti",
+            "batsman": "AT Rayudu",
+            "pid": "33141"
+          },
+          {
+            "dismissal-by": {
+              "name": "Varun Chakravarthy",
+              "pid": "1108375"
+            },
+            "dismissal": "bowled",
+            "SR": 91,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 12,
+            "R": 11,
+            "dismissal-info": "b Varun",
+            "batsman": "MS Dhoni\u00a0(c)  ",
+            "pid": "28081"
+          },
+          {
+            "dismissal-by": {
+              "name": "Eoin Morgan",
+              "pid": "24598"
+            },
+            "dismissal": "catch",
+            "SR": 154,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 11,
+            "R": 17,
+            "dismissal-info": "c Morgan b Russell",
+            "batsman": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "SR": 58,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 12,
+            "R": 7,
+            "dismissal-info": "",
+            "batsman": "KM Jadhav",
+            "pid": "290716"
+          },
+          {
+            "SR": 262,
+            "6s": 1,
+            "4s": 3,
+            "M": 0,
+            "B": 8,
+            "R": 21,
+            "dismissal-info": "",
+            "batsman": "RA Jadeja",
+            "pid": "234675"
+          }
+        ],
+        "title": "Chennai Super Kings Innings (target: 168 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Rahul Tripathi",
+            "pid": "446763"
+          },
+          {
+            "name": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "name": "Nitish Rana",
+            "pid": "604527"
+          },
+          {
+            "name": "Sunil Narine",
+            "pid": "230558"
+          },
+          {
+            "name": "Eoin Morgan",
+            "pid": "24598"
+          },
+          {
+            "name": "Andre Russell",
+            "pid": "276298"
+          },
+          {
+            "name": "Dinesh Karthik",
+            "pid": "30045"
+          },
+          {
+            "name": "Pat Cummins",
+            "pid": "489889"
+          },
+          {
+            "name": "Kamlesh Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "name": "Shivam Mavi",
+            "pid": "1079848"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "pid": "1108375"
+          }
+        ],
+        "name": "Kolkata Knight Riders"
+      },
+      {
+        "players": [
+          {
+            "name": "Shane Watson",
+            "pid": "8180"
+          },
+          {
+            "name": "Faf du Plessis",
+            "pid": "44828"
+          },
+          {
+            "name": "Ambati Rayudu",
+            "pid": "33141"
+          },
+          {
+            "name": "MS Dhoni",
+            "pid": "28081"
+          },
+          {
+            "name": "Sam Curran",
+            "pid": "662973"
+          },
+          {
+            "name": "Kedar Jadhav",
+            "pid": "290716"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "pid": "234675"
+          },
+          {
+            "name": "Dwayne Bravo",
+            "pid": "51439"
+          },
+          {
+            "name": "Shardul Thakur",
+            "pid": "475281"
+          },
+          {
+            "name": "Deepak Chahar",
+            "pid": "447261"
+          },
+          {
+            "name": "Karn Sharma",
+            "pid": "30288"
+          }
+        ],
+        "name": "Chennai Super Kings"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Rahul Tripathi",
+      "pid": "446763"
+    },
+    "toss_winner_team": "Kolkata Knight Riders",
+    "winner_team": "Kolkata Knight Riders",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 102,
+  "v": "1",
+  "ttl": 10,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-12T04:22:19.862Z"
+  }
+}

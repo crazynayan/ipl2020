@@ -1,0 +1,772 @@
+{
+  "dateTimeGMT": "2020-10-09T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Delhi Capitals Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Steven Smith",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "267192"
+          },
+          {
+            "name": "Jos Buttler",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "308967"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "423838"
+          },
+          {
+            "name": "M Vohra",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": 532856
+          },
+          {
+            "name": "Jofra Archer",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "669855"
+          },
+          {
+            "name": "Yashasvi Jaiswal",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1151278"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Rajasthan Royals Innings (target: 185 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Shikhar Dhawan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "28235"
+          },
+          {
+            "name": "Marcus Stoinis",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "325012"
+          },
+          {
+            "name": "H Patel",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "390481"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "550215"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "642519"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 3,
+            "pid": "670025"
+          },
+          {
+            "name": "Rishabh Pant",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "931581"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "1",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 4,
+            "Econ": "12.50",
+            "W": "0",
+            "R": "25",
+            "M": "0",
+            "O": "2",
+            "bowler": "VR Aaron",
+            "pid": "360911"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 3,
+            "0s": 11,
+            "Econ": "6.00",
+            "W": "3",
+            "R": "24",
+            "M": "0",
+            "O": "4",
+            "bowler": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 1,
+            "0s": 10,
+            "Econ": "8.75",
+            "W": "1",
+            "R": "35",
+            "M": "0",
+            "O": "4",
+            "bowler": "Kartik Tyagi",
+            "pid": "1122918"
+          },
+          {
+            "NB": "1",
+            "WD": "2",
+            "6s": 3,
+            "4s": 4,
+            "0s": 5,
+            "Econ": "12.50",
+            "W": "1",
+            "R": "50",
+            "M": "0",
+            "O": "4",
+            "bowler": "AJ Tye",
+            "pid": "459508"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 3,
+            "4s": 0,
+            "0s": 4,
+            "Econ": "11.50",
+            "W": "0",
+            "R": "23",
+            "M": "0",
+            "O": "2",
+            "bowler": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 0,
+            "0s": 11,
+            "Econ": "5.00",
+            "W": "1",
+            "R": "20",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Tewatia",
+            "pid": "423838"
+          }
+        ],
+        "title": "Bowling To Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "1",
+            "WD": "2",
+            "6s": 1,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "9.54",
+            "W": "3",
+            "R": "35",
+            "M": "0",
+            "O": "3.4",
+            "bowler": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 2,
+            "0s": 13,
+            "Econ": "6.25",
+            "W": "1",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "A Nortje",
+            "pid": "481979"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 9,
+            "Econ": "5.50",
+            "W": "2",
+            "R": "22",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Ashwin",
+            "pid": "26421"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 0,
+            "0s": 8,
+            "Econ": "7.25",
+            "W": "1",
+            "R": "29",
+            "M": "0",
+            "O": "4",
+            "bowler": "HV Patel",
+            "pid": "390481"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "4.00",
+            "W": "1",
+            "R": "8",
+            "M": "0",
+            "O": "2",
+            "bowler": "AR Patel",
+            "pid": "554691"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "8.50",
+            "W": "2",
+            "R": "17",
+            "M": "0",
+            "O": "2",
+            "bowler": "MP Stoinis",
+            "pid": "325012"
+          }
+        ],
+        "title": "Bowling To Rajasthan Royals Innings (target: 185 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Jofra Archer",
+              "pid": "669855"
+            },
+            "dismissal": "catch & bowled",
+            "SR": 190,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 10,
+            "R": 19,
+            "dismissal-info": "c & b Archer",
+            "batsman": "PP Shaw",
+            "pid": "1070168"
+          },
+          {
+            "dismissal-by": {
+              "name": "Yashasvi Jaiswal",
+              "pid": "1151278"
+            },
+            "dismissal": "catch",
+            "SR": 125,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 4,
+            "R": 5,
+            "dismissal-info": "c Jaiswal b Archer",
+            "batsman": "S Dhawan",
+            "pid": "28235"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Yashasvi Jaiswal",
+                "pid": "1151278"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 122,
+            "6s": 0,
+            "4s": 4,
+            "M": 0,
+            "B": 18,
+            "R": 22,
+            "dismissal-info": "run out (Jaiswal)",
+            "batsman": "SS Iyer\u00a0(c)",
+            "pid": "642519"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "M Vohra",
+                "pid": 532856
+              },
+              {
+                "name": "Rahul Tewatia",
+                "pid": "423838"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 55,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 9,
+            "R": 5,
+            "dismissal-info": "run out (sub [Vohra]/Tewatia)",
+            "batsman": "RR Pant\u00a0 ",
+            "pid": "931581"
+          },
+          {
+            "dismissal-by": {
+              "name": "Steven Smith",
+              "pid": "267192"
+            },
+            "dismissal": "catch",
+            "SR": 130,
+            "6s": 4,
+            "4s": 0,
+            "M": 0,
+            "B": 30,
+            "R": 39,
+            "dismissal-info": "c Smith b Tewatia",
+            "batsman": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Tewatia",
+              "pid": "423838"
+            },
+            "dismissal": "catch",
+            "SR": 187,
+            "6s": 5,
+            "4s": 1,
+            "M": 0,
+            "B": 24,
+            "R": 45,
+            "dismissal-info": "c Tewatia b Kartik Tyagi",
+            "batsman": "SO Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Tewatia",
+              "pid": "423838"
+            },
+            "dismissal": "catch",
+            "SR": 106,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 15,
+            "R": 16,
+            "dismissal-info": "c Tewatia b Archer",
+            "batsman": "HV Patel",
+            "pid": "390481"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jos Buttler",
+              "pid": "308967"
+            },
+            "dismissal": "catch",
+            "SR": 212,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 8,
+            "R": 17,
+            "dismissal-info": "c  Buttler b Tye",
+            "batsman": "AR Patel",
+            "pid": "554691"
+          },
+          {
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "R Ashwin",
+            "pid": "26421"
+          }
+        ],
+        "title": "Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Marcus Stoinis",
+              "pid": "325012"
+            },
+            "dismissal": "bowled",
+            "SR": 94,
+            "6s": 2,
+            "4s": 1,
+            "M": 0,
+            "B": 36,
+            "R": 34,
+            "dismissal-info": "b Stoinis",
+            "batsman": "YBK Jaiswal",
+            "pid": "1151278"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shikhar Dhawan",
+              "pid": "28235"
+            },
+            "dismissal": "catch",
+            "SR": 162,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 8,
+            "R": 13,
+            "dismissal-info": "c Dhawan b Ashwin",
+            "batsman": "JC Buttler\u00a0 ",
+            "pid": "308967"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shimron Hetmyer",
+              "pid": "670025"
+            },
+            "dismissal": "catch",
+            "SR": 141,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 17,
+            "R": 24,
+            "dismissal-info": "c Hetmyer b Nortje",
+            "batsman": "SPD Smith\u00a0(c)",
+            "pid": "267192"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shimron Hetmyer",
+              "pid": "670025"
+            },
+            "dismissal": "catch",
+            "SR": 55,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 9,
+            "R": 5,
+            "dismissal-info": "c Hetmyer b Stoinis",
+            "batsman": "SV Samson",
+            "pid": "425943"
+          },
+          {
+            "dismissal-by": {
+              "name": "H Patel",
+              "pid": "390481"
+            },
+            "dismissal": "catch",
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 1,
+            "dismissal-info": "c AR Patel b Ashwin",
+            "batsman": "MK Lomror",
+            "pid": "853265"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kagiso Rabada",
+              "pid": "550215"
+            },
+            "dismissal": "bowled",
+            "SR": 131,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 29,
+            "R": 38,
+            "dismissal-info": "b Rabada",
+            "batsman": "R Tewatia",
+            "pid": "423838"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kagiso Rabada",
+              "pid": "550215"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 6,
+            "dismissal-info": "c Rabada b AR Patel",
+            "batsman": "AJ Tye",
+            "pid": "459508"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shreyas Iyer",
+              "pid": "642519"
+            },
+            "dismissal": "catch",
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 2,
+            "dismissal-info": "c Iyer b Rabada",
+            "batsman": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shimron Hetmyer",
+              "pid": "670025"
+            },
+            "dismissal": "catch",
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "c Hetmyer b HV Patel",
+            "batsman": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "Kartik Tyagi",
+            "pid": "1122918"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rishabh Pant",
+              "pid": "931581"
+            },
+            "dismissal": "catch",
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 1,
+            "dismissal-info": "c  Pant b Rabada",
+            "batsman": "VR Aaron",
+            "pid": "360911"
+          }
+        ],
+        "title": "Rajasthan Royals Innings (target: 185 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Yashasvi Jaiswal",
+            "pid": "1151278"
+          },
+          {
+            "name": "Jos Buttler",
+            "pid": "308967"
+          },
+          {
+            "name": "Steven Smith",
+            "pid": "267192"
+          },
+          {
+            "name": "Sanju Samson",
+            "pid": "425943"
+          },
+          {
+            "name": "Mahipal Lomror",
+            "pid": "853265"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "pid": "423838"
+          },
+          {
+            "name": "Andrew Tye",
+            "pid": "459508"
+          },
+          {
+            "name": "Jofra Archer",
+            "pid": "669855"
+          },
+          {
+            "name": "Shreyas Gopal",
+            "pid": "344580"
+          },
+          {
+            "name": "Kartik Tyagi",
+            "pid": "1122918"
+          },
+          {
+            "name": "Varun Aaron",
+            "pid": "360911"
+          }
+        ],
+        "name": "Rajasthan Royals"
+      },
+      {
+        "players": [
+          {
+            "name": "Prithvi Shaw",
+            "pid": "1070168"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "pid": "28235"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "pid": "642519"
+          },
+          {
+            "name": "Rishabh Pant",
+            "pid": "931581"
+          },
+          {
+            "name": "Marcus Stoinis",
+            "pid": "325012"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "name": "Harshal Patel",
+            "pid": "390481"
+          },
+          {
+            "name": "Axar Patel",
+            "pid": "554691"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "pid": "550215"
+          },
+          {
+            "name": "Ravichandran Ashwin",
+            "pid": "26421"
+          },
+          {
+            "name": "Anrich Nortje",
+            "pid": "481979"
+          }
+        ],
+        "name": "Delhi Capitals"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Ravichandran Ashwin",
+      "pid": "26421"
+    },
+    "toss_winner_team": "Rajasthan Royals",
+    "winner_team": "Delhi Capitals",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 98,
+  "v": "1",
+  "ttl": 7,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-12T04:23:37.770Z"
+  }
+}

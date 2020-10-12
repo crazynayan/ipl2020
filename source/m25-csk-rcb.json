@@ -1,0 +1,645 @@
+{
+  "dateTimeGMT": "2020-10-10T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Royal Challengers Bangalore Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "MS Dhoni",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "28081"
+          },
+          {
+            "name": "Faf du Plessis",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "44828"
+          },
+          {
+            "name": "Deepak Chahar",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "447261"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Chennai Super Kings Innings (target: 170 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "AB de Villiers",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "44936"
+          },
+          {
+            "name": "Isuru Udana",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "328026"
+          },
+          {
+            "name": "Chris Morris",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "439952"
+          },
+          {
+            "name": "Gurkeerat Singh Mann",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "537124"
+          },
+          {
+            "name": "Washington Sundar",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "719715"
+          },
+          {
+            "name": "Devdutt Padikkal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1119026"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 0,
+            "0s": 10,
+            "Econ": "3.33",
+            "W": "1",
+            "R": "10",
+            "M": "0",
+            "O": "3",
+            "bowler": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "NB": "0",
+            "WD": "5",
+            "6s": 4,
+            "4s": 1,
+            "0s": 6,
+            "Econ": "12.00",
+            "W": "1",
+            "R": "48",
+            "M": "0",
+            "O": "4",
+            "bowler": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "NB": "1",
+            "WD": "1",
+            "6s": 1,
+            "4s": 4,
+            "0s": 9,
+            "Econ": "10.00",
+            "W": "2",
+            "R": "40",
+            "M": "0",
+            "O": "4",
+            "bowler": "SN Thakur",
+            "pid": "475281"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 2,
+            "0s": 2,
+            "Econ": "9.66",
+            "W": "0",
+            "R": "29",
+            "M": "0",
+            "O": "3",
+            "bowler": "DJ Bravo",
+            "pid": "51439"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 1,
+            "0s": 5,
+            "Econ": "8.50",
+            "W": "0",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "KV Sharma",
+            "pid": "30288"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "3.50",
+            "W": "0",
+            "R": "7",
+            "M": "0",
+            "O": "2",
+            "bowler": "RA Jadeja",
+            "pid": "234675"
+          }
+        ],
+        "title": "Bowling To Royal Challengers Bangalore Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 14,
+            "Econ": "4.75",
+            "W": "3",
+            "R": "19",
+            "M": "0",
+            "O": "4",
+            "bowler": "CH Morris",
+            "pid": "439952"
+          },
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 0,
+            "4s": 2,
+            "0s": 16,
+            "Econ": "4.50",
+            "W": "0",
+            "R": "18",
+            "M": "0",
+            "O": "4",
+            "bowler": "NA Saini",
+            "pid": "700167"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "7.50",
+            "W": "1",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "I Udana",
+            "pid": "328026"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 7,
+            "Econ": "5.33",
+            "W": "2",
+            "R": "16",
+            "M": "0",
+            "O": "3",
+            "bowler": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "8.75",
+            "W": "1",
+            "R": "35",
+            "M": "0",
+            "O": "4",
+            "bowler": "YS Chahal",
+            "pid": "430246"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 0,
+            "Econ": "14.00",
+            "W": "0",
+            "R": "14",
+            "M": "0",
+            "O": "1",
+            "bowler": "S Dube",
+            "pid": "714451"
+          }
+        ],
+        "title": "Bowling To Chennai Super Kings Innings (target: 170 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Faf du Plessis",
+              "pid": "44828"
+            },
+            "dismissal": "catch",
+            "SR": 97,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 34,
+            "R": 33,
+            "dismissal-info": "c du Plessis b Thakur",
+            "batsman": "D Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "dismissal-by": {
+              "name": "Deepak Chahar",
+              "pid": "447261"
+            },
+            "dismissal": "bowled",
+            "SR": 22,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 9,
+            "R": 2,
+            "dismissal-info": "b Chahar",
+            "batsman": "AJ Finch",
+            "pid": "5334"
+          },
+          {
+            "SR": 173,
+            "6s": 4,
+            "4s": 4,
+            "M": 0,
+            "B": 52,
+            "R": 90,
+            "dismissal-info": "",
+            "batsman": "V Kohli\u00a0(c)",
+            "pid": "253802"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "c  Dhoni b Thakur",
+            "batsman": "AB de Villiers\u00a0 ",
+            "pid": "44936"
+          },
+          {
+            "dismissal-by": {
+              "name": "MS Dhoni",
+              "pid": "28081"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 10,
+            "R": 10,
+            "dismissal-info": "c  Dhoni b Curran",
+            "batsman": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "SR": 157,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 14,
+            "R": 22,
+            "dismissal-info": "",
+            "batsman": "S Dube",
+            "pid": "714451"
+          }
+        ],
+        "title": "Royal Challengers Bangalore Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Washington Sundar",
+              "pid": "719715"
+            },
+            "dismissal": "bowled",
+            "SR": 77,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 18,
+            "R": 14,
+            "dismissal-info": "b Washington Sundar",
+            "batsman": "SR Watson",
+            "pid": "8180"
+          },
+          {
+            "dismissal-by": {
+              "name": "Chris Morris",
+              "pid": "439952"
+            },
+            "dismissal": "catch",
+            "SR": 80,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 10,
+            "R": 8,
+            "dismissal-info": "c Morris b Washington Sundar",
+            "batsman": "F du Plessis",
+            "pid": "44828"
+          },
+          {
+            "dismissal-by": {
+              "name": "Isuru Udana",
+              "pid": "328026"
+            },
+            "dismissal": "bowled",
+            "SR": 105,
+            "6s": 0,
+            "4s": 4,
+            "M": 0,
+            "B": 40,
+            "R": 42,
+            "dismissal-info": "b Udana",
+            "batsman": "AT Rayudu",
+            "pid": "33141"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Chris Morris",
+                "pid": "439952"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 117,
+            "6s": 0,
+            "4s": 4,
+            "M": 0,
+            "B": 28,
+            "R": 33,
+            "dismissal-info": "run out (Morris)",
+            "batsman": "N Jagadeesan",
+            "pid": "1048813"
+          },
+          {
+            "dismissal-by": {
+              "name": "Gurkeerat Singh Mann",
+              "pid": "537124"
+            },
+            "dismissal": "catch",
+            "SR": 166,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 10,
+            "dismissal-info": "c Gurkeerat Singh b Chahal",
+            "batsman": "MS Dhoni\u00a0(c)  ",
+            "pid": "28081"
+          },
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "c  de Villiers b Morris",
+            "batsman": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "dismissal-by": {
+              "name": "Gurkeerat Singh Mann",
+              "pid": "537124"
+            },
+            "dismissal": "catch",
+            "SR": 116,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 6,
+            "R": 7,
+            "dismissal-info": "c Gurkeerat Singh b Morris",
+            "batsman": "RA Jadeja",
+            "pid": "234675"
+          },
+          {
+            "dismissal-by": {
+              "name": "Devdutt Padikkal",
+              "pid": "1119026"
+            },
+            "dismissal": "catch",
+            "SR": 140,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 7,
+            "dismissal-info": "c Padikkal b Morris",
+            "batsman": "DJ Bravo",
+            "pid": "51439"
+          },
+          {
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 5,
+            "dismissal-info": "",
+            "batsman": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 1,
+            "dismissal-info": "",
+            "batsman": "SN Thakur",
+            "pid": "475281"
+          }
+        ],
+        "title": "Chennai Super Kings Innings (target: 170 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Shane Watson",
+            "pid": "8180"
+          },
+          {
+            "name": "Faf du Plessis",
+            "pid": "44828"
+          },
+          {
+            "name": "Ambati Rayudu",
+            "pid": "33141"
+          },
+          {
+            "name": "Narayan Jagadeesan",
+            "pid": "1048813"
+          },
+          {
+            "name": "MS Dhoni",
+            "pid": "28081"
+          },
+          {
+            "name": "Sam Curran",
+            "pid": "662973"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "pid": "234675"
+          },
+          {
+            "name": "Dwayne Bravo",
+            "pid": "51439"
+          },
+          {
+            "name": "Deepak Chahar",
+            "pid": "447261"
+          },
+          {
+            "name": "Shardul Thakur",
+            "pid": "475281"
+          },
+          {
+            "name": "Karn Sharma",
+            "pid": "30288"
+          }
+        ],
+        "name": "Chennai Super Kings"
+      },
+      {
+        "players": [
+          {
+            "name": "Devdutt Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "name": "Aaron Finch",
+            "pid": "5334"
+          },
+          {
+            "name": "Virat Kohli",
+            "pid": "253802"
+          },
+          {
+            "name": "AB de Villiers",
+            "pid": "44936"
+          },
+          {
+            "name": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "name": "Shivam Dube",
+            "pid": "714451"
+          },
+          {
+            "name": "Gurkeerat Singh Mann",
+            "pid": "537124"
+          },
+          {
+            "name": "Chris Morris",
+            "pid": "439952"
+          },
+          {
+            "name": "Isuru Udana",
+            "pid": "328026"
+          },
+          {
+            "name": "Navdeep Saini",
+            "pid": "700167"
+          },
+          {
+            "name": "Yuzvendra Chahal",
+            "pid": "430246"
+          }
+        ],
+        "name": "Royal Challengers Bangalore"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Virat Kohli",
+      "pid": "253802"
+    },
+    "toss_winner_team": "Royal Challengers Bangalore",
+    "winner_team": "Royal Challengers Bangalore",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 94,
+  "v": "1",
+  "ttl": 8,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-12T04:23:48.504Z"
+  }
+}

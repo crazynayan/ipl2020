@@ -1,0 +1,629 @@
+{
+  "dateTimeGMT": "2020-10-10T10:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Kolkata Knight Riders Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Glenn Maxwell",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "325026"
+          },
+          {
+            "name": "Mandeep Singh",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "398506"
+          },
+          {
+            "name": "Mohammed Shami",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "481896"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "runout": 2,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "604302"
+          },
+          {
+            "name": "Prabhsimran Singh",
+            "runout": 2,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1161024"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Kings XI Punjab Innings (target: 165 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Sunil Narine",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "230558"
+          },
+          {
+            "name": "Nitish Rana",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "604527"
+          },
+          {
+            "name": "C Green",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": 787073
+          },
+          {
+            "name": "Prasidh Krishna",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "917159"
+          },
+          {
+            "name": "Shubman Gill",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1070173"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 5,
+            "0s": 11,
+            "Econ": "7.50",
+            "W": "1",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 4,
+            "0s": 15,
+            "Econ": "6.25",
+            "W": "1",
+            "R": "25",
+            "M": "1",
+            "O": "4",
+            "bowler": "Arshdeep Singh",
+            "pid": "1125976"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 4,
+            "0s": 8,
+            "Econ": "9.25",
+            "W": "0",
+            "R": "37",
+            "M": "0",
+            "O": "4",
+            "bowler": "CJ Jordan",
+            "pid": "288992"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "11.00",
+            "W": "0",
+            "R": "44",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mujeeb Ur Rahman",
+            "pid": "974109"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 7,
+            "Econ": "6.25",
+            "W": "1",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "Ravi Bishnoi",
+            "pid": "1175441"
+          }
+        ],
+        "title": "Bowling To Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "7.25",
+            "W": "0",
+            "R": "29",
+            "M": "0",
+            "O": "4",
+            "bowler": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 12,
+            "Econ": "7.25",
+            "W": "3",
+            "R": "29",
+            "M": "0",
+            "O": "4",
+            "bowler": "M Prasidh Krishna",
+            "pid": "917159"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 5,
+            "0s": 2,
+            "Econ": "13.33",
+            "W": "0",
+            "R": "40",
+            "M": "0",
+            "O": "3",
+            "bowler": "KL Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "6.75",
+            "W": "0",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "CV Varun",
+            "pid": "1108375"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 9,
+            "Econ": "7.00",
+            "W": "2",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 0,
+            "Econ": "7.00",
+            "W": "0",
+            "R": "7",
+            "M": "0",
+            "O": "1",
+            "bowler": "N Rana",
+            "pid": "604527"
+          }
+        ],
+        "title": "Bowling To Kings XI Punjab Innings (target: 165 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Mohammed Shami",
+              "pid": "481896"
+            },
+            "dismissal": "bowled",
+            "SR": 40,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 10,
+            "R": 4,
+            "dismissal-info": "b Mohammed Shami",
+            "batsman": "RA Tripathi",
+            "pid": "446763"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Mandeep Singh",
+                "pid": "398506"
+              },
+              {
+                "name": "Prabhsimran Singh",
+                "pid": "1161024"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 121,
+            "6s": 0,
+            "4s": 5,
+            "M": 0,
+            "B": 47,
+            "R": 57,
+            "dismissal-info": "run out (Mandeep Singh/ Prabhsimran Singh)",
+            "batsman": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Mohammed Shami",
+                "pid": "481896"
+              },
+              {
+                "name": "Nicholas Pooran",
+                "pid": "604302"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 2,
+            "dismissal-info": "run out (Mohammed Shami/Pooran)",
+            "batsman": "N Rana",
+            "pid": "604527"
+          },
+          {
+            "dismissal-by": {
+              "name": "Glenn Maxwell",
+              "pid": "325026"
+            },
+            "dismissal": "catch",
+            "SR": 104,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 23,
+            "R": 24,
+            "dismissal-info": "c Maxwell b Ravi Bishnoi",
+            "batsman": "EJG Morgan",
+            "pid": "24598"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Nicholas Pooran",
+                "pid": "604302"
+              },
+              {
+                "name": "Prabhsimran Singh",
+                "pid": "1161024"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 200,
+            "6s": 2,
+            "4s": 8,
+            "M": 0,
+            "B": 29,
+            "R": 58,
+            "dismissal-info": "run out (Pooran/ Prabhsimran Singh)",
+            "batsman": "KD Karthik\u00a0(c)  ",
+            "pid": "30045"
+          },
+          {
+            "dismissal-by": {
+              "name": "Prabhsimran Singh",
+              "pid": "1161024"
+            },
+            "dismissal": "catch",
+            "SR": 166,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 3,
+            "R": 5,
+            "dismissal-info": "c  Prabhsimran Singh b Arshdeep Singh",
+            "batsman": "AD Russell",
+            "pid": "276298"
+          },
+          {
+            "SR": 125,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 5,
+            "dismissal-info": "",
+            "batsman": "PJ Cummins",
+            "pid": "489889"
+          }
+        ],
+        "title": "Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Prasidh Krishna",
+              "pid": "917159"
+            },
+            "dismissal": "bowled",
+            "SR": 127,
+            "6s": 0,
+            "4s": 6,
+            "M": 0,
+            "B": 58,
+            "R": 74,
+            "dismissal-info": "b Prasidh Krishna",
+            "batsman": "KL Rahul\u00a0(c)",
+            "pid": "422108"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shubman Gill",
+              "pid": "1070173"
+            },
+            "dismissal": "catch",
+            "SR": 143,
+            "6s": 1,
+            "4s": 6,
+            "M": 0,
+            "B": 39,
+            "R": 56,
+            "dismissal-info": "c Shubman Gill b Prasidh Krishna",
+            "batsman": "MA Agarwal",
+            "pid": "398438"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sunil Narine",
+              "pid": "230558"
+            },
+            "dismissal": "bowled",
+            "SR": 160,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 10,
+            "R": 16,
+            "dismissal-info": "b Narine",
+            "batsman": "N Pooran",
+            "pid": "604302"
+          },
+          {
+            "dismissal-by": {
+              "name": "Nitish Rana",
+              "pid": "604527"
+            },
+            "dismissal": "catch",
+            "SR": 57,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 4,
+            "dismissal-info": "c Rana b Prasidh Krishna",
+            "batsman": "Prabhsimran Singh\u00a0 ",
+            "pid": "1161024"
+          },
+          {
+            "SR": 200,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 5,
+            "R": 10,
+            "dismissal-info": "",
+            "batsman": "GJ Maxwell",
+            "pid": "325026"
+          },
+          {
+            "dismissal-by": {
+              "name": "C Green",
+              "pid": 787073
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "c sub (CJ Green) b Narine",
+            "batsman": "Mandeep Singh",
+            "pid": "398506"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "CJ Jordan",
+            "pid": "288992"
+          }
+        ],
+        "title": "Kings XI Punjab Innings (target: 165 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "KL Rahul",
+            "pid": "422108"
+          },
+          {
+            "name": "Mayank Agarwal",
+            "pid": "398438"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "pid": "604302"
+          },
+          {
+            "name": "Prabhsimran Singh",
+            "pid": "1161024"
+          },
+          {
+            "name": "Glenn Maxwell",
+            "pid": "325026"
+          },
+          {
+            "name": "Mandeep Singh",
+            "pid": "398506"
+          },
+          {
+            "name": "Chris Jordan",
+            "pid": "288992"
+          },
+          {
+            "name": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "name": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "name": "Arshdeep Singh",
+            "pid": "1125976"
+          },
+          {
+            "name": "Mujeeb Ur Rahman",
+            "pid": "974109"
+          }
+        ],
+        "name": "Kings XI Punjab"
+      },
+      {
+        "players": [
+          {
+            "name": "Rahul Tripathi",
+            "pid": "446763"
+          },
+          {
+            "name": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "name": "Nitish Rana",
+            "pid": "604527"
+          },
+          {
+            "name": "Eoin Morgan",
+            "pid": "24598"
+          },
+          {
+            "name": "Dinesh Karthik",
+            "pid": "30045"
+          },
+          {
+            "name": "Andre Russell",
+            "pid": "276298"
+          },
+          {
+            "name": "Pat Cummins",
+            "pid": "489889"
+          },
+          {
+            "name": "Sunil Narine",
+            "pid": "230558"
+          },
+          {
+            "name": "Kamlesh Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "name": "Prasidh Krishna",
+            "pid": "917159"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "pid": "1108375"
+          }
+        ],
+        "name": "Kolkata Knight Riders"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Dinesh Karthik",
+      "pid": "30045"
+    },
+    "toss_winner_team": "Kolkata Knight Riders",
+    "winner_team": "Kolkata Knight Riders",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 96,
+  "v": "1",
+  "ttl": 6,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-12T04:23:47.353Z"
+  }
+}
