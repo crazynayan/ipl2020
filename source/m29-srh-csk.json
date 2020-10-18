@@ -1,0 +1,681 @@
+{
+  "dateTimeGMT": "2020-10-13T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Chennai Super Kings Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "David Warner",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "219889"
+          },
+          {
+            "name": "Kane Williamson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "277906"
+          },
+          {
+            "name": "Manish Pandey",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "290630"
+          },
+          {
+            "name": "Jonny Bairstow",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "297433"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "438362"
+          },
+          {
+            "name": "Khaleel Ahmed",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "942645"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Sunrisers Hyderabad Innings (target: 168 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Dwayne Bravo",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "51439"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "234675"
+          },
+          {
+            "name": "Shardul Thakur",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "475281"
+          },
+          {
+            "name": "Sam Curran",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "662973"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 13,
+            "Econ": "4.75",
+            "W": "2",
+            "R": "19",
+            "M": "0",
+            "O": "4",
+            "bowler": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 4,
+            "0s": 10,
+            "Econ": "11.25",
+            "W": "2",
+            "R": "45",
+            "M": "0",
+            "O": "4",
+            "bowler": "KK Ahmed",
+            "pid": "942645"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 7,
+            "Econ": "7.25",
+            "W": "0",
+            "R": "29",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Nadeem",
+            "pid": "31872"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "10.25",
+            "W": "2",
+            "R": "41",
+            "M": "0",
+            "O": "4",
+            "bowler": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 3,
+            "4s": 0,
+            "0s": 10,
+            "Econ": "7.50",
+            "W": "0",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "Rashid Khan",
+            "pid": "793463"
+          }
+        ],
+        "title": "Bowling To Chennai Super Kings Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 2,
+            "0s": 8,
+            "Econ": "7.00",
+            "W": "0",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 11,
+            "Econ": "6.00",
+            "W": "1",
+            "R": "18",
+            "M": "0",
+            "O": "3",
+            "bowler": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "7.00",
+            "W": "1",
+            "R": "21",
+            "M": "0",
+            "O": "3",
+            "bowler": "RA Jadeja",
+            "pid": "234675"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 0,
+            "0s": 4,
+            "Econ": "5.00",
+            "W": "1",
+            "R": "10",
+            "M": "0",
+            "O": "2",
+            "bowler": "SN Thakur",
+            "pid": "475281"
+          },
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 1,
+            "4s": 3,
+            "0s": 5,
+            "Econ": "9.25",
+            "W": "2",
+            "R": "37",
+            "M": "0",
+            "O": "4",
+            "bowler": "KV Sharma",
+            "pid": "30288"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 8,
+            "Econ": "8.33",
+            "W": "2",
+            "R": "25",
+            "M": "0",
+            "O": "3",
+            "bowler": "DJ Bravo",
+            "pid": "51439"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 0,
+            "Econ": "8.00",
+            "W": "0",
+            "R": "8",
+            "M": "0",
+            "O": "1",
+            "bowler": "PP Chawla",
+            "pid": "32966"
+          }
+        ],
+        "title": "Bowling To Sunrisers Hyderabad Innings (target: 168 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Sandeep Sharma",
+              "pid": "438362"
+            },
+            "dismissal": "bowled",
+            "SR": 147,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 21,
+            "R": 31,
+            "dismissal-info": "b Sandeep Sharma",
+            "batsman": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jonny Bairstow",
+              "pid": "297433"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "c  Bairstow b Sandeep Sharma",
+            "batsman": "F du Plessis",
+            "pid": "44828"
+          },
+          {
+            "dismissal-by": {
+              "name": "Manish Pandey",
+              "pid": "290630"
+            },
+            "dismissal": "catch",
+            "SR": 110,
+            "6s": 3,
+            "4s": 1,
+            "M": 0,
+            "B": 38,
+            "R": 42,
+            "dismissal-info": "c Pandey b Natarajan",
+            "batsman": "SR Watson",
+            "pid": "8180"
+          },
+          {
+            "dismissal-by": {
+              "name": "David Warner",
+              "pid": "219889"
+            },
+            "dismissal": "catch",
+            "SR": 120,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 34,
+            "R": 41,
+            "dismissal-info": "c Warner b Ahmed",
+            "batsman": "AT Rayudu",
+            "pid": "33141"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kane Williamson",
+              "pid": "277906"
+            },
+            "dismissal": "catch",
+            "SR": 161,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 13,
+            "R": 21,
+            "dismissal-info": "c Williamson b Natarajan",
+            "batsman": "MS Dhoni\u00a0(c)  ",
+            "pid": "28081"
+          },
+          {
+            "SR": 250,
+            "6s": 1,
+            "4s": 3,
+            "M": 0,
+            "B": 10,
+            "R": 25,
+            "dismissal-info": "",
+            "batsman": "RA Jadeja",
+            "pid": "234675"
+          },
+          {
+            "dismissal-by": {
+              "name": "Khaleel Ahmed",
+              "pid": "942645"
+            },
+            "dismissal": "bowled",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "b Ahmed",
+            "batsman": "DJ Bravo",
+            "pid": "51439"
+          },
+          {
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "DL Chahar",
+            "pid": "447261"
+          }
+        ],
+        "title": "Chennai Super Kings Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Sam Curran",
+              "pid": "662973"
+            },
+            "dismissal": "catch & bowled",
+            "SR": 69,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 13,
+            "R": 9,
+            "dismissal-info": "c & b Curran",
+            "batsman": "DA Warner\u00a0(c)",
+            "pid": "219889"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ravindra Jadeja",
+              "pid": "234675"
+            },
+            "dismissal": "bowled",
+            "SR": 95,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 24,
+            "R": 23,
+            "dismissal-info": "b Jadeja",
+            "batsman": "JM Bairstow\u00a0 ",
+            "pid": "297433"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Dwayne Bravo",
+                "pid": "51439"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 133,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 3,
+            "R": 4,
+            "dismissal-info": "run out (Bravo)",
+            "batsman": "MK Pandey",
+            "pid": "290630"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shardul Thakur",
+              "pid": "475281"
+            },
+            "dismissal": "catch",
+            "SR": 146,
+            "6s": 0,
+            "4s": 7,
+            "M": 0,
+            "B": 39,
+            "R": 57,
+            "dismissal-info": "c Thakur b Sharma",
+            "batsman": "KS Williamson",
+            "pid": "277906"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ravindra Jadeja",
+              "pid": "234675"
+            },
+            "dismissal": "catch",
+            "SR": 88,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 18,
+            "R": 16,
+            "dismissal-info": "c Jadeja b Sharma",
+            "batsman": "PK Garg",
+            "pid": "1070180"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ravindra Jadeja",
+              "pid": "234675"
+            },
+            "dismissal": "catch",
+            "SR": 171,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 12,
+            "dismissal-info": "c Jadeja b Bravo",
+            "batsman": "V Shankar",
+            "pid": "477021"
+          },
+          {
+            "SR": 175,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 8,
+            "R": 14,
+            "dismissal-info": "hit wicket b Thakur",
+            "batsman": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "dismissal-by": {
+              "name": "Dwayne Bravo",
+              "pid": "51439"
+            },
+            "dismissal": "catch & bowled",
+            "SR": 100,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 5,
+            "R": 5,
+            "dismissal-info": "c & b Bravo",
+            "batsman": "S Nadeem",
+            "pid": "31872"
+          },
+          {
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 1,
+            "dismissal-info": "",
+            "batsman": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "T Natarajan",
+            "pid": "802575"
+          }
+        ],
+        "title": "Sunrisers Hyderabad Innings (target: 168 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Jonny Bairstow",
+            "pid": "297433"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Kane Williamson",
+            "pid": "277906"
+          },
+          {
+            "name": "Priyam Garg",
+            "pid": "1070180"
+          },
+          {
+            "name": "Vijay Shankar",
+            "pid": "477021"
+          },
+          {
+            "name": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "name": "Shahbaz Nadeem",
+            "pid": "31872"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "name": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "name": "Khaleel Ahmed",
+            "pid": "942645"
+          }
+        ],
+        "name": "Sunrisers Hyderabad"
+      },
+      {
+        "players": [
+          {
+            "name": "Sam Curran",
+            "pid": "662973"
+          },
+          {
+            "name": "Faf du Plessis",
+            "pid": "44828"
+          },
+          {
+            "name": "Shane Watson",
+            "pid": "8180"
+          },
+          {
+            "name": "Ambati Rayudu",
+            "pid": "33141"
+          },
+          {
+            "name": "MS Dhoni",
+            "pid": "28081"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "pid": "234675"
+          },
+          {
+            "name": "Dwayne Bravo",
+            "pid": "51439"
+          },
+          {
+            "name": "Deepak Chahar",
+            "pid": "447261"
+          },
+          {
+            "name": "Piyush Chawla",
+            "pid": "32966"
+          },
+          {
+            "name": "Shardul Thakur",
+            "pid": "475281"
+          },
+          {
+            "name": "Karn Sharma",
+            "pid": "30288"
+          }
+        ],
+        "name": "Chennai Super Kings"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Ravindra Jadeja",
+      "pid": "234675"
+    },
+    "toss_winner_team": "Chennai Super Kings",
+    "winner_team": "Chennai Super Kings",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 224,
+  "v": "1",
+  "ttl": 4,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-18T03:35:58.181Z"
+  }
+}

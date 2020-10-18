@@ -1,0 +1,561 @@
+{
+  "dateTimeGMT": "2020-10-17T10:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Rajasthan Royals Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Aaron Finch",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "5334"
+          },
+          {
+            "name": "AB de Villiers",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "44936"
+          },
+          {
+            "name": "Chris Morris",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 1,
+            "pid": "439952"
+          },
+          {
+            "name": "Navdeep Saini",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "700167"
+          },
+          {
+            "name": "Shahbaz Ahmed",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1159711"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Royal Challengers Bangalore Innings (target: 178 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Robin Uthappa",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "35582"
+          },
+          {
+            "name": "Ben Stokes",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "311158"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "423838"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "8.33",
+            "W": "0",
+            "R": "25",
+            "M": "0",
+            "O": "3",
+            "bowler": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "NB": "0",
+            "WD": "4",
+            "6s": 1,
+            "4s": 1,
+            "0s": 12,
+            "Econ": "6.50",
+            "W": "4",
+            "R": "26",
+            "M": "0",
+            "O": "4",
+            "bowler": "CH Morris",
+            "pid": "439952"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 2,
+            "4s": 5,
+            "0s": 4,
+            "Econ": "14.33",
+            "W": "0",
+            "R": "43",
+            "M": "0",
+            "O": "3",
+            "bowler": "I Udana",
+            "pid": "328026"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "7.50",
+            "W": "0",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "NA Saini",
+            "pid": "700167"
+          },
+          {
+            "NB": "2",
+            "WD": "1",
+            "6s": 1,
+            "4s": 3,
+            "0s": 9,
+            "Econ": "8.50",
+            "W": "2",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "YS Chahal",
+            "pid": "430246"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 3,
+            "Econ": "9.00",
+            "W": "0",
+            "R": "18",
+            "M": "0",
+            "O": "2",
+            "bowler": "Shahbaz Ahmed",
+            "pid": "1159711"
+          }
+        ],
+        "title": "Bowling To Rajasthan Royals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 4,
+            "4s": 0,
+            "0s": 8,
+            "Econ": "10.36",
+            "W": "0",
+            "R": "38",
+            "M": "0",
+            "O": "3.4",
+            "bowler": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 0,
+            "0s": 5,
+            "Econ": "8.00",
+            "W": "1",
+            "R": "32",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 0,
+            "4s": 3,
+            "0s": 8,
+            "Econ": "8.00",
+            "W": "1",
+            "R": "32",
+            "M": "0",
+            "O": "4",
+            "bowler": "Kartik Tyagi",
+            "pid": "1122918"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 4,
+            "4s": 2,
+            "0s": 8,
+            "Econ": "11.50",
+            "W": "0",
+            "R": "46",
+            "M": "0",
+            "O": "4",
+            "bowler": "JD Unadkat",
+            "pid": "390484"
+          },
+          {
+            "NB": "1",
+            "WD": "5",
+            "6s": 1,
+            "4s": 0,
+            "0s": 8,
+            "Econ": "7.50",
+            "W": "1",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Tewatia",
+            "pid": "423838"
+          }
+        ],
+        "title": "Bowling To Royal Challengers Bangalore Innings (target: 178 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Aaron Finch",
+              "pid": "5334"
+            },
+            "dismissal": "catch",
+            "SR": 186,
+            "6s": 1,
+            "4s": 7,
+            "M": 0,
+            "B": 22,
+            "R": 41,
+            "dismissal-info": "c Finch b Chahal",
+            "batsman": "RV Uthappa",
+            "pid": "35582"
+          },
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 78,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 19,
+            "R": 15,
+            "dismissal-info": "c  de Villiers b Morris",
+            "batsman": "BA Stokes",
+            "pid": "311158"
+          },
+          {
+            "dismissal-by": {
+              "name": "Chris Morris",
+              "pid": "439952"
+            },
+            "dismissal": "catch",
+            "SR": 150,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 9,
+            "dismissal-info": "c Morris b Chahal",
+            "batsman": "SV Samson\u00a0 ",
+            "pid": "425943"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shahbaz Ahmed",
+              "pid": "1159711"
+            },
+            "dismissal": "catch",
+            "SR": 158,
+            "6s": 1,
+            "4s": 6,
+            "M": 0,
+            "B": 36,
+            "R": 57,
+            "dismissal-info": "c Shahbaz Ahmed b Morris",
+            "batsman": "SPD Smith\u00a0(c)",
+            "pid": "267192"
+          },
+          {
+            "dismissal-by": {
+              "name": "Navdeep Saini",
+              "pid": "700167"
+            },
+            "dismissal": "catch",
+            "SR": 96,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 25,
+            "R": 24,
+            "dismissal-info": "c Saini b Morris",
+            "batsman": "JC Buttler",
+            "pid": "308967"
+          },
+          {
+            "SR": 172,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 11,
+            "R": 19,
+            "dismissal-info": "",
+            "batsman": "R Tewatia",
+            "pid": "423838"
+          },
+          {
+            "dismissal-by": {
+              "name": "Chris Morris",
+              "pid": "439952"
+            },
+            "dismissal": "lbw",
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "lbw b Morris",
+            "batsman": "JC Archer",
+            "pid": "669855"
+          }
+        ],
+        "title": "Rajasthan Royals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Ben Stokes",
+              "pid": "311158"
+            },
+            "dismissal": "catch",
+            "SR": 94,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 37,
+            "R": 35,
+            "dismissal-info": "c Stokes b Tewatia",
+            "batsman": "D Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "dismissal-by": {
+              "name": "Robin Uthappa",
+              "pid": "35582"
+            },
+            "dismissal": "catch",
+            "SR": 127,
+            "6s": 2,
+            "4s": 0,
+            "M": 0,
+            "B": 11,
+            "R": 14,
+            "dismissal-info": "c Uthappa b Gopal",
+            "batsman": "AJ Finch",
+            "pid": "5334"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Tewatia",
+              "pid": "423838"
+            },
+            "dismissal": "catch",
+            "SR": 134,
+            "6s": 2,
+            "4s": 1,
+            "M": 0,
+            "B": 32,
+            "R": 43,
+            "dismissal-info": "c Tewatia b Kartik Tyagi",
+            "batsman": "V Kohli\u00a0(c)",
+            "pid": "253802"
+          },
+          {
+            "SR": 250,
+            "6s": 6,
+            "4s": 1,
+            "M": 0,
+            "B": 22,
+            "R": 55,
+            "dismissal-info": "",
+            "batsman": "AB de Villiers\u00a0 ",
+            "pid": "44936"
+          },
+          {
+            "SR": 111,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 17,
+            "R": 19,
+            "dismissal-info": "",
+            "batsman": "Gurkeerat Singh",
+            "pid": "537124"
+          }
+        ],
+        "title": "Royal Challengers Bangalore Innings (target: 178 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Robin Uthappa",
+            "pid": "35582"
+          },
+          {
+            "name": "Ben Stokes",
+            "pid": "311158"
+          },
+          {
+            "name": "Sanju Samson",
+            "pid": "425943"
+          },
+          {
+            "name": "Steven Smith",
+            "pid": "267192"
+          },
+          {
+            "name": "Jos Buttler",
+            "pid": "308967"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "pid": "423838"
+          },
+          {
+            "name": "Jofra Archer",
+            "pid": "669855"
+          },
+          {
+            "name": "Riyan Parag",
+            "pid": "1079434"
+          },
+          {
+            "name": "Shreyas Gopal",
+            "pid": "344580"
+          },
+          {
+            "name": "Jaydev Unadkat",
+            "pid": "390484"
+          },
+          {
+            "name": "Kartik Tyagi",
+            "pid": "1122918"
+          }
+        ],
+        "name": "Rajasthan Royals"
+      },
+      {
+        "players": [
+          {
+            "name": "Devdutt Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "name": "Aaron Finch",
+            "pid": "5334"
+          },
+          {
+            "name": "Virat Kohli",
+            "pid": "253802"
+          },
+          {
+            "name": "AB de Villiers",
+            "pid": "44936"
+          },
+          {
+            "name": "Gurkeerat Singh Mann",
+            "pid": "537124"
+          },
+          {
+            "name": "Chris Morris",
+            "pid": "439952"
+          },
+          {
+            "name": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "name": "Shahbaz Ahmed",
+            "pid": "1159711"
+          },
+          {
+            "name": "Isuru Udana",
+            "pid": "328026"
+          },
+          {
+            "name": "Navdeep Saini",
+            "pid": "700167"
+          },
+          {
+            "name": "Yuzvendra Chahal",
+            "pid": "430246"
+          }
+        ],
+        "name": "Royal Challengers Bangalore"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "AB de Villiers",
+      "pid": "44936"
+    },
+    "toss_winner_team": "Rajasthan Royals",
+    "winner_team": "Royal Challengers Bangalore",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 216,
+  "v": "1",
+  "ttl": 7,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-18T03:37:48.009Z"
+  }
+}
