@@ -1,0 +1,715 @@
+{
+  "dateTimeGMT": "2020-10-24T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Kings XI Punjab Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "David Warner",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "219889"
+          },
+          {
+            "name": "Jonny Bairstow",
+            "runout": 0,
+            "stumped": 1,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "297433"
+          },
+          {
+            "name": "Vijay Shankar",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "477021"
+          },
+          {
+            "name": "Rashid Khan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "793463"
+          },
+          {
+            "name": "Khaleel Ahmed",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "942645"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Sunrisers Hyderabad Innings (target: 127 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Chris Jordan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "288992"
+          },
+          {
+            "name": "Mandeep Singh",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "398506"
+          },
+          {
+            "name": "KL Rahul",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "422108"
+          },
+          {
+            "name": "J Suchith",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": 527663
+          },
+          {
+            "name": "Murugan Ashwin",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "528067"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "604302"
+          },
+          {
+            "name": "Ravi Bishnoi",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "1175441"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 1,
+            "0s": 10,
+            "Econ": "7.25",
+            "W": "2",
+            "R": "29",
+            "M": "0",
+            "O": "4",
+            "bowler": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 7,
+            "Econ": "7.75",
+            "W": "0",
+            "R": "31",
+            "M": "0",
+            "O": "4",
+            "bowler": "KK Ahmed",
+            "pid": "942645"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 2,
+            "0s": 6,
+            "Econ": "6.75",
+            "W": "2",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "JO Holder",
+            "pid": "391485"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 15,
+            "Econ": "3.50",
+            "W": "2",
+            "R": "14",
+            "M": "0",
+            "O": "4",
+            "bowler": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 1,
+            "0s": 10,
+            "Econ": "5.75",
+            "W": "0",
+            "R": "23",
+            "M": "0",
+            "O": "4",
+            "bowler": "T Natarajan",
+            "pid": "802575"
+          }
+        ],
+        "title": "Bowling To Kings XI Punjab Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 4,
+            "0s": 11,
+            "Econ": "8.50",
+            "W": "1",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "6.00",
+            "W": "3",
+            "R": "23",
+            "M": "0",
+            "O": "3.5",
+            "bowler": "Arshdeep Singh",
+            "pid": "1125976"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 5,
+            "0s": 12,
+            "Econ": "6.75",
+            "W": "1",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "M Ashwin",
+            "pid": "528067"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 14,
+            "Econ": "3.25",
+            "W": "1",
+            "R": "13",
+            "M": "0",
+            "O": "4",
+            "bowler": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 1,
+            "0s": 12,
+            "Econ": "4.25",
+            "W": "3",
+            "R": "17",
+            "M": "0",
+            "O": "4",
+            "bowler": "CJ Jordan",
+            "pid": "288992"
+          }
+        ],
+        "title": "Bowling To Sunrisers Hyderabad Innings (target: 127 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Rashid Khan",
+              "pid": "793463"
+            },
+            "dismissal": "bowled",
+            "SR": 100,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 27,
+            "R": 27,
+            "dismissal-info": "b Rashid Khan",
+            "batsman": "KL Rahul\u00a0(c)  ",
+            "pid": "422108"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rashid Khan",
+              "pid": "793463"
+            },
+            "dismissal": "catch",
+            "SR": 121,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 14,
+            "R": 17,
+            "dismissal-info": "c Rashid Khan b Sandeep Sharma",
+            "batsman": "Mandeep Singh",
+            "pid": "398506"
+          },
+          {
+            "dismissal-by": {
+              "name": "David Warner",
+              "pid": "219889"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 20,
+            "R": 20,
+            "dismissal-info": "c Warner b Holder",
+            "batsman": "CH Gayle",
+            "pid": "51880"
+          },
+          {
+            "SR": 114,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 28,
+            "R": 32,
+            "dismissal-info": "",
+            "batsman": "N Pooran",
+            "pid": "604302"
+          },
+          {
+            "dismissal-by": {
+              "name": "David Warner",
+              "pid": "219889"
+            },
+            "dismissal": "catch",
+            "SR": 92,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 13,
+            "R": 12,
+            "dismissal-info": "c Warner b Sandeep Sharma",
+            "batsman": "GJ Maxwell",
+            "pid": "325026"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jonny Bairstow",
+              "pid": "297433"
+            },
+            "dismissal": "stumped",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "st  Bairstow b Rashid Khan",
+            "batsman": "DJ Hooda",
+            "pid": "497121"
+          },
+          {
+            "dismissal-by": {
+              "name": "Khaleel Ahmed",
+              "pid": "942645"
+            },
+            "dismissal": "catch",
+            "SR": 58,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 12,
+            "R": 7,
+            "dismissal-info": "c Ahmed b Holder",
+            "batsman": "CJ Jordan",
+            "pid": "288992"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Vijay Shankar",
+                "pid": "477021"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 4,
+            "dismissal-info": "run out (Shankar)",
+            "batsman": "M Ashwin",
+            "pid": "528067"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "Ravi Bishnoi",
+            "pid": "1175441"
+          }
+        ],
+        "title": "Kings XI Punjab Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "KL Rahul",
+              "pid": "422108"
+            },
+            "dismissal": "catch",
+            "SR": 175,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 20,
+            "R": 35,
+            "dismissal-info": "c  Rahul b Ravi Bishnoi",
+            "batsman": "DA Warner\u00a0(c)",
+            "pid": "219889"
+          },
+          {
+            "dismissal-by": {
+              "name": "Murugan Ashwin",
+              "pid": "528067"
+            },
+            "dismissal": "bowled",
+            "SR": 95,
+            "6s": 0,
+            "4s": 4,
+            "M": 0,
+            "B": 20,
+            "R": 19,
+            "dismissal-info": "b Ashwin",
+            "batsman": "JM Bairstow\u00a0 ",
+            "pid": "297433"
+          },
+          {
+            "dismissal-by": {
+              "name": "J Suchith",
+              "pid": 527663
+            },
+            "dismissal": "catch",
+            "SR": 51,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 29,
+            "R": 15,
+            "dismissal-info": "c sub (J Suchith) b Jordan",
+            "batsman": "MK Pandey",
+            "pid": "290630"
+          },
+          {
+            "dismissal-by": {
+              "name": "Chris Jordan",
+              "pid": "288992"
+            },
+            "dismissal": "catch",
+            "SR": 140,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 5,
+            "R": 7,
+            "dismissal-info": "c Jordan b Mohammed Shami",
+            "batsman": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "dismissal-by": {
+              "name": "KL Rahul",
+              "pid": "422108"
+            },
+            "dismissal": "catch",
+            "SR": 96,
+            "6s": 0,
+            "4s": 4,
+            "M": 0,
+            "B": 27,
+            "R": 26,
+            "dismissal-info": "c  Rahul b Arshdeep Singh",
+            "batsman": "V Shankar",
+            "pid": "477021"
+          },
+          {
+            "dismissal-by": {
+              "name": "Mandeep Singh",
+              "pid": "398506"
+            },
+            "dismissal": "catch",
+            "SR": 62,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 8,
+            "R": 5,
+            "dismissal-info": "c Mandeep Singh b Jordan",
+            "batsman": "JO Holder",
+            "pid": "391485"
+          },
+          {
+            "dismissal-by": {
+              "name": "Chris Jordan",
+              "pid": "288992"
+            },
+            "dismissal": "catch",
+            "SR": 60,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 3,
+            "dismissal-info": "c Jordan b Arshdeep Singh",
+            "batsman": "PK Garg",
+            "pid": "1070180"
+          },
+          {
+            "dismissal-by": {
+              "name": "Nicholas Pooran",
+              "pid": "604302"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "c Pooran b Jordan",
+            "batsman": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "dismissal-by": {
+              "name": "Murugan Ashwin",
+              "pid": "528067"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "c Ashwin b Arshdeep Singh",
+            "batsman": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Ravi Bishnoi",
+                "pid": "1175441"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "run out (Ravi Bishnoi)",
+            "batsman": "KK Ahmed",
+            "pid": "942645"
+          }
+        ],
+        "title": "Sunrisers Hyderabad Innings (target: 127 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "KL Rahul",
+            "pid": "422108"
+          },
+          {
+            "name": "Mandeep Singh",
+            "pid": "398506"
+          },
+          {
+            "name": "Chris Gayle",
+            "pid": "51880"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "pid": "604302"
+          },
+          {
+            "name": "Glenn Maxwell",
+            "pid": "325026"
+          },
+          {
+            "name": "Deepak Hooda",
+            "pid": "497121"
+          },
+          {
+            "name": "Chris Jordan",
+            "pid": "288992"
+          },
+          {
+            "name": "Murugan Ashwin",
+            "pid": "528067"
+          },
+          {
+            "name": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "name": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "name": "Arshdeep Singh",
+            "pid": "1125976"
+          }
+        ],
+        "name": "Kings XI Punjab"
+      },
+      {
+        "players": [
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Jonny Bairstow",
+            "pid": "297433"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "name": "Vijay Shankar",
+            "pid": "477021"
+          },
+          {
+            "name": "Jason Holder",
+            "pid": "391485"
+          },
+          {
+            "name": "Priyam Garg",
+            "pid": "1070180"
+          },
+          {
+            "name": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "name": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "name": "Khaleel Ahmed",
+            "pid": "942645"
+          }
+        ],
+        "name": "Sunrisers Hyderabad"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Chris Jordan",
+      "pid": "288992"
+    },
+    "toss_winner_team": "Sunrisers Hyderabad",
+    "winner_team": "Kings XI Punjab",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 226,
+  "v": "1",
+  "ttl": 8,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-27T02:42:55.339Z"
+  }
+}

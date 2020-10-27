@@ -1,0 +1,707 @@
+{
+  "dateTimeGMT": "2020-10-24T10:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Kolkata Knight Riders Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Ajinkya Rahane",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "277916"
+          },
+          {
+            "name": "Anrich Nortje",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "481979"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "550215"
+          },
+          {
+            "name": "Axar Patel",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "554691"
+          },
+          {
+            "name": "Tushar Deshpande",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "822553"
+          },
+          {
+            "name": "Rishabh Pant",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "931581"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Delhi Capitals Innings (target: 195 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Eoin Morgan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "24598"
+          },
+          {
+            "name": "Rahul Tripathi",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 3,
+            "pid": "446763"
+          },
+          {
+            "name": "Pat Cummins",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "489889"
+          },
+          {
+            "name": "Shubman Gill",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1070173"
+          },
+          {
+            "name": "Kamlesh Nagarkoti",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1070188"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "1108375"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 6,
+            "0s": 10,
+            "Econ": "10.00",
+            "W": "0",
+            "R": "40",
+            "M": "0",
+            "O": "4",
+            "bowler": "TU Deshpande",
+            "pid": "822553"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 9,
+            "Econ": "6.75",
+            "W": "2",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "A Nortje",
+            "pid": "481979"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 3,
+            "0s": 10,
+            "Econ": "8.25",
+            "W": "2",
+            "R": "33",
+            "M": "0",
+            "O": "4",
+            "bowler": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 3,
+            "Econ": "7.00",
+            "W": "0",
+            "R": "7",
+            "M": "0",
+            "O": "1",
+            "bowler": "AR Patel",
+            "pid": "554691"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 6,
+            "0s": 9,
+            "Econ": "10.25",
+            "W": "2",
+            "R": "41",
+            "M": "0",
+            "O": "4",
+            "bowler": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 3,
+            "4s": 4,
+            "0s": 2,
+            "Econ": "15.00",
+            "W": "0",
+            "R": "45",
+            "M": "0",
+            "O": "3",
+            "bowler": "R Ashwin",
+            "pid": "26421"
+          }
+        ],
+        "title": "Bowling To Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 3,
+            "0s": 16,
+            "Econ": "4.25",
+            "W": "3",
+            "R": "17",
+            "M": "0",
+            "O": "4",
+            "bowler": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "NB": "2",
+            "WD": "1",
+            "6s": 1,
+            "4s": 1,
+            "0s": 4,
+            "Econ": "9.50",
+            "W": "0",
+            "R": "19",
+            "M": "0",
+            "O": "2",
+            "bowler": "M Prasidh Krishna",
+            "pid": "917159"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 7,
+            "Econ": "5.50",
+            "W": "0",
+            "R": "11",
+            "M": "0",
+            "O": "2",
+            "bowler": "KL Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 8,
+            "Econ": "7.50",
+            "W": "1",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "LH Ferguson",
+            "pid": "493773"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 0,
+            "0s": 4,
+            "Econ": "9.25",
+            "W": "0",
+            "R": "37",
+            "M": "0",
+            "O": "4",
+            "bowler": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "5.00",
+            "W": "5",
+            "R": "20",
+            "M": "0",
+            "O": "4",
+            "bowler": "CV Varun",
+            "pid": "1108375"
+          }
+        ],
+        "title": "Bowling To Delhi Capitals Innings (target: 195 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Axar Patel",
+              "pid": "554691"
+            },
+            "dismissal": "catch",
+            "SR": 112,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 8,
+            "R": 9,
+            "dismissal-info": "c Patel b Nortje",
+            "batsman": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "dismissal-by": {
+              "name": "Tushar Deshpande",
+              "pid": "822553"
+            },
+            "dismissal": "catch",
+            "SR": 152,
+            "6s": 1,
+            "4s": 13,
+            "M": 0,
+            "B": 53,
+            "R": 81,
+            "dismissal-info": "c Deshpande b Stoinis",
+            "batsman": "N Rana",
+            "pid": "604527"
+          },
+          {
+            "dismissal-by": {
+              "name": "Anrich Nortje",
+              "pid": "481979"
+            },
+            "dismissal": "bowled",
+            "SR": 108,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 12,
+            "R": 13,
+            "dismissal-info": "b Nortje",
+            "batsman": "RA Tripathi",
+            "pid": "446763"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rishabh Pant",
+              "pid": "931581"
+            },
+            "dismissal": "catch",
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 3,
+            "dismissal-info": "c  Pant b Rabada",
+            "batsman": "KD Karthik\u00a0 ",
+            "pid": "30045"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ajinkya Rahane",
+              "pid": "277916"
+            },
+            "dismissal": "catch",
+            "SR": 200,
+            "6s": 4,
+            "4s": 6,
+            "M": 0,
+            "B": 32,
+            "R": 64,
+            "dismissal-info": "c Rahane b Rabada",
+            "batsman": "SP Narine",
+            "pid": "230558"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kagiso Rabada",
+              "pid": "550215"
+            },
+            "dismissal": "catch",
+            "SR": 188,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 9,
+            "R": 17,
+            "dismissal-info": "c Rabada b Stoinis",
+            "batsman": "EJG Morgan\u00a0(c)",
+            "pid": "24598"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "PJ Cummins",
+            "pid": "489889"
+          }
+        ],
+        "title": "Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Pat Cummins",
+              "pid": "489889"
+            },
+            "dismissal": "lbw",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "lbw b Cummins",
+            "batsman": "AM Rahane",
+            "pid": "277916"
+          },
+          {
+            "dismissal-by": {
+              "name": "Pat Cummins",
+              "pid": "489889"
+            },
+            "dismissal": "bowled",
+            "SR": 100,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 6,
+            "R": 6,
+            "dismissal-info": "b Cummins",
+            "batsman": "S Dhawan",
+            "pid": "28235"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kamlesh Nagarkoti",
+              "pid": "1070188"
+            },
+            "dismissal": "catch",
+            "SR": 123,
+            "6s": 0,
+            "4s": 5,
+            "M": 0,
+            "B": 38,
+            "R": 47,
+            "dismissal-info": "c Nagarkoti b Varun",
+            "batsman": "SS Iyer\u00a0(c)",
+            "pid": "642519"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shubman Gill",
+              "pid": "1070173"
+            },
+            "dismissal": "catch",
+            "SR": 81,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 33,
+            "R": 27,
+            "dismissal-info": "c Shubman Gill b Varun",
+            "batsman": "RR Pant\u00a0 ",
+            "pid": "931581"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Tripathi",
+              "pid": "446763"
+            },
+            "dismissal": "catch",
+            "SR": 200,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 10,
+            "dismissal-info": "c Tripathi b Varun",
+            "batsman": "SO Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Tripathi",
+              "pid": "446763"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 6,
+            "dismissal-info": "c Tripathi b Varun",
+            "batsman": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "dismissal-by": {
+              "name": "Varun Chakravarthy",
+              "pid": "1108375"
+            },
+            "dismissal": "bowled",
+            "SR": 128,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 9,
+            "dismissal-info": "b Varun",
+            "batsman": "AR Patel",
+            "pid": "554691"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rahul Tripathi",
+              "pid": "446763"
+            },
+            "dismissal": "catch",
+            "SR": 90,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 10,
+            "R": 9,
+            "dismissal-info": "c Tripathi b Cummins",
+            "batsman": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "SR": 107,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 13,
+            "R": 14,
+            "dismissal-info": "",
+            "batsman": "R Ashwin",
+            "pid": "26421"
+          },
+          {
+            "dismissal-by": {
+              "name": "Eoin Morgan",
+              "pid": "24598"
+            },
+            "dismissal": "catch",
+            "SR": 33,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 1,
+            "dismissal-info": "c Morgan b Ferguson",
+            "batsman": "TU Deshpande",
+            "pid": "822553"
+          },
+          {
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 0,
+            "R": 0,
+            "dismissal-info": "",
+            "batsman": "A Nortje",
+            "pid": "481979"
+          }
+        ],
+        "title": "Delhi Capitals Innings (target: 195 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "name": "Nitish Rana",
+            "pid": "604527"
+          },
+          {
+            "name": "Rahul Tripathi",
+            "pid": "446763"
+          },
+          {
+            "name": "Dinesh Karthik",
+            "pid": "30045"
+          },
+          {
+            "name": "Sunil Narine",
+            "pid": "230558"
+          },
+          {
+            "name": "Eoin Morgan",
+            "pid": "24598"
+          },
+          {
+            "name": "Pat Cummins",
+            "pid": "489889"
+          },
+          {
+            "name": "Lockie Ferguson",
+            "pid": "493773"
+          },
+          {
+            "name": "Kamlesh Nagarkoti",
+            "pid": "1070188"
+          },
+          {
+            "name": "Prasidh Krishna",
+            "pid": "917159"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "pid": "1108375"
+          }
+        ],
+        "name": "Kolkata Knight Riders"
+      },
+      {
+        "players": [
+          {
+            "name": "Ajinkya Rahane",
+            "pid": "277916"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "pid": "28235"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "pid": "642519"
+          },
+          {
+            "name": "Rishabh Pant",
+            "pid": "931581"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "name": "Marcus Stoinis",
+            "pid": "325012"
+          },
+          {
+            "name": "Axar Patel",
+            "pid": "554691"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "pid": "550215"
+          },
+          {
+            "name": "Ravichandran Ashwin",
+            "pid": "26421"
+          },
+          {
+            "name": "Tushar Deshpande",
+            "pid": "822553"
+          },
+          {
+            "name": "Anrich Nortje",
+            "pid": "481979"
+          }
+        ],
+        "name": "Delhi Capitals"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Varun Chakravarthy",
+      "pid": "1108375"
+    },
+    "toss_winner_team": "Delhi Capitals",
+    "winner_team": "Kolkata Knight Riders",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 228,
+  "v": "1",
+  "ttl": 8,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-27T02:42:54.217Z"
+  }
+}

@@ -270,4 +270,12 @@ def view_schedule():
 def view_match_score(match_id: str):
     players = MatchPlayer.objects.filter_by(match_id=match_id).get()
     players.sort(key=lambda player: -player.adjusted_points)
-    return render_template("match_score.html", players=players)
+    return render_template("match_score.html", players=players, title="Schedule")
+
+
+@ipl_app.route("/man_of_the_match")
+@login_required
+def view_man_of_the_match():
+    players = MatchPlayer.objects.filter_by(man_of_the_match=True).get()
+    players.sort(key=lambda item: item.gameweek)
+    return render_template("man_of_the_match.html", players=players, title="Man of the match")

@@ -1,0 +1,513 @@
+{
+  "dateTimeGMT": "2020-10-25T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Mumbai Indians Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Ben Stokes",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "311158"
+          },
+          {
+            "name": "Shreyas Gopal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "344580"
+          },
+          {
+            "name": "Jofra Archer",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "669855"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Rajasthan Royals Innings (target: 196 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Kieron Pollard",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "230559"
+          },
+          {
+            "name": "James Pattinson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "272465"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 2,
+            "0s": 11,
+            "Econ": "7.75",
+            "W": "2",
+            "R": "31",
+            "M": "0",
+            "O": "4",
+            "bowler": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "NB": "0",
+            "WD": "4",
+            "6s": 6,
+            "4s": 3,
+            "0s": 7,
+            "Econ": "15.00",
+            "W": "0",
+            "R": "60",
+            "M": "0",
+            "O": "4",
+            "bowler": "AS Rajpoot",
+            "pid": "591650"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 3,
+            "4s": 4,
+            "0s": 6,
+            "Econ": "11.25",
+            "W": "1",
+            "R": "45",
+            "M": "0",
+            "O": "4",
+            "bowler": "Kartik Tyagi",
+            "pid": "1122918"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 8,
+            "Econ": "7.50",
+            "W": "2",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 8,
+            "Econ": "6.25",
+            "W": "0",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Tewatia",
+            "pid": "423838"
+          }
+        ],
+        "title": "Bowling To Mumbai Indians Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 6,
+            "0s": 7,
+            "Econ": "10.00",
+            "W": "0",
+            "R": "40",
+            "M": "0",
+            "O": "4",
+            "bowler": "TA Boult",
+            "pid": "277912"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 2,
+            "4s": 5,
+            "0s": 9,
+            "Econ": "12.00",
+            "W": "2",
+            "R": "40",
+            "M": "0",
+            "O": "3.2",
+            "bowler": "JL Pattinson",
+            "pid": "272465"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "9.50",
+            "W": "0",
+            "R": "38",
+            "M": "0",
+            "O": "4",
+            "bowler": "JJ Bumrah",
+            "pid": "625383"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 5,
+            "Econ": "10.00",
+            "W": "0",
+            "R": "20",
+            "M": "0",
+            "O": "2",
+            "bowler": "KH Pandya",
+            "pid": "471342"
+          },
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 1,
+            "4s": 0,
+            "0s": 3,
+            "Econ": "9.00",
+            "W": "0",
+            "R": "18",
+            "M": "0",
+            "O": "2",
+            "bowler": "KA Pollard",
+            "pid": "230559"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 2,
+            "0s": 4,
+            "Econ": "12.00",
+            "W": "0",
+            "R": "36",
+            "M": "0",
+            "O": "3",
+            "bowler": "RD Chahar",
+            "pid": "1064812"
+          }
+        ],
+        "title": "Bowling To Rajasthan Royals Innings (target: 196 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Jofra Archer",
+              "pid": "669855"
+            },
+            "dismissal": "catch",
+            "SR": 102,
+            "6s": 1,
+            "4s": 4,
+            "M": 0,
+            "B": 36,
+            "R": 37,
+            "dismissal-info": "c Archer b Kartik Tyagi",
+            "batsman": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jofra Archer",
+              "pid": "669855"
+            },
+            "dismissal": "bowled",
+            "SR": 150,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 6,
+            "dismissal-info": "b Archer",
+            "batsman": "Q de Kock\u00a0 ",
+            "pid": "379143"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ben Stokes",
+              "pid": "311158"
+            },
+            "dismissal": "catch",
+            "SR": 153,
+            "6s": 1,
+            "4s": 4,
+            "M": 0,
+            "B": 26,
+            "R": 40,
+            "dismissal-info": "c Stokes b Gopal",
+            "batsman": "SA Yadav",
+            "pid": "446507"
+          },
+          {
+            "dismissal-by": {
+              "name": "Ben Stokes",
+              "pid": "311158"
+            },
+            "dismissal": "catch",
+            "SR": 136,
+            "6s": 1,
+            "4s": 4,
+            "M": 0,
+            "B": 25,
+            "R": 34,
+            "dismissal-info": "c Stokes b Archer",
+            "batsman": "SS Tiwary",
+            "pid": "35390"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shreyas Gopal",
+              "pid": "344580"
+            },
+            "dismissal": "bowled",
+            "SR": 150,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 6,
+            "dismissal-info": "b Gopal",
+            "batsman": "KA Pollard\u00a0(c)",
+            "pid": "230559"
+          },
+          {
+            "SR": 285,
+            "6s": 7,
+            "4s": 2,
+            "M": 0,
+            "B": 21,
+            "R": 60,
+            "dismissal-info": "",
+            "batsman": "HH Pandya",
+            "pid": "625371"
+          },
+          {
+            "SR": 75,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 3,
+            "dismissal-info": "",
+            "batsman": "KH Pandya",
+            "pid": "471342"
+          }
+        ],
+        "title": "Mumbai Indians Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Kieron Pollard",
+              "pid": "230559"
+            },
+            "dismissal": "catch",
+            "SR": 118,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 11,
+            "R": 13,
+            "dismissal-info": "c Pollard b Pattinson",
+            "batsman": "RV Uthappa",
+            "pid": "35582"
+          },
+          {
+            "SR": 178,
+            "6s": 3,
+            "4s": 14,
+            "M": 0,
+            "B": 60,
+            "R": 107,
+            "dismissal-info": "",
+            "batsman": "BA Stokes",
+            "pid": "311158"
+          },
+          {
+            "dismissal-by": {
+              "name": "James Pattinson",
+              "pid": "272465"
+            },
+            "dismissal": "bowled",
+            "SR": 137,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 8,
+            "R": 11,
+            "dismissal-info": "b Pattinson",
+            "batsman": "SPD Smith\u00a0(c)",
+            "pid": "267192"
+          },
+          {
+            "SR": 174,
+            "6s": 3,
+            "4s": 4,
+            "M": 0,
+            "B": 31,
+            "R": 54,
+            "dismissal-info": "",
+            "batsman": "SV Samson\u00a0 ",
+            "pid": "425943"
+          }
+        ],
+        "title": "Rajasthan Royals Innings (target: 196 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Robin Uthappa",
+            "pid": "35582"
+          },
+          {
+            "name": "Ben Stokes",
+            "pid": "311158"
+          },
+          {
+            "name": "Steven Smith",
+            "pid": "267192"
+          },
+          {
+            "name": "Sanju Samson",
+            "pid": "425943"
+          },
+          {
+            "name": "Jos Buttler",
+            "pid": "308967"
+          },
+          {
+            "name": "Riyan Parag",
+            "pid": "1079434"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "pid": "423838"
+          },
+          {
+            "name": "Jofra Archer",
+            "pid": "669855"
+          },
+          {
+            "name": "Shreyas Gopal",
+            "pid": "344580"
+          },
+          {
+            "name": "Ankit Rajpoot",
+            "pid": "591650"
+          },
+          {
+            "name": "Kartik Tyagi",
+            "pid": "1122918"
+          }
+        ],
+        "name": "Rajasthan Royals"
+      },
+      {
+        "players": [
+          {
+            "name": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "name": "Quinton de Kock",
+            "pid": "379143"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "pid": "446507"
+          },
+          {
+            "name": "Saurabh Tiwary",
+            "pid": "35390"
+          },
+          {
+            "name": "Kieron Pollard",
+            "pid": "230559"
+          },
+          {
+            "name": "Hardik Pandya",
+            "pid": "625371"
+          },
+          {
+            "name": "Krunal Pandya",
+            "pid": "471342"
+          },
+          {
+            "name": "James Pattinson",
+            "pid": "272465"
+          },
+          {
+            "name": "Rahul Chahar",
+            "pid": "1064812"
+          },
+          {
+            "name": "Trent Boult",
+            "pid": "277912"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "pid": "625383"
+          }
+        ],
+        "name": "Mumbai Indians"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Ben Stokes",
+      "pid": "311158"
+    },
+    "toss_winner_team": "Mumbai Indians",
+    "winner_team": "Rajasthan Royals",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 224,
+  "v": "1",
+  "ttl": 18,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-27T02:43:50.454Z"
+  }
+}

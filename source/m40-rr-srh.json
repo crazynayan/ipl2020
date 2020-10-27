@@ -1,0 +1,563 @@
+{
+  "dateTimeGMT": "2020-10-22T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Rajasthan Royals Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Shahbaz Nadeem",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "31872"
+          },
+          {
+            "name": "David Warner",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "219889"
+          },
+          {
+            "name": "Manish Pandey",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "290630"
+          },
+          {
+            "name": "Jason Holder",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "391485"
+          },
+          {
+            "name": "Rashid Khan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "793463"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Sunrisers Hyderabad Innings (target: 155 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Ben Stokes",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "311158"
+          },
+          {
+            "name": "Jofra Archer",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "669855"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 8,
+            "Econ": "7.75",
+            "W": "0",
+            "R": "31",
+            "M": "0",
+            "O": "4",
+            "bowler": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 1,
+            "4s": 3,
+            "0s": 11,
+            "Econ": "8.25",
+            "W": "3",
+            "R": "33",
+            "M": "0",
+            "O": "4",
+            "bowler": "JO Holder",
+            "pid": "391485"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 8,
+            "Econ": "5.00",
+            "W": "1",
+            "R": "15",
+            "M": "0",
+            "O": "3",
+            "bowler": "V Shankar",
+            "pid": "477021"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 2,
+            "4s": 4,
+            "0s": 5,
+            "Econ": "11.50",
+            "W": "0",
+            "R": "46",
+            "M": "0",
+            "O": "4",
+            "bowler": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 9,
+            "Econ": "5.00",
+            "W": "1",
+            "R": "20",
+            "M": "0",
+            "O": "4",
+            "bowler": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 0,
+            "Econ": "9.00",
+            "W": "0",
+            "R": "9",
+            "M": "0",
+            "O": "1",
+            "bowler": "S Nadeem",
+            "pid": "31872"
+          }
+        ],
+        "title": "Bowling To Rajasthan Royals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 4,
+            "0s": 16,
+            "Econ": "5.25",
+            "W": "2",
+            "R": "21",
+            "M": "0",
+            "O": "4",
+            "bowler": "JC Archer",
+            "pid": "669855"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 1,
+            "0s": 4,
+            "Econ": "11.00",
+            "W": "0",
+            "R": "11",
+            "M": "0",
+            "O": "1",
+            "bowler": "AS Rajpoot",
+            "pid": "591650"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 3,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "13.26",
+            "W": "0",
+            "R": "42",
+            "M": "0",
+            "O": "3.1",
+            "bowler": "Kartik Tyagi",
+            "pid": "1122918"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 0,
+            "0s": 5,
+            "Econ": "12.00",
+            "W": "0",
+            "R": "24",
+            "M": "0",
+            "O": "2",
+            "bowler": "BA Stokes",
+            "pid": "311158"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 7,
+            "Econ": "8.00",
+            "W": "0",
+            "R": "32",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Gopal",
+            "pid": "344580"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "6.25",
+            "W": "0",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Tewatia",
+            "pid": "423838"
+          }
+        ],
+        "title": "Bowling To Sunrisers Hyderabad Innings (target: 155 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": [
+              {
+                "name": "Jason Holder",
+                "pid": "391485"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 146,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 13,
+            "R": 19,
+            "dismissal-info": "run out (Holder)",
+            "batsman": "RV Uthappa",
+            "pid": "35582"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rashid Khan",
+              "pid": "793463"
+            },
+            "dismissal": "bowled",
+            "SR": 93,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 32,
+            "R": 30,
+            "dismissal-info": "b Rashid Khan",
+            "batsman": "BA Stokes",
+            "pid": "311158"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jason Holder",
+              "pid": "391485"
+            },
+            "dismissal": "bowled",
+            "SR": 138,
+            "6s": 1,
+            "4s": 3,
+            "M": 0,
+            "B": 26,
+            "R": 36,
+            "dismissal-info": "b Holder",
+            "batsman": "SV Samson\u00a0 ",
+            "pid": "425943"
+          },
+          {
+            "dismissal-by": {
+              "name": "Shahbaz Nadeem",
+              "pid": "31872"
+            },
+            "dismissal": "catch",
+            "SR": 75,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 12,
+            "R": 9,
+            "dismissal-info": "c Nadeem b Shankar",
+            "batsman": "JC Buttler",
+            "pid": "308967"
+          },
+          {
+            "dismissal-by": {
+              "name": "Manish Pandey",
+              "pid": "290630"
+            },
+            "dismissal": "catch",
+            "SR": 126,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 15,
+            "R": 19,
+            "dismissal-info": "c Pandey b Holder",
+            "batsman": "SPD Smith\u00a0(c)",
+            "pid": "267192"
+          },
+          {
+            "dismissal-by": {
+              "name": "David Warner",
+              "pid": "219889"
+            },
+            "dismissal": "catch",
+            "SR": 166,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 12,
+            "R": 20,
+            "dismissal-info": "c Warner b Holder",
+            "batsman": "R Parag",
+            "pid": "1079434"
+          },
+          {
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "R Tewatia",
+            "pid": "423838"
+          },
+          {
+            "SR": 228,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 7,
+            "R": 16,
+            "dismissal-info": "",
+            "batsman": "JC Archer",
+            "pid": "669855"
+          }
+        ],
+        "title": "Rajasthan Royals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Ben Stokes",
+              "pid": "311158"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 4,
+            "R": 4,
+            "dismissal-info": "c Stokes b Archer",
+            "batsman": "DA Warner\u00a0(c)",
+            "pid": "219889"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jofra Archer",
+              "pid": "669855"
+            },
+            "dismissal": "bowled",
+            "SR": 142,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 7,
+            "R": 10,
+            "dismissal-info": "b Archer",
+            "batsman": "JM Bairstow\u00a0 ",
+            "pid": "297433"
+          },
+          {
+            "SR": 176,
+            "6s": 8,
+            "4s": 4,
+            "M": 0,
+            "B": 47,
+            "R": 83,
+            "dismissal-info": "",
+            "batsman": "MK Pandey",
+            "pid": "290630"
+          },
+          {
+            "SR": 101,
+            "6s": 0,
+            "4s": 6,
+            "M": 0,
+            "B": 51,
+            "R": 52,
+            "dismissal-info": "",
+            "batsman": "V Shankar",
+            "pid": "477021"
+          }
+        ],
+        "title": "Sunrisers Hyderabad Innings (target: 155 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Robin Uthappa",
+            "pid": "35582"
+          },
+          {
+            "name": "Ben Stokes",
+            "pid": "311158"
+          },
+          {
+            "name": "Sanju Samson",
+            "pid": "425943"
+          },
+          {
+            "name": "Jos Buttler",
+            "pid": "308967"
+          },
+          {
+            "name": "Steven Smith",
+            "pid": "267192"
+          },
+          {
+            "name": "Riyan Parag",
+            "pid": "1079434"
+          },
+          {
+            "name": "Rahul Tewatia",
+            "pid": "423838"
+          },
+          {
+            "name": "Jofra Archer",
+            "pid": "669855"
+          },
+          {
+            "name": "Shreyas Gopal",
+            "pid": "344580"
+          },
+          {
+            "name": "Ankit Rajpoot",
+            "pid": "591650"
+          },
+          {
+            "name": "Kartik Tyagi",
+            "pid": "1122918"
+          }
+        ],
+        "name": "Rajasthan Royals"
+      },
+      {
+        "players": [
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Jonny Bairstow",
+            "pid": "297433"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Vijay Shankar",
+            "pid": "477021"
+          },
+          {
+            "name": "Priyam Garg",
+            "pid": "1070180"
+          },
+          {
+            "name": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "name": "Jason Holder",
+            "pid": "391485"
+          },
+          {
+            "name": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "name": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "name": "Shahbaz Nadeem",
+            "pid": "31872"
+          }
+        ],
+        "name": "Sunrisers Hyderabad"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Manish Pandey",
+      "pid": "290630"
+    },
+    "toss_winner_team": "Sunrisers Hyderabad",
+    "winner_team": "Sunrisers Hyderabad",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 232,
+  "v": "1",
+  "ttl": 8,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-27T02:42:30.510Z"
+  }
+}

@@ -1,0 +1,571 @@
+{
+  "dateTimeGMT": "2020-10-21T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Kolkata Knight Riders Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "AB de Villiers",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "44936"
+          },
+          {
+            "name": "Yuzvendra Chahal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "430246"
+          },
+          {
+            "name": "Chris Morris",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "439952"
+          },
+          {
+            "name": "Gurkeerat Singh Mann",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "537124"
+          },
+          {
+            "name": "Mohammed Siraj",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "940973"
+          },
+          {
+            "name": "Devdutt Padikkal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1119026"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Royal Challengers Bangalore Innings (target: 85 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Dinesh Karthik",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "30045"
+          },
+          {
+            "name": "Pat Cummins",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "489889"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 1,
+            "0s": 15,
+            "Econ": "4.00",
+            "W": "0",
+            "R": "16",
+            "M": "1",
+            "O": "4",
+            "bowler": "CH Morris",
+            "pid": "439952"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 16,
+            "Econ": "2.00",
+            "W": "3",
+            "R": "8",
+            "M": "2",
+            "O": "4",
+            "bowler": "Mohammed Siraj",
+            "pid": "940973"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 2,
+            "0s": 11,
+            "Econ": "7.66",
+            "W": "1",
+            "R": "23",
+            "M": "0",
+            "O": "3",
+            "bowler": "NA Saini",
+            "pid": "700167"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 3,
+            "Econ": "6.00",
+            "W": "0",
+            "R": "6",
+            "M": "0",
+            "O": "1",
+            "bowler": "I Udana",
+            "pid": "328026"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 13,
+            "Econ": "3.75",
+            "W": "2",
+            "R": "15",
+            "M": "0",
+            "O": "4",
+            "bowler": "YS Chahal",
+            "pid": "430246"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 14,
+            "Econ": "3.50",
+            "W": "1",
+            "R": "14",
+            "M": "1",
+            "O": "4",
+            "bowler": "Washington Sundar",
+            "pid": "719715"
+          }
+        ],
+        "title": "Bowling To Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 9,
+            "Econ": "6.00",
+            "W": "0",
+            "R": "18",
+            "M": "0",
+            "O": "3",
+            "bowler": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "8.00",
+            "W": "0",
+            "R": "20",
+            "M": "0",
+            "O": "2.3",
+            "bowler": "M Prasidh Krishna",
+            "pid": "917159"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 5,
+            "0s": 11,
+            "Econ": "7.00",
+            "W": "0",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "CV Varun",
+            "pid": "1108375"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 14,
+            "Econ": "4.25",
+            "W": "1",
+            "R": "17",
+            "M": "0",
+            "O": "4",
+            "bowler": "LH Ferguson",
+            "pid": "493773"
+          }
+        ],
+        "title": "Bowling To Royal Challengers Bangalore Innings (target: 85 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Chris Morris",
+              "pid": "439952"
+            },
+            "dismissal": "catch",
+            "SR": 16,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 1,
+            "dismissal-info": "c Morris b Saini",
+            "batsman": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 20,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 1,
+            "dismissal-info": "c  de Villiers b Mohammed Siraj",
+            "batsman": "RA Tripathi",
+            "pid": "446763"
+          },
+          {
+            "dismissal-by": {
+              "name": "Mohammed Siraj",
+              "pid": "940973"
+            },
+            "dismissal": "bowled",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "b Mohammed Siraj",
+            "batsman": "N Rana",
+            "pid": "604527"
+          },
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 125,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 8,
+            "R": 10,
+            "dismissal-info": "c  de Villiers b Mohammed Siraj",
+            "batsman": "T Banton",
+            "pid": "877051"
+          },
+          {
+            "dismissal-by": {
+              "name": "Yuzvendra Chahal",
+              "pid": "430246"
+            },
+            "dismissal": "lbw",
+            "SR": 28,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 14,
+            "R": 4,
+            "dismissal-info": "lbw b Chahal",
+            "batsman": "KD Karthik\u00a0 ",
+            "pid": "30045"
+          },
+          {
+            "dismissal-by": {
+              "name": "Gurkeerat Singh Mann",
+              "pid": "537124"
+            },
+            "dismissal": "catch",
+            "SR": 88,
+            "6s": 1,
+            "4s": 3,
+            "M": 0,
+            "B": 34,
+            "R": 30,
+            "dismissal-info": "c Gurkeerat Singh b Washington Sundar",
+            "batsman": "EJG Morgan\u00a0(c)",
+            "pid": "24598"
+          },
+          {
+            "dismissal-by": {
+              "name": "Devdutt Padikkal",
+              "pid": "1119026"
+            },
+            "dismissal": "catch",
+            "SR": 23,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 17,
+            "R": 4,
+            "dismissal-info": "c Padikkal b Chahal",
+            "batsman": "PJ Cummins",
+            "pid": "489889"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Gurkeerat Singh Mann",
+                "pid": "537124"
+              },
+              {
+                "name": "Chris Morris",
+                "pid": "439952"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 63,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 19,
+            "R": 12,
+            "dismissal-info": "run out (Gurkeerat Singh/Morris)",
+            "batsman": "Kuldeep Yadav",
+            "pid": "559235"
+          },
+          {
+            "SR": 118,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 16,
+            "R": 19,
+            "dismissal-info": "",
+            "batsman": "LH Ferguson",
+            "pid": "493773"
+          }
+        ],
+        "title": "Kolkata Knight Riders Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": [
+              {
+                "name": "Pat Cummins",
+                "pid": "489889"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 147,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 17,
+            "R": 25,
+            "dismissal-info": "run out (Cummins)",
+            "batsman": "D Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "dismissal-by": {
+              "name": "Dinesh Karthik",
+              "pid": "30045"
+            },
+            "dismissal": "catch",
+            "SR": 76,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 21,
+            "R": 16,
+            "dismissal-info": "c  Karthik b Ferguson",
+            "batsman": "AJ Finch",
+            "pid": "5334"
+          },
+          {
+            "SR": 80,
+            "6s": 0,
+            "4s": 4,
+            "M": 0,
+            "B": 26,
+            "R": 21,
+            "dismissal-info": "",
+            "batsman": "Gurkeerat Singh",
+            "pid": "537124"
+          },
+          {
+            "SR": 105,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 17,
+            "R": 18,
+            "dismissal-info": "",
+            "batsman": "V Kohli\u00a0(c)",
+            "pid": "253802"
+          }
+        ],
+        "title": "Royal Challengers Bangalore Innings (target: 85 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Shubman Gill",
+            "pid": "1070173"
+          },
+          {
+            "name": "Rahul Tripathi",
+            "pid": "446763"
+          },
+          {
+            "name": "Nitish Rana",
+            "pid": "604527"
+          },
+          {
+            "name": "Tom Banton",
+            "pid": "877051"
+          },
+          {
+            "name": "Dinesh Karthik",
+            "pid": "30045"
+          },
+          {
+            "name": "Eoin Morgan",
+            "pid": "24598"
+          },
+          {
+            "name": "Pat Cummins",
+            "pid": "489889"
+          },
+          {
+            "name": "Kuldeep Yadav",
+            "pid": "559235"
+          },
+          {
+            "name": "Lockie Ferguson",
+            "pid": "493773"
+          },
+          {
+            "name": "Prasidh Krishna",
+            "pid": "917159"
+          },
+          {
+            "name": "Varun Chakravarthy",
+            "pid": "1108375"
+          }
+        ],
+        "name": "Kolkata Knight Riders"
+      },
+      {
+        "players": [
+          {
+            "name": "Devdutt Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "name": "Aaron Finch",
+            "pid": "5334"
+          },
+          {
+            "name": "Gurkeerat Singh Mann",
+            "pid": "537124"
+          },
+          {
+            "name": "Virat Kohli",
+            "pid": "253802"
+          },
+          {
+            "name": "AB de Villiers",
+            "pid": "44936"
+          },
+          {
+            "name": "Chris Morris",
+            "pid": "439952"
+          },
+          {
+            "name": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "name": "Isuru Udana",
+            "pid": "328026"
+          },
+          {
+            "name": "Navdeep Saini",
+            "pid": "700167"
+          },
+          {
+            "name": "Yuzvendra Chahal",
+            "pid": "430246"
+          },
+          {
+            "name": "Mohammed Siraj",
+            "pid": "940973"
+          }
+        ],
+        "name": "Royal Challengers Bangalore"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Mohammed Siraj",
+      "pid": "940973"
+    },
+    "toss_winner_team": "Kolkata Knight Riders",
+    "winner_team": "Royal Challengers Bangalore",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 234,
+  "v": "1",
+  "ttl": 12,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-27T02:42:21.055Z"
+  }
+}

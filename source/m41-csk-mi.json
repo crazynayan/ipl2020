@@ -1,0 +1,524 @@
+{
+  "dateTimeGMT": "2020-10-23T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Chennai Super Kings Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Trent Boult",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "277912"
+          },
+          {
+            "name": "Quinton de Kock",
+            "runout": 0,
+            "stumped": 1,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 3,
+            "pid": "379143"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "446507"
+          },
+          {
+            "name": "K Pandya",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "471342"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Mumbai Indians Innings (target: 115 runs from 20 overs)",
+        "scores": []
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 3,
+            "0s": 17,
+            "Econ": "4.50",
+            "W": "4",
+            "R": "18",
+            "M": "1",
+            "O": "4",
+            "bowler": "TA Boult",
+            "pid": "277912"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 13,
+            "Econ": "6.25",
+            "W": "2",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "JJ Bumrah",
+            "pid": "625383"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 1,
+            "0s": 8,
+            "Econ": "5.33",
+            "W": "0",
+            "R": "16",
+            "M": "0",
+            "O": "3",
+            "bowler": "KH Pandya",
+            "pid": "471342"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 0,
+            "0s": 13,
+            "Econ": "5.50",
+            "W": "2",
+            "R": "22",
+            "M": "0",
+            "O": "4",
+            "bowler": "RD Chahar",
+            "pid": "1064812"
+          },
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 1,
+            "4s": 1,
+            "0s": 14,
+            "Econ": "6.25",
+            "W": "1",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "NM Coulter-Nile",
+            "pid": "261354"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 2,
+            "Econ": "4.00",
+            "W": "0",
+            "R": "4",
+            "M": "0",
+            "O": "1",
+            "bowler": "KA Pollard",
+            "pid": "230559"
+          }
+        ],
+        "title": "Bowling To Chennai Super Kings Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 5,
+            "0s": 11,
+            "Econ": "8.50",
+            "W": "0",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "8.50",
+            "W": "0",
+            "R": "17",
+            "M": "0",
+            "O": "2",
+            "bowler": "JR Hazlewood",
+            "pid": "288284"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "7.33",
+            "W": "0",
+            "R": "22",
+            "M": "0",
+            "O": "3",
+            "bowler": "Imran Tahir",
+            "pid": "40618"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 2,
+            "0s": 4,
+            "Econ": "11.14",
+            "W": "0",
+            "R": "26",
+            "M": "0",
+            "O": "2.2",
+            "bowler": "SN Thakur",
+            "pid": "475281"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 0,
+            "0s": 1,
+            "Econ": "15.00",
+            "W": "0",
+            "R": "15",
+            "M": "0",
+            "O": "1",
+            "bowler": "RA Jadeja",
+            "pid": "234675"
+          }
+        ],
+        "title": "Bowling To Mumbai Indians Innings (target: 115 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Trent Boult",
+              "pid": "277912"
+            },
+            "dismissal": "lbw",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 0,
+            "dismissal-info": "lbw b Boult",
+            "batsman": "RD Gaikwad",
+            "pid": "1060380"
+          },
+          {
+            "dismissal-by": {
+              "name": "Quinton de Kock",
+              "pid": "379143"
+            },
+            "dismissal": "catch",
+            "SR": 14,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 1,
+            "dismissal-info": "c  de Kock b Boult",
+            "batsman": "F du Plessis",
+            "pid": "44828"
+          },
+          {
+            "dismissal-by": {
+              "name": "Quinton de Kock",
+              "pid": "379143"
+            },
+            "dismissal": "catch",
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "c  de Kock b Bumrah",
+            "batsman": "AT Rayudu",
+            "pid": "33141"
+          },
+          {
+            "dismissal-by": {
+              "name": "Suryakumar Yadav",
+              "pid": "446507"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "c Yadav b Bumrah",
+            "batsman": "N Jagadeesan",
+            "pid": "1048813"
+          },
+          {
+            "dismissal-by": {
+              "name": "Quinton de Kock",
+              "pid": "379143"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 1,
+            "4s": 2,
+            "M": 0,
+            "B": 16,
+            "R": 16,
+            "dismissal-info": "c  de Kock b Chahar",
+            "batsman": "MS Dhoni\u00a0(c)  ",
+            "pid": "28081"
+          },
+          {
+            "dismissal-by": {
+              "name": "K Pandya",
+              "pid": "471342"
+            },
+            "dismissal": "catch",
+            "SR": 116,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 6,
+            "R": 7,
+            "dismissal-info": "c KH Pandya b Boult",
+            "batsman": "RA Jadeja",
+            "pid": "234675"
+          },
+          {
+            "dismissal-by": {
+              "name": "Trent Boult",
+              "pid": "277912"
+            },
+            "dismissal": "bowled",
+            "SR": 110,
+            "6s": 2,
+            "4s": 4,
+            "M": 0,
+            "B": 47,
+            "R": 52,
+            "dismissal-info": "b Boult",
+            "batsman": "SM Curran",
+            "pid": "662973"
+          },
+          {
+            "dismissal-by": {
+              "name": "Quinton de Kock",
+              "pid": "379143"
+            },
+            "dismissal": "stumped",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 0,
+            "dismissal-info": "st  de Kock b Chahar",
+            "batsman": "DL Chahar",
+            "pid": "447261"
+          },
+          {
+            "dismissal-by": {
+              "name": "Suryakumar Yadav",
+              "pid": "446507"
+            },
+            "dismissal": "catch",
+            "SR": 55,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 20,
+            "R": 11,
+            "dismissal-info": "c Yadav b Coulter-Nile",
+            "batsman": "SN Thakur",
+            "pid": "475281"
+          },
+          {
+            "SR": 130,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 10,
+            "R": 13,
+            "dismissal-info": "",
+            "batsman": "Imran Tahir",
+            "pid": "40618"
+          }
+        ],
+        "title": "Chennai Super Kings Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "SR": 124,
+            "6s": 2,
+            "4s": 5,
+            "M": 0,
+            "B": 37,
+            "R": 46,
+            "dismissal-info": "",
+            "batsman": "Q de Kock\u00a0 ",
+            "pid": "379143"
+          },
+          {
+            "SR": 183,
+            "6s": 5,
+            "4s": 6,
+            "M": 0,
+            "B": 37,
+            "R": 68,
+            "dismissal-info": "",
+            "batsman": "Ishan Kishan",
+            "pid": "720471"
+          }
+        ],
+        "title": "Mumbai Indians Innings (target: 115 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Ruturaj Gaikwad",
+            "pid": "1060380"
+          },
+          {
+            "name": "Faf du Plessis",
+            "pid": "44828"
+          },
+          {
+            "name": "Ambati Rayudu",
+            "pid": "33141"
+          },
+          {
+            "name": "Narayan Jagadeesan",
+            "pid": "1048813"
+          },
+          {
+            "name": "MS Dhoni",
+            "pid": "28081"
+          },
+          {
+            "name": "Ravindra Jadeja",
+            "pid": "234675"
+          },
+          {
+            "name": "Sam Curran",
+            "pid": "662973"
+          },
+          {
+            "name": "Deepak Chahar",
+            "pid": "447261"
+          },
+          {
+            "name": "Shardul Thakur",
+            "pid": "475281"
+          },
+          {
+            "name": "Imran Tahir",
+            "pid": "40618"
+          },
+          {
+            "name": "Josh Hazlewood",
+            "pid": "288284"
+          }
+        ],
+        "name": "Chennai Super Kings"
+      },
+      {
+        "players": [
+          {
+            "name": "Quinton de Kock",
+            "pid": "379143"
+          },
+          {
+            "name": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "pid": "446507"
+          },
+          {
+            "name": "Saurabh Tiwary",
+            "pid": "35390"
+          },
+          {
+            "name": "Krunal Pandya",
+            "pid": "471342"
+          },
+          {
+            "name": "Hardik Pandya",
+            "pid": "625371"
+          },
+          {
+            "name": "Kieron Pollard",
+            "pid": "230559"
+          },
+          {
+            "name": "Nathan Coulter-Nile",
+            "pid": "261354"
+          },
+          {
+            "name": "Rahul Chahar",
+            "pid": "1064812"
+          },
+          {
+            "name": "Trent Boult",
+            "pid": "277912"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "pid": "625383"
+          }
+        ],
+        "name": "Mumbai Indians"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Trent Boult",
+      "pid": "277912"
+    },
+    "toss_winner_team": "Mumbai Indians",
+    "winner_team": "Mumbai Indians",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 230,
+  "v": "1",
+  "ttl": 6,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-27T02:42:40.681Z"
+  }
+}

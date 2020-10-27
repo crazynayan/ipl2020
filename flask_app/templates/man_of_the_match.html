@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    {% if players %}
+        <table id="player_list" class="table table-bordered table-sm table-hover">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col" class="text-center">No</th>
+                <th scope="col" class="text-center">Player</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Team</th>
+                <th scope="col" class="text-center ">Owner</th>
+                <th scope="col" class="text-center">Earn</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">Score</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">R</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">4s</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">6s</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">O</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">W</th>
+                <th scope="col" class="text-center d-none d-md-table-cell">ER</th>
+                <th scope="col" class="d-none">Owner Full Name Hidden</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for player in players %}
+                <tr class="{{ player.display_class }}">
+                    <td class="text-center align-middle">
+                        {{ loop.index }}
+                    </td>
+                    <td class="text-center align-middle font-weight-bold">
+                        {{ player.player_name }}
+                    </td>
+                    <td class="text-center align-middle font-weight-bold d-none d-md-table-cell">
+                        {{ player.team }}
+                    </td>
+                    <td class="text-center align-middle">
+                        {% if player.owner %}
+                            {{ player.owner.upper() }}
+                        {% else %}
+                            Unsold
+                        {% endif %}
+                    </td>
+                    <td class="text-center align-middle font-weight-bold">
+                        {{ player.adjusted_points }}
+                    </td>
+                    <td class="text-center align-middle d-none d-md-table-cell">
+                        {{ player.total_points }}
+                    </td>
+                    <td class="text-center align-middle  d-none d-md-table-cell">
+                        {{ player.runs }}
+                    </td>
+                    <td class="text-center d-none d-md-table-cell align-middle">
+                        {{ player.fours }}
+                    </td>
+                    <td class="text-center d-none d-md-table-cell align-middle">
+                        {{ player.sixes }}
+                    </td>
+                    <td class="text-center align-middle d-none d-md-table-cell">
+                        {{ player.overs }}
+                    </td>
+                    <td class="text-center d-none d-md-table-cell align-middle">
+                        {{ player.wickets }}
+                    </td>
+                    <td class="text-center d-none d-md-table-cell align-middle">
+                        {{ player.economy_rate }}
+                    </td>
+                    <td class="d-none">
+                        {{ player.owner_full_name }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <h6>Match not started or players have not yet scored points</h6>
+            </div>
+        </div>
+    {% endif %}
+    <br>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $(document).ready(function () {
+            $('#player_list').DataTable({
+                "order": [[0, "asc"]]
+            });
+        });
+    </script>
+{% endblock %}

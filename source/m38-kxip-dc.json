@@ -1,0 +1,588 @@
+{
+  "dateTimeGMT": "2020-10-20T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Delhi Capitals Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Glenn Maxwell",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "325026"
+          },
+          {
+            "name": "Mayank Agarwal",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "398438"
+          },
+          {
+            "name": "KL Rahul",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "422108"
+          },
+          {
+            "name": "Mohammed Shami",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "481896"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Kings XI Punjab Innings (target: 165 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Murugan Ashwin",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "528067"
+          },
+          {
+            "name": "Daniel Sams",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "826901"
+          },
+          {
+            "name": "Rishabh Pant",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "931581"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "7.75",
+            "W": "1",
+            "R": "31",
+            "M": "0",
+            "O": "4",
+            "bowler": "GJ Maxwell",
+            "pid": "325026"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 4,
+            "0s": 12,
+            "Econ": "7.00",
+            "W": "2",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 4,
+            "Econ": "10.00",
+            "W": "0",
+            "R": "30",
+            "M": "0",
+            "O": "3",
+            "bowler": "Arshdeep Singh",
+            "pid": "1125976"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 4,
+            "Econ": "8.50",
+            "W": "1",
+            "R": "17",
+            "M": "0",
+            "O": "2",
+            "bowler": "JDS Neesham",
+            "pid": "355269"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "8.25",
+            "W": "1",
+            "R": "33",
+            "M": "0",
+            "O": "4",
+            "bowler": "M Ashwin",
+            "pid": "528067"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "8.00",
+            "W": "0",
+            "R": "24",
+            "M": "0",
+            "O": "3",
+            "bowler": "Ravi Bishnoi",
+            "pid": "1175441"
+          }
+        ],
+        "title": "Bowling To Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "1",
+            "WD": "1",
+            "6s": 2,
+            "4s": 1,
+            "0s": 10,
+            "Econ": "7.50",
+            "W": "0",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "DR Sams",
+            "pid": "826901"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 3,
+            "0s": 9,
+            "Econ": "6.75",
+            "W": "2",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 8,
+            "Econ": "6.75",
+            "W": "1",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "AR Patel",
+            "pid": "554691"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 3,
+            "4s": 5,
+            "0s": 2,
+            "Econ": "20.50",
+            "W": "0",
+            "R": "41",
+            "M": "0",
+            "O": "2",
+            "bowler": "TU Deshpande",
+            "pid": "822553"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 9,
+            "Econ": "6.75",
+            "W": "1",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Ashwin",
+            "pid": "26421"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "14.00",
+            "W": "0",
+            "R": "14",
+            "M": "0",
+            "O": "1",
+            "bowler": "MP Stoinis",
+            "pid": "325012"
+          }
+        ],
+        "title": "Bowling To Kings XI Punjab Innings (target: 165 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Glenn Maxwell",
+              "pid": "325026"
+            },
+            "dismissal": "catch",
+            "SR": 63,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 11,
+            "R": 7,
+            "dismissal-info": "c Maxwell b Neesham",
+            "batsman": "PP Shaw",
+            "pid": "1070168"
+          },
+          {
+            "SR": 173,
+            "6s": 3,
+            "4s": 12,
+            "M": 0,
+            "B": 61,
+            "R": 106,
+            "dismissal-info": "",
+            "batsman": "S Dhawan",
+            "pid": "28235"
+          },
+          {
+            "dismissal-by": {
+              "name": "KL Rahul",
+              "pid": "422108"
+            },
+            "dismissal": "catch",
+            "SR": 116,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 12,
+            "R": 14,
+            "dismissal-info": "c  Rahul b Ashwin",
+            "batsman": "SS Iyer\u00a0(c)",
+            "pid": "642519"
+          },
+          {
+            "dismissal-by": {
+              "name": "Mayank Agarwal",
+              "pid": "398438"
+            },
+            "dismissal": "catch",
+            "SR": 70,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 20,
+            "R": 14,
+            "dismissal-info": "c Agarwal b Maxwell",
+            "batsman": "RR Pant\u00a0 ",
+            "pid": "931581"
+          },
+          {
+            "dismissal-by": {
+              "name": "Mayank Agarwal",
+              "pid": "398438"
+            },
+            "dismissal": "catch",
+            "SR": 90,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 10,
+            "R": 9,
+            "dismissal-info": "c Agarwal b Mohammed Shami",
+            "batsman": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "dismissal-by": {
+              "name": "Mohammed Shami",
+              "pid": "481896"
+            },
+            "dismissal": "bowled",
+            "SR": 166,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 10,
+            "dismissal-info": "b Mohammed Shami",
+            "batsman": "SO Hetmyer",
+            "pid": "670025"
+          }
+        ],
+        "title": "Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Daniel Sams",
+              "pid": "826901"
+            },
+            "dismissal": "catch",
+            "SR": 136,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 11,
+            "R": 15,
+            "dismissal-info": "c Sams b Patel",
+            "batsman": "KL Rahul\u00a0(c)  ",
+            "pid": "422108"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Murugan Ashwin",
+                "pid": "528067"
+              },
+              {
+                "name": "Rishabh Pant",
+                "pid": "931581"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 55,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 9,
+            "R": 5,
+            "dismissal-info": "run out (Ashwin/ Pant)",
+            "batsman": "MA Agarwal",
+            "pid": "398438"
+          },
+          {
+            "dismissal-by": {
+              "name": "Murugan Ashwin",
+              "pid": "528067"
+            },
+            "dismissal": "bowled",
+            "SR": 223,
+            "6s": 2,
+            "4s": 3,
+            "M": 0,
+            "B": 13,
+            "R": 29,
+            "dismissal-info": "b Ashwin",
+            "batsman": "CH Gayle",
+            "pid": "51880"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rishabh Pant",
+              "pid": "931581"
+            },
+            "dismissal": "catch",
+            "SR": 189,
+            "6s": 3,
+            "4s": 6,
+            "M": 0,
+            "B": 28,
+            "R": 53,
+            "dismissal-info": "c  Pant b Rabada",
+            "batsman": "N Pooran",
+            "pid": "604302"
+          },
+          {
+            "dismissal-by": {
+              "name": "Rishabh Pant",
+              "pid": "931581"
+            },
+            "dismissal": "catch",
+            "SR": 133,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 24,
+            "R": 32,
+            "dismissal-info": "c  Pant b Rabada",
+            "batsman": "GJ Maxwell",
+            "pid": "325026"
+          },
+          {
+            "SR": 68,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 22,
+            "R": 15,
+            "dismissal-info": "",
+            "batsman": "DJ Hooda",
+            "pid": "497121"
+          },
+          {
+            "SR": 125,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 8,
+            "R": 10,
+            "dismissal-info": "",
+            "batsman": "JDS Neesham",
+            "pid": "355269"
+          }
+        ],
+        "title": "Kings XI Punjab Innings (target: 165 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "KL Rahul",
+            "pid": "422108"
+          },
+          {
+            "name": "Mayank Agarwal",
+            "pid": "398438"
+          },
+          {
+            "name": "Chris Gayle",
+            "pid": "51880"
+          },
+          {
+            "name": "Nicholas Pooran",
+            "pid": "604302"
+          },
+          {
+            "name": "Glenn Maxwell",
+            "pid": "325026"
+          },
+          {
+            "name": "Deepak Hooda",
+            "pid": "497121"
+          },
+          {
+            "name": "James Neesham",
+            "pid": "355269"
+          },
+          {
+            "name": "Murugan Ashwin",
+            "pid": "528067"
+          },
+          {
+            "name": "Ravi Bishnoi",
+            "pid": "1175441"
+          },
+          {
+            "name": "Mohammed Shami",
+            "pid": "481896"
+          },
+          {
+            "name": "Arshdeep Singh",
+            "pid": "1125976"
+          }
+        ],
+        "name": "Kings XI Punjab"
+      },
+      {
+        "players": [
+          {
+            "name": "Prithvi Shaw",
+            "pid": "1070168"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "pid": "28235"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "pid": "642519"
+          },
+          {
+            "name": "Rishabh Pant",
+            "pid": "931581"
+          },
+          {
+            "name": "Marcus Stoinis",
+            "pid": "325012"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "name": "Axar Patel",
+            "pid": "554691"
+          },
+          {
+            "name": "Ravichandran Ashwin",
+            "pid": "26421"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "pid": "550215"
+          },
+          {
+            "name": "Daniel Sams",
+            "pid": "826901"
+          },
+          {
+            "name": "Tushar Deshpande",
+            "pid": "822553"
+          }
+        ],
+        "name": "Delhi Capitals"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Shikhar Dhawan",
+      "pid": "28235"
+    },
+    "toss_winner_team": "Delhi Capitals",
+    "winner_team": "Kings XI Punjab",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 236,
+  "v": "1",
+  "ttl": 9,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-10-27T02:41:52.528Z"
+  }
+}

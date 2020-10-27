@@ -30,6 +30,7 @@
                 {% if current_user.is_authenticated %}
                     <a class="nav-item nav-link active" href="{{ url_for('my_team') }}">My Team</a>
                     <a class="nav-item nav-link active" href="{{ url_for('view_schedule') }}">Schedule</a>
+                    <a class="nav-item nav-link active" href="{{ url_for('view_man_of_the_match') }}">MoM</a>
                     <a class="nav-item nav-link active" href="{{ url_for('all_players') }}">Players</a>
                     <a class="nav-item nav-link active" href="{{ url_for('view_bids') }}">Bids</a>
                     {% if current_user.bidding %}
