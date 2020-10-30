@@ -1,4 +1,5 @@
 import json
+from json import JSONDecodeError
 from typing import List, Dict, Tuple
 
 import requests
@@ -31,7 +32,11 @@ def cache_request(match: Match) -> Dict:
 def get_score(match: Match) -> Dict:
     response = requests.get("https://cricapi.com/api/fantasySummary",
                             params={"apikey": Config.API_KEY, "unique_id": match.unique_id})
-    score_data = response.json()
+    try:
+        score_data = response.json()
+    except JSONDecodeError:
+        print("Error in server")
+        return dict()
     if "creditsLeft" in score_data:
         print(f"Credits Left: {score_data['creditsLeft']}")
     if "data" not in score_data:
