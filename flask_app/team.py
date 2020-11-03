@@ -75,6 +75,44 @@ class UserTeam(FirestoreDocument):
         return
 
     @classmethod
+    def update_matches(cls, game_week: int):
+        # Update matches in UserTeam when schedule changes after the gameweek is created
+        user_teams = cls.objects.filter_by(game_week=game_week).get()
+        if not user_teams:
+            print("No user teams created for the given game week")
+            return
+        updated_user_teams = list()
+        for user_team in user_teams:
+            matches = [{"match": match.get_text(user_team.team), "score": 0.0, "match_id": str(match.unique_id)}
+                       for match in schedule.get_matches(user_team.team, game_week)]
+            if user_team.matches == matches:
+                continue
+            # Add new matches to UserTeam
+            for match in matches:
+                user_team_match = next((user_team_match for user_team_match in user_team.matches
+                                        if user_team_match["match"][:5] == match["match"][:5]), None)
+                if not user_team_match:
+                    user_team.matches.append(match)
+            # Remove unnecessary matches from UserTeam and update matches in the UserTeam
+            user_team_matches = list()
+            for user_team_match in user_team.matches:
+                match = next((match for match in matches if match["match"][:5] == user_team_match["match"][:5]), None)
+                if not match:
+                    continue
+                user_team_match["match"] = match["match"]
+                user_team_match["match_id"] = match["match_id"]
+                user_team_matches.append(user_team_match)
+            user_team.matches = user_team_matches
+            # Update UserTeam
+            updated_user_teams.append(user_team)
+        if not updated_user_teams:
+            print("No user teams updated")
+            return
+        cls.objects.save_all(updated_user_teams)
+        print(f"{len(updated_user_teams)} user teams updated")
+        return
+
+    @classmethod
     def get_dummy_user_team(cls, game_week: int, team: str) -> "UserTeam":
         user_team = UserTeam()
         user_team.game_week = game_week

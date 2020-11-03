@@ -74,10 +74,12 @@ class _Schedule:
         date = today()
         if date <= Config.GAME_WEEK_START:
             return 0
-        if Config.GAME_WEEK_START <= date <= Config.GAME_WEEK_2_CUT_OFF:
+        if Config.GAME_WEEK_START < date <= Config.GAME_WEEK_2_CUT_OFF:
             return 1
-        if date > Config.GAME_WEEK_9_CUT_OFF:
-            return self.max_game_week + 1
+        if Config.GAME_WEEK_9_CUT_OFF < date <= Config.GAME_WEEK_10_CUT_OFF:
+            return 9
+        if date > Config.GAME_WEEK_10_CUT_OFF:
+            return 10
         game_week_start = Config.GAME_WEEK_2_CUT_OFF
         for game_week in range(2, self.max_game_week + 1):
             if game_week_start <= date < game_week_start + timedelta(days=7):
@@ -91,6 +93,10 @@ class _Schedule:
             return Config.GAME_WEEK_START
         if game_week == 9:
             return Config.GAME_WEEK_9_CUT_OFF
+        if game_week == 10:
+            return Config.GAME_WEEK_10_CUT_OFF
+        if game_week > 10:
+            return Config.GAME_WEEK_10_CUT_OFF + timedelta(days=7)
         return Config.GAME_WEEK_2_CUT_OFF + timedelta(days=7 * (game_week - 2))
 
     def get_matches_being_played(self) -> List[Match]:
