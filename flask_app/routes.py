@@ -277,5 +277,6 @@ def view_match_score(match_id: str):
 @login_required
 def view_man_of_the_match():
     players = MatchPlayer.objects.filter_by(man_of_the_match=True).get()
-    players.sort(key=lambda item: item.gameweek)
+    for player in players:
+        player.match_number = next(match.number for match in schedule.schedule if match.unique_id == player.match_id)
     return render_template("man_of_the_match.html", players=players, title="Man of the match")

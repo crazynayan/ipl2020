@@ -1,0 +1,566 @@
+{
+  "dateTimeGMT": "2020-10-31T10:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Delhi Capitals Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Quinton de Kock",
+            "runout": 0,
+            "stumped": 1,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "379143"
+          },
+          {
+            "name": "S Yadav",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "446507"
+          },
+          {
+            "name": "Krunal Pandya",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "471342"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 2,
+            "catch": 0,
+            "pid": "625383"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Mumbai Indians Innings (target: 111 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Anrich Nortje",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "481979"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 16,
+            "Econ": "5.25",
+            "W": "3",
+            "R": "21",
+            "M": "0",
+            "O": "4",
+            "bowler": "TA Boult",
+            "pid": "277912"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "4.33",
+            "W": "0",
+            "R": "13",
+            "M": "0",
+            "O": "3",
+            "bowler": "KH Pandya",
+            "pid": "471342"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "6.00",
+            "W": "0",
+            "R": "18",
+            "M": "0",
+            "O": "3",
+            "bowler": "J Yadav",
+            "pid": "447587"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 15,
+            "Econ": "4.25",
+            "W": "3",
+            "R": "17",
+            "M": "0",
+            "O": "4",
+            "bowler": "JJ Bumrah",
+            "pid": "625383"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 6,
+            "Econ": "7.00",
+            "W": "1",
+            "R": "14",
+            "M": "0",
+            "O": "2",
+            "bowler": "NM Coulter-Nile",
+            "pid": "261354"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 10,
+            "Econ": "6.00",
+            "W": "1",
+            "R": "24",
+            "M": "0",
+            "O": "4",
+            "bowler": "RD Chahar",
+            "pid": "1064812"
+          }
+        ],
+        "title": "Bowling To Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 11,
+            "Econ": "4.50",
+            "W": "0",
+            "R": "18",
+            "M": "0",
+            "O": "4",
+            "bowler": "R Ashwin",
+            "pid": "26421"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 7,
+            "Econ": "9.00",
+            "W": "0",
+            "R": "27",
+            "M": "0",
+            "O": "3",
+            "bowler": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 4,
+            "0s": 6,
+            "Econ": "10.71",
+            "W": "1",
+            "R": "25",
+            "M": "0",
+            "O": "2.2",
+            "bowler": "A Nortje",
+            "pid": "481979"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 2,
+            "Econ": "4.00",
+            "W": "0",
+            "R": "4",
+            "M": "0",
+            "O": "1",
+            "bowler": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 4,
+            "Econ": "9.66",
+            "W": "0",
+            "R": "29",
+            "M": "0",
+            "O": "3",
+            "bowler": "P Dubey",
+            "pid": "777515"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "8.00",
+            "W": "0",
+            "R": "8",
+            "M": "0",
+            "O": "1",
+            "bowler": "HV Patel",
+            "pid": "390481"
+          }
+        ],
+        "title": "Bowling To Mumbai Indians Innings (target: 111 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Quinton de Kock",
+              "pid": "379143"
+            },
+            "dismissal": "catch",
+            "SR": 90,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 11,
+            "R": 10,
+            "dismissal-info": "c  de Kock b Boult",
+            "batsman": "PP Shaw",
+            "pid": "1070168"
+          },
+          {
+            "dismissal-by": {
+              "name": "S Yadav",
+              "pid": "446507"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 0,
+            "dismissal-info": "c SA Yadav b Boult",
+            "batsman": "S Dhawan",
+            "pid": "28235"
+          },
+          {
+            "dismissal-by": {
+              "name": "Quinton de Kock",
+              "pid": "379143"
+            },
+            "dismissal": "stumped",
+            "SR": 86,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 29,
+            "R": 25,
+            "dismissal-info": "st  de Kock b Chahar",
+            "batsman": "SS Iyer\u00a0(c)",
+            "pid": "642519"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jasprit Bumrah",
+              "pid": "625383"
+            },
+            "dismissal": "lbw",
+            "SR": 87,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 24,
+            "R": 21,
+            "dismissal-info": "lbw b Bumrah",
+            "batsman": "RR Pant\u00a0 ",
+            "pid": "931581"
+          },
+          {
+            "dismissal-by": {
+              "name": "Quinton de Kock",
+              "pid": "379143"
+            },
+            "dismissal": "catch",
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "c  de Kock b Bumrah",
+            "batsman": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "dismissal-by": {
+              "name": "Krunal Pandya",
+              "pid": "471342"
+            },
+            "dismissal": "catch",
+            "SR": 84,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 13,
+            "R": 11,
+            "dismissal-info": "c Pandya b Coulter-Nile",
+            "batsman": "SO Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jasprit Bumrah",
+              "pid": "625383"
+            },
+            "dismissal": "lbw",
+            "SR": 55,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 9,
+            "R": 5,
+            "dismissal-info": "lbw b Bumrah",
+            "batsman": "HV Patel",
+            "pid": "390481"
+          },
+          {
+            "dismissal-by": {
+              "name": "Krunal Pandya",
+              "pid": "471342"
+            },
+            "dismissal": "catch",
+            "SR": 133,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 9,
+            "R": 12,
+            "dismissal-info": "c Pandya b Boult",
+            "batsman": "R Ashwin",
+            "pid": "26421"
+          },
+          {
+            "SR": 53,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 13,
+            "R": 7,
+            "dismissal-info": "",
+            "batsman": "P Dubey",
+            "pid": "777515"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Jasprit Bumrah",
+                "pid": "625383"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 171,
+            "6s": 1,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 12,
+            "dismissal-info": "run out (Bumrah)",
+            "batsman": "K Rabada",
+            "pid": "550215"
+          }
+        ],
+        "title": "Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "SR": 153,
+            "6s": 3,
+            "4s": 8,
+            "M": 0,
+            "B": 47,
+            "R": 72,
+            "dismissal-info": "",
+            "batsman": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "dismissal-by": {
+              "name": "Anrich Nortje",
+              "pid": "481979"
+            },
+            "dismissal": "bowled",
+            "SR": 92,
+            "6s": 0,
+            "4s": 2,
+            "M": 0,
+            "B": 28,
+            "R": 26,
+            "dismissal-info": "b Nortje",
+            "batsman": "Q de Kock\u00a0 ",
+            "pid": "379143"
+          },
+          {
+            "SR": 109,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 11,
+            "R": 12,
+            "dismissal-info": "",
+            "batsman": "SA Yadav",
+            "pid": "446507"
+          }
+        ],
+        "title": "Mumbai Indians Innings (target: 111 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Prithvi Shaw",
+            "pid": "1070168"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "pid": "28235"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "pid": "642519"
+          },
+          {
+            "name": "Rishabh Pant",
+            "pid": "931581"
+          },
+          {
+            "name": "Marcus Stoinis",
+            "pid": "325012"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "name": "Harshal Patel",
+            "pid": "390481"
+          },
+          {
+            "name": "Ravichandran Ashwin",
+            "pid": "26421"
+          },
+          {
+            "name": "Praveen Dubey",
+            "pid": "777515"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "pid": "550215"
+          },
+          {
+            "name": "Anrich Nortje",
+            "pid": "481979"
+          }
+        ],
+        "name": "Delhi Capitals"
+      },
+      {
+        "players": [
+          {
+            "name": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "name": "Quinton de Kock",
+            "pid": "379143"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "pid": "446507"
+          },
+          {
+            "name": "Saurabh Tiwary",
+            "pid": "35390"
+          },
+          {
+            "name": "Krunal Pandya",
+            "pid": "471342"
+          },
+          {
+            "name": "Kieron Pollard",
+            "pid": "230559"
+          },
+          {
+            "name": "Nathan Coulter-Nile",
+            "pid": "261354"
+          },
+          {
+            "name": "Jayant Yadav",
+            "pid": "447587"
+          },
+          {
+            "name": "Rahul Chahar",
+            "pid": "1064812"
+          },
+          {
+            "name": "Trent Boult",
+            "pid": "277912"
+          },
+          {
+            "name": "Jasprit Bumrah",
+            "pid": "625383"
+          }
+        ],
+        "name": "Mumbai Indians"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Ishan Kishan",
+      "pid": "720471"
+    },
+    "toss_winner_team": "Mumbai Indians",
+    "winner_team": "Mumbai Indians",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 72,
+  "v": "1",
+  "ttl": 7,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-11-03T09:16:48.189Z"
+  }
+}

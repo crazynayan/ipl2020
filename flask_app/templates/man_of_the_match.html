@@ -24,7 +24,7 @@
             {% for player in players %}
                 <tr class="{{ player.display_class }}">
                     <td class="text-center align-middle">
-                        {{ loop.index }}
+                        {{ player.match_number }}
                     </td>
                     <td class="text-center align-middle font-weight-bold">
                         {{ player.player_name }}
