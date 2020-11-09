@@ -1,0 +1,612 @@
+{
+  "dateTimeGMT": "2020-11-08T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Delhi Capitals Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "Manish Pandey",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "290630"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 1,
+            "catch": 0,
+            "pid": "438362"
+          },
+          {
+            "name": "Rashid Khan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "793463"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Sunrisers Hyderabad Innings (target: 190 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "Marcus Stoinis",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "325012"
+          },
+          {
+            "name": "Anrich Nortje",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "481979"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "550215"
+          },
+          {
+            "name": "Axar Patel",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "554691"
+          },
+          {
+            "name": "Praveen Dubey",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "777515"
+          },
+          {
+            "name": "R Pant",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "931581"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "7.50",
+            "W": "1",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 8,
+            "0s": 6,
+            "Econ": "12.50",
+            "W": "1",
+            "R": "50",
+            "M": "0",
+            "O": "4",
+            "bowler": "JO Holder",
+            "pid": "391485"
+          },
+          {
+            "NB": "2",
+            "WD": "0",
+            "6s": 2,
+            "4s": 3,
+            "0s": 4,
+            "Econ": "12.00",
+            "W": "0",
+            "R": "48",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Nadeem",
+            "pid": "31872"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 4,
+            "Econ": "6.50",
+            "W": "1",
+            "R": "26",
+            "M": "0",
+            "O": "4",
+            "bowler": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 1,
+            "4s": 1,
+            "0s": 6,
+            "Econ": "8.00",
+            "W": "0",
+            "R": "32",
+            "M": "0",
+            "O": "4",
+            "bowler": "T Natarajan",
+            "pid": "802575"
+          }
+        ],
+        "title": "Bowling To Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 2,
+            "4s": 2,
+            "0s": 4,
+            "Econ": "11.00",
+            "W": "0",
+            "R": "33",
+            "M": "0",
+            "O": "3",
+            "bowler": "R Ashwin",
+            "pid": "26421"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 2,
+            "4s": 1,
+            "0s": 12,
+            "Econ": "7.25",
+            "W": "4",
+            "R": "29",
+            "M": "0",
+            "O": "4",
+            "bowler": "K Rabada",
+            "pid": "550215"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 2,
+            "4s": 4,
+            "0s": 10,
+            "Econ": "9.00",
+            "W": "0",
+            "R": "36",
+            "M": "0",
+            "O": "4",
+            "bowler": "A Nortje",
+            "pid": "481979"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "8.66",
+            "W": "3",
+            "R": "26",
+            "M": "0",
+            "O": "3",
+            "bowler": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 3,
+            "0s": 6,
+            "Econ": "8.25",
+            "W": "1",
+            "R": "33",
+            "M": "0",
+            "O": "4",
+            "bowler": "AR Patel",
+            "pid": "554691"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 3,
+            "Econ": "7.00",
+            "W": "0",
+            "R": "14",
+            "M": "0",
+            "O": "2",
+            "bowler": "P Dubey",
+            "pid": "777515"
+          }
+        ],
+        "title": "Bowling To Sunrisers Hyderabad Innings (target: 190 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Rashid Khan",
+              "pid": "793463"
+            },
+            "dismissal": "bowled",
+            "SR": 140,
+            "6s": 1,
+            "4s": 5,
+            "M": 0,
+            "B": 27,
+            "R": 38,
+            "dismissal-info": "b Rashid Khan",
+            "batsman": "MP Stoinis",
+            "pid": "325012"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sandeep Sharma",
+              "pid": "438362"
+            },
+            "dismissal": "lbw",
+            "SR": 156,
+            "6s": 2,
+            "4s": 6,
+            "M": 0,
+            "B": 50,
+            "R": 78,
+            "dismissal-info": "lbw b Sandeep Sharma",
+            "batsman": "S Dhawan",
+            "pid": "28235"
+          },
+          {
+            "dismissal-by": {
+              "name": "Manish Pandey",
+              "pid": "290630"
+            },
+            "dismissal": "catch",
+            "SR": 105,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 20,
+            "R": 21,
+            "dismissal-info": "c Pandey b Holder",
+            "batsman": "SS Iyer\u00a0(c)",
+            "pid": "642519"
+          },
+          {
+            "SR": 190,
+            "6s": 1,
+            "4s": 4,
+            "M": 0,
+            "B": 22,
+            "R": 42,
+            "dismissal-info": "",
+            "batsman": "SO Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "RR Pant\u00a0 ",
+            "pid": "931581"
+          }
+        ],
+        "title": "Delhi Capitals Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Marcus Stoinis",
+              "pid": "325012"
+            },
+            "dismissal": "bowled",
+            "SR": 141,
+            "6s": 2,
+            "4s": 0,
+            "M": 0,
+            "B": 12,
+            "R": 17,
+            "dismissal-info": "b Stoinis",
+            "batsman": "PK Garg",
+            "pid": "1070180"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kagiso Rabada",
+              "pid": "550215"
+            },
+            "dismissal": "bowled",
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "b Rabada",
+            "batsman": "DA Warner\u00a0(c)",
+            "pid": "219889"
+          },
+          {
+            "dismissal-by": {
+              "name": "Anrich Nortje",
+              "pid": "481979"
+            },
+            "dismissal": "catch",
+            "SR": 150,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 14,
+            "R": 21,
+            "dismissal-info": "c Nortje b Stoinis",
+            "batsman": "MK Pandey",
+            "pid": "290630"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kagiso Rabada",
+              "pid": "550215"
+            },
+            "dismissal": "catch",
+            "SR": 148,
+            "6s": 4,
+            "4s": 5,
+            "M": 0,
+            "B": 45,
+            "R": 67,
+            "dismissal-info": "c Rabada b Stoinis",
+            "batsman": "KS Williamson",
+            "pid": "277906"
+          },
+          {
+            "dismissal-by": {
+              "name": "Praveen Dubey",
+              "pid": "777515"
+            },
+            "dismissal": "catch",
+            "SR": 73,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 15,
+            "R": 11,
+            "dismissal-info": "c Dubey b Patel",
+            "batsman": "JO Holder",
+            "pid": "391485"
+          },
+          {
+            "dismissal-by": {
+              "name": "R Pant",
+              "pid": "931581"
+            },
+            "dismissal": "catch",
+            "SR": 206,
+            "6s": 2,
+            "4s": 2,
+            "M": 0,
+            "B": 16,
+            "R": 33,
+            "dismissal-info": "c sub (KMA Paul) b Rabada",
+            "batsman": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "dismissal-by": {
+              "name": "Axar Patel",
+              "pid": "554691"
+            },
+            "dismissal": "catch",
+            "SR": 157,
+            "6s": 1,
+            "4s": 1,
+            "M": 0,
+            "B": 7,
+            "R": 11,
+            "dismissal-info": "c Patel b Rabada",
+            "batsman": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "dismissal-by": {
+              "name": "Marcus Stoinis",
+              "pid": "325012"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "c Stoinis b Rabada",
+            "batsman": "SP Goswami\u00a0 ",
+            "pid": "302579"
+          },
+          {
+            "SR": 66,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "S Nadeem",
+            "pid": "31872"
+          },
+          {
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 4,
+            "R": 2,
+            "dismissal-info": "",
+            "batsman": "Sandeep Sharma",
+            "pid": "438362"
+          }
+        ],
+        "title": "Sunrisers Hyderabad Innings (target: 190 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Marcus Stoinis",
+            "pid": "325012"
+          },
+          {
+            "name": "Shikhar Dhawan",
+            "pid": "28235"
+          },
+          {
+            "name": "Shreyas Iyer",
+            "pid": "642519"
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "pid": "670025"
+          },
+          {
+            "name": "Rishabh Pant",
+            "pid": "931581"
+          },
+          {
+            "name": "Ajinkya Rahane",
+            "pid": "277916"
+          },
+          {
+            "name": "Praveen Dubey",
+            "pid": "777515"
+          },
+          {
+            "name": "Axar Patel",
+            "pid": "554691"
+          },
+          {
+            "name": "Ravichandran Ashwin",
+            "pid": "26421"
+          },
+          {
+            "name": "Kagiso Rabada",
+            "pid": "550215"
+          },
+          {
+            "name": "Anrich Nortje",
+            "pid": "481979"
+          }
+        ],
+        "name": "Delhi Capitals"
+      },
+      {
+        "players": [
+          {
+            "name": "Priyam Garg",
+            "pid": "1070180"
+          },
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Kane Williamson",
+            "pid": "277906"
+          },
+          {
+            "name": "Jason Holder",
+            "pid": "391485"
+          },
+          {
+            "name": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "name": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "name": "Shreevats Goswami",
+            "pid": "302579"
+          },
+          {
+            "name": "Shahbaz Nadeem",
+            "pid": "31872"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "name": "T Natarajan",
+            "pid": "802575"
+          }
+        ],
+        "name": "Sunrisers Hyderabad"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Marcus Stoinis",
+      "pid": "325012"
+    },
+    "toss_winner_team": "Delhi Capitals",
+    "winner_team": "Delhi Capitals",
+    "matchStarted": true
+  },
+  "cache3": true,
+  "creditsLeft": 248,
+  "v": "1",
+  "ttl": 7,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-11-09T02:54:50.613Z"
+  }
+}

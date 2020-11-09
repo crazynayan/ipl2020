@@ -1,0 +1,619 @@
+{
+  "dateTimeGMT": "2020-11-06T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Royal Challengers Bangalore Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "David Warner",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "219889"
+          },
+          {
+            "name": "Shreevats Goswami",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "302579"
+          },
+          {
+            "name": "Rashid Khan",
+            "runout": 1,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "793463"
+          },
+          {
+            "name": "T Natarajan",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "802575"
+          },
+          {
+            "name": "Priyam Garg",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1070180"
+          },
+          {
+            "name": "Abdul Samad",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 2,
+            "pid": "1175485"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Sunrisers Hyderabad Innings (target: 132 runs from 20 overs)",
+        "scores": [
+          {
+            "name": "AB de Villiers",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 3,
+            "pid": "44936"
+          },
+          {
+            "name": "Adam Zampa",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "379504"
+          }
+        ]
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 9,
+            "Econ": "5.25",
+            "W": "0",
+            "R": "21",
+            "M": "0",
+            "O": "4",
+            "bowler": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 2,
+            "0s": 10,
+            "Econ": "6.25",
+            "W": "3",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "JO Holder",
+            "pid": "391485"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 6,
+            "Econ": "8.25",
+            "W": "2",
+            "R": "33",
+            "M": "0",
+            "O": "4",
+            "bowler": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "NB": "1",
+            "WD": "1",
+            "6s": 0,
+            "4s": 2,
+            "0s": 4,
+            "Econ": "7.50",
+            "W": "1",
+            "R": "30",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Nadeem",
+            "pid": "31872"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 11,
+            "Econ": "5.50",
+            "W": "0",
+            "R": "22",
+            "M": "0",
+            "O": "4",
+            "bowler": "Rashid Khan",
+            "pid": "793463"
+          }
+        ],
+        "title": "Bowling To Royal Challengers Bangalore Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "3",
+            "6s": 1,
+            "4s": 3,
+            "0s": 14,
+            "Econ": "7.00",
+            "W": "2",
+            "R": "28",
+            "M": "0",
+            "O": "4",
+            "bowler": "Mohammed Siraj",
+            "pid": "940973"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 5,
+            "0s": 7,
+            "Econ": "8.45",
+            "W": "0",
+            "R": "31",
+            "M": "0",
+            "O": "3.4",
+            "bowler": "NA Saini",
+            "pid": "700167"
+          },
+          {
+            "NB": "1",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 4,
+            "Econ": "10.50",
+            "W": "0",
+            "R": "21",
+            "M": "0",
+            "O": "2",
+            "bowler": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 0,
+            "0s": 14,
+            "Econ": "3.00",
+            "W": "1",
+            "R": "12",
+            "M": "0",
+            "O": "4",
+            "bowler": "A Zampa",
+            "pid": "379504"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 0,
+            "0s": 7,
+            "Econ": "6.00",
+            "W": "1",
+            "R": "24",
+            "M": "0",
+            "O": "4",
+            "bowler": "YS Chahal",
+            "pid": "430246"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 0,
+            "0s": 3,
+            "Econ": "4.00",
+            "W": "0",
+            "R": "4",
+            "M": "0",
+            "O": "1",
+            "bowler": "MM Ali",
+            "pid": "8917"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 1,
+            "0s": 2,
+            "Econ": "7.00",
+            "W": "0",
+            "R": "7",
+            "M": "0",
+            "O": "1",
+            "bowler": "S Dube",
+            "pid": "714451"
+          }
+        ],
+        "title": "Bowling To Sunrisers Hyderabad Innings (target: 132 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "Shreevats Goswami",
+              "pid": "302579"
+            },
+            "dismissal": "catch",
+            "SR": 85,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 6,
+            "dismissal-info": "c  Goswami b Holder",
+            "batsman": "V Kohli\u00a0(c)",
+            "pid": "253802"
+          },
+          {
+            "dismissal-by": {
+              "name": "Priyam Garg",
+              "pid": "1070180"
+            },
+            "dismissal": "catch",
+            "SR": 16,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 1,
+            "dismissal-info": "c Garg b Holder",
+            "batsman": "D Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "dismissal-by": {
+              "name": "Abdul Samad",
+              "pid": "1175485"
+            },
+            "dismissal": "catch",
+            "SR": 106,
+            "6s": 1,
+            "4s": 3,
+            "M": 0,
+            "B": 30,
+            "R": 32,
+            "dismissal-info": "c Abdul Samad b Nadeem",
+            "batsman": "AJ Finch",
+            "pid": "5334"
+          },
+          {
+            "dismissal-by": {
+              "name": "T Natarajan",
+              "pid": "802575"
+            },
+            "dismissal": "bowled",
+            "SR": 130,
+            "6s": 0,
+            "4s": 5,
+            "M": 0,
+            "B": 43,
+            "R": 56,
+            "dismissal-info": "b Natarajan",
+            "batsman": "AB de Villiers\u00a0 ",
+            "pid": "44936"
+          },
+          {
+            "dismissal-by": [
+              {
+                "name": "Rashid Khan",
+                "pid": "793463"
+              }
+            ],
+            "dismissal": "runout",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 1,
+            "R": 0,
+            "dismissal-info": "run out (Rashid Khan)",
+            "batsman": "MM Ali",
+            "pid": "8917"
+          },
+          {
+            "dismissal-by": {
+              "name": "David Warner",
+              "pid": "219889"
+            },
+            "dismissal": "catch",
+            "SR": 61,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 13,
+            "R": 8,
+            "dismissal-info": "c Warner b Holder",
+            "batsman": "S Dube",
+            "pid": "714451"
+          },
+          {
+            "dismissal-by": {
+              "name": "Abdul Samad",
+              "pid": "1175485"
+            },
+            "dismissal": "catch",
+            "SR": 83,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 6,
+            "R": 5,
+            "dismissal-info": "c Abdul Samad b Natarajan",
+            "batsman": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "SR": 112,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 8,
+            "R": 9,
+            "dismissal-info": "",
+            "batsman": "NA Saini",
+            "pid": "700167"
+          },
+          {
+            "SR": 142,
+            "6s": 0,
+            "4s": 1,
+            "M": 0,
+            "B": 7,
+            "R": 10,
+            "dismissal-info": "",
+            "batsman": "Mohammed Siraj",
+            "pid": "940973"
+          }
+        ],
+        "title": "Royal Challengers Bangalore Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 100,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 17,
+            "R": 17,
+            "dismissal-info": "c  de Villiers b Mohammed Siraj",
+            "batsman": "DA Warner\u00a0(c)",
+            "pid": "219889"
+          },
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 0,
+            "dismissal-info": "c  de Villiers b Mohammed Siraj",
+            "batsman": "SP Goswami\u00a0 ",
+            "pid": "302579"
+          },
+          {
+            "dismissal-by": {
+              "name": "AB de Villiers",
+              "pid": "44936"
+            },
+            "dismissal": "catch",
+            "SR": 114,
+            "6s": 1,
+            "4s": 3,
+            "M": 0,
+            "B": 21,
+            "R": 24,
+            "dismissal-info": "c  de Villiers b Zampa",
+            "batsman": "MK Pandey",
+            "pid": "290630"
+          },
+          {
+            "SR": 113,
+            "6s": 2,
+            "4s": 2,
+            "M": 0,
+            "B": 44,
+            "R": 50,
+            "dismissal-info": "",
+            "batsman": "KS Williamson",
+            "pid": "277906"
+          },
+          {
+            "dismissal-by": {
+              "name": "Adam Zampa",
+              "pid": "379504"
+            },
+            "dismissal": "catch",
+            "SR": 50,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 14,
+            "R": 7,
+            "dismissal-info": "c Zampa b Chahal",
+            "batsman": "PK Garg",
+            "pid": "1070180"
+          },
+          {
+            "SR": 120,
+            "6s": 0,
+            "4s": 3,
+            "M": 0,
+            "B": 20,
+            "R": 24,
+            "dismissal-info": "",
+            "batsman": "JO Holder",
+            "pid": "391485"
+          }
+        ],
+        "title": "Sunrisers Hyderabad Innings (target: 132 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "Virat Kohli",
+            "pid": "253802"
+          },
+          {
+            "name": "Devdutt Padikkal",
+            "pid": "1119026"
+          },
+          {
+            "name": "Aaron Finch",
+            "pid": "5334"
+          },
+          {
+            "name": "AB de Villiers",
+            "pid": "44936"
+          },
+          {
+            "name": "Moeen Ali",
+            "pid": "8917"
+          },
+          {
+            "name": "Shivam Dube",
+            "pid": "714451"
+          },
+          {
+            "name": "Washington Sundar",
+            "pid": "719715"
+          },
+          {
+            "name": "Navdeep Saini",
+            "pid": "700167"
+          },
+          {
+            "name": "Mohammed Siraj",
+            "pid": "940973"
+          },
+          {
+            "name": "Yuzvendra Chahal",
+            "pid": "430246"
+          },
+          {
+            "name": "Adam Zampa",
+            "pid": "379504"
+          }
+        ],
+        "name": "Royal Challengers Bangalore"
+      },
+      {
+        "players": [
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Shreevats Goswami",
+            "pid": "302579"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Kane Williamson",
+            "pid": "277906"
+          },
+          {
+            "name": "Priyam Garg",
+            "pid": "1070180"
+          },
+          {
+            "name": "Jason Holder",
+            "pid": "391485"
+          },
+          {
+            "name": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "name": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "name": "Shahbaz Nadeem",
+            "pid": "31872"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "name": "T Natarajan",
+            "pid": "802575"
+          }
+        ],
+        "name": "Sunrisers Hyderabad"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Kane Williamson",
+      "pid": "277906"
+    },
+    "toss_winner_team": "Sunrisers Hyderabad",
+    "winner_team": "Sunrisers Hyderabad",
+    "matchStarted": true
+  },
+  "cache3": true,
+  "creditsLeft": 242,
+  "v": "1",
+  "ttl": 7,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-11-09T03:06:54.868Z"
+  }
+}

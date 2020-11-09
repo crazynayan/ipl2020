@@ -1,0 +1,523 @@
+{
+  "dateTimeGMT": "2020-11-03T14:00:00.000Z",
+  "data": {
+    "fielding": [
+      {
+        "title": "Fielding for Mumbai Indians Innings (20 overs maximum)",
+        "scores": [
+          {
+            "name": "David Warner",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "219889"
+          },
+          {
+            "name": "Kane Williamson",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "277906"
+          },
+          {
+            "name": "Wriddhiman Saha",
+            "runout": 0,
+            "stumped": 1,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "279810"
+          },
+          {
+            "name": "Jason Holder",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 1,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "391485"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 2,
+            "lbw": 0,
+            "catch": 0,
+            "pid": "438362"
+          },
+          {
+            "name": "Priyam Garg",
+            "runout": 0,
+            "stumped": 0,
+            "bowled": 0,
+            "lbw": 0,
+            "catch": 1,
+            "pid": "1070180"
+          }
+        ]
+      },
+      {
+        "title": "Fielding for Sunrisers Hyderabad Innings (target: 150 runs from 20 overs)",
+        "scores": []
+      }
+    ],
+    "bowling": [
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 3,
+            "4s": 3,
+            "0s": 14,
+            "Econ": "8.50",
+            "W": "3",
+            "R": "34",
+            "M": "0",
+            "O": "4",
+            "bowler": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 1,
+            "0s": 10,
+            "Econ": "6.25",
+            "W": "2",
+            "R": "25",
+            "M": "0",
+            "O": "4",
+            "bowler": "JO Holder",
+            "pid": "391485"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 2,
+            "0s": 11,
+            "Econ": "4.75",
+            "W": "2",
+            "R": "19",
+            "M": "0",
+            "O": "4",
+            "bowler": "S Nadeem",
+            "pid": "31872"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 3,
+            "4s": 2,
+            "0s": 7,
+            "Econ": "9.50",
+            "W": "0",
+            "R": "38",
+            "M": "0",
+            "O": "4",
+            "bowler": "T Natarajan",
+            "pid": "802575"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 2,
+            "0s": 5,
+            "Econ": "8.00",
+            "W": "1",
+            "R": "32",
+            "M": "0",
+            "O": "4",
+            "bowler": "Rashid Khan",
+            "pid": "793463"
+          }
+        ],
+        "title": "Bowling To Mumbai Indians Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "NB": "0",
+            "WD": "2",
+            "6s": 0,
+            "4s": 2,
+            "0s": 6,
+            "Econ": "7.33",
+            "W": "0",
+            "R": "22",
+            "M": "0",
+            "O": "3",
+            "bowler": "DS Kulkarni",
+            "pid": "277955"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 1,
+            "4s": 3,
+            "0s": 12,
+            "Econ": "6.75",
+            "W": "0",
+            "R": "27",
+            "M": "0",
+            "O": "4",
+            "bowler": "NM Coulter-Nile",
+            "pid": "261354"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 0,
+            "4s": 4,
+            "0s": 3,
+            "Econ": "9.66",
+            "W": "0",
+            "R": "29",
+            "M": "0",
+            "O": "3",
+            "bowler": "JL Pattinson",
+            "pid": "272465"
+          },
+          {
+            "NB": "0",
+            "WD": "0",
+            "6s": 1,
+            "4s": 4,
+            "0s": 7,
+            "Econ": "9.00",
+            "W": "0",
+            "R": "36",
+            "M": "0",
+            "O": "4",
+            "bowler": "RD Chahar",
+            "pid": "1064812"
+          },
+          {
+            "NB": "0",
+            "WD": "1",
+            "6s": 0,
+            "4s": 4,
+            "0s": 2,
+            "Econ": "11.68",
+            "W": "0",
+            "R": "37",
+            "M": "0",
+            "O": "3.1",
+            "bowler": "KH Pandya",
+            "pid": "471342"
+          }
+        ],
+        "title": "Bowling To Sunrisers Hyderabad Innings (target: 150 runs from 20 overs)"
+      }
+    ],
+    "batting": [
+      {
+        "scores": [
+          {
+            "dismissal-by": {
+              "name": "David Warner",
+              "pid": "219889"
+            },
+            "dismissal": "catch",
+            "SR": 57,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 7,
+            "R": 4,
+            "dismissal-info": "c Warner b Sandeep Sharma",
+            "batsman": "RG Sharma\u00a0(c)",
+            "pid": "34102"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sandeep Sharma",
+              "pid": "438362"
+            },
+            "dismissal": "bowled",
+            "SR": 192,
+            "6s": 2,
+            "4s": 2,
+            "M": 0,
+            "B": 13,
+            "R": 25,
+            "dismissal-info": "b Sandeep Sharma",
+            "batsman": "Q de Kock\u00a0 ",
+            "pid": "379143"
+          },
+          {
+            "dismissal-by": {
+              "name": "Wriddhiman Saha",
+              "pid": "279810"
+            },
+            "dismissal": "stumped",
+            "SR": 124,
+            "6s": 0,
+            "4s": 5,
+            "M": 0,
+            "B": 29,
+            "R": 36,
+            "dismissal-info": "st  Saha b Nadeem",
+            "batsman": "SA Yadav",
+            "pid": "446507"
+          },
+          {
+            "dismissal-by": {
+              "name": "Sandeep Sharma",
+              "pid": "438362"
+            },
+            "dismissal": "bowled",
+            "SR": 110,
+            "6s": 2,
+            "4s": 1,
+            "M": 0,
+            "B": 30,
+            "R": 33,
+            "dismissal-info": "b Sandeep Sharma",
+            "batsman": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "dismissal-by": {
+              "name": "Kane Williamson",
+              "pid": "277906"
+            },
+            "dismissal": "catch",
+            "SR": 0,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 0,
+            "dismissal-info": "c Williamson b Nadeem",
+            "batsman": "KH Pandya",
+            "pid": "471342"
+          },
+          {
+            "dismissal-by": {
+              "name": "Wriddhiman Saha",
+              "pid": "279810"
+            },
+            "dismissal": "catch",
+            "SR": 33,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 1,
+            "dismissal-info": "c  Saha b Rashid Khan",
+            "batsman": "SS Tiwary",
+            "pid": "35390"
+          },
+          {
+            "dismissal-by": {
+              "name": "Jason Holder",
+              "pid": "391485"
+            },
+            "dismissal": "bowled",
+            "SR": 164,
+            "6s": 4,
+            "4s": 2,
+            "M": 0,
+            "B": 25,
+            "R": 41,
+            "dismissal-info": "b Holder",
+            "batsman": "KA Pollard",
+            "pid": "230559"
+          },
+          {
+            "dismissal-by": {
+              "name": "Priyam Garg",
+              "pid": "1070180"
+            },
+            "dismissal": "catch",
+            "SR": 33,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 3,
+            "R": 1,
+            "dismissal-info": "c Garg b Holder",
+            "batsman": "NM Coulter-Nile",
+            "pid": "261354"
+          },
+          {
+            "SR": 80,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 5,
+            "R": 4,
+            "dismissal-info": "",
+            "batsman": "JL Pattinson",
+            "pid": "272465"
+          },
+          {
+            "SR": 150,
+            "6s": 0,
+            "4s": 0,
+            "M": 0,
+            "B": 2,
+            "R": 3,
+            "dismissal-info": "",
+            "batsman": "DS Kulkarni",
+            "pid": "277955"
+          }
+        ],
+        "title": "Mumbai Indians Innings (20 overs maximum)"
+      },
+      {
+        "scores": [
+          {
+            "SR": 146,
+            "6s": 1,
+            "4s": 10,
+            "M": 0,
+            "B": 58,
+            "R": 85,
+            "dismissal-info": "",
+            "batsman": "DA Warner\u00a0(c)",
+            "pid": "219889"
+          },
+          {
+            "SR": 128,
+            "6s": 1,
+            "4s": 7,
+            "M": 0,
+            "B": 45,
+            "R": 58,
+            "dismissal-info": "",
+            "batsman": "WP Saha\u00a0 ",
+            "pid": "279810"
+          }
+        ],
+        "title": "Sunrisers Hyderabad Innings (target: 150 runs from 20 overs)"
+      }
+    ],
+    "team": [
+      {
+        "players": [
+          {
+            "name": "David Warner",
+            "pid": "219889"
+          },
+          {
+            "name": "Wriddhiman Saha",
+            "pid": "279810"
+          },
+          {
+            "name": "Manish Pandey",
+            "pid": "290630"
+          },
+          {
+            "name": "Kane Williamson",
+            "pid": "277906"
+          },
+          {
+            "name": "Priyam Garg",
+            "pid": "1070180"
+          },
+          {
+            "name": "Jason Holder",
+            "pid": "391485"
+          },
+          {
+            "name": "Abdul Samad",
+            "pid": "1175485"
+          },
+          {
+            "name": "Rashid Khan",
+            "pid": "793463"
+          },
+          {
+            "name": "Shahbaz Nadeem",
+            "pid": "31872"
+          },
+          {
+            "name": "Sandeep Sharma",
+            "pid": "438362"
+          },
+          {
+            "name": "T Natarajan",
+            "pid": "802575"
+          }
+        ],
+        "name": "Sunrisers Hyderabad"
+      },
+      {
+        "players": [
+          {
+            "name": "Rohit Sharma",
+            "pid": "34102"
+          },
+          {
+            "name": "Quinton de Kock",
+            "pid": "379143"
+          },
+          {
+            "name": "Suryakumar Yadav",
+            "pid": "446507"
+          },
+          {
+            "name": "Ishan Kishan",
+            "pid": "720471"
+          },
+          {
+            "name": "Krunal Pandya",
+            "pid": "471342"
+          },
+          {
+            "name": "Saurabh Tiwary",
+            "pid": "35390"
+          },
+          {
+            "name": "Kieron Pollard",
+            "pid": "230559"
+          },
+          {
+            "name": "Nathan Coulter-Nile",
+            "pid": "261354"
+          },
+          {
+            "name": "James Pattinson",
+            "pid": "272465"
+          },
+          {
+            "name": "Dhawal Kulkarni",
+            "pid": "277955"
+          },
+          {
+            "name": "Rahul Chahar",
+            "pid": "1064812"
+          }
+        ],
+        "name": "Mumbai Indians"
+      }
+    ],
+    "man-of-the-match": {
+      "name": "Shahbaz Nadeem",
+      "pid": "31872"
+    },
+    "toss_winner_team": "Sunrisers Hyderabad",
+    "winner_team": "Sunrisers Hyderabad",
+    "matchStarted": true
+  },
+  "type": "Twenty20",
+  "cache3": true,
+  "creditsLeft": 246,
+  "v": "1",
+  "ttl": 11,
+  "provider": {
+    "source": "Various",
+    "url": "https://cricapi.com/",
+    "pubDate": "2020-11-09T03:06:18.687Z"
+  }
+}
